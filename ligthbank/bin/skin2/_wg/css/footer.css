@@ -1,0 +1,87 @@
+
+/** footer **/
+   
+    .footer_wrap { position:relative; z-index:10; width:100%; border-top:1px solid #333; background:#fff; line-height:20px; font-size:11px; }
+    .footer_wrap:after { content:""; display:block; clear:both; }
+    
+    #footer { margin:0 auto 20px; }
+    #footer h4 { margin:0 0 12px; font-size:11px; font-weight:700; letter-spacing:0.1em; }
+    #footer .h4_line { width:17px; height:1px; margin:0 0 20px; border-bottom:1px solid #555; line-height:0px; font-size:0; }
+    
+    #footer ._section { min-height:180px; margin:0 0 10px; background:url('/_wg/img/bar_eee.gif') repeat-y 85% 0; }
+    /* 1265px 이하 */
+    @media all and (max-width:1265px){
+        #footer ._section { background:url('/_wg/img/bar_eee.gif') repeat-y 90% 0; }
+    }
+
+    #footer ._line { width:100%; height:0; line-height:0; margin:15px 0 25px; border-top:1px solid #e6e6e6; }
+
+    #footer .info { color:#aaa; }
+    #footer i { font-size:13px; vertical-align:-2px; }
+
+    /* 하단 메뉴 */
+    #footer .footer_menu { display:block; margin:15px 0 30px; padding:0 0 13px 10px; border-bottom:1px solid #e6e6e6; }
+    #footer .footer_menu ul { font-size:0; line-height:0; letter-spacing:-4px; }
+    #footer .footer_menu li { display:inline-block; *display:inline; *zoom:1; height:20px; padding:0 15px; background:url("/_wg/img/bar_ddd.gif") 0 5px no-repeat; font-size:12px; line-height:19px; letter-spacing:0; }
+    #footer .footer_menu li.home { padding-left:0; background:none; }
+    #footer .footer_menu li a { color:#333; }
+    #footer .footer_menu li a:hover { color:#000; text-decoration:none; font-weight:700; }
+    
+    /* 콜센터 */
+    #footer .footer_info { float:left; width:24%; padding:0 0 0 1%; }
+    #footer .footer_info .phone { margin:0 0 15px; font-size:22px; font-weight:700; }
+    #footer .footer_info strong { padding-right:10px; color:#333; }
+    
+    /* 은행정보 */
+    #footer .footer_bank { float:left; width:23%; }
+    #footer .footer_bank li { min-height:0; letter-spacing:0.1em; }
+    #footer .footer_bank strong { display:block; float:left; width:65px; min-height:0; line-height:20px; font-weight:bold; }
+    #footer .footer_bank span { min-height:0; line-height:20px; }
+    #footer .footer_bank .bank_list { width:170px; margin:10px 0 0; }
+    
+    /* 배송 */
+    #footer .footer_delivery { float:left; width:39%; background:url('/_wg/img/bar_eee.gif') repeat-y 93% 0;}
+    #footer .footer_delivery h4 { margin:0 0 5px; font-size:11px; }
+    #footer .footer_delivery ul.first { margin:0 0 25px; }
+    #footer .footer_delivery li { font-size:11px; }
+    #footer .footer_delivery strong,
+    #footer .footer_delivery span { margin:0 10px 0 0; }
+    #footer .footer_delivery .v_returnAdd1 { word-break:keep-all; }
+
+    /* 메뉴2 */
+    #footer .footer_menu2 { float:right; width:11%; margin:0 1% 0 0; }
+    #footer .footer_menu2 li { display:block; }
+    #footer .footer_menu2 li a { display:block; margin:0 0 4px; padding:3px 0 2px 6px; line-height:20px; border:1px solid #ddd; color:#333; transition:all .3s ease; -webkit-transition:all .3s ease; }
+    #footer .footer_menu2 li a:hover { border:1px solid #888; background:#f4f4f4; color:#000; text-decoration:none; }
+
+    /* 회사정보 */
+    #footer .footer_company { float:left; width:55%; padding:0 0 0 1%; font-size:12px; line-height:23px; }
+    #footer .footer_company strong { padding-right:8px; color:#aaa; font-weight:normal; }
+    #footer .footer_company span { padding-right:23px; color:#333; }
+    #footer .footer_company a:hover { text-decoration:none; color:#999; }
+
+    /* 에스크로 */
+    #footer .footer_escrow { float:right; width:43%; margin:0 1% 15px 0; text-align:right; line-height:22px; }
+    #footer .footer_escrow .v_escrow1 { padding:3px 7px; border-radius:3px; -webkit-border-radius:3px; background:#888; color:#fff; }
+    #footer .footer_escrow .btn_11_ff { margin:5px 0 0; }
+
+    /* 아이콘 */
+    #footer .footer_ico { float:right; width:43%; margin:0 1% 10px 0; font-size:0; line-height:0; text-align:right; }
+    #footer .footer_ico li { display:inline-block; *display:inline; *zoom:1; margin:0 0 0 10px; }
+
+    /* 카피라이터 */
+    .footer_end { display:block; clear:both; height:45px; background:url('/_wg/img/bg_slash_w.png') #333; fon-size:11px; text-align:center; line-height:45px; color:#fff; letter-spacing:0.2em; }
+    .footer_end .copyright { float:left; }
+    .footer_end .made a { float:right; color:#ddd; }
+    .footer_end .made a:hover { text-decoration:none; }
+    
+    
+
+
+    /* 모바일 화면보기 버튼 속성 */
+    .xans-layout-conversionpc { background:#fff; padding:45px; text-align:center; }
+    .xans-layout-conversionpc a {
+        margin:20px; padding:20px 40px 20px 110px;
+        font-size:68px; color:#63666e; text-decoration:none; text-align:center;
+        border:4px solid #9d9db0; border-radius:10px; background:url("http://img.echosting.cafe24.com/skin/base/layout/ico_mobile.png") no-repeat 40px 50%;
+    }

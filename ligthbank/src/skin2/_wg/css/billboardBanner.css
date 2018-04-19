@@ -1,0 +1,155 @@
+.thumb-wrap.with-lnb .thumb-list .item {
+	width: 310px
+}
+
+.thumb-wrap .tit {
+	color: #0f0f10;
+	font-size: 26px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	text-align: center
+}
+
+.thumb-wrap .thumb-list {
+	margin-left: -15px
+}
+
+.thumb-wrap .thumb-list:after {
+	clear: both;
+	content: "";
+	display: table
+}
+
+.thumb-wrap .thumb-list .item {
+	float: left;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	position: relative;
+	width: 390px
+}
+
+.thumb-wrap .thumb-list.slide-list {
+	margin: 0;
+	position: relative
+}
+
+.thumb-wrap .thumb-list.slide-list .item {
+	margin-bottom: 0;
+	margin-left: 0
+}
+
+.swiper-wrapper {
+	-webkit-box-sizing: content-box;
+	-webkit-transition-property: -webkit-transform;
+	box-sizing: content-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	height: 600px;
+	max-width: 972px;
+	position: relative;
+	transition-property: -webkit-transform;
+	transition-property: transform;
+	transition-property: transform, -webkit-transform;
+	width: 100%;
+	z-index: 1
+}
+
+.swiper-wrapper .swiper-slide {
+	-ms-flex: 0 0 auto;
+	-ms-flex-align: center;
+	-ms-flex-negative: 0;
+	-ms-flex-pack: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	-webkit-flex-shrink: 0;
+	-webkit-justify-content: center;
+	align-items: center;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-shrink: 0;
+	height: 100%;
+	justify-content: center;
+	position: relative;
+	webkit-flex-shrink: 0
+}
+
+.swiper-wrapper .swiper-slide.square-banner {
+	background: #f0f0f0
+}
+
+.swiper-wrapper .swiper-slide>a {
+	display: block;
+	width: 100%
+}
+
+.swiper-container-horizontal {
+	position: relative
+}
+
+.swiper-container-horizontal:hover .swiper-controls {
+	display: block
+}
+
+.swiper-controls {
+	display: none
+}
+
+.swiper-controls .swiper-button-next, .swiper-controls .swiper-button-prev
+	{
+	display: inline-block;
+	font: 0/0 a;
+	height: 45px;
+	margin-top: -23px;
+	position: absolute;
+	top: 50%;
+	width: 45px;
+	z-index: 2
+}
+
+.swiper-controls .swiper-button-prev {
+	background: url(/_ui/img/pc/icn/icn-swipe-prev.gif) no-repeat;
+	left: 0
+}
+
+.swiper-controls .swiper-button-next {
+	background: url(/_ui/img/pc/icn/icn-swipe-next.gif) no-repeat;
+	right: 0
+}
+
+.swiper-pagination {
+	-ms-transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+	-webkit-transition: .3s;
+	background: transparent;
+	bottom: 0;
+	height: 5px;
+	left: 0;
+	opacity: .8;
+	position: absolute;
+	text-align: center;
+	transform: translateZ(0);
+	transition: .3s;
+	width: 100%;
+	z-index: 10
+}
+
+.swiper-pagination .swiper-pagination-progressbar {
+	-ms-transform: scale(0);
+	-ms-transform-origin: left top;
+	-webkit-transform: scale(0);
+	-webkit-transform-origin: left top;
+	background: #1f1f1f;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: scale(0);
+	transform-origin: left top;
+	width: 100%
+}

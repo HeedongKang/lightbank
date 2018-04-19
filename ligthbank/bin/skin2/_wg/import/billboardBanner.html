@@ -1,0 +1,55 @@
+<link rel="stylesheet" type="text/css" href="/_wg/css/slider-pro.min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="/_wg/css/jquery.fancybox.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="/_wg/css/billboard.css" media="screen"/>
+
+<script type="text/javascript" src="/_wg/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/_wg/js/jquery.sliderPro.min.js"></script>
+<script type="text/javascript" src="/_wg/js/jquery.fancybox.pack.js"></script>
+
+<script type="text/javascript">
+	$( document ).ready(function( $ ) {
+		$( '#billboardBanner' ).sliderPro({
+			height: 514,
+			arrows: true,
+			buttons: true,
+			visibleSize: '100%',
+			forceSize: 'fullWidth',
+			autoSlideSize: true
+		});
+		
+		$("#loadingBanner").hide();
+        $("#billboardBanner").show();
+	});
+	
+	  /*   $.ajax({
+	        url : 'https://ipinfo.io',
+	        dataType: 'json',
+	        success: function(data) {
+	        	console.log(data);
+	        }
+	    }); */
+</script>	
+	<br>
+	<div id="loadingBanner" style="text-align:center;position:absolute;width:100%;padding-bottom:50px;z-index:10;background:#ffffff">
+		<img src="/_wg/img/billboard_bnr/bill_banner01_180212.jpg" height="514">
+	</div>
+	<div id="billboardBanner" class="slider-pro" style="height:514px;">
+		<div class="sp-slides">
+			<div class="sp-slide">131
+				      <a href="/product/list.html?cate_no=100"><img class="sp-image" src="/_wg/img/billboard_bnr/bill_banner01_180212.jpg" height="514"></a>    
+          		<!-- <p class="sp-caption">초특가!세일~ 최저가110%보상제!</p> -->
+			</div>
+			<div class="sp-slide">
+				      <a href="/product/list.html?cate_no=131"><img class="sp-image" src="/_wg/img/billboard_bnr/bill_banner03_180402.jpg" height="514"></a>    
+          		<!--<p class="sp-caption">초특가!세일~ 최저가110%보상제!</p> -->
+			</div>
+     		 <div class="sp-slide">
+					<a href="/product/list.html?cate_no=134"><img class="sp-image" src="/_wg/img/billboard_bnr/bill_banner02_180213.jpg" height="514"></a>
+	        	<!--<p class="sp-caption">조명도 리폼이 트렌드!</p> -->
+			</div>
+			<div class="sp-slide">
+				      <a href="/product/list.html?cate_no=131"><img class="sp-image" src="/_wg/img/billboard_bnr/bill_banner04_180402.jpg" height="514"></a>    
+          		<!--<p class="sp-caption">초특가!세일~ 최저가110%보상제!</p> -->
+			</div>		
+		</div>
+    </div>

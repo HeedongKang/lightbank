@@ -1,0 +1,42 @@
+
+    body.lightbox { overflow:hidden/* !important 스크롤 사용안함 */; }
+    .d_lightbox { display:none !important /* !important 라이트박스 사용안함 */; position:fixed; z-index:299; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,.5); }
+
+    .d_etc18.right { display:none; position:fixed; z-index:300; right:0px; top:0; width:251px; height:100%; border-left:1px solid #ddd; background:#fff/* 배경색상 */; box-shadow:-2px 0px 4px rgba(0,0,0,0.07); }
+    .d_etc18.right .position { position:relative; z-index:2; top:0; background:#fff; transition:top .5s .5s ease; -webkit-transition:top .5s .5s ease; }
+    
+    /* 버튼 */
+    .d_etc18.right .section_btn { position:absolute; top:50%; left:-40px; width:40px; margin-top:-100px; }
+    .d_etc18.right .Btn { position:relative; width:38px; height:38px; border:1px solid #ddd; border-top:none;  background:#fff; box-shadow:-2px 0px 4px rgba(0,0,0,0.07); cursor:pointer; font-size:11px; text-align:center; transition:all .2s ease; -webkit-transition:all .2s ease; }
+    .d_etc18.right .Btn p { display:block; position:absolute; right:-100px; top:6px; height:25px; line-height:25px; padding:0 10px; border:1px solid #ddd; background:#fff; text-align:center; opacity:0; transition:opacity .2s ease; -webkit-transition:opacity .2s ease; }
+    .d_etc18.right .Btn:hover p { right:47px; opacity:1; }
+    .d_etc18.right .Btn img { position:relative; left:0; top:12px; width:15px; }
+
+    /* 화살표 */
+    .d_etc18.right .d_toggle { position:relative; top:1px; width:39px; border:1px solid #000; border-right:none; background:#000; box-shadow:-2px 0px 4px rgba(0,0,0,0.07); cursor:pointer; transition:all .5s 1s ease; -webkit-transition:all .5s 1s ease; }
+    .d_etc18.right .d_toggle.d_on { border:1px solid #ddd; border-right:none; background:#fff; }
+    /* 화살표 > bar 공통 */
+    .d_etc18.right .d_toggle .bar { display:block; position:absolute; left:15px; width:9px; height:1px; background:#fff; transition:all .4s 1s ease; -webkit-transition:all .4s 1s ease; }
+    .d_etc18.right .d_toggle.d_on .bar { background:#000; }
+    /* 화살표 > bar1 */
+    .d_etc18.right .d_toggle .bar.l01 { top:16px; transform:rotate(-45deg); -webkit-transform:rotate(-45deg); }
+    .d_etc18.right .d_toggle.d_on .bar.l01 { transform:rotate(45deg); -webkit-transform:rotate(45deg); }
+    /* 화살표 > bar2 */
+    .d_etc18.right .d_toggle .bar.l02 { top:22px; transform:rotate(45deg); -webkit-transform:rotate(45deg); }
+    .d_etc18.right .d_toggle.d_on .l02 { transform:rotate(-45deg); -webkit-transform:rotate(-45deg); }
+
+    .d_etc18.right .naver.Btn { border-top:1px solid #ddd; }
+    .d_etc18.right .naver.Btn:hover { background:#f4f4f4; }
+    .d_etc18.right .goBtn a { text-decoration:none; }
+    .d_etc18.right .goBtn i { position:relative; top:10px; color:#000; font-size:17px; }
+    .d_etc18.right .goBtn.Btn:hover { background:#f4f4f4; }
+
+    /* 캡션넓이 */
+    .d_etc18.right .d_toggle.Btn p { width:40px; } /* 퀵메뉴 */
+    .d_etc18.right .naver.Btn p { width:65px; } /* 네이버톡톡 */
+    .d_etc18.right .goBtn.Btn p { width:35px; } /* 위아래버튼 */
+
+    /* 1265px 이하 */
+    @media all and (min-height:850px){
+        .d_etc18.right .position { top:10%; }
+    }

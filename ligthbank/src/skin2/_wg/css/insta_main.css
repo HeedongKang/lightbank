@@ -1,0 +1,30 @@
+
+    .instafeed_wrap { position:relative; z-index:11; width:1260px; margin:0 0 -1px; padding:40px 0 50px; border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6;}
+    .instafeed_wrap .title { position:relative; width:1260px; margin:0 auto 25px; height:26px; line-height:26px; text-align:center; }
+    .instafeed_wrap .title .tit a { font-size:23px; color:#333; letter-spacing:0.2em; }
+    .instafeed_wrap .title .tit i { position:relative; top:3px; font-size:25px !important; }
+    .instafeed_wrap .title .tag { position:absolute; right:5px; }
+    .instafeed_wrap .title .idTag {position: absolute;right: 0;height: 27px;line-height: 27px;white-space: nowrap;}
+	.instafeed_wrap .title .idTag a {display: inline-block;margin: 0 2px;padding: 0 10px;border-radius: 5px;background: #333;color: #fff;font-size: 12px;font-weight: normal;text-decoration: none;text-align: right;transition: background .3s ease;-webkit-transition: background .3s ease;}
+	.instafeed_wrap .title .idTag a:hover {background: #7b7b7b;}
+    .instafeed_wrap .title a { color:#666; font-size:12px; }
+    .instafeed_wrap .title a:hover { color:#111; text-decoration:none; }
+    
+    #instafeed { width:1260px; margin:0 auto; }
+    #instafeed .post { display:inline-block; *display:inline; *zoom:1; position:relative; width:123px; height:123px; margin:0 3px 3px 0; overflow:hidden; }
+    #instafeed img { width:100%; height:100%; transition:all .3s ease; -webkit-transition:all .3s ease; }
+    #instafeed img:hover { filter:alpha(opacity=60); opacity:.6; -webkit-opacity:.6; }
+
+    /* 캡션(사용안함) */
+    #instafeed .post .tit { display:none; position:absolute; z-index:10; bottom:-4px; left:50%; width:74px; margin-left:-37px; line-height:25px; border:1px solid #ddd; border-radius:4px; background:#f4f4f4; font-size:11px; color:#333; text-align:center; white-space:nowrap; overflow:hidden; filter:alpha(opacity=0); opacity:0; -webkit-opacity:0; transition:all .2s ease; -webkit-transition:all .2s ease; }
+    #instafeed .post:hover .tit { bottom:0; filter:alpha(opacity=100); opacity:1.0; -webkit-opacity:1.0; }
+    #instafeed .post .tit a:hover { text-decoration:none; }
+
+    /* 1265px 이하 */
+    @media all and (max-width:1265px){
+        .instafeed_wrap .title { width:880px; }
+        #instafeed { width:880px; }
+        #instafeed .post { width:85px; height:85px; }
+    }
+    
+    

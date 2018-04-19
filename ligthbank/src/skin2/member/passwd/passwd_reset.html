@@ -1,0 +1,37 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="path">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li title="현재 위치"><strong>비밀번호 찾기</strong></li>
+    </ol>
+</div>
+<div class="titleArea">
+    <h2>비밀번호 찾기</h2>
+</div>
+<div module="member_passwordreset">
+    <!--@css(/css/module/member/passwd_reset.css)-->
+    <div class="inner">
+        <h3><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/h3_reset_password.gif" alt="비밀번호 재설정" /></h3>
+        <fieldset>
+            <legend>비밀번호 재설정</legend>
+            <ul class="ec-base-desc typeBullet gSmall">
+                <li><strong class="term">아이디</strong><span class="desc"><strong class="txtEm">{$member_id}</strong></span></li>
+                <li>
+                    <strong class="term">새 비밀번호</strong>
+                    <div class="desc">
+                        {$form.new_passwd}
+                        <div class="txtInfo">
+                            {$passwd_type_desc}
+                        </div>
+                    </div>
+                </li>
+                <li><strong class="term">새 비밀번호 확인</strong><span class="desc">{$form.new_passwd_confirm}</span></li>
+            </ul>
+            <p class="ec-base-button gBlank20">
+                <a href="#none" onclick="{$action_func_password_reset_submit}"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_change_password.gif" alt="비밀번호 변경" /></a>
+                <a href="#none" onclick="{$action_func_password_reset_cancel}"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_cancel.gif" alt="취소" /></a>
+            </p>
+        </fieldset>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+
+    .JS_tabRolling { position:relative; margin:0 auto 50px; border-bottom:1px solid #eee; }
+    .JS_tabRolling > .img { position:relative; overflow:hidden; }
+    .JS_tabRolling > .img > li { position:absolute; left:0; top:0; width:100%; font-size:0; line-height:0; }
+    .JS_tabRolling > .img > li img { width:100%; }
+
+    /* 버튼 */
+    .JS_tabRolling .btn { display:none; position:relative; width:100%; margin:0 0 15px; text-align:center; font-size:0; line-height:0; }
+    .JS_tabRolling .btn li { display:inline-block; position:relative; width:20%; height:40px; line-height:40px; border-top:1px solid #fff; border-bottom:1px solid #777; background:#f8f8f8; font-size:11px; font-weight:200; letter-spacing:0em; color:#999; text-align:center; }
+    .JS_tabRolling .btn li.on { top:-1px; height:42px; line-height:42px; border-top:1px solid #777; border-bottom:1px solid #fff; background:#fff; font-weight:700; color:#111; }
+    .JS_tabRolling .btn li span { display:block; }
+    .JS_tabRolling .btn li.on span { color:#111; }
+    .JS_tabRolling .btn li:first-child.on span { border-right:1px solid #777; }
+    .JS_tabRolling .btn li:nth-child(2).on span { border-right:1px solid #777; border-left:1px solid #777; }
+    .JS_tabRolling .btn li:nth-child(3).on span { border-left:1px solid #777; }
+
+    /* 상품 리스트 */
+    .JS_tabRolling .item_list { display:block; padding:1% 3%; background:#fff; font-size:0; line-height:0; letter-spacing:-4px; }
+    .JS_tabRolling .item_list .item { display:inline-block; width:50%; margin:0 0 20px; font-size:11px; line-height:14px; letter-spacing:-0.04em; vertical-align:top; }
+    .JS_tabRolling .item_list .thumbnail { position:relative; width:90%; margin:0 auto 10px; }
+    .JS_tabRolling .item_list .thumbnail .thumb { width:100%; }
+
+    .JS_tabRolling .item_list .description { position:relative; width:88%; margin:0 auto; text-align:left; }
+    .JS_tabRolling .item_list .description .name { dispaly:block; margin:0 0 5px; padding:0 0 5px; border-bottom:1px solid #eee; }
+    .JS_tabRolling .item_list .description ul li span { /* color:#333 !important; 리스트 텍스트 설정 */ }
+
+    .JS_tabRolling .item_list ul { counter-reset:rankup 0; }
+    .JS_tabRolling .best_ico { position:absolute; left:10px; top:10px; width:40px; height:22px; border-top:1px solid #111; border-bottom:1px solid #111; background:rgba(255,255,255,.7); font-size:13px; font-weight:bold; color:#111; line-height:24px; text-align:center; }
+    .JS_tabRolling ul .num_ico { position:absolute; z-index:10; left:10px; top:10px; width:20px; height:22px; border-top:1px solid #111; border-bottom:1px solid #111; background:rgba(255,255,255,.7); font-size:12px; font-weight:bold; color:#111; line-height:24px; text-align:center; }
+    .JS_tabRolling ul .num_ico:after { counter-increment:rankup 1; content:counter(rankup)''; }

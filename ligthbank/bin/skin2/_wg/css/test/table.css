@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+/** 기본테이블 공통영역 **/
+.tbCom {width:100%; text-align:center; font-size:13px; position:relative; clear:both;}
+.tbCom:after {content:""; display:block; clear:both;}
+.tbCom td {font-size:12px;}
+.tbCom td strong {font-weight:bold; color:#111; font-size:13px;}
+.tbCom td em {font-weight:bold; color:#ff6c00; line-height:18px; font-size:13px;}
+.tbCom td em.point {font-size:18px;}
+.tbCom .tdempty {text-align:center !important; padding:0 !important; font-size:18px;}
+.tbCom .fSize12 {font-size:12px;}
+
+.tbCom .img {position:relative; margin-left:15px;}
+.tbCom .img .imgSoldout {position:absolute; top:0; left:0; right:0; bottom:0; background:url('../images/img_soldout.png') no-repeat; text-indent:-999999px; background-size:100%;}
+.tbCom .img img {width:100%;}
+.tbCom .img50 {width:50px; height:50px;}
+.tbCom .img70 {width:70px; height:70px;}
+
+.tbCom button.btnOption {color:#666; width:47px; height:20px; padding-bottom:2px; border:1px solid #ccc; text-align:center; font-weight:bold;}
+.tbCom .btn {text-align:center; width:80px; line-height:26px; padding:0 0 2px 0; border-radius:3px; behavior:url('../../resources/css/PIE.htc'); position:relative; font-weight:bold; font-size:12px; vertical-align:middle; display:inline-block;}
+.tbCom .btnBk {background:#333; color:#fff;}
+.tbCom .btnWh {background:#fff; color:#333; border:1px solid #ccc; line-height:24px;}
+.tbCom .btnW140 {width:140px;}
+.tbCom .noLine {border:none;}
+.tbCom .txt {line-height:16px;}
+.tbCom .lineB0 {border-bottom:1px solid #000 !important;}
+.tbCom .lineTd {border-top:1px solid #ddd !important;}
+.tbCom .lineL {border-left:1px solid #ddd !important;}
+
+.tbCom .address {padding:15px 0;}
+
+.tbCom .message {position:relative;}
+.tbCom .message input {width:87%; padding:0; padding-left:10px; }
+.tbCom .message .messageLayer {position:absolute; top:27px; left:0; width:87%; border:1px solid #333; border-top:none; background:#fff; overflow:hidden; z-index:18; display:none; padding-left:10px; }
+.tbCom .message .messageLayer li {line-height:30px; border-top:1px solid #ccc; margin-left:-10px; padding-left:10px;}
+.tbCom .message .messageLayer li span {display:block; cursor:pointer; margin-left:-10px; padding-left:10px;}
+.tbCom .message .messageLayer li span:hover , .tbCom .message .messageLayer li span:focus {background:#f8f8f8;}
+.tbCom .seller {color:#666; margin-top:3px;}
+.tbCom .seller a span {color:#333; border-bottom:1px solid #999;}
+.tbCom .seller a:hover span , .tbCom .seller a:focus span {color:#ff6c00; border-bottom:1px solid #ff6c00;}
+.tbCom .linkOrLine {color:#ff6c00; border-bottom:1px solid #ff6c00;}
+.tbCom .linkGr {color:#666;}
+.tbCom .linkGr:hover ,.tbCom .linkGr:focus {border-bottom:1px solid #666;}
+.tbCom .linkGrLine  {color:#666; border-bottom:1px solid #666;}
+.tbCom .linkGrLine:hover , .tbCom .linkGrLine:focus {color:#ff6c00; border-bottom:1px solid #ff6c00;}
+
+
+/** 기본-가로테이블 **/
+.tbTypeH {clear:both;}
+.tbTypeH th {border-bottom:1px solid #ddd; border-top:1px solid #aaa; line-height:43px; font-size:14px; color:#333; font-weight:bold; background:#f8f8f8;}
+.tbTypeH td {padding:15px 0; border-bottom:1px solid #ddd;}
+.tbTypeH .bgSoldout {background:#eee; position:relative; border-bottom:none !important;}
+.tbTypeH .lineSoldout {padding:0; border-top:1px solid #ddd;}
+
+.tbTypeH td input.count {width:35px; display:inline-block; line-height:23px !important; height:23px; margin-bottom:3px; border:1px solid #ccc; text-align:center; font-family:'Verdana','Malgun Gothic','맑은 고딕'; font-weight:bold;}
+.tbTypeH td.pdInfo {text-align:left; font-size:12px; vertical-align:top;}
+.tbTypeH td.pdInfo .label {margin-bottom:7px;}
+.tbTypeH td.pdInfo a:hover  , .tbTypeH td.pdInfo a:focus {text-decoration:underline; color:#333;}
+.tbTypeH td.pdInfo .name {color:#333; margin-bottom:7px; line-height:16px;}
+.tbTypeH td.pdInfo .option {color:#999; line-height:16px; margin-top:10px;}
+.tbTypeH td.pdInfo .option:first-child {margin-top:0;}
+.tbTypeH td .cost {font-size:12px; line-height:18px; position:relative;}
+.tbTypeH td.row {background:#f8f8f8; z-index:-1;}
+.tbTypeH td .orderNumber {display:inline-block; line-height:16px; border-bottom:1px solid #999; color:#666; font-family:'Verdana','Malgun Gothic','맑은 고딕'; margin-bottom:5px;}
+.tbTypeH td .orderNumber:hover , .tbTypeH td .orderNumber:focus {color:#ff6c00; border-bottom:1px solid #ff6c00;}
+.tbTypeH td .underLine {border-bottom:1px solid #666;}
+.tbTypeH td.tdpd10 {padding-top:10px; padding-bottom:10px;}
+
+
+/** 기본-세로테이블 **/
+.tbTypeV {clear:both; width:100%; clear:both; border-top:1px solid #aaa;}
+.tbTypeV th {background:#f3f3f3; line-height:25px; font-size:14px; color:#333; text-align:left; padding:10px 0 10px 20px; border-bottom:1px solid #ddd; border-right:1px solid #ddd; font-weight:bold;}
+.tbTypeV td {line-height:25px; padding:10px 0 10px 20px; border-bottom:1px solid #ddd; color:#666; text-align:left;font-size:12px;}
+.tbTypeV td input {vertical-align:middle;}
+.tbTypeV .pay {padding-left:20px; padding-right:0;}
+.tbTypeV .pay button {margin:2px 0;}
+.tbTypeV .cuPoint {margin-top:10px;}
+.tbTypeV .cuPoint:first-child {margin-top:0;}
+.tbTypeV .cuPoint span {width:162px; display:inline-block; text-align:right; padding-right:3px;}
+.tbTypeV .welPoint {display: inline-block; vertical-align:middle; padding-left:10px; line-height:22px;}
+
+
+
+/** 복수배송 테이블 **/
+.tbMultiAddress {border-top:1px solid #ddd;}
+.tbMultiAddress th {border-top:none;}
+.tbMultiAddress td {padding-left:20px; padding-right:20px;}
+.tbMultiAddress .rowAdd {background:#eee; border-right:1px solid #ddd; font-size:14px; color:#333; font-weight:bold;}
+.tbMultiAddress .rowAdd button {margin-top:10px;}
+.tbMultiAddress .optionView {border-left:1px solid #ddd; font-size:12px; color:#999; text-align:left; position:relative;}
+.tbMultiAddress .optionView .txt {float:left;}
+.tbMultiAddress .optionView .txt dt {float:left; clear:both;}
+.tbMultiAddress .optionView .txt dd {float:left; width:350px; padding-left:5px;}
+.tbMultiAddress .count {position:absolute; top:50%; right:10px; margin-top:-15px;}
+.tbMultiAddress .count button {background:url('../images/arw_set.png') no-repeat; border:1px solid #ccc; display:inline-block; width:27px; height:27px; text-align:center; vertical-align:middle; text-indent:-999999px;}
+.tbMultiAddress .count button.btnPlus {background-position:-24px -462px;}
+.tbMultiAddress .count button.btnMinus {background-position:-1px -462px;}
+.tbMultiAddress .count button:hover , .tbMultiAddress .count button:focus {background-color:#f8f8f8;}
+.tbMultiAddress .count span {line-height:25px; font-weight:bold; font-family:'Verdana','Malgun Gothic','맑은 고딕'; font-size:14px; color:#333; border-top:1px solid #ccc; border-bottom:1px solid #ccc; display:inline-block; width:50px; vertical-align:middle; text-align:center;}
+.tbMultiAddress .btnSel {padding:15px 0 15px 20px; text-align:left;}
+.tbMultiAddress .btnSel button {margin:0 1px;}
+.tbMultiAddress .btnSel .address {margin-top:10px;}
+.tbMultiAddress .address {padding-top:0; padding-bottom:0;}
+.tbMultiAddress .tbTypeV {border-top:1px solid #ddd; margin:15px 0 5px 0;}
+.tbMultiAddress .tbTypeV th {font-size:12px;}
+.tbMultiAddress .tbTypeV th, .tbMultiAddress .tbTypeV td {padding:10px 0 0 10px; border-bottom:none;}
+.tbMultiAddress .tbTypeV .tdLine {border-bottom:1px solid #ddd; height:1px; padding:10px 0 0 0;}
+.tbPopMultiAdd td {padding-top:10px; padding-bottom:10px;}
+.tbPopMultiAdd .rowAdd {padding:0;}
+
+.tbMultiCancel td {border-left:1px solid #ddd;}
+.tbMultiCancel td:first-child {border-left:none;}
+.tbMultiCancel .optionView li {border-top:1px solid #ddd; font-size:12px; color:#999; text-align:left; overflow:hidden; padding-left:20px;}
+.tbMultiCancel .optionView li:first-child {border-top:none;}
+.tbMultiCancel .optionView .txt {float:left;border-right:1px solid #ddd; width:315px; padding:15px 0;}
+.tbMultiCancel .wSize .txt {width:295px;}
+.tbMultiCancel .optionView .txt dt {float:left; clear:both;}
+.tbMultiCancel .optionView .txt dd {float:left; width:350px; padding-left:5px;}
+.tbMultiCancel .optionView .sel {float:right; padding-right:15px; padding-top:17px;}
+.tbMultiCancel .wSize .sel {padding-right:7px;}
+.tbMultiCancel .thAddress {background:#f3f3f3; text-align:left; font-size:12px; color:#333; padding:7px 0 10px 0 !important;}
+.tbMultiCancel .thAddress p {display:inline-block; vertical-align:middle;}
+.tbMultiCancel .thAddress .eeeee {font-size:14px; width:90px; text-align:center; line-height:14px; }
+.tbMultiCancel .thAddress .bbbb {padding-left:20px; line-height:14px; border-left:1px solid #ddd;}
+.tbMultiCancel .thAddress .bbbb small {color:#999; font-size:12px; margin-top:4px; display:block;}
+
+
+/* 총합 테이블 상단 검은색 라인 */
+.tbBox {overflow: hidden; border-top:2px solid #000; border-bottom:1px solid #aaa; margin-top:30px;}
+
+/** 총합- 가로테이블 **/
+.tbTotalH {width:100%; clear:both; position:relative; border-right:1px solid #aaa;}
+.tbTotalH th {line-height:65px; border-left:1px solid #ddd; background:#f8f8f8; padding:0 20px; font-size:14px; color:#333;}
+.tbTotalH td {border-left:1px solid #ddd; border-top:1px solid #ddd; padding:15px 20px; line-height:22px; font-size:12px; vertical-align:top;}
+.tbTotalH th:first-child , .tbTotalH td:first-child {border-left:1px solid #aaa;}
+.tbTotalH th dt {font-weight:bold; padding-top:3px;}
+.tbTotalH dt {float:left;}
+.tbTotalH dd {float:right; color:#999; text-align:right;}
+.tbTotalH th dd {color:#333;}
+.tbTotalH th dl.total {color:#ff6c00;}
+.tbTotalH th dl.total dt , .tbTotalH th dl.total dd {color:#ff6c00;}
+.tbTotalH th dd em {font-family:'Verdana','Malgun Gothic','맑은 고딕'; font-size:22px; font-weight:bold; display:inline-block; margin-top:2px;}
+.tbTotalH .icnMinus {position:absolute; left:33.33%; top:26px; width:22px; margin-left:-11px; height:22px; z-index:10; text-indent:-999999px; background:url('../images/icn_count.png') no-repeat 0 0; }
+.tbTotalH .icnEqual {position:absolute; right:33.33%; top:26px; width:22px; margin-right:-11px; height:22px; z-index:10; text-indent:-999999px; background:url('../images/icn_count.png') no-repeat 0 -22px; }
+
+.tbTotalH2 th {line-height:65px; border-left:1px solid #ddd; background:#f8f8f8; font-size:12px; color:#333;}
+.tbTotalH2 th:first-child {padding-left:10px;}
+.tbTotalH2 th + th + th + th + th {padding-right:0 !important;}
+.tbTotalH2 tbody td:first-child  {padding-left:10px !important;}
+.tbTotalH2 th dt {font-weight:bold; padding-top:3px;}
+.tbTotalH2 th dd {color:#333;}
+.tbTotalH2 th dl.total {line-height:20px; font-size:14px;}
+.tbTotalH2 th dl.total dd {text-align:left; display:block; clear:both;float:left;}
+.tbTotalH2 th dl.total dd em {font-size:19px;}
+.tbTotalH2 th dd em {font-family:'Verdana','Malgun Gothic','맑은 고딕'; font-size:16px; font-weight:bold;}
+.tbTotalH2 .icnMinus {position:absolute; left:20%; top:26px; width:22px; margin-left:-11px; height:22px; z-index:10; text-indent:-999999px; background:url('../images/icn_count.png') no-repeat 0 0; }
+.tbTotalH2 .icnPlus1 {position:absolute; left:40%; top:26px; width:22px; margin-left:-11px; height:22px; z-index:10; text-indent:-999999px; background:url('../images/icn_count.png') no-repeat 0 -44px; }
+.tbTotalH2 .icnPlus2 {position:absolute; left:60%; top:26px; width:22px; margin-left:-11px; height:22px; z-index:10; text-indent:-999999px; background:url('../images/icn_count.png') no-repeat 0 -44px; }
+.tbTotalH2 .icnEqual {position:absolute; right:20%; top:26px; width:22px; margin-right:-12px; height:22px; z-index:10; text-indent:-999999px; background:url('../images/icn_count.png') no-repeat 0 -22px; }
+.tbTotalH2 .dtTxt {line-height:14px; padding-top:5px;}
+
+
+/** 총합- 복수배송 **/
+.tbTotalMulti th , .tbTotalMulti td {padding:15px; line-height:14px;}
+.tbTotalMulti th {border-left:1px solid #ddd !important;}
+.tbTotalMulti td .numPoint {font-family:'Verdana','Malgun Gothic','맑은 고딕'; font-size:18px; font-weight:bold; color:#ff6c00}
+.tbTotalMulti tr:first-child th {border-bottom:1px solid #ddd;}
+.tbTotalMulti tr:first-child td {border-top:none;}
+.tbTotalMulti .comfirm {position:relative; font-size:14px; font-weight:bold; margin-top:10px; text-align:left;}
+.tbTotalMulti .comfirm  small {font-size:14px; color:#666; display:block; margin-top:10px;}
+.tbTotalMulti .comfirm  em {color:#ff6c00; font-weight:bold;}
+.tbTotalMulti .comfirm button {position:absolute; top:50%; right:35px; margin-top:-12px;}
+
+
+/** 총합- 세로테이블 **/
+.tbTotalV {width:100%; clear:both; border:1px solid #999; border-top:2px solid #000; position:relative; margin-top:60px;}
+.tbTotalV caption {background:url('../images/bul_set.png') no-repeat 0 -1px; padding-left:12px; font-size:14px; font-weight:bold; color:#333; text-align:left; margin-bottom:15px;}
+.tbTotalV th {border-left:1px solid #999; background:#f8f8f8; padding:12px 20px; line-height:25px; font-size:12px; text-align:left; color:#333; font-weight:normal;}
+.tbTotalV td {border-left:1px solid #ddd; padding:12px 20px; line-height:25px; font-size:12px; color:#999;}
+.tbTotalV dl.total {color:#ff6c00; font-size:14px;}
+.tbTotalV dt {float:left; font-weight:bold;}
+.tbTotalV dd {float:right;}
+.tbTotalV dd em {font-family:'Verdana','Malgun Gothic','맑은 고딕'; font-size:22px; font-weight:bold;}
+.tbTotalV .payCoupon {position:relative;}
+.tbTotalV .payCoupon .btnCouponShow {background:url('../images/arw_set.png') no-repeat -28px -466px; background-color:#fff; border:1px solid #ccc; width:19px; height:19px; display:block; position:absolute; top:5px; right:0; text-indent:-999999px;}
+.tbTotalV .payCoupon .btnCouponHide {background:url('../images/arw_set.png') no-repeat -5px -466px; background-color:#fff; border:1px solid #ccc; width:19px; height:19px; display:none; position:absolute; top:5px; right:0; text-indent:-999999px;}
+.tbTotalV .payCoupon .couponLayer {background:#fff; border:1px solid #999; position:absolute; top:5px; right:-365px; width:320px; padding:12px 20px; display:none;}
+
+.tbTotalV .payCoupon .couponLayer li span {float:right; color:#999;}
+.tbTotalV .payCoupon .couponLayer li.total {color:#333; font-weight:bold;}
+.tbTotalV .payCoupon .couponLayer li.total span {color:#333;}
+
+
+
+/* 테이블 하단 텍스트 */
+.tbUnderTxt {clear:both; font-size:12px; color:#666; margin:10px 0 0 20px;}
+
+
+
+/** 모두라인 있는 테이블 **/
+.tbAllLine {border-right:1px solid #ddd;}
+.tbAllLine th {border-top:1px solid #ddd; border-left:1px solid #ddd;}
+.tbAllLine td {border-top:1px solid #ddd;}
+
+
+/** 레이어 팝업 테이블 **/
+.tbLayer {width:100%; position:relative;}
+.tbLayer caption {font-size:14px; color:#333; font-weight:bold; text-align:left; margin:0 0 20px 0;}
+.tbLayer th {line-height:35px !important; background:#f8f8f8; border-bottom:1px solid #ddd; border-top:1px solid #999; text-align:center;  padding:0 20px !important; border-left:1px solid #ddd; position:relative; z-index:-1;}
+.tbLayer td {line-height:30px !important; border-bottom:1px solid #ddd; border-left:1px solid #ddd; padding:0 20px !important; font-size:12px; color:#666; font-weight:normal;}
+.tbLayer th:first-child , .tbLayer td:first-child  {border-left:none;}
+
+
+/** 테이블 좌우 분할 **/
+.tbLeft {float:left; width:48%;}
+.tbRight {float:right; width:48%;}
+
+
+
+/** 테이블 위/아래 버튼 **/
+.tbBtns {clear:both; margin-top:20px; text-align:right;}
+.tbBtns .btn {border:1px solid #ccc; border-radius:2px; line-height:30px; text-align:center; color:#666; font-size:12px; font-weight:bold; margin-right:2px;}
+.tbBtns .btn i  {margin-right:3px;}
+.tbBtns .btnCk {width:110px; background:#f8f8f8;}
+.tbBtns .btnWi {width:95px; background-color:#fff;}
+
+
+
+/* 주문취소 테이블 */
+.tbCancel td {border-top:1px solid #ddd; border-bottom:none;}
+.tbCancel .cancel {border-top:none; border-bottom:1px solid #ddd; padding-left:10px;}
+
+/** 이용약관 테이블 **/
+.tbAgree {width:100%; font-size:13px; position:relative; clear:both; font-size:12px; margin-top:10px; margin-bottom:15px;}
+.tbAgree:after {content:""; display:block; clear:both;}
+.tbAgree th {background:#f8f8f8; border:1px solid #ddd; color:#333; padding:8px 10px 8px 15px; letter-spacing:-1.5px;}
+.tbAgree td {border:1px solid #ddd; color:#666; padding:8px 10px 8px 15px; vertical-align:top;}
+
+
+
+/* 반품/취소 관련 td */
+.tbCom .tdCancel {padding-top:0; position:relative; background:#fff; top:-1px; padding-left:100px; padding-bottom:5px !important; padding-right:20px;}
+.tbCom .tdCancel .cancelBox .tit {float:left;}
+
+.tbCom .tdCancel2 {padding-top:15px; position:relative; padding-left:100px; padding-bottom:13px !important; padding-right:20px;}
+.tbCom .tdCancel2 .cancelBox .tit {float:left;}
+.tbCom tr:last-child .tdCancel2 {border-bottom:none;}
+
+
+
+

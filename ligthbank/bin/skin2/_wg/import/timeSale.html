@@ -1,0 +1,49 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="Product_menupackage" class="_product_menupackage">
+    <!--@css(/_wg/css/menupackage.css)-->
+    <div class="path" module="product_headcategory">
+        <span>현재 위치</span>
+        <ol>
+            <li><a href="/">홈</a></li>
+            <li><a href="#none">타임세일</a></li>
+        </ol>
+    </div>
+</div>
+
+
+<!--@css(/_wg/css/timeSale.css)-->
+<!--@js(/_wg/js/jquery.d_DDay.min.js)-->
+<!--@js(/_wg/js/timeSale.js)-->
+
+<!-- 타임세일 리스트 -->
+<div module="product_listmain_15" class="ec-base-timeSale">
+    <!--
+        $count = 20
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+    -->
+    <h2>
+        {$category_title_text}
+    </h2>
+    <ul class="prdList grid3">
+        <li class="item box1" id="anchorBoxId_{$product_no}">
+            <!--@import(/_wg/import/timeList.html)-->
+        </li>
+        <li class="item box2" id="anchorBoxId_{$product_no}">
+            <!--@import(/_wg/import/timeList.html)-->
+        </li>
+        <li class="item box3" id="anchorBoxId_{$product_no}">
+            <!--@import(/_wg/import/timeList.html)-->
+        </li>
+        <li class="item box4" id="anchorBoxId_{$product_no}">
+            <!--@import(/_wg/import/timeList.html)-->
+        </li>
+        <li class="item box5" id="anchorBoxId_{$product_no}">
+            <!--@import(/_wg/import/timeList.html)-->
+        </li>
+        <li class="item box6" id="anchorBoxId_{$product_no}">
+            <!--@import(/_wg/import/timeList.html)-->
+        </li>
+    </ul>
+</div>
+

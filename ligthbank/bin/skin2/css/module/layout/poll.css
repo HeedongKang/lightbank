@@ -1,0 +1,7 @@
+.xans-layout-poll { margin:0 0 20px; padding:0 0 16px; border-bottom:1px solid #e8e8e8; }
+.xans-layout-poll h2 { height:30px; color:#2e2e2e; font-size:12px; }
+.xans-layout-poll h3 { padding:0 0 10px 36px; min-height:27px; color:#757575; font-size:12px; line-height:18px; background:url("http://img.echosting.cafe24.com/skin/base/layout/ico_poll_question.png") no-repeat 10px 3px; }
+
+.xans-layout-poll li { margin:5px 0 0 10px; color:#757575; font-size:11px; line-height:1.5; }
+.xans-layout-poll p.button { margin:10px 0 0; text-align:right; }
+.xans-layout-poll p.button a { padding:0 17px 0 4px; text-decoration:none; background:url("http://img.echosting.cafe24.com/skin/base/common/ico_circle_arrow.png") no-repeat right center; }

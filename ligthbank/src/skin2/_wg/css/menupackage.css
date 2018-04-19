@@ -1,0 +1,42 @@
+
+    .product_menupackage { display:block; margin:0 0 50px !important; }
+    .product_menupackage .title { min-height:30px; margin:10px 0; padding:0 0 10px; border-bottom:1px solid #ddd; }
+    .product_menupackage .title .banner { margin:0 0 40px; }
+    .product_menupackage .title .banner img { width:100%; }
+    .product_menupackage .title h2 { padding:0 0 0 12px; color:#333; font-size:16px; background:url("http://img.echosting.cafe24.com/skin/base/layout/ico_heading.gif") 0 50% no-repeat; }
+
+    /* 상품분류메뉴 */
+    .menuCategory { position:relative; z-index:15; padding:10px 0 0; border:none; font-size:0; line-height:0; letter-spacing:-4px; }
+    .menuCategory:after { content:""; display:block; clear:both; *zoom:1; }
+    .menuCategory a { display:block; color:#555 !important; font-size:12px; letter-spacing:0; text-align:left; }
+    .menuCategory a:hover { display:block; text-decoration:none; color:#000 !important; }
+    
+    /* 2depth */
+    .menuCategory > li { position:relative; display:inline-block; *display:inline; *zoom:1; width:auto; margin:0 5px 10px; padding:0; letter-spacing:-0.03em; line-height:25px; }
+    .menuCategory > li > a { display:block; width:188px; height:35px; padding:0 0 0 10px; border:1px solid #ddd; line-height:35px; }
+    .menuCategory > li.be > a { background:url('/_wg/img/arrowVR_15.gif') no-repeat 95% 50%; }
+    .menuCategory > li > a:hover,
+    .menuCategory > li.on > a { font-weight:700; color:#333 !important; }
+    
+    /* 3depth */
+    .menuCategory > li > ul { position:absolute; z-index:2; display:none; left:0; top:35px; width:198px; padding:5px 0 10px; background:#fff; border:1px solid #ddd; border-top:0; }
+    .menuCategory > li > ul > li { position:relative; margin:0; line-height:25px !important; }
+    .menuCategory > li > ul > li > a { line-height:27px !important; margin:0; padding:0 10px; }
+    .menuCategory > li > ul > li.be > a { line-height:27px !important; margin:0; padding:0 10px; background:url('/_wg/img/arrowR_15.gif') no-repeat 95% 50%; }
+    .menuCategory > li > ul > li > a:hover,
+    .menuCategory > li > ul > li.on > a { background:#f4f4f4; color:#333 !important; }
+    
+    /* 4depth */
+    .menuCategory > li > ul > li > ul { position:absolute; z-index:3; display:none; left:198px; top:-11px; width:170px; padding:10px 0; background:#fff; border:1px solid #ddd; }
+    .menuCategory > li:nth-child(6) > ul > li > ul { left:-172px; }
+    .menuCategory > li > ul > li > ul > li > a { line-height:27px; padding:0 10px; transition:all .2s ease; -webkit-transition:all .2s ease; }
+    .menuCategory > li > ul > li > ul > li > a:hover { background:#f4f4f4; }
+
+    /* 1280px 이하 */
+    @media all and (max-width:1265px){
+        .menuCategory > li > a { width:174px; }
+        .menuCategory > li > ul { width:184px; }
+        .menuCategory > li > ul > li > ul { left:184px; }
+        .menuCategory > li:nth-child(5) > ul > li > ul { left:-172px; }
+        .menuCategory > li:nth-child(6) > ul > li > ul { left:184px; }
+    }

@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/* 레이어 팝업시 검은색 배경 */
+.popWrap2 .bgPopup {width:100%; height:100%; position:fixed; top:0; left:0; right:0; bottom:0; background:#000; opacity:.75; filter:alpha(opacity=75); text-indent:-999999px; z-index:900;}
+
+/* 레이어 팝업시 컨텐츠 영역 및 닫기 버튼 */
+.layerPopup {background:#fff; z-index:950; position:fixed; left:50%; top:50%;}
+.layerPopup .btnPopClose {position:absolute; top:20px; right:20px; text-indent:-999999px; background:url('../images/icn_set.png') no-repeat -25px -415px; display:block; width:22px; height:22px;}
+.layerPopup .popCnt {margin:22px 30px; padding-bottom:30px; font-size:14px; color:#666; line-height:23px; border-bottom:1px solid #ddd;}
+.layerPopup .popCnt strong {font-weight:bold; color:#333;}
+.layerPopup .popCnt em {font-weight:bold; color:#ff6c00;}
+
+
+/* 팝업 타이틀 */
+.titTxt {font-size:12px; color:#666; margin:20px;}
+
+
+.popWrap {padding:0 20px 0 20px; position:absolute; top:62px; left:0; right:0; bottom:0;}
+.popScroll {overflow-y:auto; overflow-x:hidden; clear:both;}
+.popScroll:after {content:""; display:block; clear:both;}
+.popScrollTxt {top:120px; overflow-y:auto; overflow-x:hidden; clear:both;}
+.popScrollTxt:after {content:""; display:block; clear:both;}
+
+.popPrint {padding:0 20px 0 20px;}
+
+
+/* 팝업내 스크롤이 있을경우 컨텐츠 사이즈 픽스 */
+.tb500 {width:464px;}
+.tb800 {width:764px;}
+.tb940 {width:904px;}
+
+
+/* 팝업 하단 버튼 */
+.popBotBtns {clear:both; margin-top:30px; padding-bottom:50px; text-align:center; overflow:hidden;}
+.popBotBtns .btnOr {border:1px solid #ff6c00; background:#ff6c00; color:#fff; display:inline-block; width:160px; height:45px; font-size:16px; margin:0 3px; border-radius:3px; font-weight:bold; padding:0 0 3px 0;}
+.popBotBtns .btnWh {border:1px solid #666; background:#fff; color:#333; display:inline-block; width:160px; height:45px;
+	font-size:16px; margin:0 3px; border-radius:3px; font-weight:bold; padding:0 0 3px 0;}
+.popBotBtns .btnBk {border:1px solid #333; background:#333; color:#fff; display:inline-block; width:160px; height:45px; font-size:16px; margin:0 3px; border-radius:3px; font-weight:bold; padding:0 0 3px 0;}
+
+
+/* 쿠폰적용 */
+.tbCoupon {width:874px;}
+.tbCoupon .couponEmpty {text-align:center; padding:60px 0; font-size:18px; border-top:1px solid #ddd;}
+.couponScroll {max-height:250px; overflow-y:auto; overflow-x:hidden; margin-right:-10px;}
+
+.couponSelect {position:relative;}
+.couponSelect .tit {line-height:26px; background:url('../images/icn_selectbox.png') no-repeat right; background-color:#fff; width:200px; border:1px solid #ccc; padding:0 5px; cursor:pointer;}
+.couponSelect .list {position:absolute; top:27px; left:0; width:200px; padding:5px; background:#fff; border:1px solid #ccc; display:none; z-index:200;}
+.couponSelect .list li {line-height:22px; color:#333; display:block; cursor:pointer;}
+.couponSelect .list li:hover {background:#f8f8f8; display:block;}
+.couponSelect .list li del {color:#999;}
+
+
+/* 팝업 탭 공통 */
+.tabPop {clear:both;}
+.tabPop li a {line-height:40px !important; height:40px !important; }
+.tabPop li a.active {line-height:39px !important; height:39px !important; }
+
+
+/* 구매영수증 출력 */
+.receiptBox {border:1px solid #ddd; margin-top:30px; padding:20px;}
+.receiptBox .tbCom .payInfo {clear:both; width:180px; padding:0; margin:0; line-height:20px;}
+.receiptBox .tbCom strong {color:#666 !important;}
+.receiptBox .noti {border:none; text-align:left; padding:0 0 0 10px; margin:0; line-height:20px;}
+.receiptBox .address {background:#f8f8f8; margin:30px -10px -10px -10px; padding:15px 20px; line-height:18px;}
+.logoSk {position:absolute; top:12px; left:20px; }
+.logoBenepia {position:absolute; top:24px; right:25px; }
+
+
+/* 우편번호 검색 */
+.postStreet {clear:both; margin:0 auto; margin-top:30px;}
+.postStreet .txt {font-size:12px; color:#666;}
+.postStreet .txt p {background:url('../images/bul_set.png') no-repeat 0 0; padding-left:10px; line-height:18px;}
+.postNumber {clear:both; margin-top:25px;}
+.postSearch .inpt {clear:both; margin-top:25px;}
+.postSearch .inpt .tit {margin-bottom:15px;}
+.tbPost caption {font-size:12px; background:transparent; padding-left:0;}
+.tbPost caption em {color:#333; font-weight:bold;}
+.tbPost td {padding:15px 0;}
+.tbPost .address {font-size:12px; text-align:left; color:#333; padding:10px 0; line-height:18px;}
+.tbPost .address span {display:inline-block; border-bottom:1px solid #333;}
+.tbPost .address small {display:block; color:#666; font-size:11px; margin-top:3px;}
+.tbPost .address a {color:#333; display:block;}
+.tbPost .address a:hover {color:#ff6c00;}
+.tbPost .address a:hover span {border-color:#ff6c00;}
+
+.postListStreetScroll {max-height:300px; overflow-y:auto; overflow-x:hidden; margin-right:-20px;}
+.postListNumberScroll {max-height:387px; overflow-y:auto; overflow-x:hidden; margin-right:-20px;}
+
+.postSearch .btnBk {text-align:center; line-height:28px; width:50px; border-radius:3px; behavior:url('../../resources/css/PIE.htc'); position:relative; font-weight:bold; font-size:12px; vertical-align:middle; display:inline-block; background:#333; color:#fff;}
+
+.postEmpty {text-align:center; margin-top:200px;}
+
+
+
+/* 신용카드 이용안내 */
+.cardGuideScroll {clear:both; max-height:420px; overflow-y:auto; overflow-x:hidden; margin-right:-20px;}
+.cardGuide2Scroll {clear:both; max-height:470px; overflow-y:auto; overflow-x:hidden; margin-right:-20px;}
+.syrupGuideScroll {clear:both; max-height:485px; overflow-y:auto; overflow-x:hidden; margin-right:-20px;}
+
+.tbCard {width:98%; margin-top:15px; position:relative; clear:both;}
+.tbCard:after {content:""; display:block; clear:both;}
+.tbCard td {border:1px solid #ddd; width:24.5%; padding:15px 0 15px 0; text-align:center; font-size:12px; color:#666;}
+.tbCard td i {display:block; width:120px; height:33px; background:url('../images/img_card.png') no-repeat; margin:0 auto;}
+.tbCard td i.cardLotte {background-position:0 0;}
+.tbCard td i.cardKb {background-position:0 -40px;}
+
+.cardGuiceBox {clear:both; margin-top:25px;}
+.cardGuiceBox .txt {font-size:12px; color:#666; margin:10px 10px; line-height:18px;}
+.cardGuiceBox .txt em {color:#ff6c00;}
+
+.tbCardGuide th {line-height:20px !important; padding:0 0 0 20px !important;}
+.tbCardGuide td {line-height:30px !important; padding:0 0 0 20px !important;}
+.tbCardGuide td .cardInfo {float:right; display:inline-block; width:150px; text-align:center;}
+
+.tbStep {width:98%; margin-top:10px;}
+.tbStep td {border:1px solid #ddd; padding:10px 0 15px 15px; text-align:left; font-size:12px; color:#666; vertical-align:top; position:relative;}
+.tbStep td .icnStep {position:absolute; top:50%; right:-6px; margin-top:-6px; background:url('../images/arw_set.png') no-repeat 0 -530px; display:block; width:6px; height:12px; text-indent:-999999px;}
+.tbStep td strong {font-weight:bold; display:block; color:#333; margin-bottom:5px;}
+.tbStep td.none {border:0;}
+
+.guideKB {background:#f8f8f8; float:left; width:48.5%; line-height:50px; font-weight:bold; font-size:14px; color:#333; margin-top:20px;}
+.guideBC {background:#f8f8f8; float:left; width:48.5%; margin-left:10px; line-height:50px; font-weight:bold; font-size:14px; color:#333; margin-top:20px;}
+.guideKB a , .guideBC a {float:right; color:#ff6c00; font-size:12px; border-bottom:1px solid #ff6c00; display:inline-block; line-height:18px; margin:15px 15px 0 0; background:url('../images/bul_set.png') no-repeat 0 -80px; padding-left:7px;}
+
+.cardList {border-top:1px solid #ddd; margin-top:15px;}
+.cardList li {border-bottom:1px solid #ddd; color:#666; font-size:12px; padding:7px 0 6px 0;}
+.cardList li em {font-weight:bold; color:#000;}
+.cardList li span {display:inline-block;}
+.cardList li i.kb {background-position:0 -55px;}
+
+
+.txtSyrup {clear:both; margin-top:20px;}
+.txtSyrup p {background:url('../images/bul_set.png') no-repeat 0 0; font-size:12px; color:#666; padding-left:10px; margin-left:5px; line-height:18px;}
+
+.popWrap i.imgCard {display:inline-block; width:120px; height:23px; background:url('../images/img_card.png') no-repeat; margin:0 auto; vertical-align:middle;}
+.popWrap i.lotte {background-position:0 -10px;}
+.popWrap i.kb {background-position:0 -50px;}
+.popWrap i.keb {background-position:0 -90px;}
+.popWrap i.samgsung {background-position:0 -130px;}
+.popWrap i.sh {background-position:0 -170px;}
+.popWrap i.hyundai {background-position:0 -210px;}
+.popWrap i.nh {background-position:0 -250px;}
+.popWrap i.bc {background-position:0 -290px;}
+.popWrap i.citi {background-position:0 -330px;}
+.popWrap i.sc {background-position:0 -370px;}
+.popWrap i.hanask {background-position:0 -410px;}
+.popWrap i.hana {background-position:0 -450px;}
+.popWrap i.woori {background-position:0 -490px;}
+.popWrap i.kb2 {background-position:0 -525px; width:60px; height:33px; display:inline-block; margin-left:15px;}
+.popWrap i.bc2 {background-position:-60px -525px; width:45px; height:33px; display:inline-block; margin-left:15px;}
+
+
+
+/* 시럽페이 안내 */
+.syrupGuide {clear:both; margin-top:35px;}
+.syrupGuide .txt {display:inline-block; padding-right:40px;width:250px; vertical-align:top;}
+.syrupGuide .txt strong {font-size:14px; font-weight:bold; display:block; background:url('../images/bul_set.png') no-repeat 0 0; padding-left:10px; margin-top:20px;}
+.syrupGuide .txt em {font-size:14px; font-weight:bold; display: block; margin-top:30px; margin-left:10px;}
+.syrupGuide .txt small {font-size:12px; color:#666; display:block; margin-top:15px; margin-left:10px;}
+.syrupGuide .img {display:inline-block; width:150px; height:240px; background:url('../images/img_syrupGuide2.jpg') no-repeat; vertical-align:top; text-indent:-999999px;}
+.syrupGuide .guide1 {background-position:0 0;}
+
+
+
+/* 배송추적 */
+.deliveryStep {line-height:50px; font-size:16px; color:#999; font-weight:bold; overflow:hidden; height:50px; width:760px; margin:0 auto;}
+.deliveryStep .step1 {background:url('../images/img_deliveryStep.png') no-repeat 0 0; width:100%; height:50px;}
+.deliveryStep .step2 {background:url('../images/img_deliveryStep.png') no-repeat 0 -50px; width:100%; height:50px;}
+.deliveryStep .step3 {background:url('../images/img_deliveryStep.png') no-repeat 0 -100px; width:100%; height:50px;}
+.deliveryStep .step4 {background:url('../images/img_deliveryStep.png') no-repeat 0 -150px; width:100%; height:50px;}
+.deliveryStep li {float:left; width:25%; text-align:center;}
+.deliveryStep li.on {color:#fff;}
+
+.trackingScroll {max-height:250px; overflow-y:auto; overflow-x:hidden; margin-right:-20px;}
+
+
+/* 판매자 정보 */
+.sellerInfo {clear:both; margin:20px 0 0 0;}
+.sellerInfo dt {clear:both; float:left; width:95px; background:url('../images/bul_set.png') no-repeat 8px 1px; padding-left:18px; color:#333; font-weight:bold; line-height:15px; margin-top:5px;}
+.sellerInfo dd {float:left; color:#666; line-height:15px; margin-top:5px;}
+.sellerInfo dd.equal {width:10px;}
+
+
+
+/* 쿠폰 적용 상품보기 | 쿠폰 적용 카테고리 보기 */
+.couponInfoTxt {clear:both; margin-top:25px;}
+.couponInfoTxt small {display:block; font-size:12px; font-weight:bold; color:#333;}
+.couponInfoTxt em {display:block; font-size:20px; font-weight:bold; color:#ff6c00; margin-top:-2px;}
+.couponInfoTxt span {display:block; font-size:12px; color:#666; margin-top:5px; font-family:'Verdana','Malgun Gothic','맑은 고딕';}
+
+.couponScroll {max-height:378px; overflow-y:auto; overflow-x:hidden; margin-right:-20px;}
+
+
+/* 복지포인트 적용 */
+.welPoint .bundle {background:#ddd; line-height:35px !important; padding:0 !important; text-align:left; padding-left:15px !important; font-weight:bold; font-size:14px;}
+.welPoint td.bundle {border-bottom:1px solid #999;}
+.welPoint td.tdpd10 {color:#666;}
+
+
+.popBtn {margin-top:-37px; margin-bottom:17px;}
+.popBtn .btn {padding-left:10px; padding-right:10px;}
+
+
+
+
+
+
+/* 마이페이지 - 주문내역 리스트 팝업 */
+.tbOrderList td {padding:5px 0 !important; border-left:1px solid #ddd; line-height:25px;}
+.tbOrderList td.tit {border-left:none;}
+
+
+

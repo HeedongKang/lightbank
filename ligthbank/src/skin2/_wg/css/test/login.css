@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+/* 레이아웃공통 */
+.loginWrap {position:relative;}
+html, body{margin:0;padding:0;height:100%;}
+.loginHeader{position:relative;height:133px;z-index:1;text-align:center;border-top:32px solid #d0112b;border-bottom:1px solid #e5e5e5;background:#fff;box-sizing:border-box;}
+.loginWrapper {position:relative;margin:-133px 0 -50px;min-height:100%;}
+* html .loginWrapper {position:relative;height:100%;}
+.loginContainer {position:relative;left:50%;top:0;margin:0 0 0 -320px;padding:248px 0 150px;width:640px;}
+.contentsContainer {position:relative;left:50%;top:0;margin:0 0 0 -540px;padding:150px 0 150px;width:1080px;}
+.loginFooter {position:relative;text-align:center;height:50px;line-height:50px;z-index:1;background:#f1f1f1;}
+
+.loginHeader .h2 {margin:0 auto;width:233px;background:none;}
+.loginHeader .btnLineDefault {position:absolute;right:0;top:37px;}
+
+.btnLineDefault {padding:0 23px;height:26px;line-height:25px;border-radius:0.3em;border:1px solid #333;background:#fff;}
+
+.loginWrapper .btnBox {margin-top:95px;text-align:center;}
+
+.loginWrapper .btnBox .btnGrayBottom,
+.loginWrapper .btnBox .btnLineBottom,
+.loginWrapper .btnBox .btnConfrmBottom {
+	width:315px;height:50px;text-align:center;
+	border-radius:0.2em;background:#333;
+	font-weight:600;font-size:18px;color:#fff;
+}
+.loginWrapper .btnBox .btnGrayBottom {
+	width:315px;height:50px;text-align:center;
+	border-radius:0.2em;background:#333;
+}
+.loginWrapper .btnBox .btnLineBottom {
+	border:1px solid #333;background:#fff;
+	color:#333;
+}
+.loginWrapper .btnBox .btnConfrmBottom {
+	width:180px;
+}
+/* 텍스트포인트칼라 */
+.point {color:#ee401e;}
+.subPoint {}
+
+/* 로그인 */
+.loginContainer .loginTitle {margin-bottom:65px;text-align:center;height:81px;line-height:81px;font-weight:600;font-size:38px;letter-spacing:-0.075em;}
+.loginContainer .loginTitle span {position:relative;display:inline-block;padding-left:145px;}
+.loginContainer .loginTitle .title01:after,
+.loginContainer .loginTitle .title02:after,
+.loginContainer .loginTitle .title03:after {content:'';position:absolute;left:0;top:0;display:block;width:115px;height:81px;background:url('../images/icon/ico_login_title.png') no-repeat;}
+.loginContainer .loginTitle .title01:after {background-position:0 0;} 
+.loginContainer .loginTitle .title02:after {background-position:0 -120px;}
+.loginContainer .loginTitle .title03:after {background-position:0 -240px;}
+
+.loginInfoBox .infoBox {text-align:center;}
+.loginInfoBox .infoBox .strInfo {margin-bottom:15px;line-height:34px;font-size:24px;letter-spacing:-0.05em;}
+.loginInfoBox .infoBox .addInfo {line-height:24px;font-size:14px;color:#666;letter-spacing:-0.05em;}
+.loginInfoBox .infoBox .subPoint {color:#ee401e;}
+.loginInfoBox .infoBox strong.subPoint {font-weight:600;font-size:32px;}
+.loginInfoBox .regBox .addInfo {font-size:12px;color:#222;letter-spacing:-0.025em;}
+
+.loginInfoBox .regBox.type02,.loginInfoBox .regBox.type03,.loginInfoBox .regBox.type04 {margin-top:40px;padding-top:40px;border-top:3px solid #ebebeb;}
+.loginInfoBox input[type=text],.loginInfoBox input[type=password] {width:100%;height:30px;line-height:30px;border:1px solid #ccc;box-sizing:border-box;}
+
+.loginInfoBox .regBox:after {content:'';display:block;clear:both;}
+.loginInfoBox .regBox {padding:0 85px;}
+.loginInfoBox .regBox .dt {float:left;width:150px;}
+.loginInfoBox .regBox .dt label {display:inline-block;margin-top:3px;font-weight:600;font-size:16px;letter-spacing:-0.05em;}
+.loginInfoBox .regBox .dd {float:left;width:320px;}
+.loginInfoBox .regBox .inputBtn {display:block;position:relative;padding-right:90px;}
+.loginInfoBox .regBox .inputBtn .btnConfrm {
+	position:absolute;right:0;top:0;
+	display:block;width:80px;height:30px;
+	border-radius:0.2em;background:#333;
+	font-weight:600;font-size:14px;color:#fff;
+}
+.loginInfoBox .regBox.type01 .dt {width:73px;}
+.loginInfoBox .regBox.type01 .dd {width:389px;}
+
+.loginInfoBox .regBox div:after {content:'';display:block;clear:both;}
+.loginInfoBox .regBox.type02 div:first-child {margin-top:0;}
+.loginInfoBox .regBox.type02 div {margin-top:10px;}
+
+.loginInfoBox .regBox.type03 div:first-child {margin-top:0;}
+.loginInfoBox .regBox.type03 div {margin-top:10px;padding:0 30px;}
+.loginInfoBox .regBox.type03 .dt {float:left;width:156px;}
+.loginInfoBox .regBox.type03 .dd {float:left;;width:250px;}
+
+.loginInfoBox .txtCener {/*margin-top:40px;*/text-align:center;}
+.loginInfoBox .txtCener .infoTitle {margin-bottom:10px;font-size:24px;letter-spacing:-0.05em;}
+.loginInfoBox .txtCener .addInfo {line-height:24px;font-size:14px;color:#666;letter-spacing:-0.05em;}
+
+.idpwTabWrap {}
+.idpwTabWrap .tabBox:after {content:'';display:block;clear:both;}
+.idpwTabWrap .tabBox {}
+.idpwTabWrap .tabBox a {
+	float:left;
+	width:320px;height:55px;line-height:55px;
+	text-align:center;
+	border:1px solid #ddd;border-bottom:1px solid #333;background:#f8f8f8;
+	font-size:16px;color:#999;letter-spacing:-0.025em;
+	box-sizing:border-box;
+}
+.idpwTabWrap .tabBox a.on {border:1px solid #333;border-top:2px solid #333;border-bottom:0 none;background:#fff;font-weight:600;font-size:16px;color:#333;}
+.idpwTabWrap .tabContentBox {padding:70px 0 0;}
+
+/* 약관동의 */
+.memberContainer {position:relative;left:50%;top:0;margin:0 0 0 -540px;padding:166px 0 150px;width:1080px;}
+
+.titleMemberStep span {margin-bottom:70px;display:inline-block;width:100%;height:45px;background:url('../images/tit_member_step.png') no-repeat;text-indent:-9999px;}
+.titleMemberStep .step01 {background-position:0 0;}
+.titleMemberStep .step02 {background-position:0 -55px;}
+.titleMemberStep .step03 {background-position:0 -110px;}
+.titleMemberStep .step04 {background-position:0 -165px;}
+
+.memberInfoBox .memberTitle {margin-bottom:20px;text-align:center;height:150px;font-weight:600;font-size:24px;letter-spacing:-0.05em;}
+.memberInfoBox .memberTitle span {position:relative;display:inline-block;padding-top:120px;}
+.memberInfoBox .memberTitle span:after {content:'';position:absolute;left:50%;top:0;margin-left:-28px;display:block;width:57px;height:93px;background:url('../images/icon/ico_member_title.png') no-repeat 0 0;}
+
+.memberInfoBox .infoBox {text-align:center;}
+.memberInfoBox .infoBox .strInfo {margin-bottom:10px;font-size:14px;color:#666;}
+.memberInfoBox .infoBox .addInfo {line-height:16px;color:#222;letter-spacing:-0.025em;}
+
+.memberInfoBox .infoTitle {margin-bottom:45px;text-align:center;line-height:34px;font-size:24px;letter-spacing:-0.05em;;}
+
+.memberInfoBox .checkAllBox:after {content:'';display:block;clear:both;}
+.memberInfoBox .checkAllBox {margin-bottom:50px;padding-bottom:15px;border-bottom:2px solid #777;}
+.memberInfoBox .checkAllBox .alignRight {float:right;}
+.memberInfoBox .checkAllBox input[type=checkbox] {width:16px;height:16px;}
+.memberInfoBox .checkAllBox label {display:inline-block;margin-left:3px;vertical-align:middle;font-size:16px;letter-spacing:-0.05em;}
+
+.memberInfoBox .checkBox:after {content:'';display:block;clear:both;}
+.memberInfoBox .checkBox {margin-top:10px;}
+.memberInfoBox .agreeBox .checkBox {margin-top:40px;}
+.memberInfoBox .checkBox .alignLeft {float:left;}
+.memberInfoBox .checkBox .sTitle {margin-bottom:12px;font-size:16px;letter-spacing:-0.05em;}
+.memberInfoBox .checkBox .alignRight {float:right;}
+.memberInfoBox .checkBox label {margin-left:3px;}
+
+.memberInfoBox .agreeCont {padding:10px;width:1080px;height:150px;overflow-y:scroll;border:1px solid #ddd;box-sizing:border-box;}
+
+.memberInfoBox .addInfoBox {margin-top:25px;}
+.memberInfoBox .addInfoBox p {line-height:16px;color:#222;letter-spacing:-0.025em;}
+
+/* 회원정보입력 */
+.memberRegBox {}
+.memberRegBox .tblRegType {width:100%;border-top:2px solid #333;border-bottom:1px solid #ddd;}
+.tblRegType tr:first-child th,.tblRegType tr:first-child td {border-top:0 none;}
+.tblRegType th,.tblRegType td {padding:11px 20px 10px;min-height:28px;text-align:left;border-top:1px solid #f8f8f8;}
+
+/* 테이블내버튼 */
+.btnGrayTable {padding:0 18px;height:28px;border-radius:0.2em;background:#333;font-weight:600;color:#fff;}
+
+.memberRegBox .icoMale:after {content:'';position:absolute;left:0;top:0;display:block;width:18px;height:18px;background:url('../images/icon/ico_sex.png') no-repeat 0 0;}
+.memberRegBox .icoFemale:after {content:'';position:absolute;left:0;top:0;display:block;width:18px;height:18px;background:url('../images/icon/ico_sex.png') no-repeat 0 -22px;}
+.memberRegBox .icoMale {position:relative;margin-left:20px;padding-left:24px;}
+.memberRegBox .icoFemale {position:relative;margin-left:20px;padding-left:24px;}
+
+/*.memberRegBox .regCheck {display:inline-block;margin-left:5px;width:12px;height:6px;background:url('../images/icon/ico_reg_check.png') no-repeat 0 0;}*/
+/*.memberRegBox .conCheck {display:inline-block;margin-left:5px;font-size:11px;color:#68b109;letter-spacing:-0.05em;}*/
+.memberRegBox .errorCheck {display:inline-block;margin-left:5px;font-size:11px;color:#ec1717;letter-spacing:-0.05em;}
+.memberRegBox .regCheck:after {content:'';position:absolute;left:0;top:6px;display:block;width:12px;height:6px;background:url('../images/icon/ico_reg_check.png') no-repeat 0 0;}
+.memberRegBox .regCheck {position:relative;margin-left:5px;padding-left:15px;font-size:11px;letter-spacing:-0.05em;}
+
+/* 수신동의팝업보기버튼 */
+.btnAgreeView {margin-left:8px;width:13px;height:13px;background:url('../images/button/btn_agree_view.png') no-repeat 0 0;text-indent:-9999px;}
+
+/* 필수입력 */
+.icoStar {display:inline-block;margin-right:1px;width:5px;height:5px;line-height:8px;background:url('../images/icon/ico_star.png') no-repeat 0 0;text-indent:-9999px;}
+
+/* 회원가입완료 */
+.memberInfoBox .memberEnd {margin-bottom:45px;text-align:center;height:200px;font-weight:600;font-size:30px;letter-spacing:-0.05em;}
+.memberInfoBox .memberEnd span {position:relative;display:inline-block;padding-top:170px;}
+.memberInfoBox .memberEnd span:after {content:'';position:absolute;left:50%;top:0;margin-left:-55px;display:block;width:110px;height:111px;background:url('../images/icon/ico_member_title.png') no-repeat 0 -139px;}
+
+.joinEnd {text-align:center;}
+.joinEnd .strInfo {margin-bottom:15px;line-height:34px;font-size:24px;letter-spacing:-0.05em;}
+.joinEnd .addInfo {line-height:24px;font-size:14px;color:#666;letter-spacing:-0.05em;}
+.joinEnd .subPoint {color:#ee401e;}
+.joinEnd strong.subPoint {font-weight:600;font-size:32px;}
+
+
+/* [팝업]sms/이메일 수신동의 */
+.titleBox {margin:20px 0 10px;}
+.titleBox h3 {margin:0 0 10px 0;}
+.titleBox .info {margin-left:5px;}
+
+.tblLineListType {width:100%;}
+.tblLineListType tr th:first-child,.tblLineListType tr td:first-child {border-left:0 none;}
+.tblLineListType th,.tblLineListType td {border-left:1px solid #ddd;}
+.tblLineListType th {border-bottom:1px solid #ddd; border-top:1px solid #aaa; line-height:43px; font-size:14px; color:#333; font-weight:600; background:#f8f8f8;}
+.tblLineListType td {padding:15px 10px;text-align:center;border-bottom:1px solid #ddd;}
+
+
+/* [레이어]로그인 */
+.loginMain {
+	position:relative;/*left:50%;top:0;*/
+	padding:100px 0 50px;
+	min-height:680px;overflow:hidden;
+	background:url('../images/img_login.jpg') no-repeat center top;
+	background-size:cover;
+}
+.loginLayerWrap {position:absolute;left:50%;top:253px;z-index:100;margin:0 0 0 -172px;width:344px;height:447px;border:1px solid #ddd;background:#fff;box-sizing:border-box;}
+.loginLayerWrap .loginLayer {position:relative;padding:40px 37px 0;}
+.loginLayerWrap .loginLayer h1 {margin-bottom:38px;padding:0;background:none;font-weight:400;font-size:28px;letter-spacing:-0.075em;}
+.loginLayerWrap .frmBox {margin-bottom:40px;}
+.loginLayerWrap .frmBox label {margin-left:3px;font-size:13px;}
+.loginLayerWrap .regBox {margin-bottom:12px;}
+.loginLayerWrap .regBox input[type=text],.loginLayerWrap .regBox input[type=password] {padding:0 10px;width:100%;height:40px;border-radius:0.3em;border:1px solid #ddd;font-size:13px;box-sizing:border-box;}
+.loginLayerWrap .regBox input[type=text]:first-child {margin-bottom:10px;}
+.loginLayerWrap .btnLogin {width:100%;height:50px;border-radius:0.3em;background:#ee401e;font-weight:600;font-size:16px;color:#fff;}
+.loginLayerWrap .footLink:after {content:'';display:block;clear:both;}
+.loginLayerWrap .footLink {margin-top:73px;/*padding:12px 0 20px;*/padding:10px 0;height:25px;border-top:1px solid #ddd;}
+.loginLayerWrap .footLink > a {font-weight:600;}
+.loginLayerWrap .footLink ul {float:right;}
+.loginLayerWrap .footLink ul li:first-child:after {content:'';position:absolute;right:0;top:5px;display:block;width:1px;height:11px;background:url('../images/bg_login.png') no-repeat right top;}
+.loginLayerWrap .footLink ul li:first-child {position:relative;margin-right:10px;padding-right:10px;}
+.loginLayerWrap .footLink ul li {float:left;}
+.loginLayerWrap .footLink ul li a {}
+
+.centerLayer {position:absolute;left:50%;bottom:-40%;z-index:99;margin-left:-174px;width:100%;text-align:center;}
+.centerLayer p {font-size:14px;color:#fff;}
+.centerLayer p:first-child {margin-bottom:15px;font-size:24px;}
+.centerLayer p:first-child strong {font-weight:600;}
+
+.backgroundLayer {
+/*	display:none;*/
+	position:fixed;left:0;top:0;z-index:99;
+	width:100%;height:100%;overflow:hidden;
+	background-color:rgba(0, 0, 0, 0.7);
+}

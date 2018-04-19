@@ -1,0 +1,32 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="path">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li title="현재 위치"><strong>비밀번호 찾기</strong></li>
+    </ol>
+</div>
+<div class="titleArea">
+    <h2>비밀번호 찾기</h2>
+</div>
+<div module="member_findpasswdmethod">
+    <!--@css(/css/module/member/find_passwd_method.css)-->
+    <!--
+        $nextURL = /member/passwd/find_passwd_result.html
+     -->
+    <div class="inner">
+        <h3><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/h3_send_password.gif" alt="임시 비밀번호 전송" /></h3>
+        <fieldset>
+            <legend>임시 비밀번호 전송</legend>
+            <ul class="ec-base-desc typeBullet gSmall">
+                <li><strong class="term">임시 비밀번호</strong><span class="desc">{$form.passwd_method_type}</span></li>
+                <li id="{$passwd_method_email_info}"><strong class="term">이메일</strong><span class="desc"><strong class="txtEm">{$passwd_method_email}</strong></span></li>
+                <li id="{$passwd_method_mobile_info}"><strong class="term">휴대폰 번호</strong><span class="desc"><strong class="txtEm number">{$passwd_method_mobile}</strong></span></li>
+            </ul>
+            <p class="ec-base-button gBlank20">
+                <a href="#none" onclick="{$action_func_find_passwd_send}"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_send_password.gif" alt="임시 비밀번호 전송" /></a>
+                <a href="#none" onclick="{$action_func_find_passwd_cancel}"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_cancel.gif" alt="취소" /></a>
+            </p>
+        </fieldset>
+    </div>
+</div>

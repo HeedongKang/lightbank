@@ -1,0 +1,75 @@
+
+/** 브랜드 **/
+
+    .categorySub.brand { position:relative; z-index:9; float:left; height:50px; margin:0 0 0 -1px; }
+    .categorySub.brand h4 { display:block; line-height:25px; margin:0 15px 15px 0; padding:0 0 5px; border-bottom:1px solid #eee; font-size:16px; font-weight:normal; }
+    .categorySub.brand > li { float:left; border-left:1px solid #ddd; border-right:1px solid #ddd; }
+    .categorySub.brand > li > a { position:relative; z-index:3; display:block; padding:0 10px;/*대분류폭*/ background:url('/_wg/img/bg_slash_b.png'); font-size:12px;/*대분류폰트사이즈*/ line-height:50px; color:#222; text-align:center; transition:all .3s ease; -webkit-transition:all .3s ease; }
+    .categorySub.brand > li > a:hover,
+    .categorySub.brand > li.on > a,
+    .categorySub.brand > li.fix > a { background-color:#f4f4f4; font-weight:bold; color:#111; text-decoration:none; }
+    .categorySub.brand > li > ul { display:none; position:absolute; z-index:1; top:50px; left:-52px; width:1243px; min-height:120px; padding:15px 0 15px 15px; border:1px solid #ddd; background:#fff; }
+    /* 1265px 이하 */
+    @media all and (max-width:1265px){
+        .categorySub.brand > li > ul { width:963px; }
+    }
+
+
+    /* 공통 */
+    #brand_list { position:relative; margin:20px 0 0; }
+
+    /* 메인메뉴용 */
+    /* 버튼 */
+    .categorySub.brand #brand_list .DB_btn { display:block !important; height:40px; }
+    .categorySub.brand #brand_list .DB_btn > li { float:left; margin:0 0 0 -1px; }
+    .categorySub.brand #brand_list .DB_btn > li a { display:block; width:25px; height:25px; line-height:25px; border:1px solid #ddd; font-size:12px; text-align:center; transition:all .3s ease; -webkit-transition:all .3s ease; }
+    .categorySub.brand #brand_list .DB_btn > li a:hover { background:#ebebeb; text-decoration:none; }
+    .categorySub.brand #brand_list .DB_btn > li a.DB_select { background:#333; border:1px solid #333; color:#fff; }
+    .categorySub.brand #brand_list .DB_btn > li.DB_k14,
+    .categorySub.brand #brand_list .DB_btn > li.DB_k40 { margin:0 13px 0 -1px; }
+    .categorySub.brand #brand_list .DB_btn > li.DB_all a,
+    .categorySub.brand #brand_list .DB_btn > li.DB_eng a { width:37px; margin:0 13px 0 0; }
+    .categorySub.brand #brand_list .DB_btn > li.DB_etc a { width:37px; }
+
+    /* 리스트 */
+    .categorySub.brand #brand_list .DB_list { display:block!important; height:297px; font-size:0; line-height:0; letter-spacing:-4px; overflow-x:hidden; overflow-y:auto; }
+    .categorySub.brand #brand_list .DB_list li.tit { display:block; margin:20px 0 20px; }
+    .categorySub.brand #brand_list .DB_list li.tit a { width:100%; padding:0; font-size:25px; color:#000; font-weight:bold; cursor:default; }
+    .categorySub.brand #brand_list .DB_list li.tit a:hover { color:#000; text-decoration:none; }
+
+    .categorySub.brand #brand_list .DB_list li { display:inline-block; *display:block; *zoom:1; width:16.66%; }
+    .categorySub.brand #brand_list .DB_list li a { position:relative; display:block; line-height:20px; margin:0 0 10px; font-size:13px; letter-spacing:0; color:#333; }
+    .categorySub.brand #brand_list .DB_list li a:hover { text-decoration:none; color:#888; }
+
+    /* 1265px 이하 */
+    @media all and (max-width:1265px){
+        .categorySub.brand #brand_list .DB_btn > li a { width:18px; height:18px; line-height:18px; font-size:11px; }
+    }
+
+
+    /* 스마트서치용 */
+    /* 버튼 */
+    .SD_headerSearch #brand_list .DB_btn { display:block !important; height:40px; padding:20px 0 0; border-top:1px solid #eee; }
+    .SD_headerSearch #brand_list .DB_btn > li { float:left; margin:0 0 0 -1px; }
+    .SD_headerSearch #brand_list .DB_btn > li a { display:block; width:17px; height:17px; line-height:17px; border:1px solid #ddd; font-size:11px; text-align:center; transition:all .3s ease; -webkit-transition:all .3s ease; }
+    .SD_headerSearch #brand_list .DB_btn > li a:hover { background:#ebebeb; text-decoration:none; }
+    .SD_headerSearch #brand_list .DB_btn > li a.DB_select { background:#333; border:1px solid #333; color:#fff; }
+    .SD_headerSearch #brand_list .DB_btn > li.DB_k14,
+    .SD_headerSearch #brand_list .DB_btn > li.DB_k40 { margin:0 13px 0 -1px; }
+    .SD_headerSearch #brand_list .DB_btn > li.DB_all a,
+    .SD_headerSearch #brand_list .DB_btn > li.DB_eng a { width:34px; margin:0 13px 0 0; }
+    .SD_headerSearch #brand_list .DB_btn > li.DB_etc a { width:34px; }
+
+    /* 리스트 */
+    .SD_headerSearch #brand_list .DB_list { display:block!important; width:900px; height:265px; font-size:0; line-height:0; letter-spacing:-4px; overflow:auto; }
+    .SD_headerSearch #brand_list .DB_list li.tit { display:block; margin:20px 0 10px; }
+    .SD_headerSearch #brand_list .DB_list li.tit a { width:100%; padding:0; font-size:25px; color:#000; font-weight:bold; cursor:default; }
+    .SD_headerSearch #brand_list .DB_list li.tit a:hover { color:#000; text-decoration:none; }
+    
+    .SD_headerSearch #brand_list .DB_list li { display:inline-block; *display:block; *zoom:1; width:16.66%; }
+    .SD_headerSearch #brand_list .DB_list li a { position:relative; display:block; line-height:20px; padding:0; font-size:13px; letter-spacing:0; color:#333; }
+    .SD_headerSearch #brand_list .DB_list li a:hover { text-decoration:none; color:#888; }
+
+
+
+

@@ -1,0 +1,21 @@
+
+    .SD_mainNotice { float:right; width:92%; margin:0 2% 0 0; }
+    .SD_mainNotice h4 a { display:block; height:35px; line-height:35px; margin:0 0 7px; border:1px solid #eee; background:url('/_wg/img/bg_slash_b.png') #fff; font-size:13px; color:#333; text-align:center; }
+    .SD_mainNotice h4 a span { padding:0 0 0 5px; font-size:11px; color:#999; font-weight:400; }
+    .SD_mainNotice:hover h4 a { border:1px solid #111; background:url('/_wg/img/bg_slash_w.png') #222; text-decoration:none; color:#fff; }
+    
+    .SD_mainNotice li { line-height:22px; }
+    .SD_mainNotice li.title { float:left; width:68%; font-size:11px; white-space:nowrap; overflow:hidden; }
+    .SD_mainNotice li.date { float:right; width:24%; font-size:10px; color:#bbb; font-weight:400; text-align:center; }
+    .SD_mainNotice li.title a { padding:0 0 0 15px; background:url('/_wg/img/dot_list.gif') no-repeat 6px 5px; color:#777; }
+    .SD_mainNotice li a:hover { color:#111; text-decoration:none; }
+    
+    .SD_mainNotice .notice li.title a { background:url('/_wg/img/dot_notice.gif') no-repeat 6px 5px; font-weight:bold; }
+    
+    .SD_mainNotice .more { position:absolute; right:12px; top:8px; }
+    .SD_mainNotice .more a:hover img { filter:alpha(opacity=30); opacity:0.3; -webkit-opacity:0.3; }
+
+    /* 1265px 이하 */
+    @media all and (max-width:1265px){
+        .SD_mainNotice { height:110px; overflow:hidden; }
+    }

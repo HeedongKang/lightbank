@@ -1,0 +1,39 @@
+<!--@css(/_wg/css/JS_topMenu.css)-->
+
+<ul id="JS_topMenu">
+    <!-- 로그인전 -->
+    <li class="d1"><a href="https://www.cjlogistics.com">배송조회 </a></li>
+	<li class="d1" module="Layout_statelogoff"><a href="/member/login.html" class="log"><strong>로그인</strong></a></li>
+	<li class="d1" module="Layout_statelogoff"><a href="/member/join.html">회원가입 <!-- 아이콘 --><!--<p class="point_ico -spring_x">+3000 P</p>--><!-- //아이콘 --></a></li>
+    <!-- //로그인전 -->
+    
+    <!-- 로그인후 -->
+	<li class="d1" module="Layout_statelogon"><a href="{$action_logout}">로그아웃</a></li>
+	<li class="d1" module="Layout_statelogon"><a href="/member/modify.html">정보수정</a></li>
+    <!-- //로그인후 -->
+    <li class="d1"><a href="/myshop/order/list.html">주문조회 </a></li>
+	<li class="d1"><a href="/order/basket.html?page=1">장바구니 <span module="Layout_orderBasketcount" class="count{$basket_cnt}">{$basket_count}</span></a></li>
+
+	<li class="d1"><a href="/myshop/index.html"><strong>마이샵</strong></a>
+		<ul class="d2_wrap">
+            <li class="d2"><a href="/myshop/order/list.html">주문조회</a></li>
+            <li class="d2"><a href="https://www.doortodoor.co.kr/" target="_blank">배송조회</a></li>
+            <li class="d2"><a href="/myshop/mileage/historyList.html">적립금</a></li>
+            <li class="d2"><a href="/myshop/likeit/product.html">좋아요</a></li>
+            <li class="d2"><a href="/myshop/coupon/coupon.html">쿠폰관리</a></li>
+            <li class="d2"><a href="/myshop/board_list.html">내게시물</a></li>
+		</ul>
+	</li>
+	<li class="d1"><a href="/board/product/list.html?board_no=6">상품Q&amp;A</a></li>
+    
+	<li class="d1"><a href="/board/product/list.html?board_no=4">상품후기</a></li>
+	    
+	<li class="d1" module="Layout_BoardInfo"><a href="/board/index.html">커뮤니티</a>
+		<ul class="d2_wrap">
+            <li class="d2"><a href="{$board_list_url}">{$board_name}</a> {$board_adult_icon}</li>
+            <li class="d2"><a href="{$board_list_url}">{$board_name}</a> {$board_adult_icon}</li>
+		</ul>
+	</li>
+	<li class="d1"><a href="/product/list.html?cate_no=163"><b>[개인결제창]</b></a></li>
+	<li class="d1"><a href="#none" class="p_naverTalk" data-popup="http://talk.naver.com/WC5PIH,window,500,600"><img src="/_wg/img/naver_talk_green.png" width="20px" style="vertical-align:middle">&nbsp;<b>네이버톡톡상담</b></a></li>
+</ul>

@@ -1,0 +1,501 @@
+@charset "utf-8";
+
+/*/// 탑 빌보드 배너 ///*/
+.billboWrap {position:relative; width:1080px !important; height:400px !important; float:right; overflow: hidden;}
+.billBanner .bx-wrapper .bx-controls-direction a {top:44%;}
+.billBanner .billSlider li {height:400px !important; overflow: hidden;}
+.billBanner .billSlider li img {width:1080px; height:400px; object-fit:cover;}
+
+.billName {position:absolute;bottom:0;right:0;height:40px;line-height:40px;border-right:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background:rgb(255,255,255);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);width:100%;box-sizing:border-box;}
+.billName .bx-wrapper .bx-pager , .billName .bx-wrapper .bx-prev , .billName .bx-wrapper .bx-next {display:none;}
+.billName .nameSlider {float: left;width:100%;height:40px;}
+.billName .nameSlider li:first-child {border-left:0;}
+.billName .nameSlider li {text-align:center; line-height:38px; float:left;/*border-left:1px solid #e1e1e1;*//*box-sizing:border-box;*/}
+.billName .nameSlider a {display:block; color:#888; line-height:38px;border-top:1px solid #e1e1e1;border-left:1px solid #e1e1e1;overflow:hidden;font-size:14px;letter-spacing:-0.075em;outline:0;}
+.billName .nameSlider a span {line-height:38px; height:38px !important; /*width:105px;*/ overflow:hidden; display:block; text-align:center; margin:0 auto;}
+
+.billName .nameSlider a.active ,.billName .nameSlider a:hover,.billName .nameSlider a:focus {color:#fff;text-decoration:none;}
+
+.mainVisualWrap .billName .nameSlider a.active,
+.mainVisualWrap .billName .nameSlider a:hover,
+.mainVisualWrap .billName .nameSlider a:focus {border:1px solid #ee401e;background:#ee401e;}
+
+.subHealthVisual .billName .nameSlider a.active,
+.subHealthVisual .billName .nameSlider a:hover,
+.subHealthVisual .billName .nameSlider a:focus {border:1px solid #3e95cc;background:#3e95cc;}
+
+.subBeautyVisual .billName .nameSlider a.active,
+.subBeautyVisual .billName .nameSlider a:hover,
+.subBeautyVisual .billName .nameSlider a:focus {border:1px solid #fb7a7a;background:#fb7a7a;}
+
+.subFoodVisual .billName .nameSlider a.active,
+.subFoodVisual .billName .nameSlider a:hover,
+.subFoodVisual .billName .nameSlider a:focus {border:1px solid #71c043;background:#71c043;}
+
+.billName .nameSlider a:hover span {background:transparent;}
+.billName .nameSlider a.active span {background:transparent;}
+
+/* 빌보드 배너 컨트롤버튼 */
+.billBanner .bx-controls-auto .bx-start {position:absolute;right:0;bottom:0;z-index:2;}
+.billBanner .bx-controls-auto .bx-stop {position:absolute;right:0;bottom:0;z-index:2;}
+.billBanner .bx-controls-auto .bx-start.active {display:none;}
+.billBanner .bx-controls-auto .bx-stop.active {display:none;}
+
+
+
+/* 메인컨텐츠영역 */
+
+/* sale 태그 */
+.pdBox .tagSale {
+	position:absolute;left:21px;top:19px;z-index:3;
+	display:block;padding:14px 0;width:56px;height:56px;
+	text-align:center;
+	border:1px solid #ee401e;border-radius:28px;background:rgba(255,255,255,.85);
+	font-weight:600;font-size:18px;color:#ee401e;box-sizing:border-box;
+}
+.pdBox .tagSaleHealth {
+	position:absolute;left:21px;top:19px;z-index:3;
+	display:block;padding:14px 0;width:56px;height:56px;
+	text-align:center;
+	border:1px solid #3e95cc;border-radius:28px;background:rgba(255,255,255,.85);
+	font-weight:600;font-size:18px;color:#3e95cc;box-sizing:border-box;
+}
+.pdBox .tagTimeSale {
+	position:absolute;left:21px;top:19px;z-index:3;
+	display:block;padding:14px 0;width:56px;height:56px;
+	text-align:center;
+	border-radius:28px;background:rgba(208,0,28,.85);
+	font-weight:600;font-size:18px;color:#fff;box-sizing:border-box;
+}
+.tagSaleBest {
+	position:absolute;left:21px;top:19px;z-index:3;
+	display:block;padding:14px 0;width:56px;height:56px;
+	text-align:center;
+	border-radius:28px;background:rgba(170,170,170,.9);
+	font-weight:600;font-size:18px;color:#fff;box-sizing:border-box;
+}
+.tagSaleBest.best1 {
+	background:rgba(251,122,122,.9);
+}
+.tagBeautyBest {
+	position:absolute;left:21px;top:19px;z-index:3;
+	display:block;padding:14px 0;width:56px;height:56px;
+	text-align:center;
+	border:1px solid #fb8383;border-radius:28px;background:rgba(255,255,255,.9);
+	font-weight:600;font-size:18px;color:#fb7a7a;box-sizing:border-box;
+}
+.tagFoodBest {
+	position:absolute;left:21px;top:19px;z-index:3;
+	display:block;padding:14px 0;width:56px;height:56px;
+	text-align:center;
+	border:1px solid #71c043;border-radius:28px;background:rgba(255,255,255,.9);
+	font-weight:600;font-size:18px;color:#71c043;box-sizing:border-box;
+}
+
+/* 상품이미지영역 */
+.pdBox .imgBox {padding:14px 16px 10px;width:220px !important;height:220px;object-fit:cover;} /* 2017-11-23 수정 */
+.pdBox .imgBox img {width:220px;height:220px;object-fit:cover;}
+
+/* 상품정보영역 */
+.pdInfo {padding:10px 20px;height:105px;}
+.pdInfo .pdTitle {
+	margin-bottom:3px;height:2.6em;line-height:1.3em;
+	font-weight:600;font-size:16px;letter-spacing:-0.05em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* 라인수 */
+	-webkit-box-orient: vertical;
+	word-wrap:break-word;
+}
+.pdInfo .pdPrice del {margin-right:5px;font-size:14px;color:#888;}
+.pdInfo .pdPrice strong {font-weight:600;font-size:18px;color:#222;}
+.pdInfo .pdPrice strong em {font-size:14px;}
+
+.pdBox {margin:0;padding:0;}
+.pdBox a {display:block;border:none !important;}
+.pdBox a:hover,.pdBox a:focus {border:none;} /* 오버 border효과 없음 */
+
+.pdBox .pdOver {display:none;position:absolute;left:0;top:0;z-index:2;}
+.pdBox:hover .pdOver {display:block;}
+.pdBox .pdOver {width:252px;height:370px;background:url('../images/main/bg_over_gray.png') no-repeat 0 0;}
+.pdBox .pdOver .btnBox:after {content:'';display:block;clear:both;}
+.pdBox .pdOver .btnBox {position:absolute;right:16px;top:202px;}
+.pdBox .pdOver .btnBox button {float:left;width:32px;height:32px;background:url('../images/main/btn_ly_product.png') no-repeat 0 0;text-indent:-9999px;}
+/*.pdBox .pdOver .btnBox .btnCart {background-position:0 0;}*/
+.pdBox .pdOver .btnBox .btnGood {background-position:-31px 0;}
+.pdBox .pdOver .btnBox .btnGood.active {background-position:-63px 0;}
+.pdBox .pdOver .pdInfo {margin-top:244px;}
+
+/* 상품오버시이미지링크 */
+.pdBox .pdOver .imgLink {position:absolute;left:16px;top:14px;display:block;width:220px;height:220px;text-indent:-9999px;}
+
+
+
+/* 메인-인기상품 */
+.mainHotSection {position:relative;margin-top:50px;}
+.mainHotSection .mainTitle {padding-bottom:7px;border-bottom:1px solid #999;font-size:26px;}
+
+.mainHotSection .tabWrap {position:absolute;right:0;top:10px;}
+.mainHotSection .tabWrap a {margin:0 12px;font-size:16px;letter-spacing:-0.05em;}
+.mainHotSection .tabWrap a.active {font-weight:600;color:#ee401e;}
+
+.hotProduct {clear:both;}
+.hotProduct .hotSlider ul {clear:both;overflow:hidden;}
+.hotProduct .hotSlider ul li {float:left;margin:0 0 25px 24px;width:252px !important;height:340px !important;background:#fff;}
+/*.hotProduct ul li .imgBox {padding:15px 15px 10px;width:220px !important;height:220px;object-fit:cover;}  2017-11-23 수정 
+.hotProduct ul li .imgBox img {width:220px;height:220px;object-fit:cover;}*/
+.hotProduct .hotSlider ul li:first-child {margin-left:0;}
+
+/*.hotProduct .bx-wrapper .bx-controls {position:absolute;left:50%;top:50%;margin-left:-540px;width:1080px;}
+.hotProduct .bx-wrapper .bx-prev {position:absolute;left:0;top:50%;}
+.hotProduct .bx-wrapper .bx-next {position:absolute;right:0;top:50%;}*/
+
+/* 메인-인기상품배너 */
+.mainHotBanner {margin-top:50px;}
+.mainHotBanner .bx-wrapper .bx-pager {text-align:right;right:10px;bottom:10px;}
+.mainHotBanner .bx-wrapper .bx-pager.bx-default-pager a {border:1px solid #fff;background: #fff;}
+.mainHotBanner .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.mainHotBanner .bx-wrapper .bx-pager.bx-default-pager a.active {border:1px solid #333;background: #333;}
+
+/* 메인-임박특가상품 */
+.mainTimeSaleSection {margin-top:50px;padding:35px 0 57px;width:100%;background:#f0f0f0;}
+.mainTimeSaleSection .mainTitle {margin:0 0 30px 0;text-align:center;}
+.mainTimeSaleSection .mainTitle span {display:inline-block;padding:0 0 0 64px;height:54px;line-height:54px;background:url('../images/main/ico_timesale.png') no-repeat 0 0;font-size:26px;}
+.mainTimeSaleSection .linkMore {position:absolute;right:0;top:26px;display:inline-block;padding:0 12px 0 0;background:url('../images/main/bul_more.png') no-repeat right 5px;font-size:14px;}
+
+.timeSale {clear:both;}
+.timeSale .mSlider ul {clear:both;overflow:hidden;}
+.timeSale .mSlider ul li {float:left;margin:0 0 25px 24px;width:252px !important;height:340px !important;background:#fff;}
+.timeSale .mSlider ul li .imgBox {padding:15px 15px 10px;width:220px !important;height:220px;object-fit:cover;}
+
+.timeSale .mSlider ul li:first-child {margin-left:0;}
+.timeSale .bx-wrapper .bx-pager {position:absolute; bottom:-20px; height:15px; padding:0; width:30%; left:50%; margin-left:-15%;}
+.timeSale .bx-wrapper .bx-prev {top:48%;}
+.timeSale .bx-wrapper .bx-next {top:48%;}
+.timeSale .bx-wrapper .bx-pager.bx-default-pager a {border:1px solid #fff;background: #fff;}
+.timeSale .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.timeSale .bx-wrapper .bx-pager.bx-default-pager a.active {border:1px solid #d0001c;background: #d0001c;}
+
+.timeSale .pdBox .pdOver {display:none;position:absolute;left:0;top:0;z-index:2;width:252px;height:340px;background:url('../images/main/bg_over_red.png') no-repeat 0 0;}
+.timeSale .pdBox:hover .pdOver {display:block;}
+
+/* 메인-브랜드 */
+.mainBrandSection:after {content:'';display:block;clear:both;}
+.mainBrandSection {margin:50px auto;}
+.mainBrandSection .mainTitle {padding-bottom:7px;border-bottom:1px solid #999;font-size:20px;}
+.mainBrandSection .leftBrandBox {float:left;width:529px;}
+.mainBrandSection .rightBrandBox {float:right;width:529px;}
+
+.mainBrandSection .healthBrand {width:528px;height:502px;background:url('../images/main/bg_brand01.png') no-repeat 0 60px;}
+.mainBrandSection .beautyBrand {width:528px;height:502px;background:url('../images/main/bg_brand02.png') no-repeat 0 60px;}
+
+.mainBrandSection .brandTab {position:relative;/*padding:15px 0;*/overflow:hidden;height:60px;line-height:60px;background:#fff;}
+.mainBrandSection .brandTab ul {position:absolute;width:100%;}
+.mainBrandSection .brandTab li {float:left; text-align:center;margin:0 auto;} /* 2017-11-23 수정 */
+
+.mainBrandSection .brandProduct .info {height:90px;line-height:90px;text-align:center;font-size:16px;color:#fff;}
+
+.leftBrandBox .brandProduct {margin:0 12px 12px;/*width:528px;height:442px;background:url('../images/main/bg_brand01.png') no-repeat 0 0;*/} /* 2017-11-23 수정 */
+.rightBrandBox .brandProduct {margin:0 12px 12px;/*width:528px;height:442px;background:url('../images/main/bg_brand02.png') no-repeat 0 0;*/} /* 2017-11-23 수정 */
+
+.mainBrandSection {clear:both;}
+.mainBrandSection .brandSlider ul {clear:both;overflow:hidden;}
+.mainBrandSection .brandSlider ul li {float:left;margin:0;width:252px !important;height:340px !important;background:#fff;}
+/*.mainBrandSection ul li .imgBox {padding:15px 15px 10px;width:220px !important;height:220px;object-fit:cover;}  2017-11-23 수정 */
+.mainBrandSection .brandSlider ul li:first-child {margin-left:0;}
+
+
+.mainBrandSection .bx-wrapper .bx-prev {left:-12px;top:10px;}
+.mainBrandSection .bx-wrapper .bx-next {right:-12px;top:10px;}
+
+.mainHotSection .ban-btn-left,.mainHotSection .ban-btn-right { position:absolute; display:none; width:40px; height:40px; z-index:100; text-indent:-10000px; opacity:.6; }
+.mainHotSection .ban-btn-left { left:0; background:url('../../resources/images/arw_set.png') no-repeat 0 -1013px }
+.mainHotSection .ban-btn-right { right:0; background:url('../../resources/images/arw_set.png') no-repeat 0 -1054px }
+
+.mainBrandSection .ban-btn-left,.mainBrandSection .ban-btn-right { position:absolute; display:none; width:150px; height:40px; z-index:100; text-indent:-10000px; opacity:.6;}
+.mainBrandSection .ban-btn-left {left:0;}
+.mainBrandSection .ban-btn-right {right:0;}
+
+.mainBrandSection .ban-btn-left span,.mainBrandSection .ban-btn-right span {display:block;width:40px;height:40px;}
+.mainBrandSection .ban-btn-left span {background:url('../../resources/images/arw_set.png') no-repeat 0 -1013px }
+.mainBrandSection .ban-btn-right span {margin-left:110px;background:url('../../resources/images/arw_set.png') no-repeat 0 -1054px;}
+
+
+.hotProduct { position:relative; width:1080px; height:340px; overflow:hidden; }
+.hotProduct ul { display:inline-block; position:absolute; top:0; left:0; }
+.hotProduct li { float:left; width:252px; height:340px; padding:0 9px; }
+.mainHotSection:hover .ban-btn-left, .mainHotSection:hover .ban-btn-right { display:block; top:50%; }
+
+.healthBrand, .beautyBrand { position:relative; }
+.brandTab { position:relative; width:528px; height:60px; overflow:hidden; }
+.brandProduct { position:relative; width:504px; height:430px; overflow:hidden; }
+.brandTab ul { display:inline-block; position:absolute; top:0; left:0; }
+.brandTab li { float:left; width:176px; height:60px; }
+.brandProduct ul { display:inline-block; position:absolute; /*top:45px;*/}
+.brandProduct li { float:left; width:504px; height:340px; }
+.brandProduct li ul {top:90px;}
+
+.brandTab a .on { display:none; }
+.brandTab a .off { display:block; }
+.brandTab li.on a .on { display:block; }
+.brandTab li.on a .off { display:none; }
+
+.healthBrand:hover .ban-btn-left, .healthBrand:hover .ban-btn-right, .beautyBrand:hover .ban-btn-left, .beautyBrand:hover .ban-btn-right { display:block; top:10px;}
+
+
+
+/* 서브컨텐츠(건강기능식품) */
+/* 건강기능식품-추천상품 */
+.healthPickSection {margin-top:40px;padding-bottom:40px;}
+
+.healthPickSection {position:relative;margin-top:50px;}
+.healthPickSection .mainTitle {font-size:26px;}
+
+.healthPickSection .tabWrap {position:absolute;right:0;top:10px;}
+.healthPickSection .tabWrap a:first-child {background:none;}
+.healthPickSection .tabWrap a {margin:0 15px 0 0;padding:0 0 0 15px;background:url('../images/main/bg_bar_tab.png') no-repeat 0 4px;font-size:16px;letter-spacing:-0.05em;color:#666;}
+.healthPickSection .tabWrap a.active {font-weight:600;color:#3393c9;text-decoration:underline;}
+
+.pickProduct {clear:both;}
+.pickProduct .bnrTabSlider ul {clear:both;overflow:hidden;}
+.pickProduct .bnrTabSlider ul li {float:left;margin:0 0 25px 24px;width:252px !important;height:340px !important;background:#fff;}
+/*.pickProduct .bnrTabSlider ul li .imgBox {padding:15px 15px 10px;width:220px !important;height:220px;object-fit:cover;}*/
+.pickProduct .bnrTabSlider ul li:first-child {margin-left:0;}
+
+/* 건강기능식품-베스트상품 */
+.healthBestSection {margin-top:40px;padding-bottom:40px;}
+
+.bestTabBox:after {content:'';display:block;clear:both;}
+.bestTabBox a:first-child {border-left:1px solid #dedfe0;}
+.bestTabBox a {
+	float:left;width:25%;height:48px;line-height:48px;
+	text-align:center;
+	border-top:1px solid #dedfe0;border-right:1px solid #dedfe0;border-bottom:1px solid #333;background:#f3f3f3;
+	box-sizing:border-box;
+	font-weight:600;font-size:16px;color:#999;text-decoration:none;
+}
+.bestTabBox a:hover,.bestTabBox a.active {border-top:2px solid #333;border-right:1px solid #333;border-bottom:0 none;border-left:1px solid #333;background:#fff;color:#333;}
+
+.sTabBox {text-align:center;}
+.sTabBox a:first-child {padding-left:0;background:none;}
+.sTabBox a {margin-right:15px;padding-left:15px;background:url('../images/main/bg_bar_tab.png') no-repeat 0 4px;font-size:14px;letter-spacing:-0.05em;color:#666;}
+.healthBestSection .sTabBox a:hover,.healthBestSection .sTabBox a.active {font-weight:600;color:#3495cc;text-decoration:underline;}
+
+.bestProduct {clear:both;}
+.bestProduct .mSlider ul {clear:both;overflow:hidden;}
+.bestProduct .mSlider ul li {float:left;margin:0 0 25px 24px;width:252px !important;height:340px !important;background:#fff;}
+/*.bestProduct .mSlider ul li .imgBox {padding:15px 15px 10px;width:220px !important;height:220px;object-fit:cover;}*/
+.bestProduct .mSlider ul li:first-child {margin-left:0;}
+
+.bestProduct .pdBox {margin:0;padding:0;}
+.bestProduct .pdBox a {display:block;border:none;}
+.bestProduct .pdBox a:hover ,.timeSale .pdBox a:focus  {border:none;} /* 오버 border효과 없음 */
+
+.bestProduct .bx-wrapper .bx-pager {position:absolute; bottom:-20px; height:15px; padding:0; width:30%; left:50%; margin-left:-15%;}
+.bestProduct .bx-wrapper .bx-prev {top:48%;}
+.bestProduct .bx-wrapper .bx-next {top:48%;}
+/*.bestProduct .bx-wrapper .bx-pager.bx-default-pager a {border:1px solid #fff;background: #fff;}
+.bestProduct .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bestProduct .bx-wrapper .bx-pager.bx-default-pager a.active {border:1px solid #d0001c;background: #d0001c;}
+*/
+
+/* 건강기능식품-배너 */
+.healthBanSection {margin-top:40px;}
+.healthBanSection .bx-wrapper .bx-pager {text-align:right;right:10px;bottom:10px;}
+.healthBanSection .bx-wrapper .bx-pager.bx-default-pager a {border:1px solid #fff;background: #fff;}
+.healthBanSection .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.healthBanSection .bx-wrapper .bx-pager.bx-default-pager a.active {border:1px solid #333;background: #333;}
+
+/* 건강기능식품-브랜드상품 */
+/*.healthBrandSection {margin-top:40px;}
+.healthBrandSection .contArea {padding:30px 0;width:100%;border-top:1px solid #e6e6e6;background:#f0f0f0;}
+.healthBrandSection .contArea .fixed {position:relative;}
+
+.healthBrandSection .titleArea:after {content:'';display:block;clear:both;}
+.healthBrandSection .mainTitle {float:left;margin-top:12px;}
+
+.brandTabBox:after {content:'';display:block;clear:both;}
+.brandTabBox {float:right;}
+.brandTabBox a:first-child {background:none;}
+.brandTabBox a {
+	float:left;width:160px;height:60px;line-height:60px;
+	text-align:center;
+	background:url('../images/main/bg_bar_brand.png') no-repeat 0 17px;
+}
+*/
+.healthBrandSection {margin-top:40px;}
+.healthBrandSection .contArea {padding:30px 0;width:100%;border-top:1px solid #e6e6e6;background:#f0f0f0;}
+.healthBrandSection .contArea .fixed {position:relative;}
+
+.healthBrandSection .titleArea:after {content:'';display:block;clear:both;}
+.healthBrandSection .mainTitle {float:left;margin-top:12px;}
+
+.brandTabBox:after {content:'';display:block;clear:both;}
+.brandTabBox {float:right;background:url('../images/main/bg_bar_brand.png') no-repeat right 17px;}
+.brandTabBox ul:after {content:'';display:block;clear:both;}
+.brandTabBox li {
+	float:left;padding:0 1px;width:160px;height:60px;line-height:60px;text-align:center;
+	background:url('../images/main/bg_bar_brand.png') no-repeat 0 17px;
+}
+/*.brandTabBox li a {display:block;width:160px;height:60px;line-height:0;}*/
+
+/*.tabContentBox:after {content:'';display:block;clear:both;}*/
+.brandBan {float:left;}
+.brandBest3 {float:left;}
+.brandBest3 ul {clear:both;overflow:hidden;}
+.brandBest3 ul li {float:left;margin:0 0 25px 24px;width:252px !important;height:340px !important;background:#fff;}
+/*.brandBest3 ul li .imgBox {padding:15px 15px 10px;width:220px !important;height:220px;object-fit:cover;}*/
+.brandBest3 ul li:first-child {margin-left:0;}
+
+
+
+/* 서브컨텐츠(메디털화장품) */
+/* 메디털화장품-추천상품 */
+.beautyPickSection {margin-top:40px;padding-bottom:40px;}
+
+.beautyPickSection .tabWrap {position:absolute;right:0;top:10px;}
+.beautyPickSection .tabWrap a:first-child {background:none;}
+.beautyPickSection .tabWrap a {margin:0 15px 0 0;padding:0 0 0 15px;background:url('../images/main/bg_bar_tab.png') no-repeat 0 4px;font-size:16px;letter-spacing:-0.05em;color:#666;}
+.beautyPickSection .tabWrap a.active {font-weight:600;color:#fb7a7a;text-decoration:underline;}
+
+/* 메디털화장품-베스트상품 */
+.beautyBestSection {margin-top:40px;padding-bottom:40px;}
+.beautyBestSection .sTabBox a:hover,.beautyBestSection .sTabBox a.active {font-weight:600;color:#fb7a7a;text-decoration:underline;}
+
+/* 메디털화장품-배너 */
+.beautyBanSection {margin-top:40px;}
+.beautyBanSection .bx-wrapper .bx-pager {text-align:right;right:10px;bottom:10px;}
+.beautyBanSection .bx-wrapper .bx-pager.bx-default-pager a {border:1px solid #fff;background: #fff;}
+.beautyBanSection .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.beautyBanSection .bx-wrapper .bx-pager.bx-default-pager a.active {border:1px solid #333;background: #333;}
+
+/* 메디털화장품-브랜드상품 */
+.beautyBrandSection {margin-top:40px;}
+.beautyBrandSection .contArea {width:100%;background:#f0f0f0;}
+
+.beautyBrandSection {margin-top:40px;}
+.beautyBrandSection .contArea {padding:30px 0;width:100%;border-top:1px solid #e6e6e6;background:#f0f0f0;}
+.beautyBrandSection .contArea .fixed {position:relative;}
+
+.beautyBrandSection .titleArea:after {content:'';display:block;clear:both;}
+.beautyBrandSection .mainTitle {float:left;margin-top:12px;}
+
+
+
+/* 서브컨텐츠(신선식품) */
+/* 신선식품-추천상품 */
+.foodPickSection {margin-top:40px;padding-bottom:40px;}
+
+.foodPickSection .tabWrap {position:absolute;right:0;top:10px;}
+.foodPickSection .tabWrap a:first-child {background:none;}
+.foodPickSection .tabWrap a {margin:0 15px 0 0;padding:0 0 0 15px;background:url('../images/main/bg_bar_tab.png') no-repeat 0 4px;font-size:16px;letter-spacing:-0.05em;color:#666;}
+.foodPickSection .tabWrap a.active {font-weight:600;color:#71c043;text-decoration:underline;}
+
+/* 신선식품-꾸러미상품 */
+.foodPackSection {margin-top:40px;padding:25px 0 30px;width:100%;background:#f0f0f0;}
+.foodPackSection .mainTitle {padding:0 0 25px 0;line-height:34px;font-weight:400;font-size:26px;color:#222;letter-spacing:-0.075em;}
+.foodPackSection .mainTitle strong {font-weight:600;}
+
+.packBox:after {content:'';display:block;clear:both;}
+.packBox {}
+.packBox a:first-child {margin-left:0;}
+.packBox a {float:left;margin-left:24px;/*padding:16px;*/width:344px;height:406px;background:#fff;box-sizing:border-box;}
+/*.packBox li .imgBox {width:312px;height:284px;overflow:hidden;}
+.packBox li .info {margin-top:11px;text-align:center;}
+.packBox li .info .title {margin-bottom:4px;font-weight:600;font-size:14px;letter-spacing:-0.05em;}
+.packBox li .info .cont {margin-bottom:7px;font-size:16px;letter-spacing:-0.05em;}
+.packBox li .info .price {font-weight:600;font-size:14px;}
+.packBox li .info .price strong {font-weight:600;font-size:18px;}*/
+
+/* 신선식품-인기상품 */
+.foodHotSection {margin-top:40px;padding-bottom:40px;}
+
+.foodHotSection .bestTabBox:after {content:'';display:block;clear:both;}
+.foodHotSection .bestTabBox a:first-child {border-left:1px solid #dedfe0;}
+.foodHotSection .bestTabBox a {
+	float:left;width:14.28571428571429%;height:48px;line-height:48px;
+	text-align:center;
+	border-top:1px solid #dedfe0;border-right:1px solid #dedfe0;border-bottom:1px solid #333;background:#f3f3f3;
+	box-sizing:border-box;
+	font-weight:600;font-size:16px;color:#999;text-decoration:none;
+}
+.foodHotSection .bestTabBox a:hover,.foodHotSection .bestTabBox a.active {border-top:2px solid #333;border-right:1px solid #333;border-bottom:0 none;border-left:1px solid #333;background:#fff;color:#333;}
+
+/* 신선식품-헬스레시피 */
+.foodRecipeSection {margin-top:40px;}
+.foodRecipeSection .mainTitle {text-indent:-9999px;font-size:0;}
+.foodRecipeSection .banBox:after {content:'';display:block;clear:both;}
+.foodRecipeSection .healthRecipeBan {float:left;width:711px;height:260px;}
+.foodRecipeSection .healthRecipeBan .recipeInfo {float:left;padding:30px;width:251px;background:#f6f6f6;height:260px;box-sizing:border-box;}
+.foodRecipeSection .healthRecipeBan .recipeInfo h3 {margin:0 0 15px 0;padding:20px 0 0 0;background:url('../images/main/bg_recipe.png') no-repeat 0 0;font-weight:400;font-size:27px;letter-spacing:-0.05em;}
+.foodRecipeSection .healthRecipeBan .recipeInfo h3 strong {font-weight:600;}
+.foodRecipeSection .healthRecipeBan .recipeInfo > p {line-height:20px;font-weight:400;font-size:15px;letter-spacing:-0.05em;}
+.foodRecipeSection .healthRecipeBan .recipeInfo > a {position:absolute;bottom:50px;display:inline-block;padding-right:12px;background:url('../images/main/bul_consulting.png') no-repeat right 4px;font-weight:600;font-size:13px;letter-spacing:-0.05em;}
+.foodRecipeSection .healthRecipeBan .recipeBan {float:left;width:460px;}
+.foodRecipeSection .healthRecipeBan .recipeBan .bx-wrapper .bx-pager {text-align:left;left:-225px;bottom:20px;}
+.foodRecipeSection .consultingSection {float:right;margin-top:0;}
+
+
+
+/* 서브메인 하단공통영역 */
+/* 상담 */
+.consultingSection:after {content:'';display:block;clear:both;}
+.consultingSection {margin-top:40px;}
+.consultingSection .linkBox:first-child {margin-left:0;}
+.consultingSection .linkBox {float:left;position:relative;margin-left:24px;width:344px;height:260px;overflow:hidden;}
+/*.consultingSection .linkBox .lyBan {position:absolute;left:0;top:0;z-index:2;padding:30px;width:344px;height:260px;background:rgba(0,0,0,.3);box-sizing:border-box;}
+.consultingSection .linkBox .lyBan h3 {margin:0 0 15px 0;padding:20px 0 0 0;background:url('../images/main/bg_consulting.png') no-repeat 0 0;font-weight:400;font-size:27px;color:#fff;letter-spacing:-0.05em;}
+.consultingSection .linkBox .lyBan h3 strong {font-weight:600;}
+.consultingSection .linkBox .lyBan > p {line-height:20px;font-weight:400;font-size:15px;color:#fff;letter-spacing:-0.05em;}
+.consultingSection .linkBox .lyBan > a {position:absolute;bottom:30px;display:inline-block;padding-right:12px;background:url('../images/main/bul_consulting.png') no-repeat right 4px;font-weight:600;font-size:13px;color:#fff;letter-spacing:-0.05em;}
+.consultingSection .linkBox .lyBan .bg {position:absolute;left:50%;top:50%;margin:-79px 0 0 -79px;padding:30px 0;width:158px;height:158px;text-align:center;background:#fff;box-sizing:border-box;}
+.consultingSection .linkBox .lyBan .bg > p {margin-bottom:15px;line-height:16px;font-weight:600;font-size:13px;color:#666;letter-spacing:-0.05em;}
+.consultingSection .linkBox .lyBan .bg > a {line-height:26px;font-weight:600;font-size:21px;color:#333;letter-spacing:-0.05em;}*/
+
+/* 공지공통 */
+.noticeSection:after {content:'';display:block;clear:both;}
+.noticeSection {margin-top:40px;}
+.noticeSection h3 {margin:0;padding:0;line-height:100%;background:none;font-size:20px;letter-spacing:-0.075em;}
+
+/* 공지사항 */
+.newsArea {float:left;position:relative;margin-right:72px;width:296px;}
+.newsArea h3 {padding:0 0 11px 0;border-bottom:1px solid #e1e1e1;}
+.newsArea ul {padding:5px 0 0 0;}
+.newsArea ul li:after {content:'';display:block;clear:both;}
+.newsArea ul li {margin-top:9px;}
+.newsArea ul li a {float:left;width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-0.075em;}
+.newsArea ul li .date {float:right;font-size:13px;color:#666;letter-spacing:-0.025em;}
+.newsArea .linkMore {position:absolute;right:0;top:3px;padding:0 11px 0 0;background:url('../images/main/bul_more.png') no-repeat right 3px;}
+
+/* FAQ */
+.faqArea {float:left;margin-right:68px;}
+.faqArea h3 {padding:0 0 11px 0;border-bottom:1px solid #e1e1e1;}
+.faqArea ul:after {content:'';display:block;clear:both;}
+.faqArea ul {margin-top:9px;}
+.faqArea ul li:first-child {margin-left:0;}
+.faqArea ul li {float:left;margin-left:20px;}
+.faqArea ul li a {display:block;padding-top:60px;width:54px;text-align:center;background:url('../images/main/ico_faq.png') no-repeat 0 0;}
+.faqArea ul li a.link01 {background-position:0 0;}
+.faqArea ul li a.link02 {background-position:-74px 0;}
+.faqArea ul li a.link03 {background-position:-148px 0;}
+.faqArea ul li a.link04 {background-position:-222px 0;}
+
+/* 고객센터 */
+.centerArea {float:left;/*margin-right:26px;*/padding-right:30px;border-right:1px solid #e1e1e1;}
+.centerArea h3 {margin-bottom:15px;}
+.centerArea .tel {margin-bottom:9px;font-weight:600;font-size:30px;color:#444;letter-spacing:-0.025em;}
+.centerArea .time {line-height:16px;color:#666;letter-spacing:-0.025em;}
+
+/* 톡 */
+.talkArea {float:right;}
+.talkArea h3 {margin-bottom:22px;}
+.talkArea a {display:block;margin-bottom:16px;width:160px;height:27px;background:url('../images/main/link_kakao.png') no-repeat 0 0;text-indent:-9999px;}
+.talkArea p {line-height:16px;color:#666;letter-spacing:-0.025em;}
+
+/* 배너슬라이드 */
+.bnrMSlider {width:1080px;height:200px !important;}
+.bnrMSlider li {width:1080px;height:200px !important;}
+
+.healthRecipeBan .bnrMSlider {width:460px;height:260px !important;}
+.healthRecipeBan .bnrMSlider li {width:460px;height:260px !important;}

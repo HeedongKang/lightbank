@@ -1,0 +1,31 @@
+<div id="header_02" class="-frame">
+    
+    <!-- 로고 -->
+    <div style="position:absolute; top:35px; z-index:1; font-size:0;cursor:pointer">
+        <a href="/index.html"><img src="/_wg/img/new_logo.jpg" alt="{$mall_name}"  border="0"/></a>
+    </div>
+     <!-- 검색창 -->
+    <!--@css(/_wg/css/search_section_new.css)-->
+    <div class="search_section">
+        <div module="Layout_SearchHeader"  style="float: left;width: 370px;height: 37px;border: 1px solid #000000;">
+            <!--
+                $product_page=/product/detail.html
+                $category_page=/product/list.html
+            -->
+            <fieldset>
+                <legend>검색</legend>
+                <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" style="height:33px;width:327px;border:0" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text">
+                <input type="image" src="/_wg/img/search_btn_new.jpg" alt="검색" onclick="{$action_search_submit}" class="-mov" />
+            </fieldset>
+        </div>
+        
+        <!-- 스마트서치 버튼 ( /_wg/import/JS_searchBox.html 에서 내용 수정이 가능합니다 ) -->
+    </div>
+    <div class="h_right" style="position:absolute; top:-15px; right:1px; cursor:pointer">
+        <!--임시삭제 <img src="/_wg/img/ban_top_link.png" id="JS_searchBtn" alt="맞춤검색" /> -->
+        <a href="/board/free/list.html?board_no=3001">대량구매할인</a>
+        <a href="/board/free/list.html?board_no=1002">무료방문견적</a>
+        <a href="/_wg/import/installService.html">조명설치서비스</a>
+    </div>
+
+</div>

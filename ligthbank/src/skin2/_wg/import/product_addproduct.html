@@ -1,0 +1,95 @@
+<!-- 추가구성상품 -->
+<!--@css(/_wg/css/product_addproduct.css)-->
+
+<!-- 참고 : 뉴상품관리 전용 모듈입니다. 뉴상품관리 이외의 곳에서 사용하면 정상동작하지 않습니다. -->
+<div class="product_addproduct" module="product_addproduct">
+    
+    <img class="DB_btn" src="/_wg/img/arrowV_21_off.gif" alt="온오프버튼"/><h3>추가구성상품 <span>선택하신 상품은 메인 상품과 함께 결제가 가능합니다.</span></h3>
+    
+    <div class="DB_banner">
+        <table border="0" summary="" class="productSet">
+            <caption>추가구성상품</caption>
+            <colgroup>
+                <col style="width:12%;" />
+                <col style="width:auto; " />
+                <col style="width:12%;" />
+                <col style="width:420px;" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">상품이미지</th>
+                    <th scope="col">상품명</th>
+                    <th scope="col">판매가</th>
+                    <th scope="col">상품옵션</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="product">
+                    <td class="thumb"><a href="/product/detail.html?product_no={$product_no}" target="_blank"><img src="{$product_image}" alt="" /></a></td>
+                    <td class="name"><a href="/product/detail.html?product_no={$product_no}" target="_blank">{$product_name}</a></td>
+                    <td class="price {$product_price_display|display}">{$product_price}<span class="{$product_sale_price_display|display}">{$product_sale_price}</span></td>
+                    <td class="product_option">
+                        <div class="option">
+                            <table border="0" summary="">
+                                <caption>옵션 정보</caption>
+                                <tbody>
+                                <tr module="product_addoption">
+                                    <th>{$add_option_name}</th>
+                                    <td>
+                                        {$form.add_option}
+                                        <span class="txtByte" title="현재글자수/최대글자수">(<strong class="length">0</strong>/{$option_maxlength})</span>
+                                    </td>
+                                </tr>
+                                <tr module="product_option">
+                                    <th>{$option_name}</th>
+                                    <td>{$form.option}<p class="value">{$option_desc}</p></td>
+                                </tr>
+                                <tr module="product_noneoption">
+                                    <th>상품선택</th>
+                                    <td>{$form.noneoption}</td>
+                                </tr>
+                                <tr class="{$add_option_push_button_display|display}" id="{$add_option_push_button_id}">
+                                    <td colspan="2" class="selectButton"><a href="#none" onclick="{$add_action_push_button}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_manual_select.gif" alt="옵션 선택" /></a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="product">
+                    <td class="thumb"><a href="/product/detail.html?product_no={$product_no}" target="_blank"><img src="{$product_image}" alt="" /></a></td>
+                    <td class="name"><a href="/product/detail.html?product_no={$product_no}" target="_blank">{$product_name}</a></td>
+                    <td class="price {$product_price_display|display}">{$product_price}<span class="{$product_sale_price_display|display}">{$product_sale_price}</span></td>
+                    <td class="product_option">
+                        <div class="option">
+                            <table border="0" summary="">
+                                <caption>옵션 정보</caption>
+                                <tbody>
+                                <tr module="product_addoption">
+                                    <th>{$add_option_name}</th>
+                                    <td>
+                                        {$form.add_option}
+                                        <span class="txtByte" title="현재글자수/최대글자수">(<strong class="length">0</strong>/{$option_maxlength})</span>
+                                    </td>
+                                </tr>
+                                <tr module="product_option">
+                                    <th>{$option_name}</th>
+                                    <td>{$form.option}<p class="value">{$option_desc}</p></td>
+                                </tr>
+                                <tr module="product_noneoption">
+                                    <th>상품선택</th>
+                                    <td>{$form.noneoption}</td>
+                                </tr>
+                                <tr class="{$add_option_push_button_display|display}" id="{$add_option_push_button_id}">
+                                    <td colspan="2" class="selectButton"><a href="#none" onclick="{$add_action_push_button}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_manual_select.gif" alt="옵션 선택" /></a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div><!-- //DB_banner -->
+    
+</div><!-- //참고 -->

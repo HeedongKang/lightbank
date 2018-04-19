@@ -1,0 +1,61 @@
+.main_title1 {
+	text-align: center; color: rgb(0, 0, 0); letter-spacing: -1px; font-size: 24px; font-weight: 600;
+}
+.main_title1 span {
+	border-bottom-color: rgb(0, 0, 0); border-bottom-width: 3px; border-bottom-style: solid;
+}
+.main_title1_btm {
+	margin: 10px 0px 20px; text-align: center; color: rgb(163, 163, 163); font-size: 13px; font-weight: 500;
+}
+.main_title1 a {
+	font-weight: 400;
+}
+.main_title1_btm {
+	margin: 10px 0px 20px; text-align: center; color: rgb(163, 163, 163); font-size: 13px; font-weight: 500;
+}
+
+.main_area1 {
+	margin: 60px 0px; overflow: hidden;
+}
+.main_area1 .dc_area > a {
+	width: 100%; height: 100%; display: block;
+}
+.main_area1 .dc1 {
+	background: url("/_wg/img/new_banner_170615/main_area1_bg1.jpg") no-repeat; width: 301px; height: 237px; padding-top: 248px; margin-right: 12px; float: left;
+}
+.main_area1 .dc1 .wbox {
+	width: 251px;
+}
+.main_area1 .dc2 {
+	background: url("/_wg/img/new_banner_170615/main_area1_bg2.jpg") no-repeat; width: 624px; height: 237px; padding-top: 248px; margin-right: 12px; float: left;
+}
+.main_area1 .dc2 .wbox {
+	width: 574px;
+}
+.main_area1 .dc3 {
+	background: url("/_wg/img/new_banner_170615/main_area1_bg3.jpg") no-repeat; width: 301px; height: 237px; padding-top: 248px; float: left;
+}
+.main_area1 .dc3 .wbox {
+	width: 251px;
+}
+.main_area1 .wbox {
+	background: rgba(255, 255, 255, 0.8); margin: 0px auto; height: 179px; text-align: center; padding-top: 28px;
+}
+.main_area1 .wbox .tit {
+	color: rgb(0, 0, 0); font-size: 28px; font-weight: 500; margin-bottom: 10px;
+}
+.main_area1 .wbox .opt {
+	color: rgb(100, 99, 99); line-height: 150%; font-size: 13px; font-weight: 500;
+}
+.main_area1 .wbox .dc_p {
+	color: rgb(100, 99, 99); font-size: 13px; font-weight: 500;
+}
+.main_area1 .wbox .dc_p span {
+	color: rgb(213, 44, 37); font-size: 24px; font-weight: 600;
+}
+.main_area1 .wbox .more {
+	margin: 10px auto; width: 118px; height: 26px;
+}
+.main_area1 .wbox .more {
+	background: rgb(65, 64, 66); width: 118px; height: 26px; text-align: center; color: rgb(255, 255, 255); line-height: 26px; font-size: 13px; font-weight: 500; display: block;
+}

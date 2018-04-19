@@ -1,0 +1,27 @@
+    
+    .product_menupackage .banner { display:block; margin:0 0 30px; }
+    .product_menupackage .banner img { width:100%; }
+    
+    .product_menupackage > ul { display:block; clear:both; background:url('/_wg/img/category_bar.gif') repeat-y top; background-size:100% 100%; border-bottom:1px solid #ddd; }
+    .product_menupackage > ul:after { content:""; display:block; clear:both; *zoom:1; }
+    .product_menupackage > ul .icoOpen { width:13px; cursor:pointer; vertical-align:top; }
+    .product_menupackage > ul > li { position:relative; float:left; width:33.33%; padding:10px 0; text-align:center; border-bottom:1px solid #ddd; }
+    .product_menupackage > ul > li > a { display:block; font-size:12px; color:#333; font-weight:normal; letter-spacing:-0.07em; }
+    .product_menupackage > ul > li > ul { display:inline; }
+    .product_menupackage > ul > li > ul > li { position:relative; display:inline-block; padding:0 7px 0 8px; }
+    .product_menupackage > ul > li > ul > li:before { display:block; content:""; position:absolute; top:0; left:0; width:1px; height:13px; background:#d6d6d6; }
+    .product_menupackage > ul > li > ul > li:first-child:before { display:none; }
+    .product_menupackage > ul li.selected > a { color:#333; }
+    .product_menupackage > ul > li > ul > li > .button { display:inline-block; position:relative; width:13px; height:12px; }
+    
+    
+    .product_menupackage .subCategory { display:none; position:absolute; right:0; top:13px; z-index:11; min-width:120px; padding:12px 12px 0; border:1px solid #9b9b9b; background:#fff; border-radius:4px; box-shadow: 3px 3px 15px #a8a8a8;}
+    .product_menupackage .subCategory li { padding:7px 0 0; }
+    .product_menupackage .subCategory li:first-child { padding:0 13px 0 0; }
+    .product_menupackage .subCategory li a { color:#575a63; }
+    .product_menupackage .subCategory li a:hover,
+    .product_menupackage .subCategory li.selected a { color:#008bcc; }
+    .product_menupackage .subCategory .icoClose { position:absolute; right:12px; top:12px; width:13px; cursor:pointer; }
+    .product_menupackage .menuCategory .button.selected { z-index:11; }
+    .product_menupackage .menuCategory .button.selected .subCategory { display:block; }
+    .product_menupackage .menuCategory li.xans-product-displaysubcategory { display:inline-block; border:0; }

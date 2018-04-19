@@ -1,0 +1,10 @@
+
+    .quickIco { width:200px; margin:0 auto 20px; overflow:hidden; }
+    .quickIco:after { content:""; display:block; *zoom:1; clear:both; }
+
+    .quickIco ul { display:block; width:220px; letter-spacing:-4px; }
+    .quickIco li { display:inline-block; margin:0 17px 13px 0; font-size:11px; color:#333; text-align:center; letter-spacing:0; }
+    .quickIco li a { display:block; width:55px; height:55px; margin:0 0 6px; background:#f4f4f4; font-size:22px; border-radius:12px; -webkit-border-radius:12px; color:#333; transition:all .3s ease; -webkit-transition:all .3s ease; text-decoration:none; }
+    .quickIco li a i { line-height:55px; color:#777; }
+    .quickIco li:hover a { background:#ddd; }
+    .quickIco li:hover a i { color:#111; }

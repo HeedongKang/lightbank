@@ -1,0 +1,36 @@
+    
+    .category_sub3_left { position:relative; width:100%; border-bottom:1px solid rgba(0,0,0,0.07); }
+
+    .category_sub3_left span { display:block; line-height:40px; padding:0 0 0 35px; word-wrap:break-word; font-size:13px; font-weight:200; letter-spacing:0.05em; }
+    .category_sub3_left span:hover { text-decoration:none; }
+    .category_sub3_left a { position:absolute; top:0; right:5px; width:40px; height:40px; background: url("/_wg/img/btn_arrow_right_20_b.gif") no-repeat 3px 14px; background-position:center center; background-size:13px 13px; background-color:none; white-space: nowrap; text-indent:-9999px; }
+    .category_sub3_left li:first-child { border-top:none; }
+    .category_sub3_left li { position:relative; border-top:1px solid rgba(0,0,0,0.07); }
+    .category_sub3_left ul { position:relative; width:100%; }
+
+    .category_sub3_left span.plus { background-size:13px 13px !important; }
+
+    /*1뎁쓰*/
+    .category_sub3_left ul.DB_d1 li span { padding:0 0 0 35px; }
+    .category_sub3_left ul.DB_d1 li span.plus { background:url("/_wg/img/btn_plus.png") no-repeat; background-position:15px 50%; }
+    .category_sub3_left ul.DB_d1 li.DB_select { background:rgba(0,0,0,0.03); }
+    .category_sub3_left ul.DB_d1 li.DB_select span.plus,
+    .category_sub3_left ul.DB_d1 li.DB_fixed span.plus { background:url("/_wg/img/btn_minus.png") no-repeat ; background-position:15px 50%; }
+    
+    /*2뎁쓰*/
+    .category_sub3_left ul.DB_d1 ul.DB_d2 { display:none; }
+    .category_sub3_left ul.DB_d1 ul.DB_d2 li:first-child { border-top:1px solid rgba(0,0,0,0.07); }
+    .category_sub3_left ul.DB_d1 ul.DB_d2 li span { padding:0 0 0 45px; }
+    .category_sub3_left ul.DB_d1 ul.DB_d2 li span.plus { background:url("/_wg/img/btn_plus.png") no-repeat; background-position:25px 50%; }
+    .category_sub3_left ul.DB_d1 ul.DB_d2 li.DB_select { background:rgba(0,0,0,0.05); }
+    .category_sub3_left ul.DB_d1 ul.DB_d2 li.DB_select span.plus,
+    .category_sub3_left ul.DB_d1 ul.DB_d2 li.DB_fixed span.plus { background:url("/_wg/img/btn_minus.png") no-repeat; background-position:25px 50%; }
+    
+    /*3뎁쓰*/
+    .category_sub3_left ul.DB_d1 ul.DB_d2 ul.DB_d3 { display:none; }
+    .category_sub3_left ul.DB_d1 ul.DB_d2 ul.DB_d3 li:first-child { border-top:1px solid rgba(0,0,0,0.07); }
+    .category_sub3_left ul.DB_d1 ul.DB_d2 ul.DB_d3 li span { padding:0 0 0 55px; }
+    .category_sub3_left ul.DB_d1 ul.DB_d2 ul.DB_d3 li span.plus background:url("/_wg/img/btn_plus.png") no-repeat; background-position:35px 50%; }
+    .category_sub3_left ul.DB_d1 ul.DB_d2 ul.DB_d3 li.DB_select { background:rgba(0,0,0,0.07); }
+    .category_sub3_left ul.DB_d1 ul.DB_d2 ul.DB_d3 li.DB_select span,
+    .category_sub3_left ul.DB_d1 ul.DB_d2 ul.DB_d3 li.DB_fixed span { background:url("/_wg/img/btn_minus.png") no-repeat; background-position:35px 50%; }

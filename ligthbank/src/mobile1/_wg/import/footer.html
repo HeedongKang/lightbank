@@ -1,0 +1,133 @@
+<!--@css(/_wg/css/footer.css)-->
+<!-- 인스타그램 -->
+<footer id="footer" module="layout_footerPackage">
+    
+    <!-- 하단 메뉴 -->
+    <!--@import(/_wg/import/footer_menu.html)-->
+
+    <div class="footer_inner">
+    
+        <!-- 고객센터 -->
+        <div class="footer_info _section">
+            <h4>CUSTOMER CENTER</h4>
+            <p class="line"></p>
+            <ul module="Layout_footer">
+                <p class="phone"><a href="tel:{$phone}"><img src="/_wg/img/phone_ico.png"> {$phone}</a></p><!-- 상점관리 > 기본정보관리 > 내쇼핑몰 정보에 기재하신 전화번호가 자동으로 노출됩니다. 직접 넣으셔도 됩니다. -->
+                <li><strong>평일</strong><span class="v_time1"></span></li>
+                <li><strong>점심</strong><span class="v_time2"></span></li>
+                <li><strong>휴무</strong><span class="v_time3"></span></li>
+            </ul>
+            <div module="Layout_footer" class="btn">
+                <span><a href="tel:{$phone}" class="call">고객센터 전화연결</a></span>
+                <span><a href="/board/product/write.html?board_no=6">상품문의하기</a></span>
+            </div>
+        </div>
+        
+        <!-- 은행계좌안내 -->
+        <div class="footer_bank _section">
+            <h4>BANK ACCOUNT</h4>
+            <p class="line"></p>
+            <ul>
+                <li><strong class="v_bank11"></strong><span class="v_bank12"></span></li>
+                <li><strong class="v_bank21"></strong><span class="v_bank22"></span></li>
+                <li><strong class="v_bank31"></strong><span class="v_bank32"></span></li>
+                <li><strong class="v_bank41"></strong><span class="v_bank42"></span></li>
+                <li><strong>예금주</strong><span class="v_bankName"></span></li>
+            </ul>
+        </div>
+        
+        <!-- 배송 -->
+        <div class="footer_delivery _section">
+            <h4>ORDER TRACKING</h4>
+            <p><i class="xi-truck"></i> <span class="v_tracking1"></span> <span><a href="#none" class="a_tracking2 btn_11_ff" target="_blank"><i class="xi-search"></i> 배송위치 조회하기</a></span></p>
+            <p class="v_tracking3 gap"></p>
+            
+            <h4>RETRUN &amp; EXCHANGE</h4>
+            <p><i class="xi-map-marker"></i> <strong>반품배송지</strong> <span class="v_returnAdd1"></span></p>
+            <p class="v_returnAdd2"></p>
+        </div>
+        
+        <!-- 회사정보 -->
+        <div class="footer_company _section" module="Layout_footer">
+            <h4>COMPANY INFO</h4>
+            <p class="line"></p>
+            <p><strong>상점명</strong><span>{$mall_name}</span></p>
+            <p><strong>대표이사</strong><span><a href="mailto:{$email}">{$president_name}</a></span></p>
+            <p><strong>대표전화</strong><span>{$phone}</span></p>
+            <p><strong>주소</strong><span>{$mall_addr1} {$mall_addr2}</span></p>
+            <p><strong>사업자등록번호</strong><span>{$company_regno}</span></p>
+            <p><strong>통신판매업신고</strong><span>{$network_regno}</span></p>
+            <p><strong>개인정보관리책임자</strong><span><a href="mailto:{$cpo_email}">{$cpo_name}<br><i class="xi-mail-o"></i> {$cpo_email}</a></span></p>
+            <!--<p><strong>호스팅제공</strong><span>심플렉스인터넷(주)</span></p>-->
+        </div>
+        
+        <!-- 에스크로 -->
+        <div class="footer_escrow _section">
+            <p><span class="v_escrow1"></span> 를 통해 고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰 에서 가입한 구매안전 서비스를 이용하실 수 있습니다.</p>
+            <p><a href="#none" class="a_escrow2 btn_11_ff" target="_blank"><i class="xi-check-min"></i> 서비스 가입사실 확인</a></p>
+        </div>
+    
+    </div>
+
+    <!-- 하단 아이콘 -->
+    <!--@import(/_wg/import/footer_ico.html)-->
+    
+    <div id="bottom" class="copyright" module="Layout_footer">
+        Copyright &copy; 2016 <strong>{$mall_name}</strong>. All rights reserved.
+        <a href="http://webgood.co.kr" class="made">Design by WG</a>
+    </div>
+</footer>
+
+<!-- 스크롤시 나타나는 TOP버튼 -->
+<!--@css(/_wg/css/back-top.css)-->
+<div id="goBtn">
+    <div class="btn up"><a href="#top"><i class="xi-angle-up-thin"></i></a></div>
+    <div class="btn down"><a href="#bottom"><i class="xi-angle-down-thin"></i></a></div>
+</div>
+
+<div id="progressPaybar" style="display:none;">
+    <!-- 배경 -->
+    <div id="progressPaybarBackground" class="layerProgress"></div>
+    <!-- 진행바 -->
+    <div id="progressPaybarView">
+        <p class="graph">현재 결제가 진행중입니다.</p>
+        <p class="txt">
+            본 결제 창은 결제완료 후 자동으로 닫히며, <br>
+            결제 진행 중에 본 결제 창을 닫으시면<br>
+            주문이 되지 않으니 <br>
+            결제 완료 될 때 까지 닫지 마시기 바랍니다.
+        </p>
+    </div>
+</div>
+
+<div module="Layout_multishopShipping">
+    <!--@css(/css/module/layout/multishopShipping.css)-->
+    <!--@js(/js/module/layout/multishopShipping.js)-->
+    <div class="worldshipLayer">
+        <h2>WORLD SHIPPING</h2>
+        <div class="content">
+            <p class="desc">PLEASE SELECT THE DESTINATION COUNTRY AND LANGUAGE :</p>
+            <div class="select">
+                <select module="Layout_multishopShippingCountrylist">
+                    <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+                    <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+                </select>
+            </div>
+            <div class="select">
+                <select module="Layout_multishopShippingLanguagelist">
+                    <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+                    <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+                </select>
+            </div>
+        </div>
+        <div class="btnArea type2">
+            <a href="#none" class="btnSubmit">GO</a>
+        </div>
+        <a href="#none" class="btnClose"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_close_gray.png" width="15" height="15" alt="close"></a>
+    </div>
+</div>
+
+<div module="mobilequick_display">
+    {$quick_link}
+    {$quick_button}
+</div>

@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Malgun Gothic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../font/malgun/MalgunGothic.eot');
+  src: url('../font/malgun/MalgunGothic.eot?#iefix') format('embedded-opentype'),
+        url('../font/malgun/MalgunGothic.ttf') format('truetype'),
+}
+
+body {font-size:12px; line-height:normal; color:#333; font-family:'Malgun Gothic','맑은 고딕','Dotum','Verdana','AppleGothic','sans-serif'; font-weight:400; letter-spacing:-0.7px; background-color:#fff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,span,pre,code,form,fieldset,legend,textarea,p,blockquote,table,th,td,input,select,textarea,button,table,th,td {margin:0;padding:0}
+article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, mark, canvas, video, audio, details, summary {display:block;}
+hr {width:100%; border:0; display:block; margin:0; padding:0;}
+img,fieldset { border:0; vertical-align:middle;}
+small,em,strong,samp,kbd,u,i,cite,mark,address,dfn,dl,dt,dd,sub,sup,tt,s,strike {font-style:normal; font-weight:normal;}
+
+dl,ul,ol,menu,li {list-style:none;}
+
+blockquote,q {quotes:none;}
+blockquote:before , blockquote:after , q:before , q:after {content:'';content:none;}
+
+table {border-collapse:collapse; border-spacing:0;}
+caption {margin:0 !important; padding:0 !important; text-indent:-999999px; font-size:0 !important; height:0 !important;}
+
+a {text-decoration:none; color:#333;}
+a:hover, a:focus {color:#ff6c00;}
+a:active {text-decoration:none;}
+
+
+input, textarea, button,select {vertical-align:middle; font-family:'Malgun Gothic','맑은 고딕','Dotum','Verdana','AppleGothic','sans-serif'; line-height:1.2; font-size:12px; letter-spacing:-0.7px; outline:none;}
+input::-ms-clear {display:none;}
+button {border:0 none; background-color:transparent; cursor:pointer;}
+
+input[type="text"] , input[type="password"] {border:1px solid #ccc; line-height:26px; height:26px; padding:0 5px; color:#666;}
+input[type="checkbox"] , input[type="radio"] {width:14px; height:14px;}
+input[type="text"]:disabled , input[type="password"]:disabled , select:disabled , textarea:disabled {background-color:#f8f8f8;}
+input[type="text"]:focus , input[type="password"]:focus , select:focus , textarea:focus {border:1px solid #333;}
+
+select {border:1px solid #ccc; height:28px; background:url('../images/icn_selectbox.png') no-repeat right; background-color:#fff; -webkit-appearance:none; -moz-appearance:none; appearance:none; padding:3px 5px 5px 5px; color:#666;}
+select::-ms-expand {display:none;}
+
+textarea {border:1px solid #ccc; padding:5px; color:#666;}
+

@@ -1,0 +1,14 @@
+
+    .lookbook_home { position:fixed; z-index:10; top:0; left:0; width:35px; height:35px; }
+    .lookbook_home img { width:100%; }
+
+
+    .JS_lookbook { position:relative; }
+    .JS_lookbook .img { position:relative; overflow:hidden; }
+    .JS_lookbook .img li { position:absolute; left:0; top:0; width:100%; }
+    .JS_lookbook .img li img { width:100%; }
+
+    /* 버튼 */
+    .JS_lookbook .btn { display:none; position:absolute; width:100%; bottom:10px; text-align:center; }
+    .JS_lookbook .btn li { display:inline-block; width:5px; height:5px; line-height:5px; margin:0 3px; background:#aaa; border-radius:100%; -webkit-border-raidus:100%; transition:all .3s ease; -webkit-transition:all .3s ease; text-indent:-9999px/*번호생략*/; }
+    .JS_lookbook .btn li.on { background:#111; color:#fff; }

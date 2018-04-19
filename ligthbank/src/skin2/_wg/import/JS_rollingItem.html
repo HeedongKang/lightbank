@@ -1,0 +1,67 @@
+<!--------------------------------------------------------------------------------------------------------------------------------------
+
+    ### MD's PICK ###
+    
+    • 상품관리 > 상품표시관리 > 상품 진열관리 > MD's Pick 에 상품을 넣어주세요.
+
+--------------------------------------------------------------------------------------------------------------------------------------->
+<!--@css(/_wg/css/JS_rollingItem.css)-->
+
+<div class="JS_rollingItem" module="product_listmain_14">
+    <!--
+    $count = 20
+    -->
+    <h2>
+        {$category_title_text}
+    </h2>
+    <div class="DB_mask">
+        <ul class="DB_imgSet">
+            <li class="item">
+                <div class="-likeButton {$disp_likeprd_class} -mov"><button type="button" class="-mov">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
+                <span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
+                <div class="wishIcon"><span>{$list_wish_icon}</span></div>
+                <a href="/product/detail.html{$param}">
+                    <div class="thumbnail">
+                        <img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" />
+                    </div>
+                    <div class="box -mov">
+                        <div class="discount_rate ico01 -mov" data-price="{$product_custom}" data-sale="{$product_price}"></div>
+                        <div class="info">
+                            <p class="name">
+                                <span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}
+                            </p>
+                            <ul module="product_ListItem">
+                                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <div class="-likeButton {$disp_likeprd_class} -mov"><button type="button" class="-mov">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
+                <span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
+                <div class="wishIcon"><span>{$list_wish_icon}</span></div>
+                <a href="/product/detail.html{$param}">
+                    <div class="thumbnail">
+                        <img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" />
+                    </div>
+                    <div class="box -mov">
+                        <div class="discount_rate ico01 -mov" data-price="{$product_custom}" data-sale="{$product_price}"></div>
+                        <div class="info">
+                            <p class="name">
+                                <span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}
+                            </p>
+                            <ul module="product_ListItem">
+                                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="arrow DB_prevBtn">이전</div>
+    <div class="arrow DB_nextBtn">다음</div>
+</div>

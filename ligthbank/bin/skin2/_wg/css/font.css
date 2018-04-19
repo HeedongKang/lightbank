@@ -1,0 +1,12 @@
+@font-face{
+    font-family:"fontwg";
+    src:url('/_wg/library/font/fontawesome-webfont.eot'); 
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:"fontwg";
+    src:url('/_wg/library/font/fontawesome-webfont.woff') format('woff'),url('/_wg/library/font/fontawesome-webfont.ttf') format('truetype'),url('/_wg/library/font/fontawesome-webfont.svg#FontAwesome') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}

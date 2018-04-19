@@ -1,0 +1,8 @@
+.xans-myshop-orderhistorynologin { position:relative; border:1px solid #d7d5d5; padding:30px 0; color:#2e2e2e; }
+.xans-myshop-orderhistorynologin h3 { margin:0 0 20px 0; text-align:center;}
+.xans-myshop-orderhistorynologin p { width:380px; margin:0 auto 15px; color:#757575; }
+.xans-myshop-orderhistorynologin .ec-base-desc { width:380px; margin:0 auto; }
+.xans-myshop-orderhistorynologin input[type=text],
+.xans-myshop-orderhistorynologin input[type=password] { width:179px; }
+.xans-myshop-orderhistorynologin #order_id1, .xans-myshop-orderhistorynologin #order_id2 { width:82px; }
+.xans-myshop-orderhistorynologin .button { width:380px; margin:10px auto 0; text-align:right; }

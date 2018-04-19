@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--PG크로스브라우징필수내용 시작-->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <!--PG크로스브라우징필수내용 끝-->
+
+    <title>조명의모든것-조명뱅크</title>
+    <!--@css(/layout/basic/css/common.css)--><!--해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요.-->
+    <!--@css(/layout/basic/css/ec-base-ui.css)-->
+    <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+    <!--@css(/layout/basic/css/ec-base-tab.css)-->
+    <!--@css(/layout/basic/css/ec-base-button.css)-->
+    <!--@css(/layout/basic/css/ec-base-box.css)-->
+    <!--@css(/layout/basic/css/ec-base-desc.css)-->
+
+    <!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
+    <!--@js(/layout/basic/js/basic.js)-->
+    <!--@js(/js/common.js)-->
+    <!--@js(/js/module/layout/quick_view.js)-->
+    <script type="text/javascript" src="/ec-js/common.js"></script><!-- 해당 JS는 플래시를 사용하기 위한 스크립트입니다. -->
+    
+    <!--@import(/_wg/base.html)--><!-- 디자인웹굿 베이스 -->
+    
+ 
+</head>
+<body id="main">
+
+
+<!-- 상단 디자인 -->
+<div id="skipNavigation">
+    <p><a href="#category">전체상품목록 바로가기</a></p>
+    <p><a href="#contents">본문 바로가기</a></p>
+</div>
+
+<!--@css(/_wg/css/header_new.css)-->
+
+<div id="header">
+    
+<div id="header_01">
+    <div class="header_01_inner -frame">
+        
+        <!-- 슬라이드 홈버튼 -->
+        <div id="slide_home_wrap">
+            <div id="slide_home">
+                <a href="/"><img src="/_wg/img/gohome.gif" alt="홈" /></a>
+            </div>
+        </div>
+        
+        <!-- 좌측상단메뉴 -->
+        <!--@import(/_wg/import/JS_topMenu2.html)-->
+
+        <!-- SNS 아이콘 -->
+        <!--@import(/_wg/import/sns_icon.html)-->
+        
+        <!-- 상단 메뉴 -->
+        <!--@import(/_wg/import/JS_topMenu.html)-->
+
+    </div>
+</div><div class="divClear"></div>
+
+<div id="header_02" class="-frame">
+    
+    <!-- 로고 -->
+    <div style="position:absolute; top:35px; z-index:1; font-size:0;cursor:pointer">
+        <img src="/_wg/img/new_logo.jpg" alt="{$mall_name}"  border="0"/>
+    </div>
+     <!-- 검색창 -->
+    <!--@css(/_wg/css/search_section_new.css)-->
+    <div class="search_section">
+        <div module="Layout_SearchHeader"  style="float: left;width: 370px;height: 37px;border: 1px solid #000000;">
+            <!--
+                $product_page=/product/detail.html
+                $category_page=/product/list.html
+            -->
+            <fieldset>
+                <legend>검색</legend>
+                <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" style="height:33px;width:327px;border:0" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text">
+                <input type="image" src="/_wg/img/search_btn_new.jpg" alt="검색" onclick="{$action_search_submit}" class="-mov" />
+            </fieldset>
+        </div>
+        
+        <!-- 스마트서치 버튼 ( /_wg/import/JS_searchBox.html 에서 내용 수정이 가능합니다 ) -->
+    </div>
+    
+    <div style="position:absolute; top:35px; right:1px; cursor:pointer">
+        <img src="/_wg/img/ban_top_link.png" id="JS_searchBtn" alt="맞춤검색" />
+    </div>
+
+</div>
+
+    <!--@import(/_wg/import/header_03.html)-->
+
+</div><hr class="layout" />
+
+<div id="wrap">
+    <div id="container">
+        <div id="contents_main" >
+        
+	        <!-- 빌보드 배너 -->
+	        <!--@import(/_wg/import/billboardBanner.html)-->
+	        
+			<!-- 특가상품 (New arrivals) -->
+			<div module="product_listmain_2" class="ec-base-product">
+			    <!--
+			        $count = 3
+			        $basket_result = /product/add_basket.html
+			        $basket_option = /product/basket_option.html
+			    -->
+			    <div style="text-align:center;margin-top:30px">
+			    	<img src="/_wg/img/special_price_title.jpg" />
+			    </div>	
+			    <ul class="prdList grid3">
+			        <!--@import(/_wg/import/specialPrdList.html)-->
+			    </ul>
+			</div><!-- //신상품 (New arrivals) -->        
+	        
+	        <!-- 추천상품 -->
+	        <!--@import(/_wg/import/recommendPrd.html)-->
+	
+	
+	       <!-- 베스트 상품-->
+		   <!--@import(/_wg/import/bestProduct.html)-->
+	       
+	       
+		<!-- 추천상품 (Recommended items) -->
+		<div module="product_listmain_1" class="ec-base-product">
+		    <!--
+		        $count = 28
+		            ※ 노출시킬 상품의 갯수를 숫자로 설정할 수 있으며, 설정하지 않을경우, 최대 200개로 자동제한됩니다.
+		            ※ 상품 노출갯수가 많으면 쇼핑몰에 부하가 발생할 수 있습니다.
+		        $basket_result = /product/add_basket.html
+		        $basket_option = /product/basket_option.html
+		    -->
+		    <h2>
+				<img src="/_wg/img/suggestionTitle.jpg" />
+			</h2>
+		    <ul class="prdList grid4">
+		        <!--@import(/_wg/import/prdList.html)-->
+		    </ul>
+		</div><!-- //추천상품 (Recommended items) -->
+			    
+			    
+	      <center>
+          <img src="/_wg/img/lightbank_intro_banner.jpg"/>
+          </center>
+          <br><br><br><br>
+
+        </div>
+    </div><hr class="layout" />
+</div><hr class="layout" />
+
+
+<!-- 푸터 -->
+<!--@import(/_wg/import/footer.html)-->
+    
+<!-- 최근본상품 -->
+<!--@import(/_wg/import/productRecent.html)-->
+    
+<!-- 우측숨김바 -->
+<!--@import(/_wg/import/dev_right_hidden.html)-->
+
+<!-- 좌측하단 팝업 배너(메인페이지에만 노출됩니다.) -->
+<!--@import(/_wg/import/JS_layerBnr.html)-->
+
+</body>
+</html>
+
+
+
+<!--@define(cmc_log)-->

@@ -1,0 +1,6 @@
+.xans-member-passwordverification { border:1px solid #d7d5d5; padding:30px 0; color:#2e2e2e; }
+.xans-member-passwordverification .inner { width:500px; margin:0 auto; }
+.xans-member-passwordverification .inner h3 { margin:0 0 30px 0; text-align:center;}
+.xans-member-passwordverification .inner .ec-base-desc li { margin:5px 0 0; }
+.xans-member-passwordverification .inner .ec-base-desc li.mobile .number { text-decoration:none; }
+.xans-member-passwordverification .inner input[type=text] { width:172px; }

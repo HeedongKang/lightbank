@@ -1,0 +1,38 @@
+    
+    .d_lightBox { position:relative; }
+    
+    /*백그라운드*/
+    #dd_lightBox_overlay { position:fixed; z-index:9998; display:none; left:0; top:0; width:100%; height:100%; background:#000; opacity:0.5; -webkit-opacity:0.5; }
+    
+    #dd_lightBox{
+        position:fixed;
+        overflow:hidden;
+        z-index:9999;
+        left:0;
+        top:0;
+        display:none;
+        background:#000; /*로딩*/
+        width:200px; /*기본사이즈, 이후 이미지원본사이즈로 조정*/
+        height:200px;
+        padding:70px 10px 10px 10px; /*여백패딩*/
+        margin-left:-5px; /*패딩값의 절반*/
+        margin-top:-15px; /*패딩값의 절반*/
+        box-shadow:3px 3px 30px rgba(0,0,0,0.5);
+        border-radius:5px;
+        -webkit-border-radius:5px;
+    }
+    #dd_lightBox #dd_img_wrap { background:#ff0000; padding:15px; overflow:hidden; }
+    #dd_lightBox #dd_iframe { width:1080px;height:607px; }/*유투브기본사이즈  개별사이즈는 data-size="가로x세로" */
+    
+    #dd_lightBox #dd_title { position:absolute; left:10px; top:10px; font-family:'Nanum Gothic'; font-size:15px; font-weight:700; color:#ddd; }
+    #dd_lightBox #dd_page { position:absolute; left:10px; top:35px; font:'verdana' normal 12px; color:#999; }
+    
+    #dd_lightBox #dd_next{position:absolute;right:3px;top:50%;margin-top:0px;background:url('/_wg/img/DB_etc21/lightbox-btn-next.gif') no-repeat;width:70px;height:70px;cursor:pointer}
+    #dd_lightBox #dd_prev{position:absolute;left:10px;top:50%;margin-top:0px;background:url('/_wg/img/DB_etc21/lightbox-btn-prev.gif') no-repeat;width:63px;height:32px;cursor:pointer;z-index:10}
+    #dd_lightBox #dd_close{position:absolute;right:10px;top:10px;background:url('/_wg/img/DB_etc21/close_btn.png') no-repeat;width:39px;height:39px;cursor:pointer}
+    
+    
+    /* 1265px 이하 */
+    @media all and (max-width:1265px){
+        #dd_lightBox #dd_iframe { width:860px;height:485px; }/*유투브기본사이즈  개별사이즈는 data-size="가로x세로" */
+    }

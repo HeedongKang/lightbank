@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* 기획전  타이틀 */
+.cateLocation {position:relative;}
+
+.titLocation {font-size:24px; margin:30px 0 30px 0; color:#333; background:url('../images/bul_set.png') no-repeat 5px -12px; padding-left:15px; height:30px; position:relative;}
+.titLocation li {float:left; font-weight:bold; position:relative;}
+.titLocation li .eventName {margin-right:35px; position:relative;}
+.titLocation li .eventName i {display:inline-block; text-indent:-999999px; vertical-align:middle; width:13px; height:13px; background:url('../images/arw_set.png') no-repeat; background-color:#fff; border:1px solid #ccc; position:absolute; right:-25px; top:12px; }
+.titLocation li .eventName i.arwDown {z-index:32; background-position:-1px -328px;}
+.titLocation li .eventName i.arwUp {z-index:33; background-position:-31px -328px; display:none;}
+.titLocation li .eventName:hover i , .titLocation li .eventName:focus i {border:1px solid #333;}
+
+.titLocation li i.arwNext {width:15px; height:15px; background:url('../images/arw_set.png') no-repeat 0 -372px; margin-right:6px; margin-left:6px; display:inline-block; text-indent:-999999px; vertical-align:middle;}
+
+.layerEventList {position:absolute; top:35px; right:10px; background:#fff; border:1px solid #999; width:220px; max-height:240px; overflow-y:auto; z-index:31; display:none;}
+
+.layerEventList ul {overflow:hidden; padding:20px 0 20px 20px;}
+.layerEventList ul li {float:none; font-size:13px; font-weight:normal; margin-bottom:10px;}
+.layerEventList ul li a {color:#666;}
+.layerEventList ul li a:hover , .layerEventList ul li a:focus {color:#ff6c00; border-bottom:1px solid #ff6c00;}
+
+
+/* 기획전 전체보기 */
+.allEvent {position:absolute; right:-1px; top:12px; text-align:right;}
+.allEvent .btnAll {font-size:14px; color:#333; font-weight:bold; background:url('../images/arw_set.png') no-repeat 110px -736px; padding-right: 25px; line-height:20px;}
+.allEvent button.active {background:url('../images/arw_set.png') no-repeat 110px -761px;}
+.allEvent .layerAllEvent {clear:both; background:#fff; border:2px solid #666; position:relative; top:4px; left:-1px; right:0; width: 1076px; text-align:left; display:none;}
+.allEvent .layerAllEvent .tit {font-size:15px; font-weight:bold; color:#fff; padding-left:20px; line-height:50px; background:#666;}
+.allEvent .layerAllEvent .bnrList {padding:0 10px 10px 11px; overflow:hidden; white-space: nowrap; overflow-x: auto;
+    overflow-y: hidden;}
+.allEvent .layerAllEvent .bnrList li {width:208px; display:inline-block; padding:20px 0 10px 0;}
+.allEvent .layerAllEvent .bnrList li img {width:188px; height:135px; display:block; margin:0 auto; margin-bottom:8px;}
+.allEvent .layerAllEvent .bnrList li a {display:block; width:188px; margin:0 auto; font-size:14px; font-weight:bold; color:#333;}
+.allEvent .layerAllEvent .bnrList li .noView {display:block; width:188px; margin:0 auto; font-size:14px; font-weight:bold; color:#333;}
+.allEvent .layerAllEvent .bnrList li span {text-overflow:ellipsis; white-space:nowrap; overflow:hidden; width:188px; display:block;}
+.allEvent .layerAllEvent .bnrList li small {display:block; font-weight:normal; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; width:188px; margin-top:3px; font-size:14px;}
+.allEvent .layerAllEvent .btnClose {text-indent:-999999px; background:url('../images/icn_set.png') no-repeat 0 -415px; display:block; width:22px; height:22px; position:absolute; top:13px; right:13px;}
+
+
+
+/* 기획전 메인 배너 */
+.bnrEvent {clear:both; margin-top:-10px;}
+
+
+/* 상품 그룹 카테고리 */
+.pdGroup {clear:both; padding-top:50px;}
+
+.groupMenu {position:relative; clear:both; background:url('../images/bg_group.png') repeat-y top right; border-top:1px solid #ddd; overflow:hidden;}
+.groupMenu li {width:20%; line-height:48px; font-size:15px; float:left;}
+.groupMenu li .group {border:1px solid #ddd; position:relative; margin-left:-1px; margin-top:-1px; font-weight:bold;}
+.groupMenu li .group a {display:block; padding-left:15px;}
+.groupMenu li .group a:hover , .groupMenu li .group a:focus {position:relative; z-index:6; margin:-1px; line-height:48px; border:1px solid #ff6c00; background:#ff6c00; color:#fff;}
+.groupMenu li i {display:inline-block; width:15px; height:15px; vertical-align:middle; position:absolute; right:10px; top:17px; text-indent:-999999px;}
+.groupMenu li .group a .arwView {background:url('../images/arw_set.png') no-repeat -30px -357px;}
+.groupMenu li .group a:hover .arwView , .groupMenu li .group a:focus .arwView  {background:url('../images/arw_set.png') no-repeat 0 -357px;}
+.groupMenu li .group a span {text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width:175px; display:block;}
+
+.groupMenu li .none {display:block; text-indent:-999999px;}
+
+
+/* 기획전 리스트 및 그룹 타이틀 */
+.listWrap {clear:both; padding-top:30px;}
+.listWrap .titGroup {background:url('../images/bg_titEvent.png') repeat-x 0 37px; text-align:center; padding-top:20px; position:relative;}
+.listWrap .titGroup span {display:inline-block; background:#fff; font-size:24px; font-weight:bold; padding:0 25px;}
+.listWrap .titGroup a {position:absolute; top:17px; right:0; display:block; width:45px; height:13px; font-family:'Verdana','Malgun Gothic','맑은 고딕'; font-size:11px; color:#333; font-weight:bold; text-align:left;}
+.listWrap .titGroup a .arw {background:url('../images/arw_set.png') no-repeat -25px -448px; display:inline-block; width:12px; height:7px; vertical-align:middle; margin-bottom:3px; margin-left:3px;}
+
+
+/* 기획전 이용 제한 안내 팝업 */
+.eventGuide { width:500px; height:360px; margin-left:-250px; margin-top:-180px; border:1px solid #000;}
+
+
+
+/* 화끈딜 리스트 */
+.hListWrap {padding-top:30px;}
+

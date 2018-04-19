@@ -1,0 +1,12 @@
+    
+    .JS_quickNotice { position:relative; height:20px; margin:0 3% 10px; padding:0 0 2px; border-bottom:1px solid #eee; }
+    
+    .JS_quickNotice .tit a { position:relative; float:left; height:17px; margin-right:10px; font-size:14px; letter-spacing:0.1em; line-height:20px; color:#111; text-decoration:none; }
+    
+    .JS_quickNotice .xans-board-notice.DB_mask { position:relative; height:17px; overflow:hidden; }
+    .JS_quickNotice .xans-board-notice.DB_mask .DB_imgSet { position:absolute; top:0px; left:0; width:100%; height:100%; }
+    .JS_quickNotice .xans-board-notice.DB_mask .DB_imgSet li { display:block; width:95%; height:22px/*이미지사이공간포함*/!important; line-height:20px; overflow:hidden; font-size:11px; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; }
+    .JS_quickNotice .xans-board-notice.DB_mask .DB_imgSet li a { color:#555; }
+    
+    .JS_quickNotice .DB_prevBtn { position:absolute; top:12px; right:14px; cursor:pointer; display:none; }
+    .JS_quickNotice .DB_nextBtn { position:absolute; top:12px; right:0px; cursor:pointer; display:none; }

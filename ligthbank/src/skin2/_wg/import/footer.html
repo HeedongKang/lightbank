@@ -1,0 +1,193 @@
+<!--------------------------------------------------------------------------------------------------------------------------------------
+
+    ??? footer 하단정보  ???
+    
+    ? 상점관리 > 기본정보관리 > 내쇼핑몰 정보 에 회사정보를 기재해주세요. 기재한 사항은 사이트 하단에 노출됩니다.
+    ? 아이콘 및 반품주소지는 직접 입력해주세요.
+
+--------------------------------------------------------------------------------------------------------------------------------------->
+
+<!--@css(/_wg/css/footer.css)-->
+
+<!--  하단 배너 -->
+<!--@import(/_wg/import/SD_footerBnr.html)-->
+
+<!--  하단 인스타그램 -->
+<!--@import(/_wg/import/insta.html)-->
+
+<div module="Layout_footer" class="footer_wrap">
+    <div id="footer" class="-frame">
+
+        <!-- 하단메뉴 -->
+        <div class="footer_menu">
+            <ul>
+                <!--@import(/_wg/import/footer_menu.html)-->
+            </ul>
+        </div>
+        
+        <!-- 고객센터 -->
+        <!--@import(/_wg/import/footer_info.html)-->
+        
+        <!-- 계좌정보 -->
+        <div class="footer_bank _section">
+            <h4>BANK INFO</h4>
+            <p class="h4_line"></p>
+            <ul>
+                <li><strong class="v_bank11"></strong><span class="v_bank12"></span></li>
+                <li><strong class="v_bank21"></strong><span class="v_bank22"></span></li>
+                <li><strong class="v_bank31"></strong><span class="v_bank32"></span></li>
+                <li><strong class="v_bank41"></strong><span class="v_bank42"></span></li>
+                <li><strong>예금주</strong><span class="v_bankName"></span></li>
+            </ul>
+            <select class="bank_list" onchange="window.open(this.value);" name="select">
+                <option value=""> 인터넷뱅킹 바로가기 </option>
+                <option value="http://banking.nonghyup.com"> 농협 </option>
+                <option value="http://www.kbstar.com"> 국민은행 </option>
+                <option value="http://www.scfirstbank.com"> 제일은행 </option>
+                <option value="http://www.wooribank.com"> 우리은행 </option>
+                <option value="http://www.kiupbank.co.kr"> 기업은행 </option>
+                <option value="http://www.kjbank.com"> 광주은행 </option>
+                <option value="http://www.daegubank.co.kr"> 대구은행 </option>
+                <option value="http://www.hanabank.com"> 하나은행 </option>
+                <option value="http://www.shinhan.com"> 신한은행 </option>
+                <option value="http://www.keb.co.kr"> 외환은행 </option>
+                <option value="http://www.jbbank.co.kr"> 전북은행 </option>
+                <option value="http://www.pusanbank.co.kr"> 부산은행 </option>
+                <option value="http://www.chb.co.kr"> 조흥은행 </option>
+                <option value="http://www.goodbank.com"> 한미은행 </option>
+                <option value="http://www.chejubank.co.kr"> 제주은행 </option>
+                <option value="http://www.kyongnambank.co.kr"> 경남은행</option>
+                <option value="http://www.epostbank.go.kr"> 우체국 </option>
+            </select>
+        </div>
+        
+        <!-- 배송 -->
+        <div class="footer_delivery _section">
+            <h4>ORDER TRACKING</h4>
+            <ul class="first">
+                <li><i class="xi-truck"></i> <span class="v_tracking1"></span> <span><a href="#none" class="a_tracking2 btn_11_ff" target="_blank"><i class="xi-search"></i> 배송위치 조회하기</a></span></li>
+                <li class="v_tracking3 info"></li>
+            </ul>
+            
+            <h4>RETURN &amp; EXCHANGE</h4>
+            <ul>
+                <li><i class="xi-map-marker"></i> <strong>반품배송지</strong> <span class="v_returnAdd1"></span></li>
+                <li class="v_returnAdd2 info"></li>
+            </ul>
+        </div>
+        
+        <!-- 하단메뉴2 -->
+        <div class="footer_menu2">
+            <h4>SHOP MENU</h4>
+            <p class="h4_line"></p>
+            <ul>
+                <!--@import(/_wg/import/footer_menu2.html)-->
+            </ul>
+        </div>
+        
+        <div class="divClear"></div>
+        <div class="_line"></div>
+        
+        <!-- 회사정보 ( 상점관리 > 기본정보관리 > 내쇼핑몰 정보에 기재하신 내용이 자동으로 출력됩니다. ) -->
+        <div class="footer_company">
+            <h4>COMPANY INFO</h4>
+            <p class="h4_line"></p>
+            <ul>
+                <li>
+                    <strong>회사명</strong><span>{$company_name}</span>
+                    <strong>대표</strong><span>{$president_name}</span>
+                    <strong>대표전화</strong><span>{$phone}</span>
+                    <strong>팩스</strong><span>{$fax}</span>
+                </li>
+                <li>
+                    <strong>주소</strong><span>{$mall_zipcode} {$mall_addr1} {$mall_addr2}</span>
+                </li>
+                <li>
+                    <strong>사업자 등록번호</strong><span>{$company_regno}</span>
+                    <strong>통신판매업 신고</strong><span>{$network_regno} &nbsp;<a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" class="btn_11_ff">사업자정보확인</a></span>
+                </li>
+                <li>
+                    <strong>개인정보관리책임자</strong><span>{$cpo_name} (<a href="mailto:{$cpo_email}">{$cpo_email}</a>)</span>
+                    <strong>이메일</strong><span><a href="mailto:{$email}"><i class="xi-mail-o"></i> {$cpo_email}</a></span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 에스크로 -->
+        <div class="footer_escrow">
+            <ul>
+                <li><span class="v_escrow1"></span> 를 통해 고객님은 안전거래를 위해 현금 등으로 결제시</li>
+                <li>저희 쇼핑몰 에서 가입한 구매안전 서비스를 이용하실 수 있습니다.</li>
+                <li><a href="#none" class="p_escrow2 btn_11_ff" data-popup="link,window,700,600"><i class="xi-check-min"></i> 서비스 가입사실 확인</a></li>
+            </ul>
+        </div>
+        
+        <!-- 하단 아이콘 -->
+        <!--@import(/_wg/import/footer_ico.html)-->
+
+    </div>
+
+    <div class="footer_end">
+        <div class="footer_end_inner -frame">
+            <p class="copyright">COPYRIGHT &copy; 2016 <strong>{$mall_name}</strong>. ALL RIGHTS RESERVED.</p>
+            <p class="made"><a href="http://webgood.co.kr/" target="_blank">Design by <strong>WG</strong></a></p>
+        </div>
+    </div>
+</div>
+
+<!-- 스마트서치 -->
+<!--@import(/_wg/import/JS_searchBox.html)-->
+
+<!-- 참고: 결제를 위한 필수 영역 -->
+<div id="progressPaybar" style="display:none;">
+    <div id="progressPaybarBackground" class="layerProgress"></div>
+    <div id="progressPaybarView">
+        <div class="box">
+            <p class="graph">
+                <span><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/layout/txt_progress.gif" alt="현재 결제가 진행중입니다." /></span>
+                <span><img src="http://img.echosting.cafe24.com/skin/base/layout/img_loading.gif" alt="" /></span>
+            </p>
+            <p class="txt">
+                본 결제 창은 결제완료 후 자동으로 닫히며,결제 진행 중에 본 결제 창을 닫으시면<br />
+                주문이 되지 않으니 결제 완료 될 때 까지 닫지 마시기 바랍니다.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- //참고 -->
+
+<div module="Layout_multishopShipping">
+    <!--@css(/layout/basic/css/ec-base-layer.css)-->
+    <!--@css(/css/module/layout/multishopShipping.css)-->
+    <!--@js(/js/module/layout/multishopShipping.js)-->
+    <div class="dimmed"></div>
+    <div class="worldshipLayer ec-base-layer">
+        <div class="header">
+            <h3>WORLD SHIPPING</h3>
+        </div>
+        <div class="content">
+            <p class="desc">PLEASE SELECT THE DESTINATION COUNTRY AND LANGUAGE :</p>
+            <div class="select">
+                <select module="Layout_multishopShippingCountrylist">
+                    <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+                    <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+                </select>
+            </div>
+            <div class="select">
+                <select module="Layout_multishopShippingLanguagelist">
+                    <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+                    <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+                </select>
+            </div>
+        </div>
+        <div class="ec-base-button">
+            <a href="#none"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/link/btn_go.gif" alt="GO" /></a>
+        </div>
+        <a href="#none" class="close"><img src="http://img.echosting.cafe24.com/skin/base/common/btn_close.gif" width="13" height="13" alt="close" /></a>
+    </div>
+</div>
+
+<div module="Layout_conversionPc">
+    <!--@css(/css/module/layout/conversionpc.css)-->
+    <a href="{$mobile_url}">모바일 화면보기</a>
+</div>

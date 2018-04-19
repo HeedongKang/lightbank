@@ -1,0 +1,21 @@
+<!-- FAQ - 자주묻는질문 -->
+<!--@css(/_wg/css/DB_banner18_1.css)-->
+
+<div module="board_listpackage_3" class="DB_banner18_1">
+    <h4 module="board_title_3">{$board_name}</h4>
+    <p class="line"></p>
+    <a href="/board/free/list.html?board_no=3" class="more">+ MORE</a>
+    <ul module="board_list_3">
+        <!--
+            $count = 20
+        -->
+        <li id="{$param_read}" class="list">
+            <div class="DB_title"><span>[ {$category_name} ]</span> {$subject|cut:50,..}</div>
+            <div class="DB_detail">{$content}</div>		
+        </li>
+        <li id="{$param_read}" class="list">
+            <div class="DB_title"><span>[ {$category_name} ]</span> {$subject|cut:50,..}</div>
+            <div class="DB_detail">{$content}</div>	
+        </li>
+    </ul>
+</div><!-- //FAQ - 자주묻는질문 -->
