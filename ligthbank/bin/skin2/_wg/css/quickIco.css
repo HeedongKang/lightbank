@@ -1,10 +1,70 @@
+.quickIco {
+	margin: 0px 0px 20px; width: 180px;
+}
+.quickIco::after {
+	clear: both; display: block; content: "";
+}
+.quickIco li {
+	width: 100%; height: 40px; margin-bottom: 1px; float: left; text-align:left;background:#5a5a5a;
+}
+.quickIco li:nth-child(2n) {
+	margin-left: -1px;
+}
+.quickIco li a i {
+	margin: 0px 3px 0px 0px; top: 2px; color: rgb(119, 119, 119); font-size: 13px; display: none;
+}
+.quickIco li a {
+	border: 1px solid rgb(223, 223, 223); transition:0.3s; border-image: none; color:#ffffff; font-weight:bold;line-height: 40px; text-indent: 15px; font-size: 14px; display: block; -webkit-transition: all .3s ease;
+}
+.quickIco li a:hover {
+	background: rgb(244, 244, 244); font-weight: bold; text-decoration: none;color: rgb(51, 51, 51);
+}
 
-    .quickIco { width:200px; margin:0 auto 20px; overflow:hidden; }
-    .quickIco:after { content:""; display:block; *zoom:1; clear:both; }
-
-    .quickIco ul { display:block; width:220px; letter-spacing:-4px; }
-    .quickIco li { display:inline-block; margin:0 17px 13px 0; font-size:11px; color:#333; text-align:center; letter-spacing:0; }
-    .quickIco li a { display:block; width:55px; height:55px; margin:0 0 6px; background:#f4f4f4; font-size:22px; border-radius:12px; -webkit-border-radius:12px; color:#333; transition:all .3s ease; -webkit-transition:all .3s ease; text-decoration:none; }
-    .quickIco li a i { line-height:55px; color:#777; }
-    .quickIco li:hover a { background:#ddd; }
-    .quickIco li:hover a i { color:#111; }
+.quickIco2 {
+	margin: -20px 0px 20px; width: 180px;
+}
+.quickIco2::after {
+	clear: both; display: block; content: "";
+}
+.quickIco2 li {
+	width: 50%; height: 28px; margin-bottom: 1px; float: left;
+}
+.quickIco2 li:nth-child(2n) {
+	margin-left: -1px;
+}
+.quickIco2 li a i {
+	margin: 0px 3px 0px 0px; top: 2px; color: rgb(119, 119, 119); font-size: 13px; display: none;
+}
+.quickIco2 li a {
+	border: 1px solid rgb(223, 223, 223); transition:0.3s; border-image: none; color: rgb(51, 51, 51); line-height: 28px; text-indent: 15px; font-size: 11px; display: block; -webkit-transition: all .3s ease;
+}
+.quickIco2 li a:hover {
+	background: rgb(244, 244, 244); font-weight: bold; text-decoration: none;
+}
+.right.d_etc18 h4 {
+	margin: 0px 0px 10px; text-align: center; line-height: 28px; font-size: 12px; font-weight: bold; border-top-color: rgb(136, 136, 136); border-bottom-color: rgb(136, 136, 136); border-top-width: 1px; border-bottom-width: 1px; border-top-style: dotted; border-bottom-style: dotted; display: block;
+}
+.right.d_etc18 .oper_time {
+	margin: 0px 0px 20px; line-height: 17px; font-size: 11px;
+}
+.right.d_etc18 .oper_time .phone {
+	margin: 0px 0px 10px; line-height: 21px; font-size: 20px; font-weight: 700;
+}
+.right.d_etc18 .oper_time strong {
+	color: rgb(51, 51, 51); padding-right: 10px;
+}
+.right.d_etc18 .bank_info {
+	font-size: 11px;
+}
+.right.d_etc18 .bank_info li {
+	letter-spacing: 0.1em; min-height: 0px;
+}
+.right.d_etc18 .bank_info strong {
+	width: 30%; line-height: 20px; font-weight: bold; float: left; display: block; min-height: 0px;
+}
+.right.d_etc18 .bank_info span {
+	line-height: 20px; min-height: 0px;
+}
+.right.d_etc18 .bank_info .bank_list {
+	margin: 10px 0px 0px; width: 170px; display: none;
+}

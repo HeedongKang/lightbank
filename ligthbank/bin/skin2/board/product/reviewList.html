@@ -3,7 +3,7 @@
     <!--@css(/css/module/board/listPackage.css)-->
     <div class="ec-base-table typeList gBorder">
     	<center><b>조명뱅크 실시간 리뷰현황  <a href="/board/product/list.html?board_no=4">[전체보기]</a></b></center>
-    	<div class="recommend_list" style="height:450px; overflow:hidden;">
+    	<div class="recommend_list" style="height:1450px; overflow:hidden;">
         <table border="1" summary="">
             <tbody module="board_list_4" class="center">
                 <!--
@@ -12,13 +12,15 @@
                     $login_page_url = /member/login.html
                     $deny_access_url = /index.html
                 -->
-                <tr  class="{$product_img|display}" style="{$list_bg_color} {$list_char_color}">
+                <tr  class="{$product_img|display}" class="{$img_src|display}" style="{$list_bg_color} {$list_char_color}">
                     <td class="thumb left" width="56">
                     	<a href="{$link_product_detail}">{$product_img}</a>
                     	<br><img src="/ex/ico_point{$point_count}.gif" alt="{$point_count}점"><br><p style="font-size:11px;color:#bbb">{$writer}</p>
                     </td>
                     <td class="subject left txtBreak">
                         <p class="product_name">{$product_name}</p>
+                        <img src="{$img_src|replace://www.lightbank.co.kr/file_data/lightbank///,/_wg/img/new_logo.jpg}"/>
+                        {$content}
                         <span class="{$spread_display|display}">
                             <a href="#none" onclick="{$action_content_spread}"><img src="http://img.echosting.cafe24.com/skin/base/board/btn_unfold.gif" alt="내용 보기" /></a>
                         </span>
@@ -27,13 +29,15 @@
                         <span class="txtNum">{$write_date}</span>
                     </td>                
                 </tr>
-                <tr  class="{$product_img|display}" style="{$list_bg_color} {$list_char_color}">
+                <tr  class="{$product_img|display}" class="{$img_src|display}" style="{$list_bg_color} {$list_char_color}">
                     <td class="thumb left"  width="56">
                     	<a href="{$link_product_detail}">{$product_img}</a>
                     	<br><img src="/ex/ico_point{$point_count}.gif" alt="{$point_count}점"><br><p style="font-size:11px;color:#bbb">{$writer}</p>
                     </td>
                     <td class="subject left txtBreak">
                         <p class="product_name">{$product_name}</p>
+                        <img src="{$img_src|replace://www.lightbank.co.kr/file_data/lightbank///,/_wg/img/new_logo.jpg}"/>
+                        {$content}
                         <span class="{$spread_display|display}">
                             <a href="#none" onclick="{$action_content_spread}"><img src="http://img.echosting.cafe24.com/skin/base/board/btn_unfold.gif" alt="내용 보기" /></a>
                         </span>
@@ -50,6 +54,7 @@
 </div>
 
 <script>
+/*
 function right_autoScroll(){
 	var ih = $(this).index() == 0 ? -77 : 77; //위아래로 움직이는 px 숫자
     var obj = $('.recommend_list');
@@ -67,7 +72,7 @@ setTimeout(function() {
 		},2000);
 		
 	}, 4000);
-
+*/
 
 
 </script>
