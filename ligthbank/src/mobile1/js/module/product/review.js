@@ -29,11 +29,19 @@ $(document).ready(function(){
     
     
     //상품 인트로 이미지 상품명을 체크해서 변경 처리
-    if($("#chkPrdNm").html().indexOf("삼성") > -1){
+    /*if($("#chkPrdNm").html().indexOf("삼성") > -1){
         $("#info_img_id").attr("src","/ex/common_prd_detail_info.gif");
     }else{
         $("#info_img_id").attr("src","/ex/common_prd_detail_info_etc.gif");
     }
+*/
+    //상품명이 아닌 브랜드명으로 intro 페이지 분기로 변경
+	$(".brandChk").each(function(idx){
+		 if($(this).html().indexOf("삼성") > -1){
+	        $("#info_img_id").attr("src","/ex/common_prd_detail_info.gif");
+	    }
+	});
+    
     //상품명에 펜던트가 포함되면 전구구매가이드 노출
     if($("#chkPrdNm").html().indexOf("펜던트") > -1 || $("#chkPrdNm").html().indexOf("벽등") > -1 
     || $("#chkPrdNm").html().indexOf("레일기구") > -1 || $("#chkPrdNm").html().indexOf("직부등") > -1){
