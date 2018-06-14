@@ -43,14 +43,14 @@
                 <li><a href="/member/join.html">회원가입</a></li>
             </ul>
             <div class="snsArea">
+                <li class="{$display_kakao|display} -mov">
+                    <a href="#none" onclick="{$kakao_func_login}"><img src="/_wg/img/btn_login_kakao.gif" alt="카카오톡 로그인" /></a>
+                </li>
                 <li class="{$display_naver|display} -mov">
                     <a href="#none" onclick="{$naver_func_login}"><img src="/_wg/img/btn_login_naver.gif" alt="네이버 로그인" /></a>
                 </li>
                 <li class="{$display_facebook|display} -mov">
                     <a href="#none" onclick="{$facebook_func_login}"><img src="/_wg/img/btn_login_facebook.gif" alt="페이스북 로그인" /></a>
-                </li>
-                <li class="{$display_kakao|display} -mov">
-                    <a href="#none" onclick="{$kakao_func_login}"><img src="/_wg/img/btn_login_kakao.gif" alt="카카오톡 로그인" /></a>
                 </li>
                 <li class="{$display_google|display} -mov">
                     <a href="#none" onclick="{$google_func_login}"><img src="/_wg/img/btn_login_google.gif" alt="구글 로그인" /></a>
@@ -82,3 +82,4 @@
         <p class="button"><input type="image" src="/_wg/img/btn_nomember_login.gif" alt="로그인"></p>
      </div>
 </div>
+<!--@js(/js/comssl.js)-->
