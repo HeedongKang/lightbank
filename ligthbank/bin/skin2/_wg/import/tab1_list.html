@@ -1,10 +1,8 @@
 <ul class="grid1">
     <li class="item" id="anchorBoxId_{$product_no}">
         <div class="thumbnail">
-            <div class="best_ico -mov">BEST</div>
-            <div class="discount_rate ico01 -mov" data-price="{$product_custom}" data-sale="{$product_price}"></div>
             <div class="-likeButton {$disp_likeprd_class} -mov"><button type="button" class="-mov">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
-            <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></a>
+            <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" width="500" height="500"/></a>
         </div>
         <a href="/product/detail.html{$param}" class="{$product_name_display|display} info_wrap -mov">
             <div class="info">
@@ -18,15 +16,23 @@
                 </ul>
             </div>
         </a>
+         <div class="description">
+         	<div class="big_Best_Box">
+       			<span class="big_Best_Text">BEST</span><br>
+       		</div>
+	        <div class="BpriceBox">
+		        <span class="discount_rate sale_large_Number" data-price="{$product_custom}" data-sale="{$product_price}" style="margin-top:-15px"></span>
+		        <span class="{$product_custom|display} price_small_BNumber" style="margin-top:-60px;float:right">{$product_custom|numberformat}원</span><br>
+		        <span class="price_middle_BNumber" style="margin-top:-30px;float:right">{$product_price|numberformat}원</span>
+	        </div>
+	    </div>        
     </li>
 </ul>
 <ul class="grid2">
     <li class="item" id="anchorBoxId_{$product_no}">
         <div class="thumbnail">
-            <div class="num_ico">0</div>
-            <div class="discount_rate ico01 -mov" data-price="{$product_custom}" data-sale="{$product_price}"></div>
             <div class="-likeButton {$disp_likeprd_class} -mov"><button type="button" class="-mov">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
-            <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></a>
+            <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" width="245" height="245" /></a>
         </div>
         <a href="/product/detail.html{$param}" class="{$product_name_display|display} info_wrap -mov">
             <div class="info">
@@ -40,13 +46,19 @@
                 </ul>
             </div>
         </a>
+       	<div class="small_Best_Box best_Number_yellow">
+   			<span class="small_Best_Text">BEST</span><br>
+   		</div>
+       <div class="SpriceBox">
+        <span class="discount_rate sale_small_Number" data-price="{$product_custom}" data-sale="{$product_price}" style="margin-top:-5px"></span>
+        <span class="{$product_custom|display} price_small_SNumber" style="margin-top:-25px;float:right">{$product_custom|numberformat}원</span><br>
+        <span class="price_middle_SNumber" style="margin-top:-20px;float:right">{$product_price|numberformat}원</span>
+       </div>        
     </li>
     <li class="item" id="anchorBoxId_{$product_no}">
         <div class="thumbnail">
-            <div class="num_ico">0</div>
-            <div class="discount_rate ico01 -mov" data-price="{$product_custom}" data-sale="{$product_price}"></div>
             <div class="-likeButton {$disp_likeprd_class} -mov"><button type="button" class="-mov">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
-            <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></a>
+            <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" width="245" height="245"/></a>
         </div>
         <a href="/product/detail.html{$param}" class="{$product_name_display|display} info_wrap -mov">
             <div class="info">
@@ -60,5 +72,13 @@
                 </ul>
             </div>
         </a>
+       	<div class="small_Best_Box best_Number_white">
+   			<span class="small_Best_Text">BEST</span><br>
+   		</div>
+       <div class="SpriceBox">
+        <span class="discount_rate sale_small_Number" data-price="{$product_custom}" data-sale="{$product_price}" style="margin-top:-5px"></span>
+        <span class="{$product_custom|display} price_small_SNumber" style="margin-top:-25px;float:right">{$product_custom|numberformat}원</span><br>
+        <span class="price_middle_SNumber" style="margin-top:-20px;float:right">{$product_price|numberformat}원</span>
+       </div>          
     </li>
 </ul>

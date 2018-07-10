@@ -7,7 +7,7 @@
 .ec-base-product a[href^='/product/detail.html'] > img { border:1px solid #ececec; }
 
 .ec-base-product .prdList { display:table; width:100%; min-width:756px; margin:-20px 0 0; font-size:0; line-height:0; }
-.ec-base-product .prdList > li { display:inline-block; margin:20px 0; color:#757575; vertical-align:top; }
+.ec-base-product .prdList > li { display:inline-block; margin:20px 0; color:#757575; vertical-align:top;}
 
 .ec-base-product .prdList .chk { display:block; margin:0 0 10px; text-align:center; }
 .ec-base-product .prdList .thumbnail { position:relative; margin:0 7px 10px; text-align:center; }

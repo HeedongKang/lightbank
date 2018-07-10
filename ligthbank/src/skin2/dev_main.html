@@ -80,19 +80,19 @@
     <div class="search_section">
 		<form id="searchBarForm" name="" action="/product/search.html" method="get" enctype="multipart/form-data">
 			<input id="banner_action" name="banner_action" value="" type="hidden">
-			<div style="float: left;width: 453px;height: 47px;border: 1px solid #5A5A5A;" class="xans-element- xans-layout xans-layout-searchheader ">
+			<div style="float: left;height: 46px;" class="xans-element- xans-layout xans-layout-searchheader ">
 				<!--
 	                $product_page=/product/detail.html
 	                $category_page=/product/list.html
 	        	-->
 				<fieldset>
 					<legend>검색</legend>
-	                <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" style="height:40px;width:382px;border:0" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text">
-	                &nbsp;<input type="image" src="/_wg/img/search_btn_n.jpg" alt="검색" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;" class="-mov">
+	                <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" style="height:41px;width:381px;border: 1px solid #5A5A5A;" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text">
+	                &nbsp;<input type="image" src="/_wg/img/search_btn_n.jpg" alt="검색" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;" height="48" style="margin-left:-6px">
 				</fieldset>
 			</div>
 		</form>     
-		<div class="h_right" style="position:absolute; top:-52px; right:-54px; cursor:pointer">
+		<div class="h_right" style="position:absolute; top:-53px; right:-55px; cursor:pointer">
 			<img src="/_wg/img/search_btn_d.jpg" id="JS_searchBtn" alt="맞춤검색" />
         </div>
         <!-- 스마트서치 버튼 ( /_wg/import/JS_searchBox.html 에서 내용 수정이 가능합니다 ) -->
@@ -184,10 +184,10 @@
 	        
         <!--브랜드 베스트상품-->
 	    <!--@import(/_wg/import/brandBest.html)-->
-		<div style="background-color:#EDEDED;height:650px;margin-top:-50px;margin-bottom:80px;">	        
-			<div style="margin: 80px auto 0px; width: 1260px; text-align: center;font-size:19pt;font-weight:bold;padding-top:75px">
-				⊂ 한정수량 파격특가 <font color="red">최대45%</font> ⊃
-			</div>	        
+	    
+	    <!-- 한정수량 파격특가 -->
+		<div style="background-color:#EDEDED;height:670px;margin-top:-50px;margin-bottom:80px;">	        
+			<div class="maint_Tit" style="padding-top:75px">⊂ 한정수량 파격특가 <span class="stit">최대45%</span> ⊃</div>	        
 			<!-- 특가상품 (New arrivals) -->
 			<div module="product_listmain_2" class="ec-base-product">
 			    <!--
@@ -206,30 +206,25 @@
 	   <!--@import(/_wg/import/bestProduct.html)-->
 	       
 	       
-		<!-- 추천상품 (Recommended items) -->
-		<div module="product_listmain_1" class="ec-base-product">
-		    <!--
-		        $count = 28
-		            ※ 노출시킬 상품의 갯수를 숫자로 설정할 수 있으며, 설정하지 않을경우, 최대 200개로 자동제한됩니다.
-		            ※ 상품 노출갯수가 많으면 쇼핑몰에 부하가 발생할 수 있습니다.
-		        $basket_result = /product/add_basket.html
-		        $basket_option = /product/basket_option.html
-		    -->
-		    <h2>
-				<img src="/_wg/img/suggestionTitle.jpg" />
-			</h2>
-		    <ul class="prdList grid4">
-		        <!--@import(/_wg/import/prdList.html)-->
-		    </ul>
-		</div><!-- //추천상품 (Recommended items) -->
+	   	<!-- 조명뱅크가 자신있게 추천하는 상품 -->
+	   	<div class="maint_Tit" style="padding-top:25px">⊂ 조명뱅크가 자신있게 <span class="stit">추천하는 제품</span> ⊃</div>
+			<div module="product_listmain_1" class="ec-base-product">
+			    <!--
+			        $count = 28
+			        $basket_result = /product/add_basket.html
+			        $basket_option = /product/basket_option.html
+			    -->
+			    <ul class="prdList grid4">
+			        <!--@import(/_wg/import/main_prdList.html)-->
+			    </ul>
+			</div>
+		</div>
+		
+		<div style="background-color:#EDEDED;height:1px;margin-bottom:150px;"></div>
 			    
         <!-- 베스트리뷰 -->
         <!--import(/_wg/import/bestReview.html)-->			    
 			    
-	      <center>
-          <img src="/_wg/img/lightbank_intro_banner.jpg"/>
-          </center>
-          <br><br><br><br>
 
         </div>
     </div><hr class="layout" />

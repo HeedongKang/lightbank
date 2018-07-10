@@ -1,3 +1,4 @@
+/*변경 전 폰트18.07.10
 @font-face{
     font-family:"fontwg";
     src:url('/_wg/library/font/fontawesome-webfont.eot'); 
@@ -9,4 +10,41 @@
     src:url('/_wg/library/font/fontawesome-webfont.woff') format('woff'),url('/_wg/library/font/fontawesome-webfont.ttf') format('truetype'),url('/_wg/library/font/fontawesome-webfont.svg#FontAwesome') format('svg');
     font-weight:normal;
     font-style:normal;
+}
+*/
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Bold'),
+    url('/_wg/library/font/SpoqaHanSansBold.woff2') format('woff2'),
+    url('/_wg/library/font/SpoqaHanSansBold.woff') format('woff'),
+    url('/_wg/library/font/SpoqaHanSans/SpoqaHanSansBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Regular'),
+    url('/_wg/library/font/SpoqaHanSansRegular.woff2') format('woff2'),
+    url('/_wg/library/font/SpoqaHanSansRegular.woff') format('woff'),
+    url('/_wg/library/font/SpoqaHanSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 300;
+    src: local('Spoqa Han Sans Light'),
+    url('/_wg/library/font/SpoqaHanSansLight.woff2') format('woff2'),
+    url('/_wg/library/font/SpoqaHanSansLight.woff') format('woff'),
+    url('/_wg/library/font/SpoqaHanSansLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 100;
+    src: local('Spoqa Han Sans Thin'),
+    url('/_wg/library/font/SpoqaHanSansThin.woff2') format('woff2'),
+    url('/_wg/library/font/SpoqaHanSansThin.woff') format('woff'),
+    url('/_wg/library/font/SpoqaHanSansThin.ttf') format('truetype');
 }

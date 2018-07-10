@@ -11,7 +11,7 @@
 
     html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,img { list-style:none; margin:0; padding:0; }
     html { width:100%; height:100%; }
-    body,code { font:0.75em Nanum Gothic,Verdana,Dotum,AppleGothic,sans-serif,xeicon !important; color:#333 !important; }
+    body,code {font-family: "Spoqa Han Sans",sans-serif; font:0.75em "Spoqa Han Sans",sans-serif,xeicon !important; color:#333 !important; }
     body { min-width:1265px !important; height:100%; overflow-y:scroll !important; background:none !important; }
     /* 1265px 이하 */
     @media all and (max-width:1265px){
@@ -111,12 +111,12 @@
     .ec-base-product a[href^='/product/detail.html'] > img { border:0; outline:1px solid #eee; }
     
     .ec-base-product .prdList { display:table; position:relative; left:-10px; width:120%; padding:0 0 0 10px; min-width:756px; font-size:0; line-height:0; overflow:hidden; }
-    .ec-base-product .prdList > li { position:relative; display:inline-block; *display:inline; *zoom:1; color:#333; vertical-align:top; font-size:12px; line-height:17px; padding-bottom:20px}
+    .ec-base-product .prdList > li { position:relative; display:inline-block; *display:inline; *zoom:1; color:#333; vertical-align:top; font-size:12px; line-height:17px; padding-bottom:5px;background:#ffffff;}
  
     /* 진열방식 */
     .ec-base-product ul.grid2 > li { width:610px; margin:5px 40px 60px 0; }
     .ec-base-product ul.grid3 > li { width:400px; margin:5px 30px 50px 0; }
-    .ec-base-product ul.grid4 > li { width:300px; margin:5px 20px 40px 0; }
+    .ec-base-product ul.grid4 > li { width:300px; margin:5px 20px 20px 0; }
     .ec-base-product ul.grid5 > li { width:235px; margin:5px 19px 40px 0; }
     .ec-base-product ul.grid6 > li { width:190px; margin:5px 24px 40px 0; }
 
@@ -150,15 +150,18 @@
     .thumbnail .list_button .wishIcon:hover:after { content: "관심상품"; }
 
     /* 꾸미기 아이콘 */
-    .ec-base-product .prdList .thumbnail .prdIcon { position:absolute; z-index:5; top:0; left:-9px; width:80px; height:50px; background-repeat:no-repeat; }
+    .ec-base-product .prdList .thumbnail .prdIcon { position:absolute; z-index:5; top:0; left:-9px; width:80px; height:50px; background-repeat:no-repeat;}
 
-    .ec-base-product .prdList .description { display:block; font-size:12px; line-height:18px; }
+    .ec-base-product .prdList .description { display:block; font-size:12px; line-height:18px; margin:12px;height:120px}
     .ec-base-product .prdList .description .name { display:block; margin:0 0 10px 5px; word-break:break-all; line-height:20px; font-weight:bold; }
     .ec-base-product .prdList .description .name a:hover { text-decoration:none; }
     .ec-base-product .prdList .description .line { display:block; height:0px; line-height:0; margin:0 0 10px; border-top:1px solid #eee; }
-    .ec-base-product .prdList .description .status { position:relative; display:block; margin:0 0 0 5px; line-height:0; *zoom:1;height:20px }
+    .ec-base-product .prdList .description .status { position:relative; display:block;line-height:0; *zoom:1;height:20px }
     .ec-base-product .prdList .description .status:after { content:""; display:block; clear:both; }
 
+	/*글자수 제한 */
+	.grid4s-lim-text{text-overflow: ellipsis; white-space: nowrap; overflow: hidden;width:210px; display:inline-block}
+	
     /* 컬러칩 */
     .ec-base-product .prdList .description .colorChip { margin:0 0 0 5px; }
     .ec-base-product .prdList .description .chips { float:none !important; display:inline-block; *display:inline; *zoom:1; width:14px !important; height:7px !important; margin:5px 2px 8px !important; padding:0; border:0 !important; border-radius:7px; font-size:0; line-height:0; letter-spacing:0; }

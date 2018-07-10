@@ -9,7 +9,7 @@
     /* 1depth */
     #category-lnb .d1-wrap { /*overflow:auto*/ }
     #category-lnb .d1-wrap .d1 { position:relative; float:left; }
-    #category-lnb .d1-wrap .d1 > a { line-height:50px; padding:0 9px/*대분류 간격*/; font-size:14px;/*대분류 폰트사이즈*/ font-weight:bold/*대분류 굵기*/; text-align:center; }
+    #category-lnb .d1-wrap .d1 > a { line-height:50px; padding:0 13px/*대분류 간격*/; font-size:14px;/*대분류 폰트사이즈*/ font-weight:normal/*대분류 굵기*/; text-align:center; }
     /* 1265px 이하 */
     @media all and (max-width:1265px){
         #category-lnb .d1-wrap .d1 > a { padding:0 5px/*대분류 간격*/; font-size:11px;/*대분류 폰트사이즈*/ }

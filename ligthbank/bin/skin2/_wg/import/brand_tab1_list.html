@@ -1,8 +1,8 @@
 <ul class="grid2">
     <li class="item" id="anchorBoxId_{$product_no}">
        <div class="thumbnail">
-       		<div class="num_ico">
-       			<span style="font-size:13px">BEST</span>
+       		<div class="num_ico best_Number_yellow">
+       			<span class="best_Text">BEST</span><br>
        		</div>
 	        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" />
 	            <span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
@@ -11,7 +11,7 @@
 	                    <li><img src="{$image_medium}" alt="{$seo_alt_tag}" /></li>
 	                    <li><img src="{$add_image_src1}" alt="{$seo_alt_tag}" /></li>
 	                    <li><img src="{$add_image_src2}" alt="{$seo_alt_tag}" /></li>
-	                    <li><img src="{$add_image_src3}" alt="{$seo_alt_tag}" /></li>
+<!-- 	                    <li><img src="{$add_image_src3}" alt="{$seo_alt_tag}" /></li> -->
 	                    <li><img src="{$add_image_src4}" alt="{$seo_alt_tag}" /></li>
 	                    <li><img src="{$add_image_src5}" alt="{$seo_alt_tag}" /></li>
 	                </ul>
@@ -23,10 +23,10 @@
 		        <div class="status">
 		            <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
 		        </div> 
-	            <spean><a href="/product/detail.html{$param}" class="{$product_name_display|display}" style="display:inline-block;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;width:210px"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span>{$product_name}</a></spean><br>
-	            <span class="{$simple_desc|display}" style="font-size:12px;color:#000000;display:inline-block;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;width:210px" ><a href="/product/detail.html{$param}">"{$simple_desc}"</a></span><br>
-	            <span class="{$product_custom|display}" style="font-size:12px;color:#999999;text-decoration:line-through;">{$product_custom|numberformat}원</span><br>
-	            <span style="font-size:19px;color:#000000;font-weight:bold;">{$product_price|numberformat}원</span>
+	            <spean><a href="/product/detail.html{$param}" class="{$product_name_display|display} grid4s-lim-text"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span>{$product_name}</a></spean><br>
+	            <span class="{$simple_desc|display} grid4s-lim-text" ><a href="/product/detail.html{$param}">"{$simple_desc}"</a></span><br>
+	            <span class="{$product_custom|display} price_small_Number">{$product_custom|numberformat}원</span><br>
+	            <span class="price_middle_Number">{$product_price|numberformat}원</span>
 	        </center>
 	    </div>
     </li>
@@ -35,8 +35,8 @@
     
     <li class="item" id="anchorBoxId_{$product_no}">
         <div class="thumbnail">
-	        <div class="num_ico">
-	        	<span style="font-size:13px">BEST</span>
+	        <div class="num_ico best_Number_yellow">
+	        	<span class="best_Text">BEST</span>
 	        </div>
 	        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" />
 	            <span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
@@ -57,18 +57,18 @@
 		        <div class="status">
 		            <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
 		        </div> 
-	            <spean><a href="/product/detail.html{$param}" class="{$product_name_display|display}" style="display:inline-block;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;width:210px"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span>{$product_name}</a></spean><br>
-	            <span class="{$simple_desc|display}" style="font-size:12px;color:#000000;display:inline-block;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;width:210px" ><a href="/product/detail.html{$param}">"{$simple_desc}"</a></span><br>
-	            <span class="{$product_custom|display}" style="font-size:12px;color:#999999;text-decoration:line-through;">{$product_custom|numberformat}원</span><br>
-	            <span style="font-size:19px;color:#000000;font-weight:bold;">{$product_price|numberformat}원</span>
+	            <spean><a href="/product/detail.html{$param}" class="{$product_name_display|display} grid4s-lim-text"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span>{$product_name}</a></spean><br>
+	            <span class="{$simple_desc|display} grid4s-lim-text"><a href="/product/detail.html{$param}">"{$simple_desc}"</a></span><br>
+	            <span class="{$product_custom|display} price_small_Number">{$product_custom|numberformat}원</span><br>
+	            <span class="price_middle_Number">{$product_price|numberformat}원</span>
 	        </center>
 	    </div>
     </li>
     
     <li class="item" id="anchorBoxId_{$product_no}">
         <div class="thumbnail">
-	        <div class="num_ico2">
-	        	<span style="font-size:13px">BEST</span>
+	        <div class="num_ico2 best_Number_white">
+	        	<span class="best_Text">BEST</span>
 	        </div>
 	        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" />
 	            <span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
@@ -89,10 +89,10 @@
 		        <div class="status">
 		            <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
 		        </div> 
-	            <spean><a href="/product/detail.html{$param}" class="{$product_name_display|display}" style="display:inline-block;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;width:210px"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span>{$product_name}</a></spean><br>
-	            <span class="{$simple_desc|display}" style="font-size:12px;color:#000000;display:inline-block;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;width:210px" ><a href="/product/detail.html{$param}">"{$simple_desc}"</a></span><br>
-	            <span class="{$product_custom|display}" style="font-size:12px;color:#999999;text-decoration:line-through;">{$product_custom|numberformat}원</span><br>
-	            <span style="font-size:19px;color:#000000;font-weight:bold;">{$product_price|numberformat}원</span>
+	            <spean><a href="/product/detail.html{$param}" class="{$product_name_display|display} grid4s-lim-text"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span>{$product_name}</a></spean><br>
+	            <span class="{$simple_desc|display} grid4s-lim-text"><a href="/product/detail.html{$param}">"{$simple_desc}"</a></span><br>
+	            <span class="{$product_custom|display} price_small_Number">{$product_custom|numberformat}원</span><br>
+	            <span class="price_middle_Number">{$product_price|numberformat}원</span>
 	        </center>
 	    </div>
     </li>    

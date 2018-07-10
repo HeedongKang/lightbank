@@ -29,7 +29,7 @@
         /*#JS_searchBtn { width:115px; }*/
     }
     /**우측 버튼**/
-	.h_right{padding-top:53px;}
+	.h_right{padding-top:53px;position:absolute; top:-15px; right:1px; cursor:pointer;}
 	.h_right a{display:inline-block;font-size:14px;width:110px;height:44px;line-height:45px;border:1px solid #91949b;text-align:center;border-radius:5px;-ms-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;margin-left:6px;}
 	.h_right a:hover{color:#d44b45;border:1px solid #ed643d;text-decoration:none}
 	

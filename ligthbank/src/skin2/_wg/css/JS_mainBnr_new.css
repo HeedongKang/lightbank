@@ -18,10 +18,10 @@
 
     /* 화살표 */
     .JS_mainBnr .DB_dir { position:absolute; z-index:10; left:50%; top:50%; width:1260px; margin-left:-630px; margin-top:-32px; height:0; cursor:pointer; }
-    .JS_mainBnr .DB_prevBtn { position:absolute; top:6px;left:20px; width:54px; height:54px; background:url('/_wg/img/arrowLW_35.gif') no-repeat 50% 50% #a8a8a8; transition:all .3s ease; -webkit-transition:all .3s ease;border-radius: 50%; }
+    .JS_mainBnr .DB_prevBtn { position:absolute; top:6px;left:20px; width:54px; height:54px; background:url('/_wg/img/arrowLW_35.gif') no-repeat 50% 50% #000000; transition:all .3s ease; -webkit-transition:all .3s ease;border-radius: 50%;  opacity: 0.3; border: 1px solid white;}
     /*.JS_mainBnr:hover .DB_prevBtn { left:10px; opacity:1.0; -webkit-opacity:1.0; }*/
     .JS_mainBnr:hover .DB_prevBtn:hover { opacity:.4; -webkit-opacity:.4; }
-    .JS_mainBnr .DB_nextBtn { position:absolute; top:6px;right:20px; width:54px; height:54px; background:url('/_wg/img/arrowRW_35.gif') no-repeat 50% 50% #a8a8a8;   transition:all .3s ease; -webkit-transition:all .3s ease;border-radius: 50%; }
+    .JS_mainBnr .DB_nextBtn { position:absolute; top:6px;right:20px; width:54px; height:54px; background:url('/_wg/img/arrowRW_35.gif') no-repeat 50% 50% #000000;   transition:all .3s ease; -webkit-transition:all .3s ease;border-radius: 50%; opacity: 0.3; border: 1px solid white; }
     /*.JS_mainBnr:hover .DB_nextBtn { right:10px; opacity:1.0; -webkit-opacity:1.0; }*/
     .JS_mainBnr:hover .DB_nextBtn:hover { opacity:.4; -webkit-opacity:.4; }
 
