@@ -6,9 +6,9 @@
 
     #JS_topMenu2 .d1 { position:relative; float:left; background:url("/_wg/img/bar_ddd.gif") 0 17px no-repeat; }
     #JS_topMenu2 .d1:first-child { background:none; }
-    #JS_topMenu2 .d1 > a { height:39px; line-height:39px; padding:0 7px 0 9px; border-top:1px solid #fff; font-size:11px; color:#333/*마우스아웃 메뉴컬러*/; letter-spacing:0.08em; transition:all .3s ease; -webkit-transition:all .3s ease; }
+    #JS_topMenu2 .d1 > a { height:39px; line-height:39px; padding:0 7px 0 9px; font-size:11px; color:#333/*마우스아웃 메뉴컬러*/; letter-spacing:0.08em; transition:all .3s ease; -webkit-transition:all .3s ease; }
     #JS_topMenu2 .d1 > a:hover,
-    #JS_topMenu2 .d1.on > a { border-top:1px solid #111; font-weight:bold; color:#000; }
+    #JS_topMenu2 .d1.on > a { font-weight:bold; color:#000; }
     #JS_topMenu2 i { position:relative; top:2px; margin:0 3px 0 0; font-size:14px; }
 
     #JS_topMenu2 .d2_wrap { display:none; position:absolute; top:40px; left:50%; margin:0 0 0 -58%; padding:7px 0; border:1px solid #ddd; background:#fff; }

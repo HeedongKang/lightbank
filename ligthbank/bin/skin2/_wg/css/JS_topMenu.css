@@ -4,9 +4,9 @@
 
     #JS_topMenu .d1 { position:relative; float:left; background:url("/_wg/img/bar_ddd.gif") 0 16px no-repeat; }
     #JS_topMenu .d1:first-child { background:none; }
-    #JS_topMenu .d1 > a { height:39px; padding:0 7px 1px 8px; border-top:1px solid #fff; font-size:11px; line-height:39px; color:#333/*마우스아웃 메뉴컬러*/; letter-spacing:0.08em; transition:all .3s ease; -webkit-transition:all .3s ease; }
+    #JS_topMenu .d1 > a { height:39px; padding:0 7px 1px 8px;  font-size:11px; line-height:39px; color:#333/*마우스아웃 메뉴컬러*/; letter-spacing:0.08em; transition:all .3s ease; -webkit-transition:all .3s ease; }
     #JS_topMenu .d1 > a:hover,
-    #JS_topMenu .d1.on > a { border-top:1px solid #111; font-weight:bold; color:#000; }
+    #JS_topMenu .d1.on > a {  font-weight:bold; color:#000; }
     #JS_topMenu .d1 .count { margin:0 0 0 3px; padding:3px 5px; background:#777; border-radius:4px; text-align:center; color:#fff; font-size:10px; font-weight:400; }
 
     #JS_topMenu .d2_wrap { display:none; position:absolute; top:40px; left:50%; margin:0 0 0 -65%; padding:7px 0; border:1px solid #ddd; background:#fff; font-size:11px; }

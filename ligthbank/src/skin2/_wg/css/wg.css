@@ -132,15 +132,17 @@
     .discount_rate.ico04 { top:0px; right:2px; width:60px; line-height:30px; font-size:30px; color:#ef2d2d; cursor:pointer; }
     .discount_rate.ico04 span { margin-left:2px; font-size:18px; }
 
+	/* 브랜드별best*/
+    .discount_rate.ico05 {  width:45px; height:45px; line-height:45px; background:rgba(20,20,20,.9); background:#333 \9; box-shadow:-1px 1px 2px rgba(0,0,0,0.2); font-size:14px; filter:alpha(opacity=0); }
+    .discount_rate.ico05 span { margin-left:0px; font-size:11px; font-weight:normal; }
+    .item:hover .discount_rate.ico05 { top:-3px; filter:alpha(opacity=100); opacity:1.0; -webkit-opacity:1.0;}
+
     /* 상품상세 */
     .discount_rate_detail_wrap { position:relative; height:0; }
     .discount_rate.detail { top:-11px; right:20px; width:60px; height:60px; line-height:50px; background:url('/_wg/img/detail_sale_ico.png') no-repeat; font-size:16px; text-indent:-10px; }
     .discount_rate.detail span { margin-left:4px; font-size:11px; font-weight:400; }
 
     .rate0 { display:none !important; }
-
-
-
 
 
 /** 체크박스 **/
@@ -157,7 +159,9 @@
     .-chk input[type="checkbox"]:hover + label:after { visibility:visible; }
 
 
-
+	.prd_btn_pg_on{font-size:10pt;width: 1.8em;border-radius: 6em;line-height: 2em;display: inline-block;text-align: center;background:#1f1f1f;color:#ffffff;}
+	.prd_btn_pg_off{font-size:10pt;width: 1.8em;border-radius: 6em;line-height: 2em;display: inline-block;text-align: center;background:#ffffff;color:#1f1f1f;}
+	.prd_btn_pg_off:hover{font-size:10pt;width: 1.8em;border-radius: 6em;line-height: 2em;display: inline-block;text-align: center;background:#1f1f1f;color:#ffffff;}
 
 
 /** 좋아요 버튼 **/

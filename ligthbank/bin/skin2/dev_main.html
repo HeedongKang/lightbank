@@ -32,7 +32,10 @@
  
 </head>
 <body id="main">
-
+<!-- 최상단 top 배너 -->
+<center style="background:#323232;width:100%">
+<img src="/_wg/img/JS_topBnr/topBanner.jpg" alt=""/>
+</center>
 
 <!-- 상단 디자인 -->
 <div id="skipNavigation">
@@ -40,7 +43,7 @@
     <p><a href="#contents">본문 바로가기</a></p>
 </div>
 
-<!--@css(/_wg/css/header_new.css)-->
+<!--@css(/_wg/css/header.css)-->
 
 <div id="header">
     
@@ -66,37 +69,88 @@
     </div>
 </div><div class="divClear"></div>
 
-<div id="header_02" class="-frame">
+<div id="header_02" class="-frame" style="height:133px">
     
     <!-- 로고 -->
-    <div style="position:absolute; top:35px; z-index:1; font-size:0;cursor:pointer">
+    <div style="position:absolute; top:40px; z-index:1; font-size:0;cursor:pointer">
         <img src="/_wg/img/new_logo.jpg" alt="{$mall_name}"  border="0"/>
     </div>
      <!-- 검색창 -->
     <!--@css(/_wg/css/search_section_new.css)-->
     <div class="search_section">
-        <div module="Layout_SearchHeader"  style="float: left;width: 370px;height: 37px;border: 1px solid #000000;">
-            <!--
-                $product_page=/product/detail.html
-                $category_page=/product/list.html
-            -->
-            <fieldset>
-                <legend>검색</legend>
-                <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" style="height:33px;width:327px;border:0" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text">
-                <input type="image" src="/_wg/img/search_btn_new.jpg" alt="검색" onclick="{$action_search_submit}" class="-mov" />
-            </fieldset>
+		<form id="searchBarForm" name="" action="/product/search.html" method="get" enctype="multipart/form-data">
+			<input id="banner_action" name="banner_action" value="" type="hidden">
+			<div style="float: left;width: 453px;height: 47px;border: 1px solid #5A5A5A;" class="xans-element- xans-layout xans-layout-searchheader ">
+				<!--
+	                $product_page=/product/detail.html
+	                $category_page=/product/list.html
+	        	-->
+				<fieldset>
+					<legend>검색</legend>
+	                <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" style="height:40px;width:382px;border:0" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text">
+	                &nbsp;<input type="image" src="/_wg/img/search_btn_n.jpg" alt="검색" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;" class="-mov">
+				</fieldset>
+			</div>
+		</form>     
+		<div class="h_right" style="position:absolute; top:-52px; right:-54px; cursor:pointer">
+			<img src="/_wg/img/search_btn_d.jpg" id="JS_searchBtn" alt="맞춤검색" />
         </div>
-        
         <!-- 스마트서치 버튼 ( /_wg/import/JS_searchBox.html 에서 내용 수정이 가능합니다 ) -->
     </div>
     
-    <div style="position:absolute; top:35px; right:1px; cursor:pointer">
-        <img src="/_wg/img/ban_top_link.png" id="JS_searchBtn" alt="맞춤검색" />
-    </div>
+   <!-- 헤더 배너2 -->
+    <!--@import(/_wg/import/JS_headerBnr2.html)-->
 
 </div>
 
-    <!--@import(/_wg/import/header_03.html)-->
+    <!--import(/_wg/import/header_03.html)-->
+    <div id="header_03">   
+    <div class="header_03_inner -frame">
+        <!--@css(/_wg/css/category_sub_new.css)-->
+
+        <!-- 전체메뉴 -->
+        <!--@import(/_wg/import/category_full_new.html)-->
+        
+        <!-- 전체메뉴 html버젼 -->
+        <!--@import(/_wg/import/category_full_m.html)-->
+        
+        <!-- 브랜드 전체보기(추후 오픈 -->
+        <!--import(/_wg/import/layer_brand.html)-->
+        
+        <!-- 추가메뉴1 -->
+        <!--@import(/_wg/import/category_sub1.html)-->
+        
+        <!-- 상품분류 카테고리 -->
+        <!--@import(/_wg/import/category_new.html)-->
+        
+        <!-- 추가메뉴2(추후 오픈 -->
+        <!--import(/_wg/import/category_sub2.html)-->
+        
+        <!-- 추가메뉴3(타임세일 & 룩북) -->
+        <!--import(/_wg/import/category_sub3.html)-->
+		<!-- 추가메뉴3 -->
+		<ul class="categorySub m03">
+		    <!-- 타임세일 -->
+			<li class="time_sale"><a href="/_wg/import/timeSale.html">
+				<!-- <i class="xi-alarm-clock-o"></i> 타임세일 -->
+				파격특가
+				<!--추후사용 
+				<ul>
+		            <li><iframe src="/_wg/import/timeLayer.html" width="300" height="425" frameborder="0" scrolling="no"></iframe></li>
+		        </ul>
+		         -->
+		    </li><!-- //타임세일 -->
+		    
+		    <!-- 카탈로그(추후사용)
+		    <li class="lookbook"><a href="/_wg/import/JS_lookbook.html" class="-mov">카탈로그</a></li>
+		     -->
+		</ul>
+
+    </div>
+</div>
+
+
+
 
 </div><hr class="layout" />
 
@@ -104,9 +158,36 @@
     <div id="container">
         <div id="contents_main" >
         
-	        <!-- 빌보드 배너 -->
-	        <!--@import(/_wg/import/JS_mainBnr.html)-->
+        <!-- 빌보드 배너 -->
+        <!--import(/_wg/import/JS_mainBnr.html)-->
+		<!--@css(/_wg/css/JS_mainBnr_new.css)-->
+		<div class="JS_mainBnr">
+		    <ul class="DB_imgSet">
+		        <li><a href="/product/list.html?cate_no=164"><img src="/_wg/img/billboard_bnr/bill_banner01_180703.jpg" alt=""></a></li>
+		        <li><a href="/member/join.html"><img src="/_wg/img/billboard_bnr/bill_banner02_180703.jpg" alt=""></a></li>
+		        <li><a href="/product/list.html?cate_no=131"><img src="/_wg/img/billboard_bnr/bill_banner03_180703.jpg" alt=""></a></li>
+		        <li><a href="/product/list.html?cate_no=134"><img src="/_wg/img/billboard_bnr/bill_banner04_180703.jpg" alt=""></a></li>
+		    </ul>
+		    <div class="DB_arrow"><span></span></div>
+		    <ul class="DB_menuSet">
+		       <li><span></span></li>
+		       <li><span></span></li>
+		       <li><span></span></li>
+		       <li><span></span></li>
+		   </ul>
+		    <!-- 화살표 -->
+		    <ul class="DB_dir">
+		        <span class="DB_prevBtn"></span>
+		        <span class="DB_nextBtn"></span>
+		    </ul>
+		</div>	        
 	        
+        <!--브랜드 베스트상품-->
+	    <!--@import(/_wg/import/brandBest.html)-->
+		<div style="background-color:#EDEDED;height:650px;margin-top:-50px;margin-bottom:80px;">	        
+			<div style="margin: 80px auto 0px; width: 1260px; text-align: center;font-size:19pt;font-weight:bold;padding-top:75px">
+				⊂ 한정수량 파격특가 <font color="red">최대45%</font> ⊃
+			</div>	        
 			<!-- 특가상품 (New arrivals) -->
 			<div module="product_listmain_2" class="ec-base-product">
 			    <!--
@@ -114,20 +195,15 @@
 			        $basket_result = /product/add_basket.html
 			        $basket_option = /product/basket_option.html
 			    -->
-			    <div style="text-align:center;margin-top:30px">
-			    	<img src="/_wg/img/special_price_title.jpg" />
-			    </div>	
-			    <ul class="prdList grid3">
+			    <ul class="prdList grid4">
 			        <!--@import(/_wg/import/specialPrdList.html)-->
 			    </ul>
-			</div><!-- //신상품 (New arrivals) -->        
-	        
-	        <!-- 추천상품 -->
-	        <!--@import(/_wg/import/bestReview.html)-->
-	
-	
-	       <!-- 베스트 상품-->
-		   <!--@import(/_wg/import/bestProduct.html)-->
+			</div>        
+	    </div>
+	    
+
+       <!-- 베스트 상품-->
+	   <!--@import(/_wg/import/bestProduct.html)-->
 	       
 	       
 		<!-- 추천상품 (Recommended items) -->
@@ -147,6 +223,8 @@
 		    </ul>
 		</div><!-- //추천상품 (Recommended items) -->
 			    
+        <!-- 베스트리뷰 -->
+        <!--import(/_wg/import/bestReview.html)-->			    
 			    
 	      <center>
           <img src="/_wg/img/lightbank_intro_banner.jpg"/>
