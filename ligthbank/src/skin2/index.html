@@ -14,61 +14,53 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------->
 
+<!--슬라이딩 배너 사용안함import(/_wg/import/billboardBanner.html)-->
+<!-- 추천상품 사용안함 import(/_wg/import/recommendPrd.html)-->
+
 
 <!-- 빌보드 배너 -->
-<!--슬라이딩 배너 사용안함import(/_wg/import/billboardBanner.html)-->
 <!--@import(/_wg/import/JS_mainBnr.html)-->
-<BR>
-<center>
-	<a href="/product/list.html?cate_no=102"><img src="/_wg/img/milrebanner.jpg"></a>
-</center>
 
-<!--한정수략파격특가 -->
-<div module="product_listmain_2" class="ec-base-product">
-    <!--
-       $count = 4
-       $basket_result = /product/add_basket.html
-       $basket_option = /product/basket_option.html
-   -->
-   <div style="text-align:center;margin-top:30px">
-   	<img src="/_wg/img/special_price_title.jpg" />
-   </div>	
-   <ul class="prdList grid4">
-       <!--@import(/_wg/import/specialPrdList.html)-->
-    </ul>
-</div>        
+<!--브랜드 베스트상품-->
+<!--@import(/_wg/import/brandBest.html)-->
+	    
+<!-- 한정수량 파격특가 -->
+<div style="background-color:#EDEDED;height:670px;margin-top:-50px;margin-bottom:80px;">	        
+	<div class="maint_Tit" style="padding-top:75px">⊂ 한정수량 파격특가 <span class="stit">최대45%</span> ⊃</div>	        
+	<!-- 특가상품 (New arrivals) -->
+	<div module="product_listmain_2" class="ec-base-product">
+	    <!--
+	        $count = 4
+	        $basket_result = /product/add_basket.html
+	        $basket_option = /product/basket_option.html
+	    -->
+	    <ul class="prdList grid4">
+	        <!--@import(/_wg/import/specialPrdList.html)-->
+	    </ul>	
+	</div>        
+</div>    
      
-<!-- 추천상품 -->
-<!--사용안함 import(/_wg/import/recommendPrd.html)-->
-<!-- 베스트리뷰 -->
-<!--import(/_wg/import/bestReview.html)-->
-
 <!-- best 인기상품-->
 <!--@import(/_wg/import/bestProduct.html)-->
 
-<!-- 인스타그램 -->    
-<!--@import(/_wg/import/insta_main.html)-->
-    
-<!-- 조명뱅크가 자신있게 제안드립니다. -->
-<div module="product_listmain_1" class="ec-base-product" style="margin-top:50px">
-<!--
-    $count = 28
-        ※ 노출시킬 상품의 갯수를 숫자로 설정할 수 있으며, 설정하지 않을경우, 최대 200개로 자동제한됩니다.
-        ※ 상품 노출갯수가 많으면 쇼핑몰에 부하가 발생할 수 있습니다.
-    $basket_result = /product/add_basket.html
-    $basket_option = /product/basket_option.html
--->
-<h2 style="margin-bottom:20px">
-	<img src="/_wg/img/suggestionTitle.jpg" />
-</h2>
-<ul class="prdList grid4">
-    <!--@import(/_wg/import/prdList.html)-->
- </ul>
+<!-- 조명뱅크가 자신있게 추천하는 상품 -->
+<div class="maint_Tit" style="padding-top:25px">⊂ 조명뱅크가 자신있게 <span class="stit">추천하는 제품</span> ⊃</div>
+	<div module="product_listmain_1" class="ec-base-product">
+	    <!--
+	       $count = 28
+	       $basket_result = /product/add_basket.html
+	       $basket_option = /product/basket_option.html
+	   	-->
+	   	<ul class="prdList grid4">
+	       <!--@import(/_wg/import/main_prdList.html)-->
+		</ul>
+	</div>
 </div>
+
+<div style="background-color:#EDEDED;height:1px;margin-bottom:70px;"></div>
    
-<center>
-	<img src="/_wg/img/lightbank_intro_banner.jpg"/>
-</center>
-<br><br><br><br>
+<!-- 베스트리뷰 -->
+<!--@import(/_wg/import/bestReview.html)-->	
+
 
 <!--@define(cmc_log)-->

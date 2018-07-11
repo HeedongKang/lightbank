@@ -41,16 +41,16 @@
     
 /** 추가메뉴3 **/
 
-    .categorySub.m03 { position:absolute; z-index:12; right:0; top:0; height:50px; border-left:1px solid #ddd; }
+    .categorySub.m03 { position:absolute; z-index:12; right:0; top:0; height:50px;  }
 
-    .categorySub.m03 > li { float:left; border-right:1px solid #ddd; }
-    .categorySub.m03 > li > a { position:relative; z-index:3; display:block; padding:0 10px; background:url('/_wg/img/bg_slash_b.png'); font-size:12px;/*대분류폰트사이즈*/ line-height:50px; color:#222; text-align:center; transition:all .3s ease; -webkit-transition:all .3s ease; }
+    .categorySub.m03 > li { float:left;}
+    .categorySub.m03 > li > a { position:relative; z-index:3; display:block; padding:0 10px; font-size:14px;/*대분류폰트사이즈*/ line-height:50px; color:#ff0000; text-align:center; transition:all .3s ease; -webkit-transition:all .3s ease; font-weight:bold}
     .categorySub.m03 > li > a:hover,
-    .categorySub.m03 > li.on > a { background-color:#f4f4f4; font-weight:bold; color:#111; text-decoration:none; }
+    .categorySub.m03 > li.on > a { background-color:#f4f4f4; font-weight:bold; color:#ff0000; text-decoration:none; }
 
     .categorySub.m03 > li i { top:3px; font-size:14px; }
     
-    .categorySub.m03 > li > ul { display:none; position:absolute; z-index:4; top:50px; width:300px; margin:0 0 0 -190px; padding:0 0 5px; background:#fff; border:1px solid #ddd; text-align:left; }
+    .categorySub.m03 > li > ul { display:none; position:absolute; z-index:4; top:50px; width:300px; margin:0 0 0 -190px; padding:0 0 5px; background:#fff;  text-align:left; }
 
 
     /* 움직이는 아이콘 */

@@ -2,20 +2,20 @@
 /** 상품분류 **/
 
     #category-lnb { position:relative; float:left; z-index:11; }
-    #category-lnb a { display:block; color:#333; font-size:11px; text-transform:/* uppercase 대문자로 */; white-space:nowrap; }
+    #category-lnb a { display:block; color:#2d2c2c; font-size:11px; text-transform:/* uppercase 대문자로 */; white-space:nowrap; }
     #category-lnb a:hover { color:#111; text-decoration:none; }
 
 
     /* 1depth */
     #category-lnb .d1-wrap { /*overflow:auto*/ }
     #category-lnb .d1-wrap .d1 { position:relative; float:left; }
-    #category-lnb .d1-wrap .d1 > a { line-height:50px; padding:0 10px/*대분류 간격*/; font-size:14px;/*대분류 폰트사이즈*/ font-weight:normal/*대분류 굵기*/; text-align:center; }
+    #category-lnb .d1-wrap .d1 > a { line-height:50px; padding:0 13px/*대분류 간격*/; font-size:14px;/*대분류 폰트사이즈*/ font-weight:normal/*대분류 굵기*/; text-align:center; }
     /* 1265px 이하 */
     @media all and (max-width:1265px){
         #category-lnb .d1-wrap .d1 > a { padding:0 5px/*대분류 간격*/; font-size:11px;/*대분류 폰트사이즈*/ }
     }
     #category-lnb .d1-wrap .d1 > a:hover,
-    #category-lnb .d1-wrap .d1.on > a { font-weight:bold; color:#989898; }
+    #category-lnb .d1-wrap .d1.on > a { /*font-weight:bold;*/ color:#ff6600; }
 
     #category-lnb .d1-wrap .d1:first-child i { top:-13px; left:3px; font-size:20px; }
 

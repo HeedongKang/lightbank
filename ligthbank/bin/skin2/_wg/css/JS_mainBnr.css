@@ -5,6 +5,7 @@
     .JS_mainBnr .DB_imgSet li:first-child { z-index:1; }
     
     /* 페이지 버튼 */
+    /*메뉴표시
     .JS_mainBnr .DB_arrow { position:absolute; z-index:2; bottom:32px; margin-left:3px; }
     .JS_mainBnr .DB_arrow span { position:relative; display:block; left:50%; width:5px; height:5px; margin-left:3px; background:#333; border-radius:100%; -webkit-border-radius:100%; }
     .JS_mainBnr .DB_menuSet { position:absolute; z-index:3; left:5px; width:100%; bottom:10px; text-align:center; letter-spacing:-5px; font-size:0; line-height:0; }
@@ -13,14 +14,15 @@
     .JS_mainBnr .DB_menuSet li:hover span { background:#333; }
     .JS_mainBnr .DB_menuSet li.DB_select span { background:#333; }
     .JS_mainBnr .DB_menuSet li.DB_select { width:45px; }
+    */
 
     /* 화살표 */
     .JS_mainBnr .DB_dir { position:absolute; z-index:10; left:50%; top:50%; width:1260px; margin-left:-630px; margin-top:-32px; height:0; cursor:pointer; }
-    .JS_mainBnr .DB_prevBtn { position:absolute; left:15px; width:50px; height:65px; background:url('/_wg/img/arrowL_50.gif') no-repeat 50% 50%; opacity:0; -webkit-opacity:0; transition:all .3s ease; -webkit-transition:all .3s ease; }
-    .JS_mainBnr:hover .DB_prevBtn { left:10px; opacity:1.0; -webkit-opacity:1.0; }
+    .JS_mainBnr .DB_prevBtn { position:absolute; top:6px;left:20px; width:54px; height:54px; background:url('/_wg/img/arrowLW_35.gif') no-repeat 50% 50% #000000; transition:all .3s ease; -webkit-transition:all .3s ease;border-radius: 50%;  opacity: 0.3; border: 1px solid white;}
+    /*.JS_mainBnr:hover .DB_prevBtn { left:10px; opacity:1.0; -webkit-opacity:1.0; }*/
     .JS_mainBnr:hover .DB_prevBtn:hover { opacity:.4; -webkit-opacity:.4; }
-    .JS_mainBnr .DB_nextBtn { position:absolute; right:15px; width:50px; height:65px; background:url('/_wg/img/arrowR_50.gif') no-repeat 50% 50%; opacity:0; -webkit-opacity:0; transition:all .3s ease; -webkit-transition:all .3s ease; }
-    .JS_mainBnr:hover .DB_nextBtn { right:10px; opacity:1.0; -webkit-opacity:1.0; }
+    .JS_mainBnr .DB_nextBtn { position:absolute; top:6px;right:20px; width:54px; height:54px; background:url('/_wg/img/arrowRW_35.gif') no-repeat 50% 50% #000000;   transition:all .3s ease; -webkit-transition:all .3s ease;border-radius: 50%; opacity: 0.3; border: 1px solid white; }
+    /*.JS_mainBnr:hover .DB_nextBtn { right:10px; opacity:1.0; -webkit-opacity:1.0; }*/
     .JS_mainBnr:hover .DB_nextBtn:hover { opacity:.4; -webkit-opacity:.4; }
 
 
