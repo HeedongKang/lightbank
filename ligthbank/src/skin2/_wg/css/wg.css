@@ -129,7 +129,7 @@
     .item:hover .discount_rate.ico01 { top:-3px; filter:alpha(opacity=100); opacity:1.0; -webkit-opacity:1.0;}
 
 	/*상품 가격 표시 */
-	.price_small_Number {font-family: 'Roboto', sans-serif; font-weight: 400; color: #676565; font-size:12px;text-decoration:line-through; } /*할인전 가격*/
+	.price_small_Number {font-family: 'Roboto', sans-serif; font-weight: 400; color: #676565; font-size:12px;text-decoration:line-through; display: inline-block; margin: 3px 0 2px 0; } /*할인전 가격*/
 	.price_middle_Number {font-family: 'Roboto', sans-serif; font-weight: bold; color: #2d2c2c;font-size:19px;} /*가격*/
 	.price_small_BNumber {font-family: 'Roboto', sans-serif; font-weight: 100; color: #676565; font-size:20pt;text-decoration:line-through; } /*할인전 가격*/
 	.price_middle_BNumber {font-family: 'Roboto', sans-serif; font-weight: 500; color: #2d2c2c;font-size:30pt;} /*가격*/
@@ -197,9 +197,9 @@
     .-chk input[type="checkbox"]:hover + label:after { visibility:visible; }
 
 
-	.prd_btn_pg_on{font-size:10pt;width: 1.8em;border-radius: 6em;line-height: 2em;display: inline-block;text-align: center;background:#1f1f1f;color:#ffffff;}
-	.prd_btn_pg_off{font-size:10pt;width: 1.8em;border-radius: 6em;line-height: 2em;display: inline-block;text-align: center;background:#ffffff;color:#1f1f1f;}
-	.prd_btn_pg_off:hover{font-size:10pt;width: 1.8em;border-radius: 6em;line-height: 2em;display: inline-block;text-align: center;background:#1f1f1f;color:#ffffff;}
+	.prd_btn_pg_on{font-size:10pt;width: 1.8em;border-radius: 6em;line-height: 1.8em;display: inline-block;text-align: center;background:#1f1f1f;color:#ffffff; text-decoration: none!important;}
+	.prd_btn_pg_off{font-size:10pt;width: 1.8em;border-radius: 6em;line-height: 1.8em;display: inline-block;text-align: center;background:#ffffff;color:#1f1f1f;}
+	.prd_btn_pg_off:hover{font-size:10pt;  width: 1.8em;border-radius: 6em;line-height: 1.8em;display: inline-block;text-align: center;background:#1f1f1f;color:#ffffff; text-decoration: none!important;}
 
 
 /** 좋아요 버튼 **/

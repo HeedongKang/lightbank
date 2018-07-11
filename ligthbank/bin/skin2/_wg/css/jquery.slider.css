@@ -81,15 +81,21 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: 0;
-	background: url('/_wg/img/arw_set.png') no-repeat 0 -1013px;
-	filter:alpha(opacity=20); opacity:6;
+    left: 10px;
+    background: url(/_wg/img/arrowLW_35.gif) no-repeat 50% 50% #000000;
+    -webkit-transition: all .3s ease;
+    border-radius: 50%;
+    opacity: 0.3;
+    border: 1px solid white;
 }
 
 .bx-wrapper .bx-next {
-	right: 0;
-	background: url('/_wg/img/arw_set.png') no-repeat 0 -1054px;
-	filter:alpha(opacity=20); opacity:6;
+    right: 10px;
+    background: url(/_wg/img/arrowRW_35.gif) no-repeat 50% 50% #000000;
+    -webkit-transition: all .3s ease;
+    border-radius: 50%;
+    opacity: 0.3;
+    border: 1px solid white;	
 }
 
 .bx-wrapper:hover .bx-prev {
@@ -110,13 +116,14 @@
 
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	margin-top: -20px;
 	outline: 0;
-	width: 40px;
-	height: 40px;
+	width: 54px;
+	height: 54px;
 	text-indent: -999999px;
-	z-index: 9;overflow:hidden;
+	z-index: 9;
+	overflow:hidden;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {
