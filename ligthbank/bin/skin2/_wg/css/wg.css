@@ -108,6 +108,11 @@
 	.maint_Tit{margin: 80px auto 30px; width: 1260px; text-align: center;font-size:19pt;font-weight:bold;}
 	.maint_Tit .stit {color:red;}
  
+ 	/*USER BEST 타이틀*/
+ 	.mainReview_Tit{margin: 80px auto 0px; width: 1260px; text-align: center;font-size:27pt;font-weight:bold;}
+ 	.mainReview_Tit .stit {color:red;}
+ 	.mainReview_Desc {font-size:15px;text-align:center}
+ 	
 	/*파격특가 매진임박 아이콘*/
 	.soldout { position:absolute; z-index:5; text-align:center; vertical-align:middle; cursor:pointer; }
 	.soldout.ico01 {top:15px;left:15px; width:40px; height:40px; line-height:40px;  font-size:11px; filter:alpha(opacity=0); }

@@ -1,69 +1,67 @@
 <script type="text/javascript" src="/_wg/js/jquery-1.11.0.min.js"></script>
 <link rel="stylesheet" href="/_wg/css/jquery.slider.css" media="screen" />
 <script type="text/javascript" src="/_wg//js/jquery.slider.js"></script>
-<div style="background-color:rgb(90,90,90);height:560px;margin-top:-50px;margin-bottom:80px;">
-		<div style="text-align: center;padding-top:10px">
-			<img src="/_wg/img/bestReviewTit.jpg"/>
-		</div>
-	<div style="width:1380px; margin:0 auto; position:relative; clear:both;">		
-		<!-- 추천상품 (Recommended items) -->
-		<div module="board_list_101" class="ec-base-product">
-            <!--
-            	$count = 20
-                $product_name_cut = 18
-                $login_page_url = /member/login.html
-                $deny_access_url = /index.html
-            -->
-		    <ul class="prdList grid4 mSlider" style="margin-left:20px">
-				<li class="item" style="margin-top:25px;background:#ffffff;height:430px">
-		    		<div>
-		    			<img src="{$img_src|replace:/gallery/,/}" width="100%" height="290"/>
-		    		</div>	
-				    <div style="margin-left:10px;margin-right:10px">
-				    	<table>
-				    		<tr>
-				    			<td style="font-weight:500;color:#777777">{$writer} 고객님  </td>
-				    			<td align="right"><img src="/ex/ico_point5.gif" alt="5점" height="20"></td>
-				    		</tr>
-				    		<tr>
-				    			<td colspan="2" style="font-weight:500;font-size:15px;padding-top:10px">
-				    				{$subject}
-				    			</td>
-				    		</tr>
-				    		<tr>
-				    			<td colspan="2" style="font-weight:normal;font-size:13px;padding-top:10px;color:#5a5a5a">
-				    				{$content}
-				    			</td>
-				    		</tr>
-				    	</table>
-				    </div>		    		
-				</li>
-				<li class="item" style="margin-top:25px;background:#ffffff;height:430px">
-		    		<div >
-		    			<img src="{$img_src|replace:/gallery/,/}"  width="100%" height="290"/>
-		    		</div>	
-				    <div style="margin-left:10px;margin-right:10px">
-				    	<table>
-				    		<tr>
-				    			<td style="font-weight:500;color:#777777">{$writer} 고객님  </td>
-				    			<td align="right"><img src="/ex/ico_point5.gif" alt="5점" height="20"></td>
-				    		</tr>
-				    		<tr>
-				    			<td colspan="2" style="font-weight:500;font-size:15px;padding-top:10px">
-				    				{$subject}
-				    			</td>
-				    		</tr>	
-				    		<tr>
-				    			<td colspan="2" style="font-weight:normal;font-size:13px;padding-top:10px;color:#5a5a5a">
-				    				{$content}
-				    			</td>
-				    		</tr>				    					    		
-				    	</table>
-				    </div>		    		
-				</li>
-		    </ul>
-		</div><!-- //추천상품 (Recommended items) -->
-	</div>
+<!--@css(/_wg/css/bestReview.css)-->
+<div class="mainReview_Tit" style="font-size:27pt">USER <span class="stit">BEST</span></div>
+<div class="mainReview_Desc">조명뱅크 고객님들의 베스트 리뷰</div>
+<div style="width:1380px; margin:0 auto; position:relative; clear:both;">		
+	<!-- 추천상품 (Recommended items) -->
+	<div module="board_list_101" class="ec-base-product">
+           <!--
+           	$count = 20
+               $product_name_cut = 18
+               $login_page_url = /member/login.html
+               $deny_access_url = /index.html
+           -->
+	    <ul class="mSlider bestReview">
+			<li class="item">
+	    		<div>
+	    			<img src="{$img_src|replace:/gallery/,/}" width="100%" height="290"/>
+	    		</div>	
+			    <div class="descriptionBox">
+			    	<table>
+			    		<tr>
+			    			<td class="name">{$writer} 고객님  </td>
+			    			<td align="right"><img src="/ex/ico_point5.gif" alt="5점" height="20"></td>
+			    		</tr>
+			    		<tr>
+			    			<td class="title" colspan="2">
+			    				{$subject}
+			    			</td>
+			    		</tr>
+			    		<tr>
+			    			<td class="conts" colspan="2">
+			    				{$content}
+			    			</td>
+			    		</tr>
+			    	</table>
+			    </div>		    		
+			</li>
+			<li class="item">
+	    		<div >
+	    			<img src="{$img_src|replace:/gallery/,/}"  width="100%" height="290"/>
+	    		</div>	
+			    <div class="descriptionBox">
+			    	<table>
+			    		<tr>
+			    			<td class="name">{$writer} 고객님  </td>
+			    			<td align="right"><img src="/ex/ico_point5.gif" alt="5점" height="20"></td>
+			    		</tr>
+			    		<tr>
+			    			<td class="title" colspan="2">
+			    				{$subject}
+			    			</td>
+			    		</tr>	
+			    		<tr>
+			    			<td class="conts" colspan="2">
+			    				{$content}
+			    			</td>
+			    		</tr>				    					    		
+			    	</table>
+			    </div>		    		
+			</li>
+	    </ul>
+	</div><!-- //추천상품 (Recommended items) -->
 </div>
 <script type="text/javascript" >
 $('.mSlider').bxSlider({

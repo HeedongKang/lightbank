@@ -1,0 +1,7 @@
+    .bestReview {}
+    .bestReview >li{position: relative;display: inline-block;color: #000; vertical-align: top;font-size: 12px;line-height: 17px;padding-top:25px;padding-bottom: 5px;background:#ffffff;height:430px;}
+	.bestReview >li .descriptionBox {margin-left:10px;margin-right:10px;}
+	.bestReview >li .descriptionBox .name{font-weight:500;}
+	.bestReview >li .descriptionBox .title{font-weight:500;font-size:15px;padding-top:10px;}
+	.bestReview >li .descriptionBox .conts{font-weight:normal;font-size:13px;padding-top:10px;}
+    
