@@ -38,9 +38,9 @@
     .JS_tabRolling2 .item_list > ul .description .chips:first-child { margin:5px -1px 8px !important; }
 
     /* 아이콘 */
-    .JS_tabRolling2 .item_list > ul .description .icon { margin:13px 0 3px 0; vertical-align:middle; }
+    .JS_tabRolling2 .item_list > ul .description .icon { margin:13px 0 5px 0; vertical-align:middle; }
     .JS_tabRolling2 .item_list > ul .description .icon:after { content:""; display:block; clear:both; }
-    .JS_tabRolling2 .item_list > ul .description .icon img { margin:0 7px 0 0; }
+    .JS_tabRolling2 .item_list > ul .description .icon img { margin:0 2px 0 0; }
 
     .JS_tabRolling2 .item_list > ul .description .mileage { display:block; }
     .JS_tabRolling2 .item_list > ul .description span.grid { display:block; }

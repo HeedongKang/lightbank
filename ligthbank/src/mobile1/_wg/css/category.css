@@ -1,5 +1,5 @@
 
-    #nav { position:relative; margin:0 0 20px; background:url('/_wg/img/category_bar.gif') repeat-y top; background-size:100% 100%; border-top:1px solid #ddd; border-bottom:1px solid #ddd; }
+    #nav { position:relative; margin:0 0 20px;background-size:100% 100%; border-top:1px solid #ddd; border-bottom:1px solid #ddd; }
     #nav:after { content:""; display:block; clear:both; *zoom:1; }
     #nav ul { clear:both; }
     #nav ul:after { content:""; display:block; clear:both; *zoom:1; }

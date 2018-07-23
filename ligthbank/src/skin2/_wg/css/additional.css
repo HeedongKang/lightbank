@@ -84,7 +84,7 @@
 .slide_anchor ul li { display:inline-block; letter-spacing:0; vertical-align:top; }
 .slide_anchor ul li a { display:block; min-width:140px; height:35px; line-height:35px; margin:0 0 0 -1px; border:1px solid #e8e8e8; border-bottom:none; background:#f6f6f6; color:#888; text-align:center; font-size:12px; }
 .slide_anchor ul li a:hover { text-decoration:none; background:#f1f1f1; color:#111; }
-.slide_anchor ul li.on a { position:relative; z-index:1; margin:-4px 0 0 -1px; height:40px; line-height:40px; border:1px solid #555; border-bottom:none; background:#fff; font-weight:700; color:#111; font-size:13px; }
+.slide_anchor ul li.on a { position:relative; z-index:1; margin:-4px 0 0 -1px; height:40px; line-height:40px; border:1px solid #555; border-bottom:none; background:#fff; font-weight:500; color:#111; font-size:13px; }
 .slide_anchor span { display:inline-block; line-height:12px; margin:0 0 0 5px; padding:2px 4px; border-radius:5px; background:#333; color:#fff; font-size:10px; }
 
 /* 상품상세정보 설정 */

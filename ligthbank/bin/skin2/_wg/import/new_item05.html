@@ -1,0 +1,79 @@
+<!--@layout(/_wg/import/layout_blank.html)-->
+
+<!--@css(/_wg/css/new_item.css)-->
+
+<div module="product_listmain_40" class="new_item">
+    <!--
+        $count = 3
+    -->
+    <ul class="prdList grid3">
+        <li class="item" id="anchorBoxId_{$product_no}">
+            <div class="discount_rate ico01 -mov" data-price="{$product_custom}" data-sale="{$product_price}"></div>
+            <div class="thumbnail">
+                <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}" target="_parent"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" />
+                    <span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
+                    <div class="d_thumb">
+                        <ul class="img">
+                            <li><img src="{$image_medium}" alt="{$seo_alt_tag}" /></li>
+                            <li><img src="{$add_image_src1}" alt="{$seo_alt_tag}" /></li>
+                            <li><img src="{$add_image_src2}" alt="{$seo_alt_tag}" /></li>
+                            <li><img src="{$add_image_src3}" alt="{$seo_alt_tag}" /></li>
+                            <li><img src="{$add_image_src4}" alt="{$seo_alt_tag}" /></li>
+                            <li><img src="{$add_image_src5}" alt="{$seo_alt_tag}" /></li>
+                        </ul>
+                        <ul class="btn"></ul>
+                        <span class="arrow prev">이전</span>
+                        <span class="arrow next">다음</span>
+                    </div>
+                </a>
+            </div>
+            <div class="description">
+                <p class="color">
+                    <div module="product_Colorchip" class="colorChip" style="display:none;"></div>
+                </p>
+                <p class="name">
+                    <a href="/product/detail.html{$param}" class="{$product_name_display|display}" target="_parent"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a>
+                    <div class="line -mov"></div>
+                </p>
+                <ul module="product_ListItem" class="spec">
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                </ul>
+            </div>
+        </li>
+        <li class="item" id="anchorBoxId_{$product_no}">
+            <div class="discount_rate ico01 -mov" data-price="{$product_custom}" data-sale="{$product_price}"></div>
+            <div class="thumbnail">
+                <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}" target="_parent"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" />
+                    <span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
+                    <div class="d_thumb">
+                        <ul class="img">
+                            <li><img src="{$image_medium}" alt="{$seo_alt_tag}" /></li>
+                            <li><img src="{$add_image_src1}" alt="{$seo_alt_tag}" /></li>
+                            <li><img src="{$add_image_src2}" alt="{$seo_alt_tag}" /></li>
+                            <li><img src="{$add_image_src3}" alt="{$seo_alt_tag}" /></li>
+                            <li><img src="{$add_image_src4}" alt="{$seo_alt_tag}" /></li>
+                            <li><img src="{$add_image_src5}" alt="{$seo_alt_tag}" /></li>
+                        </ul>
+                        <ul class="btn"></ul>
+                        <span class="arrow prev">이전</span>
+                        <span class="arrow next">다음</span>
+                    </div>
+                </a>
+            </div>
+            <div class="description">
+                <p class="color">
+                    <div module="product_Colorchip" class="colorChip" style="display:none;"></div>
+                </p>
+                <p class="name">
+                    <a href="/product/detail.html{$param}" class="{$product_name_display|display}" target="_parent"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a>
+                    <div class="line -mov"></div>
+                </p>
+                <ul module="product_ListItem" class="spec">
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -6,10 +6,11 @@
 
 /** header_01 **/
 
-    .header_01_wrap { position:fixed; z-index:3; width:100%; top:0; left:0; }
+    .header_01_wrap { z-index:3; width:100%; top:0; left:0; }
+    .header_01_wrap.fixed{position:fixed;}
 
     /* 홈버튼 */
-    #slide_home { position:absolute; z-index:1; top:-39px; left:40px; width:39px; height:39px; opacity:.5; -webkit-opacity:.5; transition:all .3s 0s ease; }
+    #slide_home { position:absolute; z-index:1; top:-109px; left:40px; width:39px; height:39px; opacity:.5; -webkit-opacity:.5; transition:all .3s 0s ease; }
     #slide_home img { width:100%; }
     #header.fixed #slide_home { top:0px; opacity:1; -webkit-opacity:1; transition:all .3s .5s ease; }
 
@@ -39,7 +40,7 @@
 
 /** header_02 **/
 
-    .header_02 { position:relative; display:block; height:60px; margin:30px 0 25px; }
+    .header_02 { position:relative; display:block; height:60px; margin:9px 0 25px; }
 
     /* 로고 */
     .header_02 #logo { height:60px; text-align:center; }

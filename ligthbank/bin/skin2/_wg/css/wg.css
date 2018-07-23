@@ -129,12 +129,12 @@
     .item:hover .discount_rate.ico01 { top:-3px; filter:alpha(opacity=100); opacity:1.0; -webkit-opacity:1.0;}
 
 	/*상품 가격 표시 */
-	.price_small_Number {font-family: 'Roboto', sans-serif; font-weight: 400; color: #676565; font-size:12px;text-decoration:line-through; display: inline-block; margin: 3px 0 2px 0; } /*할인전 가격*/
+	.price_small_Number {font-family: 'Roboto', sans-serif; font-weight: 400; color: #a1a1a1; font-size:13px;text-decoration:line-through; display: inline-block; margin: 10px 0 7px 0;  line-height: 11px; } /*할인전 가격*/
 	.price_middle_Number {font-family: 'Roboto', sans-serif; font-weight: bold; color: #2d2c2c;font-size:19px;} /*가격*/
-	.price_small_BNumber {font-family: 'Roboto', sans-serif; font-weight: 100; color: #676565; font-size:20pt;text-decoration:line-through; } /*할인전 가격*/
+	.price_small_BNumber {font-family: 'Roboto', sans-serif; font-weight: 300; color: #a1a1a1; font-size:23px; text-decoration:line-through; } /*할인전 가격*/
 	.price_middle_BNumber {font-family: 'Roboto', sans-serif; font-weight: 500; color: #2d2c2c;font-size:30pt;} /*가격*/
-	.price_small_SNumber {font-family: 'Roboto', sans-serif; font-weight: 100; color: #676565; font-size:10pt;text-decoration:line-through; } /*할인전 가격*/
-	.price_middle_SNumber {font-family: 'Roboto', sans-serif; font-weight: 500; color: #2d2c2c;font-size:15pt;} /*가격*/
+	.price_small_SNumber {font-family: 'Roboto', sans-serif; font-weight: 400; color: #a1a1a1; font-size:13px;text-decoration:line-through; } /*할인전 가격*/
+	.price_middle_SNumber {font-family: 'Roboto', sans-serif; font-weight: 600; color: #2d2c2c;font-size:19px; leter-sacing:-0.03em;} /*가격*/
 	
 	
 	.best_Number_yellow {font-family: 'Roboto', sans-serif; font-weight: 500; color:#f6e406;background:#333;font-size: 15pt;}  /*Best 1,2 */
@@ -145,9 +145,14 @@
 	.big_Best_Box:after { counter-increment:chapter; content:counter(chapter)""; }
 	.big_Best_Text{font-family: 'Roboto', sans-serif; font-weight: 400;font-size:20pt;}  /*Best */
 	
-	.small_Best_Box{width: 45px;height:40px;text-align:center;line-height: 15px;margin-top: 3px;padding-top: 5px;}
+	.small_Best_Box{ width: 45px;  text-align: center; line-height: 15px;  margin-top: 3px;  height: 47px;}
 	.small_Best_Box:after { counter-increment:chapter; content:counter(chapter)""; }
-	.small_Best_Text{font-family: 'Roboto', sans-serif; font-weight: 400;font-size:10pt;}  /*Best */
+	.small_Best_Text{font-family: 'Roboto',sans-serif;  font-weight: 400;  font-size: 10px;  line-height: 18px;  display: inline-block;  margin-top: 3px;}  /*Best */
+    .won_txt { font-size: 12px; vertical-align: middle;  display: inline-block;  height: 22px;  padding: 0 0 0 4px;  font-weight: 500; }
+    .won_txt2 { font-size: 12px; vertical-align: middle; display: inline-block; height: 20px; padding: 0 0 0 4px; font-weight: 500; }
+    .won_txt3 { font-size: 12px; vertical-align: middle; display: inline-block; height: 18px; padding: 0 0 0 4px; font-weight: 500; }
+    .won_txtbig {font-size: 23px; vertical-align: middle; display: inline-block; height: 22px; padding: 0 0 0 6px; font-weight: 500;}
+
 	
     /* 세일 */
     .discount_rate.ico02 { top:-4px; left:-4px; width:60px; height:60px; line-height:60px; background:rgba(0,0,0,.8)/* 아이콘 배경색상 */; background:#333/* ie9이하 배경색상 */; font-size:20px; color:#fff; cursor:pointer; }
@@ -172,7 +177,7 @@
     .item:hover .discount_rate.ico06 { top:-3px; filter:alpha(opacity=100); opacity:1.0; -webkit-opacity:1.0;}
 
 	/*상품 하단 왼쪽  할인율*/
-	.discount_rate.sale_large_Number {font-family: 'Roboto', sans-serif; font-weight: 900; color:#ff7b05; font-size:35pt;}  /*할인% 가장큰거 */
+	.discount_rate.sale_large_Number {font-family: 'Roboto', sans-serif; font-weight: 700; color:#ff7b05; font-size:37pt; display: inline-block; margin-top: 3px }  /*할인% 가장큰거 */
 	.discount_rate.sale_small_Number {font-family: 'Roboto', sans-serif; font-weight: 900; color:#ff7b05; font-size:25pt;}  /*할인% 가장큰거 */
     
     /* 상품상세 */
