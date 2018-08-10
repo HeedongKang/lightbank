@@ -433,10 +433,11 @@
 
 <div id="tabProduct">
     <ul module="product_detail">
-        <li class="selected "><a href="#prdDetail" target="_self" class="-mov">DETAIL</a></li>
-        <li><a href="#prdInfo" class="-mov">INFO</a></li>
-        <li><a href="#prdReview" name="use_review" class="-mov">REVIEW ( {$review_count} )</a></li>
-        <li><a href="#prdQnA" name="use_qna" class="-mov">Q &amp; A ( {$qna_count} )</a></li>
+        <li class="selected "><a href="#prdDetail" target="_self" class="-mov">상품상세</a></li>
+        <li><a href="#installGuide" class="-mov">설치가이드</a></li>
+        <li><a href="#prdInfo" class="-mov">상품안내</a></li>
+        <li><a href="#prdReview" name="use_review" class="-mov">후기 ( {$review_count} )</a></li>
+        <li><a href="#prdQnA" name="use_qna" class="-mov">문의( {$qna_count} )</a></li>
     </ul>
 </div>
 
@@ -458,6 +459,18 @@
         <div class="button" id="prdDetailBtn">
             <a href="/product/zoom.html?product_no={$product_no}" class="btnNormal">원본보기 <span class="ico"></span></a>
         </div> 
+    </div>
+    
+    <!-- 설치가이드-->
+    <div id="installGuide">
+		<div class="prG_wrap">
+			<p><img src="/_wg/img/pr01_guide_title.jpg" alt="조명설치방법" width="100%"></p>
+			<p><img src="/_wg/img/pr01_guide01.jpg" alt="거실등" width="100%"></p>
+			<p><img src="/_wg/img/pr01_guide02.jpg" alt="거실등" width="100%"></p>
+			<p><img src="/_wg/img/pr01_guide03.jpg" alt="거실등" width="100%"></p>
+			<p><img src="/_wg/img/pr01_guide04.jpg" alt="거실등" width="100%"></p>
+			<p><img src="/_wg/img/pr02_guide02.jpg" alt="전선설치/잔광현상이란?/잔광현상조치사항" width="100%"></p>
+		</div>      
     </div>
 
     <!-- 구매안내 -->

@@ -260,7 +260,7 @@
 #tabProduct { margin:40px 0 0; font-size:12px; background-color:#fff; }
 #tabProduct ul { position:relative; height:36px; border-bottom:1px solid #ddd; }
 #tabProduct ul:after { content:""; display:block; clear:both; }
-#tabProduct li { width:25%; float:left; }
+#tabProduct li { width:20%; float:left; }
 #tabProduct li a { float:left; position:relative; height:36px; width:100%; padding:0; color:#555; line-height:36px; text-align:center; text-decoration:none; }
 #tabProduct li:first-child a { border-left:0; }
 #tabProduct li.selected a { border-bottom:1px solid #111; color:#111; font-weight:bold; }

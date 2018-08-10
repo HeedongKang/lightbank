@@ -103,3 +103,8 @@
 /* 게시판 */
 #prdReview, #prdQnA { position:relative; }
 #prdReview .anchor, #prdQnA .anchor { position:absolute; top:-115px; }
+
+/*설치가이드*/
+.prG_wrap { width:1081px; margin: 0 auto; text-align: center; padding: 50px 0 100px 0; }
+.prG_wrap > p {padding-bottom: 80px;}
+.prG_wrap > p:last-child {border-bottom:1px solid #e1e1e1;}

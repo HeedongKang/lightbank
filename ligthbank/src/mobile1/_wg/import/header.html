@@ -1,13 +1,26 @@
 <div style="z-index:1000">
-  <a href="/"><img src="/_wg/img/topBanner.jpg" width="100%"></a>
+  <a href="/"><img src="/_wg/img/topBanner.jpg" width="100%" height="70"></a>
 </div>
 <!--@css(/_wg/css/header.css)-->
 <header id="header">
-    
-    <!--@import(/_wg/import/header_01.html)-->
-    
-    <!--@import(/_wg/import/header_02.html)-->
-
-    <!--@import(/_wg/import/header_03.html)-->
-
+	<div class="header_01_wrap">
+	    <div class="header_01">
+	        <ul>
+	        	<li style="width:80%">
+	        		<img src="/_wg/img/m_logo.png"  height="30" onclick="javascript:location.href='/'" id="m_logo">
+	        	</li>
+	            <li module="Layout_orderBasketcount"><a href="/order/basket.html?page=1"><img src="/_wg/img/icon_shoppinBag.png" height="28"> <span module="Layout_orderBasketcount" class="count{$basket_cnt}">{$basket_count}</span></a></li>
+	        </ul>
+	    </div>
+		<!--@css(/_wg/css/searchHeader.css)-->
+	     <form id="searchBarForm" name="" action="/product/search.html" method="get" enctype="multipart/form-data">
+			<input id="banner_action" name="banner_action" value="" type="hidden"><div class="xans-element- xans-layout xans-layout-searchheader searchHeader "><div class="searchForm">
+						            <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text" onfocusout="javascript:document.getElementById('keyword').value='';"></div>
+		</div>
+		</form>
+	</div>
+	<!-- 사용안함 -->    
+    <!--import(/_wg/import/header_01.html)-->
+    <!--import(/_wg/import/header_02.html)-->
+    <!--import(/_wg/import/header_03.html)-->
 </header>

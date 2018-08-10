@@ -295,7 +295,7 @@
 
 .buy_wrap.fixed { position:fixed; z-index:100; bottom:-591px; width:450px; height:550px; margin:0 0 0 180px; padding:20px; background:rgba(255,255,255,.95); background:#fff \9; border:1px solid #ddd; border-top:none; transition:bottom .2s, box-shadow .8s ease; -webkit-transition:bottom .2s, box-shadow .8s ease; }
 .buy_wrap.fixed.on { bottom:-10px; box-shadow:0 -3px 4px rgba(0,0,0,0.2); transition-delay:0s; -webkit-transition-delay:0s; }
-.buy_wrap.fixed .toggle_btn { position:absolute; top:-45px; left:-1px; width:492px; height:45px; line-height:45px; background:url('/_wg/img/infoArea_arrow.gif') no-repeat 97% 15px rgba(30,30,30,.98); background:#111 \9; font-size:13px; font-weight:700; cursor:pointer; color:#fff; text-indent:20px; }   
+.buy_wrap.fixed .toggle_btn { position:absolute; top:-45px; left:-1px; width:492px; height:45px; line-height:45px; background:url('/_wg/img/infoArea_arrow.gif') no-repeat 97% 15px rgba(30,30,30,.98); background:#111 \9; font-size:13px; font-weight:500; cursor:pointer; color:#fff; text-indent:20px; }   
 .buy_wrap.fixed .toggle_btn.on { background:url('/_wg/img/infoArea_arrow.gif') no-repeat 97% -21px rgba(30,30,30,.90); background:#111 \9; }
 
 .buy_wrap.fixed .buy_scroll { overflow:auto; height:485px; margin:0 0 10px; }/*스크롤내부*/

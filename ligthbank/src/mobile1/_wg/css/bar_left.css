@@ -8,30 +8,30 @@
     .d_etc18.left .d_content { position:relative; display:block; height:100%; padding:0 0 20px; font:12px 돋움; overflow-y:auto; -webkit-overflow-scrolling:touch; }
 
     /* 버튼 */
-    .d_etc18.left .d_toggle { position:absolute; z-index:1; top:102px; right:-39px; width:39px; height:39px; margin-top:-25px; background:none; cursor:pointer; transition:right .5s .6s, background .5s 1s ease; }
-    .d_etc18.left .d_toggle.fixed {top:25px;}
-    .d_etc18.left .d_toggle.d_on { right:0; background:rgba(0,0,0,.1);top:25px; }
+    .d_etc18.left .d_toggle { position:absolute; z-index:1; top:115px; right:-34px; width:30px; height:30px; margin-top:-25px; background:#1f1f1f; cursor:pointer; transition:right .5s .6s, background .5s 1s ease; }
+    .d_etc18.left .d_toggle.fixed {top:34px;}
+    .d_etc18.left .d_toggle.d_on { right:0; background:rgba(0,0,0,.1); top:35px;}
     /* bar1 */
-    .d_etc18.left .d_toggle .btn_01 { position:absolute; top:14px; left:11px; transition:all .4s 1.2s ease; }
-    .d_etc18.left .d_toggle.d_on .btn_01 { top:19px; transform:rotate(135deg); }
+    .d_etc18.left .d_toggle .btn_01 { position:absolute; top:14px; left:7px; transition:all .4s 1.2s ease; display:none}
+    .d_etc18.left .d_toggle.d_on .btn_01 { top:15px; transform:rotate(135deg); display:inline}
     /* bar2 */
-    .d_etc18.left .d_toggle .btn_02 { position:absolute; top:24px; left:11px; transition:all .4s 1.2s ease; }
-    .d_etc18.left .d_toggle.d_on .btn_02 { top:19px; transform:rotate(45deg); }
-
+    .d_etc18.left .d_toggle .btn_02 { position:absolute; top:24px; left:7px; transition:all .4s 1.2s ease; display:none}
+    .d_etc18.left .d_toggle.d_on .btn_02 { top:15px; transform:rotate(45deg); display:inline}
+	
+	.d_etc18.left .d_toggle .btn_03 { position:absolute; top:8px; left:8px;  width:15px;display:inline}
+	.d_etc18.left .d_toggle.d_on .btn_03 {top:15px;display:none}}
 
 
     /* 내용 */
     .d_etc18.left .top_content { display:block; padding:20px 15px; }
-
-    .d_content .intro { margin:0 0 15px; font-size:10px; letter-spacing:-0.03em; color:#888; font-weight:200; }
+ 
+    .d_content .intro { margin:10px 10px 15px; font-size:10px; letter-spacing:-0.03em; color:#888; font-weight:200; }
     .d_content .intro strong { display:block; margin:0 0 4px; font-size:13px; letter-spacing:0.08em; color:#333; }
 
     .d_content .member_btn { height:35px; } 
     .d_content .member_btn a { float:right; width:48%; height:35px; line-height:37px; border:1px solid #ddd; background-color:#fff; font-size:13px; text-align:center; font-weight:200; }
     .d_content .member_btn a.btnLogin { float:left; border:1px solid #000; background-color:#111; color:#fff; }
     .d_content .member_btn a.btnLogout { float:left; border:1px solid #777; background-color:#888; color:#fff; }
-
-
 
 
 
