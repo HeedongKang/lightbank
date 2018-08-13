@@ -163,4 +163,6 @@
     .titleArea h3 { display:block; padding:0 3%; line-height:30px; font-size:13px; letter-spacing:0.03em; font-weight:700; color:#000; }
     .titleArea .line { width:15px; margin:10px 0 20px 3%; border-top:1px solid #333; height:0; font-size:0; }
 
-
+	/*메인 타이틀*/
+	.maint_Tit{margin: 30px auto 25px;font-size: 13pt; text-align: center;font-weight:bold;}
+	.maint_Tit .stit {color:red;}
