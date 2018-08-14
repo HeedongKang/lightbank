@@ -18,24 +18,29 @@
 
      /* 상품 리스트 */
     .brandBestTab .item_list { display:block; padding:1% 3%; background:#fff; font-size:0; line-height:0; letter-spacing:-4px; }
-    .brandBestTab .item_list .item { display:inline-block; width:50%; margin:0 0 20px; font-size:11px; line-height:14px; letter-spacing:-0.04em; vertical-align:top; }
-    .brandBestTab .item_list .thumbnail { position:relative; width:90%; margin:0 auto 10px; }
+    .brandBestTab .item_list .item { display:inline-block; width:50%; margin:0 0 10px; font-size:11px; line-height:14px; letter-spacing:-0.04em; vertical-align:top;}
+    .brandBestTab .item_list .thumbnail { position:relative; width:90%; margin:0 auto 0px;border-top:1px solid #dbdbdb;border-left:1px solid #dbdbdb;border-right:1px solid #dbdbdb; }
     .brandBestTab .item_list .thumbnail .thumb { width:100%; }
 
-    .brandBestTab .item_list .description { position:relative; width:88%; margin:0 auto; text-align:left; }
-    .brandBestTab .item_list .description .name { dispaly:block; margin:0 0 5px; padding:0 0 5px; border-bottom:1px solid #eee; }
+    .brandBestTab .item_list .description { position:relative; width:90%; margin:0 auto; text-align:center; border:1px solid #dbdbdb;height:95px;}
+    .brandBestTab .item_list .description .name { dispaly:block; margin:0 0 5px; padding:0 0 5px; font-size:10pt}
     .brandBestTab .item_list .description ul li span { /* color:#333 !important; 리스트 텍스트 설정 */ }
     
     .brandBestTab .item_list .description .icon { margin:10px 0 5px; }
     .brandBestTab .item_list .description .icon img { max-height:20px; margin:0 4px 0 0; }
 
-    .brandBestTab .item_list .list_button { display:block; position:relative; margin:0; padding:0; font-size:0; line-height:0; }
+    .brandBestTab .item_list .list_button { display:block; position:relative; margin-left:30%; padding:0; font-size:0; line-height:0; }
     .brandBestTab .item_list .list_button span { float:left; }
     .brandBestTab .item_list .list_button img { width:25px; margin:0 3px 0 0; font-size:11px; }
 
     .brandBestTab .item_list ul { counter-reset:rankup 0; }
     .brandBestTab .best_ico { position:absolute; left:10px; top:10px; width:40px; height:22px; border-top:1px solid #111; border-bottom:1px solid #111; background:rgba(255,255,255,.7); font-size:13px; font-weight:bold; color:#111; line-height:24px; text-align:center; }
-    .brandBestTab ul .num_ico { position:absolute; z-index:10; left:10px; top:10px; width:20px; height:22px; border-top:1px solid #111; border-bottom:1px solid #111; background:rgba(255,255,255,.7); font-size:12px; font-weight:bold; color:#111; line-height:24px; text-align:center; }
+    /*.brandBestTab ul .num_ico { position:absolute; z-index:10; left:10px; top:10px; width:20px; height:22px; border-top:1px solid #111; border-bottom:1px solid #111; background:rgba(255,255,255,.7); font-size:12px; font-weight:bold; color:#111; line-height:24px; text-align:center; }
     .brandBestTab ul .num_ico:after { counter-increment:rankup 1; content:counter(rankup)''; }
+    */
+    .brandBestTab ul .num_ico {position:absolute; right:1px;z-index:10;width:45px; height:45px; line-height:0.9em; background:rgba(20,20,20,.9); background:#333 \9; box-shadow:-1px 1px 2px rgba(0,0,0,0.2); font-size:20px;text-align:center;color:#f6e406;} 
+    .brandBestTab ul .num_ico:after { counter-increment:rankup 1; content:counter(rankup)''; }
+	.brandBestTab ul .num_ico2 {position:absolute;right:1px; z-index:10;  width:45px; height:45px; line-height:1em; background:#898989; background:#333 \9; box-shadow:-1px 1px 2px rgba(0,0,0,0.2); font-size:20px;text-align:center;color:#ffffff;} 
+    .brandBestTab ul .num_ico2:after { counter-increment:rankup 1; content:counter(rankup)''; }        
     
     
