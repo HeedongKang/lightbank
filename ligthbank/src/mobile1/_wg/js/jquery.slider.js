@@ -1280,7 +1280,7 @@
 			// resize all children in ratio to new screen size
 			slider.children.add(el.find('.bx-clone')).width(getSlideWidth());
 			// adjust the height
-			slider.viewport.css('height', getViewportHeight());
+			//slider.viewport.css('height', getViewportHeight());
 			// update the slide position
 			if(!slider.settings.ticker) setSlidePosition();
 			// if active.last was true before the screen resize, we want

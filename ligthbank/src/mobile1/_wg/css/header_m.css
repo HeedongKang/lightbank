@@ -1,12 +1,14 @@
 
 /** header **/
     #header { z-index:100; position:relative; margin-top:10px}
+    #header.fixed { margin-bottom:-140px; }
 
 
 /** header_01 **/
 
-    .header_01_wrap { z-index:3; width:100%; top:0; left:0;}
-	.header_01_wrap.fixed{position:fixed;}
+    .header_01_wrap { z-index:3; width:100%; top:0; left:0; }
+    .header_01_wrap.fixed{position:fixed;}
+
     /* 홈버튼 
     #slide_home { position:absolute; z-index:1; top:-109px; left:40px; width:39px; height:39px; opacity:.5; -webkit-opacity:.5; transition:all .3s 0s ease; }
     #slide_home img { width:100%; }
