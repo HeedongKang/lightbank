@@ -2,7 +2,6 @@
     .brandBestTab { position:relative; margin:0 auto 50px;  }
     .brandBestTab > .img { position:relative; overflow:hidden; }
     .brandBestTab > .img > li { position:absolute; left:0; top:0; width:100%; font-size:0; line-height:0; }
-
     /* 버튼 */
     .brandBestTab .btn { display:none; position:relative; width:100%; margin:0 0 15px; text-align:center; font-size:0; line-height:0; }
     .brandBestTab .btn li { display:inline-block; position:relative; width:12.5%; height:40px; line-height:40px; background:#4f4f4f; font-size:14px; font-weight:200; letter-spacing:0em; color:#FFFFFF; text-align:center; }

@@ -210,7 +210,7 @@
 
 	.ec-base-product .description_c { width:92%; margin:0 auto; line-height:1em; text-align:center; border:1px solid #dbdbdb; height:130px}
     .ec-base-product .description_c > ul > li { margin:0 0 5px; }
-    .ec-base-product .description_c .name { line-height:1.2em;margin:0 0 5px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;width:180px; display:inline-block}
+    .ec-base-product .description_c .name { line-height:1.2em;margin:0 0 5px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;width:160px; display:inline-block}
     .ec-base-product .description_c .line { display:block; height:0px; line-height:0; margin:0 0 10px; border-top:1px solid #eee; }
     .ec-base-product .description_c .icon { margin:10px 0 5px; }
     .ec-base-product .description_c .icon img { margin:0 4px 0 0; }
