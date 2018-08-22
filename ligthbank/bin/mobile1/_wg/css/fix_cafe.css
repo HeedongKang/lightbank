@@ -206,8 +206,17 @@
     .ec-base-product .description .name { line-height:1.2em; word-wrap:break-word; margin:0 0 5px; }
     .ec-base-product .description .line { display:block; height:0px; line-height:0; margin:0 0 10px; border-top:1px solid #eee; }
     .ec-base-product .description .icon { margin:10px 0 5px; }
-    .ec-base-product .description .icon img { max-height:11px; margin:0 4px 0 0; }
+    .ec-base-product .description .icon img { margin:0 4px 0 0; }
 
+	.ec-base-product .description_c { width:92%; margin:0 auto; line-height:1em; text-align:center; border:1px solid #dbdbdb; height:130px}
+    .ec-base-product .description_c > ul > li { margin:0 0 5px; }
+    .ec-base-product .description_c .name { line-height:1.2em;margin:0 0 5px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;width:180px; display:inline-block}
+    .ec-base-product .description_c .line { display:block; height:0px; line-height:0; margin:0 0 10px; border-top:1px solid #eee; }
+    .ec-base-product .description_c .icon { margin:10px 0 5px; }
+    .ec-base-product .description_c .icon img { margin:0 4px 0 0; }
+    
+    .grid2s-lim-text{text-overflow: ellipsis; white-space: nowrap; overflow: hidden;width:180px; display:inline-block}
+    
     /* 컬러칩 */
     .ec-base-product .description .color { overflow:hidden; width:100%; font-size:0; }
     .ec-base-product .description .chips { display:inline-block; width:12px; height:6px; margin:0 2px 10px 2px; padding:0; border-radius:4px; }

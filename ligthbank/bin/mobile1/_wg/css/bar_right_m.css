@@ -4,7 +4,7 @@
     .d_etc18.right .d_content {position:relative; display:block; height:100%; padding:0 0 20px; font:12px 돋움; overflow-y:auto; -webkit-overflow-scrolling:touch; cursor:pointer; }
 
     /* 버튼 */
-    .d_etc18.right .d_toggle { position:absolute; z-index:1; top:112px; left:-39px; width:39px; height:39px; margin-top:-25px; cursor:pointer; transition:left .5s .6s, background .5s 1s ease; }
+    .d_etc18.right .d_toggle { position:absolute; z-index:1; top:102px; left:-39px; width:39px; height:39px; margin-top:-25px; cursor:pointer; transition:left .5s .6s, background .5s 1s ease; }
     .d_etc18.right .d_toggle.fixed {top:32px;}
     .d_etc18.right .d_toggle.d_on { left:0; background:rgba(0,0,0,.1);top:32px;}
 

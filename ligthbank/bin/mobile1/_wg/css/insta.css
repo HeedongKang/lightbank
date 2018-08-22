@@ -1,7 +1,7 @@
 
-    .instafeed_wrap { position:relative; z-index:1; margin:0 0 -1px; padding:10px 3% 15px; border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; background:#f8f8f8; }
+    .instafeed_wrap { position:relative; z-index:1; margin:0 0 -1px; padding:10px 3% 15px; }
     .instafeed_wrap .title { display:block; margin:0 0 15px; font-weight:200; text-align:center; }
-    .instafeed_wrap .title .tit a { display:block; margin:0 0 5px; font-size:16px; color:#333; letter-spacing:0.2em; }
+    .instafeed_wrap .title .tit a { display:block; margin:0 0 5px; font-size:30px; color:#333;  font-weight:bold}
     .instafeed_wrap .title .tit i { position:relative; top:3px; font-size:22px; }
     .instafeed_wrap .title .tag { position:relative; }
     .instafeed_wrap .title a { color:#666; font-size:12px; }
