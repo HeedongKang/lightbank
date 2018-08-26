@@ -1,12 +1,11 @@
     
-    .SD_23165_02 { position:relatvie; float:left; width:840px; margin:0 0 40px; }
+    .SD_23165_02 { position:relatvie; float:left; }
     .SD_23165_02 img { width:100%; }
-    .SD_23165_02 p { margin:0 0 10px; }
-    .SD_23165_02 ul { margin:0 0 20px; font-size:0; line-height:0; letter-spacing:-4px; }
-    .SD_23165_02 ul li { display:inline-block; *display:inline; *zoom:1; width:260px; }
-    .SD_23165_02 ul li:first-child { margin:0 20px 0 0; width:560px; }
+    .SD_23165_02 ul { margin:-73px 0 10px; font-size:0; line-height:0; letter-spacing:-4px; }
+    .SD_23165_02 ul li { display:inline-block; *display:inline; *zoom:1; width:50%; }
+    .SD_23165_02 ul li:first-child {width:50%; }
     .SD_23165_02 img { transition:all .5s ease; -webkit-transition:all .5s ease; }
-    .SD_23165_02 img:hover { filter:alpha(opacity=60); opacity:.6; -webkit-opacity:.6; }
+    /*.SD_23165_02 img:hover { filter:alpha(opacity=60); opacity:.6; -webkit-opacity:.6; }*/
 
     .SD_23165_02 iframe { width:560px; height:300px; }
 

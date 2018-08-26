@@ -1,29 +1,54 @@
 <!--@layout(/layout/basic/layout.html)-->
 <div module="Product_menupackage" class="product_menupackage -frame">
     <!--@css(/_wg/css/menupackage.css)-->
-    <div class="path" module="product_headcategory">
-        <span>현재 위치</span>
-        <ol>
-            <li><a href="/">홈</a></li>
-            <li class="{$disp_cate_1|display}"><a href="/product/list.html{$param_1}">{$name_1}</a></li>
-            <li class="{$disp_cate_2|display}"><a href="/product/list.html{$param_2}">{$name_2}</a></li>
-            <li class="{$disp_cate_3|display}"><a href="/product/list.html{$param_3}">{$name_3}</a></li>
-            <li class="{$disp_cate_4|display}"><strong><a href="/product/list.html{$param_4}">{$name_4}</a></strong></li>
-        </ol>
-    </div>
-
     <div class="title" module="product_headcategory">
         <div class="banner">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</div>
-        <!--
-        <table width="1260" height="200">
-        <tr>
-          <td>
-             <center><b><span id="subMainBanner">배너 공간</span></b></center>
-          </td>
-        </tr>      
-        </table>
-        -->
-        <h2><span id="titleNmUseBanner">{$title_text_or_image}</span></h2>
+        <span id="loc_1depth" style="display:none">{$param_1}</span>
+        <!-- 서브메인 배너공간 -->
+        <div id="subMainBanner" style="display:none">
+			<!-- 좌측배너 -->
+			<!--@css(/_wg/css/SD_23165_02.css)-->
+			<div class="SD_23165_02">
+				<p id="banner1"><a href="/product/list.html?cate_no=100"><img id="bannerType1" src="/_wg/img/sub_banner/sbt_03_01.jpg" alt="" /></a></p>
+				<p id="banner2" style="display:none"><a href="/product/list.html?cate_no=164"><img id="bannerType1" src="/_wg/img/sub_banner/sbt_03_02.jpg" alt="" /></a></p>
+			    <ul id="bannerTab" style="display:none">
+			        <li><a href="javascript:chgBanner(1);"><img id="samsungBtn" src="/_wg/img/sub_banner/sb_tab01_on.jpg" alt="" /></a></li>
+			        <li><a href="javascript:chgBanner(2);"><img id="setBtn" src="/_wg/img/sub_banner/sb_tab02_off.jpg" alt="" /></a></li>
+			    </ul>
+			</div>   
+			    
+			<!-- 우측배너 공통 -->
+			<!--@css(/_wg/css/JS_23165_01.css)-->
+			<div class="JS_23165_01">
+			    <ul class="img">
+			        <!-- 해당 부분의 이미지만 변경하세요. -->
+			        <li><a href="/board/product/list.html?board_no=6"><img src="/_wg/img/sub_banner/sbs_01.jpg" alt=""/></a></li>
+			        <li><a href="#"><img src="/_wg/img/sub_banner/sbs_02.jpg" alt=""/></a></li>
+			        <!-- //해당 부분의 이미지만 변경하세요. -->
+			    </ul>
+			    <ul class="btn"></ul><!--/자동셋팅-->
+			    <ul class="arrow_wrap">
+			        <span class="arrow prev"></span>
+			        <span class="arrow next"></span>
+			    </ul>
+			</div>    			     
+        
+       	 	<div style="clear:both;"></div>
+        </div>
+        
+        <div>
+	        <h2 style="float:left">{$title_text_or_image}</h2>
+		    <div class="path" module="product_headcategory">
+		        <span>현재 위치</span>
+		        <ol>
+		            <li><a href="/">홈</a></li>
+		            <li class="{$disp_cate_1|display}"><a href="/product/list.html{$param_1}">{$name_1}</a></li>
+		            <li class="{$disp_cate_2|display}"><a href="/product/list.html{$param_2}">{$name_2}</a></li>
+		            <li class="{$disp_cate_3|display}"><a href="/product/list.html{$param_3}">{$name_3}</a></li>
+		            <li class="{$disp_cate_4|display}"><strong><a href="/product/list.html{$param_4}">{$name_4}</a></strong></li>
+		        </ol>
+		    </div>
+	    </div>          
         <!--<span class="likeButton {$disp_likecate_class}"><button type="button">{$disp_likecate_icon}<strong>{$disp_likecate_count}</strong></button></span>-->
     </div>
     <ul class="menuCategory">
