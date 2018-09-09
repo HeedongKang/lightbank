@@ -1,5 +1,5 @@
 <!--@layout(/layout/basic/layout.html)-->
-<div module="Project_Package">
+<div module="Project_Package" style="font:1em Nanum Gothic,Verdana,Dotum,AppleGothic,sans-serif,xeicon !important">
     <!--@css(/css/module/product/project_package.css)-->
     <div class="path" module="project_head">
         <span>현재 위치</span>
@@ -11,7 +11,7 @@
 
     <div class="title" module="product_headcategory">
         <p class="banner">{$top_image_tag}</p>
-        <h2>{$title_text_or_image}</h2>
+        <!--<h2>{$title_text_or_image}</h2>-->
     </div>
 
     <!-- 참고 : 뉴상품관리 전용 모듈입니다. 뉴상품관리 이외의 곳에서 사용하면 정상동작하지 않습니다. -->
@@ -20,7 +20,6 @@
             <a href="#{$cate_id}">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
         </li>
     </ul><!-- //참고 -->
-
     <div module="project_list">
         <!--
             $basket_result = /product/add_basket.html
