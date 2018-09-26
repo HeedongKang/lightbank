@@ -1,9 +1,9 @@
 
     .product_menupackage { display:block; margin:0 0 50px !important; }
-    .product_menupackage .title { min-height:30px; margin:10px 0; padding:0 0 10px; border-bottom:1px solid #ddd; }
+    .product_menupackage .title { min-height:30px; margin:10px 0; padding:0 0 20px; border-bottom:1px solid #ddd; }
     .product_menupackage .title .banner { margin:0 0 10px; }
     .product_menupackage .title .banner img { width:100%; }
-    .product_menupackage .title h2 { padding:0 0 0 12px; color:#333; font-size:16px; font-weight:normal; background:url("http://img.echosting.cafe24.com/skin/base/layout/ico_heading.gif") 0 50% no-repeat; }
+    .product_menupackage .title h2 { padding:0 0 0 12px; color:#333; font-size:16px; font-weight:600; background:url("http://img.echosting.cafe24.com/skin/base/layout/ico_heading.gif") 0 50% no-repeat; }
 
     /* 상품분류메뉴 */
     .menuCategory { position:relative; z-index:15; padding:10px 0 0; border:none; font-size:0; line-height:0; letter-spacing:-4px; }

@@ -1,6 +1,6 @@
 <!--@layout(/layout/basic/layout.html)-->
-<div module="Product_menupackage" class="product_menupackage -frame">
-    <!--@css(/_wg/css/menupackage.css)-->
+<div module="Product_menupackage" class="product_menupackage -frame" style="font:1em Nanum Gothic,Verdana,Dotum,AppleGothic,sans-serif,xeicon !important">
+    <!--@css(/_wg/css/menupackage_dev.css)-->
     <div class="title" module="product_headcategory">
         <div class="banner">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</div>
         <span id="loc_1depth" style="display:none">{$param_1}</span>
@@ -37,20 +37,23 @@
         </div>
         
         <div>
-	        <h2 style="float:left">{$title_text_or_image}</h2>
-		    <div class="path" module="product_headcategory">
-		        <span>현재 위치</span>
-		        <ol>
-		            <li><a href="/">홈</a></li>
-		            <li class="{$disp_cate_1|display}"><a href="/product/list.html{$param_1}">{$name_1}</a></li>
-		            <li class="{$disp_cate_2|display}"><a href="/product/list.html{$param_2}">{$name_2}</a></li>
-		            <li class="{$disp_cate_3|display}"><a href="/product/list.html{$param_3}">{$name_3}</a></li>
-		            <li class="{$disp_cate_4|display}"><strong><a href="/product/list.html{$param_4}">{$name_4}</a></strong></li>
-		        </ol>
-		    </div>
+	        <h2 style="float:left">
+			    <div class="path" module="product_headcategory">
+			        <span>현재 위치</span>
+			        <ol>
+			            <li><a href="/">HOME</a></li>
+			            <li class="{$disp_cate_1|display}"><a href="/product/list.html{$param_1}">{$name_1}</a></li>
+			            <li class="{$disp_cate_2|display}"><a href="/product/list.html{$param_2}">{$name_2}</a></li>
+			            <li class="{$disp_cate_3|display}"><strong><a href="/product/list.html{$param_3}">{$name_3}</a></strong></li>
+			            <li class="{$disp_cate_4|display}"><strong><a href="/product/list.html{$param_4}">{$name_4}</a></strong></li>
+			        </ol>
+			    </div>	        
+	        </h2>
+			<div>&nbsp;</div>
 	    </div>          
         <!--<span class="likeButton {$disp_likecate_class}"><button type="button">{$disp_likecate_icon}<strong>{$disp_likecate_count}</strong></button></span>-->
     </div>
+    
     <ul class="menuCategory">
         <!-- 참고 : 뉴상품관리 전용 모듈입니다. 뉴상품관리 이외의 곳에서 사용하면 정상동작하지 않습니다. -->
         <li module="product_displaycategory" style="display:{$display};" class="{$selected} dm2 li">
