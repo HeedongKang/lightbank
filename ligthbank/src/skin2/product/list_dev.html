@@ -78,6 +78,14 @@
     </ul>
 </div><div class="divClear"></div>
 
+<!--@css(/_wg/css/listRecommend.css)-->
+<div class="recommendTab">
+	<ul>
+		<li><a href="javascript:chgRecommendTab('BEST');"><img id="bestBtn" src="/_wg/img/tab_title_best_on.jpg"></a></li>
+		<li><a href="javascript:chgRecommendTab('NEW');"><img id="newBtn" src="/_wg/img/tab_title_nes_off.png"></a></li>
+	</ul>
+</div>
+			    
 <!-- 추천상품 -->
 <div module="product_listrecommend">
     <!--@css(/_wg/css/JS_tabRolling.css)-->
@@ -86,7 +94,7 @@
     </h2>
     <div class="JS_tabRolling -recommend">
         <!--
-            $count = 7
+            $count = 4
             $basket_result = /product/add_basket.html
             $basket_option = /product/basket_option.html
         -->

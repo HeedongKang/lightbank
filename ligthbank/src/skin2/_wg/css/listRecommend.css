@@ -1,0 +1,20 @@
+    
+    .recommendTab { position:relatvie; float:left; }
+    .recommendTab img { width:100%; }
+    .recommendTab ul { margin:-20px 0 10px; font-size:0; line-height:0; letter-spacing:-4px; }
+    .recommendTab ul li { display:inline-block; *display:inline; *zoom:1; width:50%; }
+    .recommendTab ul li:first-child {width:50%; }
+    .recommendTab img { transition:all .5s ease; -webkit-transition:all .5s ease; }
+    /*.recommendTab img:hover { filter:alpha(opacity=60); opacity:.6; -webkit-opacity:.6; }*/
+
+    .recommendTab iframe { width:560px; height:300px; }
+
+    /* 1265px 이하 */
+    @media all and (max-width:1265px){
+        .recommendTab { width:655px; }
+        .recommendTab ul { margin:0 0 11px; }
+        .recommendTab ul li { width:202px; }
+        .recommendTab ul li:first-child { width:436px; margin:0 17px 0 0; }
+    
+        .recommendTab iframe { width:436px; height:233px; }
+    }
