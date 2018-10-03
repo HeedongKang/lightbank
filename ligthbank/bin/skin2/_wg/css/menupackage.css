@@ -16,7 +16,7 @@
     .menuCategory > li > a { display:block; width:188px; height:35px; padding:0 0 0 10px; border:1px solid #ddd; line-height:35px; }
     .menuCategory > li.be > a { background:url('/_wg/img/arrowVR_15.gif') no-repeat 95% 50%; }
     .menuCategory > li > a:hover,
-    .menuCategory > li.on > a { font-weight:700; color:#333 !important; }
+    .menuCategory > li.on > a { font-weight:600; color:#333 !important; }
     
     /* 3depth */
     .menuCategory > li > ul { position:absolute; z-index:2; display:none; left:0; top:35px; width:198px; padding:5px 0 10px; background:#fff; border:1px solid #ddd; border-top:0; }

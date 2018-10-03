@@ -198,6 +198,11 @@
     .ec-base-product [class*="grid"] { display:table; table-layout:fixed; width:100%; box-sizing:border-box; padding:0 5px; font-size:0; line-height:0; }
     .ec-base-product [class*="grid"] > li { display:inline-block; margin:0 0 30px; vertical-align:top; text-align:center; font-size:12px; line-height:1.4; }
 
+    /*BEST 상품순위*/
+    .ec-base-product .num_ico {position:absolute; right:0px;z-index:10;width:45px; height:45px; line-height:0.9em; background:rgba(20,20,20,.9); background:#333 \9; box-shadow:-1px 1px 2px rgba(0,0,0,0.2); font-size:20px;text-align:center;color:#f6e406;} 
+	.ec-base-product .num_ico2 {position:absolute;right:0px; z-index:10;  width:45px; height:45px; line-height:1em; background:#898989; background:#333 \9; box-shadow:-1px 1px 2px rgba(0,0,0,0.2); font-size:20px;text-align:center;color:#ffffff;} 
+    
+
     .ec-base-product .thumbnail { position:relative; margin:0 7px 10px; }
     .ec-base-product .thumbnail a { display:block; }
     .ec-base-product .thumbnail a img { display:block; width:100%; vertical-align:top; }
@@ -263,6 +268,7 @@
     .ec-base-product .layerDiscountPeriod ul li span { position:absolute; top:14px; left:13px; color:#757575; }
     .ec-base-product .layerDiscountPeriod .btnClose { position:absolute; top:8px; right:4px; display:block; width:40px; height:40px; text-indent:-9999px; font-size:0; background:url("http://img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_close_white.png") center center no-repeat; background-size:50% 50%; }
     
+
     /* 썸네일 아이콘 위치 */
     .ec-product-bgLT { background-position:left top; }
     .ec-product-bgLC { background-position:left center; }
@@ -340,8 +346,8 @@
 
     /* Swipe */
     .paginate.typeSwipe { color:#555; }
-    .paginate.typeSwipe button.circle { margin:0 2px; width:15px; height:1px; background:#ccc; border:0; cursor:pointer; transition:all .3s ease; -webkit-transition:all .3s ease; }
-    .paginate.typeSwipe button.circle.selected { width:28px; background:#000; }
+    .paginate.typeSwipe button.circle { margin:0 2px; width:11px; height:10px; border-radius:6em; background:#ccc; border:0; cursor:pointer; transition:all .3s ease; -webkit-transition:all .3s ease; }
+    .paginate.typeSwipe button.circle.selected { width:11px; background:#000; }
     .paginate.typeSwipe span { color:#fff; font-size:0; line-height:0; }
     .paginate.typeSwipe button.prev,
     .paginate.typeSwipe button.next { width:31px; font-size:15px; line-height:1.2em; border:0; cursor:pointer; background:url("http://img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_prev.png") no-repeat 50% 50%; background-size:7px auto; }

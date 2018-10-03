@@ -52,7 +52,7 @@
     .path span { overflow:hidden; position:absolute; width:0; height:0; white-space:nowrap; text-indent:100%; }
     .path li { float:left; padding:0 0 0 12px; margin:0 0 0 8px; color:#757575; background:url("http://img.echosting.cafe24.com/skin/base/layout/ico_path.gif") no-repeat 0 10px; }
     .path li:first-child { padding-left:0; margin-left:0; background:none; }
-    .path li a { color:#757575; }
+    .path li a { color:#333; }
     .path li strong,
     .path li strong a { color:#2e2e2e; }
     

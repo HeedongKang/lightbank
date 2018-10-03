@@ -116,3 +116,16 @@ function chgBanner(type){
 		$("#banner2").show();
 	}
 }
+function chgRecommendTab(type){
+	if(type == 'BEST'){
+		$("#bestBtn").attr("src","/_wg/img/tab_title_best_on.jpg");
+		$("#newBtn").attr("src","/_wg/img/tab_title_new_off.png");
+		$("#bestPrdList").show();
+		$("#newPrdList").hide();
+	}else{
+		$("#bestBtn").attr("src","/_wg/img/tab_title_best_off.jpg");
+		$("#newBtn").attr("src","/_wg/img/tab_title_new_on.png");
+		$("#bestPrdList").hide();
+		$("#newPrdList").show();
+	}
+}

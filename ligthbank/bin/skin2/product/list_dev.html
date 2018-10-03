@@ -1,5 +1,5 @@
 <!--@layout(/layout/basic/layout.html)-->
-<div module="Product_menupackage" class="product_menupackage -frame">
+<div module="Product_menupackage" class="product_menupackage -frame" style="font:1em Nanum Gothic,Verdana,Dotum,AppleGothic,sans-serif,xeicon !important">
     <!--@css(/_wg/css/menupackage.css)-->
     <div class="title" module="product_headcategory">
         <div class="banner">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</div>
@@ -37,20 +37,23 @@
         </div>
         
         <div>
-	        <h2 style="float:left">{$title_text_or_image}</h2>
-		    <div class="path" module="product_headcategory">
-		        <span>현재 위치</span>
-		        <ol>
-		            <li><a href="/">홈</a></li>
-		            <li class="{$disp_cate_1|display}"><a href="/product/list.html{$param_1}">{$name_1}</a></li>
-		            <li class="{$disp_cate_2|display}"><a href="/product/list.html{$param_2}">{$name_2}</a></li>
-		            <li class="{$disp_cate_3|display}"><a href="/product/list.html{$param_3}">{$name_3}</a></li>
-		            <li class="{$disp_cate_4|display}"><strong><a href="/product/list.html{$param_4}">{$name_4}</a></strong></li>
-		        </ol>
-		    </div>
+	        <h2 style="float:left">
+			    <div class="path" module="product_headcategory">
+			        <span>현재 위치</span>
+			        <ol>
+			            <li><a href="/">HOME</a></li>
+			            <li class="{$disp_cate_1|display}"><a href="/product/list.html{$param_1}">{$name_1}</a></li>
+			            <li class="{$disp_cate_2|display}"><a href="/product/list.html{$param_2}">{$name_2}</a></li>
+			            <li class="{$disp_cate_3|display}"><strong><a href="/product/list.html{$param_3}">{$name_3}</a></strong></li>
+			            <li class="{$disp_cate_4|display}"><strong><a href="/product/list.html{$param_4}">{$name_4}</a></strong></li>
+			        </ol>
+			    </div>	        
+	        </h2>
+			<div>&nbsp;</div>
 	    </div>          
         <!--<span class="likeButton {$disp_likecate_class}"><button type="button">{$disp_likecate_icon}<strong>{$disp_likecate_count}</strong></button></span>-->
     </div>
+    
     <ul class="menuCategory">
         <!-- 참고 : 뉴상품관리 전용 모듈입니다. 뉴상품관리 이외의 곳에서 사용하면 정상동작하지 않습니다. -->
         <li module="product_displaycategory" style="display:{$display};" class="{$selected} dm2 li">
@@ -75,44 +78,39 @@
     </ul>
 </div><div class="divClear"></div>
 
-<!-- 추천상품 -->
-<div module="product_listrecommend">
-    <!--@css(/_wg/css/JS_tabRolling.css)-->
-    <h2 module="product_headcategory" class="JS_tabRolling_tit">
-        <strong>BEST</strong> {$title_text}
-    </h2>
-    <div class="JS_tabRolling -recommend">
-        <!--
-            $count = 7
-            $basket_result = /product/add_basket.html
-            $basket_option = /product/basket_option.html
-        -->
-        <ul class="img">
-            <li>
-                <div class="item_list">
-                    <!--@import(/_wg/import/list_tab1_list.html)-->
-                </div>
-            </li>
-        </ul>
-    </div>
-</div><div class="divClear"></div>
-
-<!-- 신상품 (New arrivals) -->
-<div module="product_listnew" class="ec-base-product normal">
+<!--@css(/_wg/css/listRecommend.css)-->
+<div class="recommendTab">
+	<ul>
+		<li><a href="javascript:chgRecommendTab('BEST');"><img id="bestBtn" src="/_wg/img/tab_title_best_on.jpg"></a></li>
+		<li><a href="javascript:chgRecommendTab('NEW');"><img id="newBtn" src="/_wg/img/tab_title_new_off.png"></a></li>
+	</ul>
+</div>
+			    
+<!-- Best상품 -->
+<div id="bestPrdList" module="product_listrecommend" class="ec-base-product normal">
     <!--
         $count = 4
         $basket_result = /product/add_basket.html
         $basket_option = /product/basket_option.html
     -->
-    <h2>
-        NEW ARRIVALS
-        <div class="line"></div>
-    </h2>
     <ul class="prdList grid4">
-        <!--@import(/_wg/import/prdList.html)-->
+        <!--@import(/_wg/import/bestPrdList.html)-->
     </ul>
 </div><!-- //신상품 (New arrivals) -->
 
+
+<!-- 신상품 (New arrivals) -->
+<div id="newPrdList"  module="product_listnew" class="ec-base-product normal" style="display:none">
+    <!--
+        $count = 4
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+    -->
+    <ul class="prdList grid4">
+        <!--@import(/_wg/import/newPrdList.html)-->
+    </ul>
+</div><!-- //신상품 (New arrivals) -->
+<br><br><br><br>
 <!-- 일반상품 -->
 <div module="product_normalpackage">
     <!--@css(/_wg/css/listnormal.css)-->
