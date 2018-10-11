@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--PG크로스브라우징필수내용 시작-->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <!--PG크로스브라우징필수내용 끝-->
+
+    <title>조명의 모든것 조명뱅크</title>
+    <!--@css(/layout/basic/css/common.css)--><!--해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요.-->
+    <!--@css(/layout/basic/css/ec-base-ui.css)-->
+    <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+    <!--@css(/layout/basic/css/ec-base-tab.css)-->
+    <!--@css(/layout/basic/css/ec-base-button.css)-->
+    <!--@css(/layout/basic/css/ec-base-box.css)-->
+    <!--@css(/layout/basic/css/ec-base-desc.css)-->
+
+    <!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
+    <!--@js(/layout/basic/js/basic.js)-->
+    <!--@js(/js/common.js)-->
+    <!--@js(/js/module/layout/quick_view.js)-->
+    <script type="text/javascript" src="/ec-js/common.js"></script><!-- 해당 JS는 플래시를 사용하기 위한 스크립트입니다. -->
+    
+    <!--@import(/_wg/base.html)--><!-- 디자인웹굿 베이스 -->
+<script type="text/javascript">
+    // 검색창
+    $('#custom_searchBtn').DB_popupWin({
+        popupWin:$('#JS_searchBox'),           //팝업
+        lightBox:$('#d_lightBox'),			 //라이트박스
+        moveSpeed:500,
+        dir:'fade',
+        open:0,
+        cookieName:'e17_popup3'                //오픈유무
+    });
+
+</script>
+    
+</head>
+<body id="main">
+
+
+<!-- 상단 디자인 -->
+<div id="skipNavigation">
+    <p><a href="#category">전체상품목록 바로가기</a></p>
+    <p><a href="#contents">본문 바로가기</a></p>
+</div>
+
+<!--@css(/_wg/css/header_new.css)-->
+
+<div id="header">
+    
+<div id="header_01">
+    <div class="header_01_inner -frame">
+        
+        <!-- 슬라이드 홈버튼 -->
+        <div id="slide_home_wrap">
+            <div id="slide_home">
+                <a href="/"><img src="/_wg/img/gohome.gif" alt="홈" /></a>
+            </div>
+        </div>
+        
+        <!-- 좌측상단메뉴 -->
+        <!--@import(/_wg/import/JS_topMenu2.html)-->
+
+        <!-- SNS 아이콘 -->
+        <!--@import(/_wg/import/sns_icon.html)-->
+        
+        <!-- 상단 메뉴 -->
+        <!--@import(/_wg/import/JS_topMenu.html)-->
+
+    </div>
+</div><div class="divClear"></div>
+
+<div id="header_02" class="-frame">
+    
+    <!-- 로고 -->
+        <img src="/_wg/img/logo_off.png" alt="{$mall_name}" width="220" height="100" onmouseover="this.src='/_wg/img/logo_on.png'" onmouseout="this.src='/_wg/img/logo_off.png'" border="0" style="margin:10px 0 0 0;cursor:pointer"/>
+        
+     <!-- 검색창 -->
+        <!--@css(/_wg/css/search_section_new.css)-->
+        <div class="search_section">
+            <div module="Layout_SearchHeader" class="search_form">
+                <!--
+                    $product_page=/product/detail.html
+                    $category_page=/product/list.html
+                -->
+                <fieldset>
+                    <legend>검색</legend>
+                    {$form.keyword}<input type="image" src="/_wg/img/search_btn4.png" alt="검색" onclick="{$action_search_submit}" class="-mov" /></fieldset>
+            </div>
+            
+            <!-- 스마트서치 버튼 ( /_wg/import/JS_searchBox.html 에서 내용 수정이 가능합니다 ) -->
+        </div>
+
+    <div style="position:absolute; top:45px; right:122px; z-index:1; width:80px; height:80px; font-size:0;cursor:pointer">
+    				<img src="/_wg/img/ban_top_link.png" id="JS_searchBtn" alt="맞춤검색" />
+<!--        <a href="/myshop/wish_list.html"><img src="/_wg/img/btn_wishHeart_off.png" class="btn_off" alt="두근두근" /><img src="/_wg/img/btn_wishHeart_on.png" class="btn_on" alt="쿵쾅쿵쾅" /></a>-->
+    </div>
+
+</div>
+
+    <!--@import(/_wg/import/header_03.html)-->
+
+</div><hr class="layout" />
+
+<div id="wrap">
+    <div id="container">
+        <div id="contents_main">
+        
+        
+        
+        <!-- 배너모음 시작 -->
+        <center>
+<div class="banner_set">
+    <div class="bn00"><a href=""><img src="http://www.decoview.co.kr//web/upload/homi/main_img/main3.jpg"></a></div>
+    <div class="bn01"><a href=""><img src="http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_01.jpg" onmouseover="this.src='http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_01_over.jpg'" onmouseout="this.src='http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_01.jpg'"></a></div>
+    <div class="bn02"><a href=""><img src="http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_02.jpg" onmouseover="this.src='http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_02_over.jpg'" onmouseout="this.src='http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_02.jpg'"></a></div>
+    <div class="bn03"><a href=""><img src="http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_03.jpg" onmouseover="this.src='http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_03_over.jpg'" onmouseout="this.src='http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_03.jpg'"></a></div>
+    <div class="bn04"><a href=""><img src="http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_04.jpg" onmouseover="this.src='http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_04_over.jpg'" onmouseout="this.src='http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_04.jpg'"></a></div>
+  <div class="bn05"><a href=""><img src="http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_05.jpg" onmouseover="this.src='http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_05_over.jpg'" onmouseout="this.src='http://www.decoview.co.kr/web/upload/homi/main_img/main_bn_05.jpg'"></a></div>
+    <div class="xans-element- xans-photoslide2 xans-photoslide2-slide-3 xans-photoslide2-slide xans-photoslide2-3 bn06 ">
+    
+    <div class="slider-wrapper theme-default"><div class="ribbon"></div><div id="nivoSlider3" rel="3" class="nivoSlider" style="background: none; position: relative; overflow: hidden; width: 662px; height: 254px;">
+<a href="" rel="18" class="nivohref nivo-imageLink" style="display: block;"><img src="http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg" alt="" title="" border="0" style="display: none;"></a>
+<div class="nivo-caption" style="opacity: 0;"><p></p></div><div class="nivo-directionNav" style="display: none;"><a class="nivo-prevNav">Prev</a><a class="nivo-nextNav">Next</a></div><div class="nivo-controlNav"><a class="nivo-control active" rel="0"><span><img src="http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg" alt=""></span></a></div><div class="nivo-slice" style="left: 0px; width: 662px; height: 100%; opacity: 1; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) 0px 0% no-repeat;"></div><div class="nivo-slice" style="left: 44px; width: 44px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -44px 0% no-repeat;"></div><div class="nivo-slice" style="left: 88px; width: 44px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -88px 0% no-repeat;"></div><div class="nivo-slice" style="left: 132px; width: 44px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -132px 0% no-repeat;"></div><div class="nivo-slice" style="left: 176px; width: 44px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -176px 0% no-repeat;"></div><div class="nivo-slice" style="left: 220px; width: 44px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -220px 0% no-repeat;"></div><div class="nivo-slice" style="left: 264px; width: 44px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -264px 0% no-repeat;"></div><div class="nivo-slice" style="left: 308px; width: 44px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -308px 0% no-repeat;"></div><div class="nivo-slice" style="left: 352px; width: 44px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -352px 0% no-repeat;"></div><div class="nivo-slice" style="left: 396px; width: 44px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -396px 0% no-repeat;"></div><div class="nivo-slice" style="left: 440px; width: 44px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -440px 0% no-repeat;"></div><div class="nivo-slice" style="left: 484px; width: 44px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -484px 0% no-repeat;"></div><div class="nivo-slice" style="left: 528px; width: 44px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -528px 0% no-repeat;"></div><div class="nivo-slice" style="left: 572px; width: 44px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -572px 0% no-repeat;"></div><div class="nivo-slice" style="left: 616px; width: 46px; height: 0px; opacity: 0; background: url(&quot;http://app-storage-002.cafe24.com:80/photoslide2/greentea9842/2017/12/11/3ba9aec5ebd8d340d9d0940d885ba692.jpg&quot;) -616px 0% no-repeat;"></div></div></div>
+</div>
+</div>
+</center>
+<style>    
+.banner_set { position:relative; width:1223px; height:758px; margin:0px 0px 0px 8px;} 
+.bn00 { position:absolute; top:0px; left:0px; width:570px; height:758px; }
+.bn01 { position:absolute; top:0px; left:570px; width:376px; height:356px; }
+.bn02 { position:absolute; top:0px; left:955px; width:277px; height:184px; }
+.bn03 { position:absolute; top:192px; left:955px; width:277px; height:164px; }   
+.bn04 { position:absolute; top:364px; left:570px; width:277px; height:132px; }   
+.bn05 { position:absolute; top:364px; left:856px; width:376px; height:132px; }     
+.bn06 { position:absolute; top:504px; left:570px; width:662px; height:254px; display:block; }    
+</style>
+<!-- 배너모음 끝 -->    
+        
+        
+        
+        
+        
+        
+            <!--@contents-->
+        </div>
+    </div><hr class="layout" />
+</div><hr class="layout" />
+<br>
+특가상품
+<br>
+추천상품
+
+
+<!-- 푸터 -->
+<!--@import(/_wg/import/footer.html)-->
+    
+<!-- 최근본상품 -->
+<!--@import(/_wg/import/productRecent.html)-->
+    
+<!-- 우측숨김바 -->
+<!--@import(/_wg/import/right_hidden.html)-->
+
+<!-- 좌측하단 팝업 배너(메인페이지에만 노출됩니다.) -->
+<!--@import(/_wg/import/JS_layerBnr.html)-->
+
+</body>
+</html>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------
+
+    ### 본 디자인의 저작권은 디자인웹굿에 있으며 디자인을 무단 [ 이전/양도/대여/재판매/템플릿제작 ] 은 법적책임을 지게됩니다. ####
+
+    ### 이미지경로 - FTP접속 후 /sde_design/스킨번호(skin번호)/_wg/img/
+    
+    ### 언어 - 한국어
+
+    ### 버젼 SKIN215_M30
+
+    ### 업데이트 20170313
+
+----------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+<!--@define(cmc_log)-->

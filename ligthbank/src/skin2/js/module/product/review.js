@@ -28,7 +28,9 @@ $(document).ready(function(){
         $("#info_img_id").attr("src","/ex/common_prd_detail_info_etc.gif");
     }*/
     //상품명이 아닌 브랜드명으로 intro 페이지 분기로 변경
+    
 	$(".brandChk").each(function(idx){
+		console.log(idx);
 		 if($(this).html().indexOf("삼성") > -1){
 	        $("#info_img_id").attr("src","/ex/common_prd_detail_info.gif");
 	    }

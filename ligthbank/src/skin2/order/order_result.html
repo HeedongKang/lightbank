@@ -1,4 +1,29 @@
 <!--@layout(/layout/basic/layout.html)-->
+<!-- AceCounter eCommerce (Cart_Inout) v7.5 Start -->
+<!-- Function and Variables Definition Block Start -->
+<script language='javascript'>
+var _JV="AMZ2017020801";//script Version
+var _UD='undefined';var _UN='unknown';
+var _ace_countvar = 0;
+var _DC = document.cookie ;
+function _IDV(a){return (typeof a!=_UD)?1:0}
+var _CRL='http://'+'dgc5.acecounter.com:8080/';
+var _GCD='BP4A42586217924';
+if( document.URL.substring(0,8) == 'https://' ){ _CRL = 'https://dgc5.acecounter.com/logecgather/' ;};
+if(!_IDV(_A_i)) var _A_i = new Image() ;if(!_IDV(_A_i0)) var _A_i0 = new Image() ;if(!_IDV(_A_i1)) var _A_i1 = new Image() ;if(!_IDV(_A_i2)) var _A_i2 = new Image() ;if(!_IDV(_A_i3)) var _A_i3 = new Image() ;if(!_IDV(_A_i4)) var _A_i4 = new Image() ;
+function _RP(s,m){if(typeof s=='string'){if(m==1){return s.replace(/[#&^@,]/g,'');}else{return s.replace(/[#&^@]/g,'');} }else{return s;} };
+if(!_IDV(_ll)) var _ll=''; if(!_IDV(_AEC_order_code)) var _AEC_order_code='';
+function _AGC(nm) { var cn = nm + "="; var nl = cn.length; var cl = _DC.length; var i = 0; while ( i < cl ) { var j = i + nl; if ( _DC.substring( i, j ) == cn ){ var val = _DC.indexOf(";", j ); if ( val == -1 ) val = _DC.length; return unescape(_DC.substring(j, val)); }; i = _DC.indexOf(" ", i ) + 1; if ( i == 0 ) break; } return ''; }
+function _ASC( nm, val, exp ){var expd = new Date(); if ( exp ){ expd.setTime( expd.getTime() + ( exp * 1000 )); document.cookie = nm+"="+ escape(val) + "; expires="+ expd.toGMTString() +"; path="; }else{ document.cookie = nm + "=" + escape(val);};}
+function AEC_B_L(){var _AEC_order_code_cookie='';var olt=[];var oll=[];var olk=[];var oct=0;if(document.cookie.indexOf('AECORDERCODE')>=0){_AEC_order_code_cookie=_AGC('AECORDERCODE');};if(_AEC_order_code!=''&&_AEC_order_code==_AEC_order_code_cookie){return'';}else{_ASC("AECORDERCODE",_AEC_order_code,86400*30*12);_ll='';for(var i=0;i<_A_pl.length;i++){var _a=_A_pn[i];var _o=olt[_a];olt[_a]=[_RP(_A_ct[i]),_RP(_a),parseInt(_RP(_A_amt[i],1))+((_o)?_o[2]:0),parseInt(_RP(_A_nl[i],1))+((_o)?_o[3]:0)];if(!_o){oll.push(olt[_a].join('@'));olk[_a]=oct;oct++;}else{oll[olk[_a]]=olt[_a].join('@');}};_ll=oll.join("^");};};
+function AEC_S_F(str,md,idx){ var i = 0,_A_cart = ''; var k = eval('_A_i'+idx); md=md.toLowerCase(); if( md == 'b' || md == 'i' || md == 'o'){ _A_cart = _CRL+'?cuid='+_GCD ; _A_cart += '&md='+md+'&ll='+(str)+'&'; k.src = _A_cart;window.setTimeout('',2000);};};
+if(!_IDV(_A_pl)) var _A_pl = Array(1) ;
+if(!_IDV(_A_nl)) var _A_nl = Array(1) ;
+if(!_IDV(_A_ct)) var _A_ct = Array(1) ;
+if(!_IDV(_A_pn)) var _A_pn = Array(1) ;
+if(!_IDV(_A_amt)) var _A_amt = Array(1) ;
+</script>
+<!-- Function and Variables Definition Block End-->
 <div class="path">
     <span>현재 위치</span>
     <ol>
@@ -134,6 +159,17 @@
                 </tfoot>
                 <tbody module="Order_normalresultlist" class="center">
                     <tr>
+                        <!-- AceCounter* -->
+                        <script language='javascript'>
+                        if('{$product_total_price_front}'.replace(/,/g,'')>0||'{$product_total_price_front}'.replace(/,/g,'')!=''){
+                            _A_amt[_ace_countvar]='{$product_total_price_front}'.replace(/,/g,'');
+                            _A_nl[_ace_countvar]='{$product_quantity}';
+                            _A_pl[_ace_countvar]='{$product_no}';
+                            _A_pn[_ace_countvar]='{$product_name}';
+                            _A_ct[_ace_countvar]='{$param}'.split('cate_no=')[1];
+                            _ace_countvar++;
+                        }
+                        </script>
                         <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="" /></a></td>
                         <td class="left">
                             <a href="/product/detail.html{$param}"><strong>{$product_name}</strong></a>
@@ -160,6 +196,17 @@
                         <td class="right"><strong>{$product_total_price_front_head}{$product_total_price_front}{$product_total_price_front_tail}</strong><div class="{$product_total_price_ref_display|display}">{$product_total_price_back_head}{$product_total_price_back}{$product_total_price_back_tail}</div></td>
                     </tr>
                     <tr>
+                        <!-- AceCounter* -->
+                        <script language='javascript'>
+                        if('{$product_total_price_front}'.replace(/,/g,'')>0||'{$product_total_price_front}'.replace(/,/g,'')!=''){
+                            _A_amt[_ace_countvar]='{$product_total_price_front}'.replace(/,/g,'');
+                            _A_nl[_ace_countvar]='{$product_quantity}';
+                            _A_pl[_ace_countvar]='{$product_no}';
+                            _A_pn[_ace_countvar]='{$product_name}';
+                            _A_ct[_ace_countvar]='{$param}'.split('cate_no=')[1];
+                            _ace_countvar++;
+                        }
+                        </script>
                         <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="" /></a></td>
                         <td class="left">
                             <a href="/product/detail.html{$param}"><strong>{$product_name}</strong></a>
@@ -220,6 +267,17 @@
                 </tfoot>
                 <tbody module="Order_individualresultlist" class="center">
                     <tr>
+                        <!-- AceCounter* -->
+                        <script language='javascript'>
+                        if('{$product_total_price_front}'.replace(/,/g,'')>0||'{$product_total_price_front}'.replace(/,/g,'')!=''){
+                            _A_amt[_ace_countvar]='{$product_total_price_front}'.replace(/,/g,'');
+                            _A_nl[_ace_countvar]='{$product_quantity}';
+                            _A_pl[_ace_countvar]='{$product_no}';
+                            _A_pn[_ace_countvar]='{$product_name}';
+                            _A_ct[_ace_countvar]='{$param}'.split('cate_no=')[1];
+                            _ace_countvar++;
+                        }
+                        </script>
                         <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="" /></a></td>
                         <td class="left">
                             <a href="/product/detail.html{$param}"><strong>{$product_name}</strong></a>
@@ -246,6 +304,17 @@
                         <td class="right"><strong>{$product_total_price_front_head}{$product_total_price_front}{$product_total_price_front_tail}</strong><div class="{$product_total_price_ref_display|display}">{$product_total_price_back_head}{$product_total_price_back}{$product_total_price_back_tail}</div></td>
                     </tr>
                     <tr>
+                        <!-- AceCounter* -->
+                        <script language='javascript'>
+                        if('{$product_total_price_front}'.replace(/,/g,'')>0||'{$product_total_price_front}'.replace(/,/g,'')!=''){
+                            _A_amt[_ace_countvar]='{$product_total_price_front}'.replace(/,/g,'');
+                            _A_nl[_ace_countvar]='{$product_quantity}';
+                            _A_pl[_ace_countvar]='{$product_no}';
+                            _A_pn[_ace_countvar]='{$product_name}';
+                            _A_ct[_ace_countvar]='{$param}'.split('cate_no=')[1];
+                            _ace_countvar++;
+                        }
+                        </script>
                         <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="" /></a></td>
                         <td class="left">
                             <a href="/product/detail.html{$param}"><strong>{$product_name}</strong></a>
@@ -618,6 +687,13 @@
             </table>
         </div>
     </div>
+    
+    <!-- AceCounter -->
+    <script language='javascript'>
+    var _AEC_order_code='{$order_id}';		// 주문코드
+    var _amt = '{$payed_order_price_front}'.replace(/[^0-9-]/g,'') ;              // 총 구매액 
+    AEC_B_L();			// 구매완료 함수
+    </script>
 
     <!-- 추가정보 -->
     <div class="orderArea {$ordadd.display|display}">

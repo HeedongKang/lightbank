@@ -110,7 +110,7 @@
     /* 리스트 */
     .ec-base-product a[href^='/product/detail.html'] > img { border:0; outline:1px solid #eee; }
     
-    .ec-base-product .prdList { display:table; position:relative; left:-10px; width:120%; padding:0 0 0 10px; min-width:756px; font-size:0; line-height:0; overflow:hidden; }
+    .ec-base-product .prdList { display:table; position:relative; left:-10px; width:120%; min-width:756px; font-size:0; line-height:0; overflow:hidden; }
     .ec-base-product .prdList > li { position:relative; display:inline-block; *display:inline; *zoom:1; color:#333; vertical-align:top; font-size:12px; line-height:17px; padding-bottom:5px;background:#ffffff;}
  
     /* 진열방식 */

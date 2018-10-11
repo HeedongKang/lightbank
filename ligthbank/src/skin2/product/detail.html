@@ -4,6 +4,29 @@
     $project_page = /product/project.html
     $jointbuy_page = /product/jointbuy.html
 -->
+<!-- AceCounter eCommerce (Product_Detail) v7.5 Start -->
+<!-- Function and Variables Definition Block Start -->
+<script language='javascript'>
+var _JV="AMZ2017020801";//script Version
+var _UD='undefined';var _UN='unknown';
+function _IDV(a){return (typeof a!=_UD)?1:0}
+var _CRL='http://'+'dgc5.acecounter.com:8080/';
+var _GCD='BP4A42586217924';
+if( document.URL.substring(0,8) == 'https://' ){ _CRL = 'https://dgc5.acecounter.com/logecgather/' ;};
+if(!_IDV(_A_i)) var _A_i = new Image() ;if(!_IDV(_A_i0)) var _A_i0 = new Image() ;if(!_IDV(_A_i1)) var _A_i1 = new Image() ;if(!_IDV(_A_i2)) var _A_i2 = new Image() ;if(!_IDV(_A_i3)) var _A_i3 = new Image() ;if(!_IDV(_A_i4)) var _A_i4 = new Image() ;
+function _RP(s,m){if(typeof s=='string'){if(m==1){return s.replace(/[#&^@,]/g,'');}else{return s.replace(/[#&^@]/g,'');} }else{return s;} };
+function _RPS(a,b,c){var d=a.indexOf(b),e=b.length>0?c.length:1; while(a&&d>=0){a=a.substring(0,d)+c+a.substring(d+b.length);d=a.indexOf(b,d+e);}return a};
+function AEC_F_D(pd,md,cnum){var i=0,amt=0,num=0;var cat='',nm='';num=cnum;md=md.toLowerCase();if(md=='b'||md=='i'||md=='o'){for(i=0;i<_A_pl.length;i++){if(_A_nl[i]==''||_A_nl[i]==0)_A_nl[i]='1';if(num==0||num=='')num='1';if(_A_pl[i]==pd){nm=_RP(_A_pn[i]);amt=(parseInt(_RP(_A_amt[i],1))/parseInt(_RP(_A_nl[i],1)))*num;cat=_RP(_A_ct[i]);var _A_cart=_CRL+'?cuid='+_GCD;_A_cart+='&md='+md+'&ll='+_RPS(escape(cat+'@'+nm+'@'+amt+'@'+num+'^&'),'+','%2B');break;};};if(_A_cart.length>0)_A_i.src=_A_cart+"rn="+String(new Date().getTime());setTimeout("",2000);};};
+if(!_IDV(_A_pl)) var _A_pl = Array(1) ;
+if(!_IDV(_A_nl)) var _A_nl = Array(1) ;
+if(!_IDV(_A_ct)) var _A_ct = Array(1) ;
+if(!_IDV(_A_pn)) var _A_pn = Array(1) ;
+if(!_IDV(_A_amt)) var _A_amt = Array(1) ;
+if(!_IDV(_pd)) var _pd = '' ;
+if(!_IDV(_ct)) var _ct = '' ;
+if(!_IDV(_amt)) var _amt = '' ;
+</script>
+<!-- Function and Variables Definition Block End-->
 <div class="path" module="product_headcategory">
     <span>현재 위치</span>
     <ol>
@@ -344,15 +367,28 @@
                         </table>
                     </div><!-- //참고 -->
                 </div><!-- buy_scroll -->
+                
+                <!-- AceCounter -->
+                <script language='javascript'>
+                    _pd =_RP("{$name}");
+                    _ct =_RP("{$cate_no}");
+                    _amt = _RP("{$product_price}".replace(/,/g,''),1); // _RP(1)-> 가격
+
+                    _A_amt=Array("{$product_price}".replace(/,/g,''));
+                    _A_nl=Array('1');
+                    _A_pl=Array('{$product_no}');
+                    _A_pn=Array('{$name}');
+                    _A_ct=Array('{$cate_no}');
+                </script>
 
                 <!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
                 <div module="product_action">
                     <div class="ec-base-button"> 
-                        <a href="#none" class="first {$buy_display|display} btn_15_444" onclick="{$action_buy}" id="{$btn_buy_id}">바로구매하기 <div class="{$btn_reserve_class|display} btn_444" id="{$btn_reserve_id}">예약구매</div></a>
+                        <a href="#none" class="first {$buy_display|display} btn_15_444" onclick="{$action_buy}" id="{$btn_buy_id}" onMouseDown="AEC_F_D('{$product_no}','i',document.getElementsByName('quantity_opt[]')[0].value);">바로구매하기 <div class="{$btn_reserve_class|display} btn_444" id="{$btn_reserve_id}">예약구매</div></a>
                       <!--  <a href="#none" class="{$basket_display|display} btn_15_f2" onclick="category_add_basket('{$product_no}','1','{$display_group}','A0000', false, '1','{$product_code}', 'A', 'F', '0');">장바구니</a>-->
-                        <a href="#none" class="{$basket_display|display} btn_15_f2" onclick="{$action_basket}">장바구니</a>                      
+                        <a href="#none" class="{$basket_display|display} btn_15_f2" onclick="{$action_basket}" onMouseDown="AEC_F_D('{$product_no}','i',document.getElementsByName('quantity_opt[]')[0].value);">장바구니</a>                      
                         <a href="#none" class="first {$soldout_display|display} btn_15_444">품 절</a>
-                        <a href="#none" onclick="{$action_wishlist}" class="{$wishlist_display|display} btn_15_f2">관심상품</a>
+                        <a href="#none" onclick="{$action_wishlist}" class="{$wishlist_display|display} btn_15_f2" onMouseDown="AEC_F_D('{$product_no}','i',document.getElementsByName('quantity_opt[]')[0].value);">관심상품</a>
                     </div>
      
                     <!-- 샘플용 네이버페이 -->

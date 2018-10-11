@@ -1,0 +1,31 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<!-- 기본 가로 크기가 100% 입니다. 원하는 크기를 .srlite_container 의 width 속성에서 수정하시면 됩니다.  -->
+<div class='srlite_container' style="width:100%;margin-bottom:15px;">
+    <div module="srlite_display">
+        <!--@css(./skin2.css)-->
+        <h2><img src="//img.echosting.cafe24.com/apps/recommend-lite/skin1/h2_recommend_lite.gif" alt="이런 상품을 추천해드립니다." /></h2>
+        <div class="srlite-list">
+            <ul>
+                <li>
+                    <div class="outline">
+                        <a href="{$product_link}" rel="{$product_no}" class="product_img" {$target}  ><img src="{$product_img}" alt="" /></a>
+                        <a href="{$product_link}" rel="{$product_no}" class="name product_name">{$product_name}</a>
+                        <strong class="price">{$product_price}won</strong>
+                    </div>
+                </li>
+                <li>
+                    <div class="outline">
+                        <a href="{$product_link}" rel="{$product_no}" class="product_img" {$target}  ><img src="{$product_img}" alt="" /></a>
+                        <a href="{$product_link}" rel="{$product_no}" class="name product_name">{$product_name}</a>
+                        <strong class="price">{$product_price}won</strong>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p class="srlite-remote">
+            <button class="prev">이전</button>
+            <button class="next">다음</button>
+        </p>
+    </div>
+</div>
