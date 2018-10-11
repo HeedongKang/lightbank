@@ -1,8 +1,0 @@
-    
-    .sns_icon { position:relative; float:left; top:6px; margin:0 0 0 5px; }
-    .sns_icon li { position:relative; float:left; height:40px; margin:0 2px; }
-    .sns_icon li a { display:block; width:27px; height:28px; border-radius:100%; background:#eee; font-size:15px; text-align:center; text-decoration:none; transition:all .7s ease; -webkit-transition:all .7s ease; }
-    .sns_icon li:hover a { background:#ddd; transition:all .3s ease; -webkit-transition:all .3s ease; transform:rotate(30deg); -webkit-transform:rotate(30deg); }
-    .sns_icon li a i { line-height:27px; color:#000; filter:alpha(opacity=80); opacity:.8; -webkit-opacity:.8; }
-
-    .sns_icon li a img { line-height:27px; width:18px; margin:5px 0 0; opacity:.8; -webkit-opacity:.8; }

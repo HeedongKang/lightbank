@@ -1,8 +1,0 @@
-    
-    #goBtn { position:fixed; z-index:100; top:1px; right:0; width:0; height:0; }
-
-    #goBtn .btn a { display:none; position:fixed; right:10px; width:40px; height:28px; padding:12px 0 0; background:rgba(0,0,0,.15); border-radius:5px; color:#000; font-size:15px; text-align:center; }
-    #goBtn.fixed .btn a { display:block; }
-
-    #goBtn .btn.up a { bottom:110px; }
-    #goBtn .btn.down a { bottom:65px; }
