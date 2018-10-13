@@ -117,7 +117,7 @@
     .ec-base-product ul.grid2 > li { width:610px; margin:5px 40px 60px 0; }
     .ec-base-product ul.grid3 > li { width:400px; margin:5px 30px 50px 0; }
     .ec-base-product ul.grid4 > li { width:300px; margin:5px 20px 20px 0; }
-    .ec-base-product ul.grid5 > li { width:235px; margin:5px 19px 40px 0; }
+    .ec-base-product ul.grid5 > li { width:235px; margin:5px 19px 20px 0; }
     .ec-base-product ul.grid6 > li { width:190px; margin:5px 24px 40px 0; }
 
     /* 1265px 이하 */
@@ -125,12 +125,12 @@
         .ec-base-product ul.grid2 > li { width:470px; margin:5px 40px 60px 0; }
         .ec-base-product ul.grid3 > li { width:310px; margin:5px 25px 50px 0; }
         .ec-base-product ul.grid4 > li { width:230px; margin:5px 20px 40px 0; }
-        .ec-base-product ul.grid5 > li { width:180px; margin:5px 20px 40px 0; }
+        .ec-base-product ul.grid5 > li { width:180px; margin:5px 20px 20px 0; }
         .ec-base-product ul.grid6 > li { width:180px; margin:5px 20px 40px 0; }
     }
 
     /* 체크박스 */
-    .ec-base-product .prdList .chk { display:none; position:absolute; z-index:10; left:0; top:-25px; margin:0; }
+    .ec-base-product .prdList .chk { display:none; position:absolute; z-index:10; right:0; margin:0; }
     .ec-base-product .prdList .chk input[type="checkbox"] { width:20px; height:20px; }
 
     /* 썸네일 */
