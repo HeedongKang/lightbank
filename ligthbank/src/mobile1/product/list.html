@@ -48,7 +48,7 @@
 </div>
 
 
-<div style="font-size:0">
+<div style="font-size:0" id="bestNewTab">
 	<a href="javascript:chgRecommendTab('BEST');"><img id="bestBtn" src="/_wg/img/tab_title_best_on.jpg" width="50%"></a>
 	<a href="javascript:chgRecommendTab('NEW');"><img id="newBtn" src="/_wg/img/tab_title_new_off.png" width="50%"></a>
 </div>
@@ -128,3 +128,10 @@
     <p class="next"><a href="{$param_next}"><span>다음 페이지</span></a></p>
     <!--<p class="last"><a href="{$param_last}"><span>마지막 페이지</span></a></p>-->
 </div>
+<script type="text/javascript">
+window.onload = function() {
+	if($(".newPrdList").html() == null){  
+		$("#bestNewTab").hide();
+	}
+};
+</script>
