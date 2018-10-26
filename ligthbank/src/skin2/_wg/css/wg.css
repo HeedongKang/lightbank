@@ -212,8 +212,11 @@
 	.prd_btn_pg_on{font-size:10pt;width: 1.8em;border-radius: 6em;line-height: 1.8em;display: inline-block;text-align: center;background:#1f1f1f;color:#ffffff; text-decoration: none!important;}
 	.prd_btn_pg_off{font-size:10pt;width: 1.8em;border-radius: 6em;line-height: 1.8em;display: inline-block;text-align: center;background:#ffffff;color:#1f1f1f;}
 	.prd_btn_pg_off:hover{font-size:10pt;  width: 1.8em;border-radius: 6em;line-height: 1.8em;display: inline-block;text-align: center;background:#1f1f1f;color:#ffffff; text-decoration: none!important;}
-
-
+	
+	/*렌딩페이지 타이틀*/
+	.ledingTit{font-size:18pt;font-weight:bold;width: 20em;border-radius: 6em;line-height: 2.2em;display: inline-block;text-align: center;color:#ffd200;border:solid 3px #ffffff;}
+	.ledingPrdBtn{background-color: #283444;height: 50px;width: 100%;position: absolute;bottom: 0px;color: #fff;line-height: 50px;text-align: center;font-size: 12pt;cursor: pointer;}
+	
 /** 좋아요 버튼 **/
   .-likeButton { position:absolute; z-index:10; bottom:10px; right:-8px; max-width:80px; height:16px; padding:8px 0 0; background:url('/_wg/img/like_shadow.gif') no-repeat right top; visibility:hidden; filter:alpha(opacity=0); opacity:0; -webkit-opacity:0; }
  /*   .-likeButton { position:absolute; z-index:10; bottom:10px; right:-8px; max-width:80px; height:16px; padding:8px 0 0; background:url('/_wg/img/like_shadow.gif') no-repeat right top;filter:alpha(opacity=0); }*/    
