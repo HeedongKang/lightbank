@@ -201,3 +201,7 @@
  	.mainReview_Desc {font-size:15px;text-align:center;margin-top:15px;margin-bottom:20px}
 	/*더보기 버튼*/
 	.moreBtn {height: 35px;line-height: 35px;width: 50%;text-align: center;margin-top: 15px;border: 1px solid #cac7c7;font-size: 12pt;background:#ffffff} 		
+
+	/*렌딩페이지 타이틀*/
+	.ledingTit{font-size:13pt;font-weight:bold;width: 15em;border-radius: 6em;line-height: 2.2em;display: inline-block;text-align: center;color:#ffd200;border:solid 3px #ffffff;}
+	.ledingPrdBtn{background-color: #283444;height: 40px;width:96%; margin:0 auto;color: #fff;line-height: 40px;text-align: center;font-size: 11pt;cursor: pointer;}
