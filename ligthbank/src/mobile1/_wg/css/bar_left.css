@@ -8,9 +8,10 @@
     .d_etc18.left .d_content { position:relative; display:block; height:100%; padding:0 0 20px; font:12px 돋움; overflow-y:auto; -webkit-overflow-scrolling:touch; }
 
     /* 버튼 */
-    .d_etc18.left .d_toggle { position:absolute; z-index:1; top:34px; right:-34px; width:30px; height:30px; margin-top:-25px; background:#1f1f1f; cursor:pointer; transition:right .5s .6s, background .5s 1s ease; }
+    .d_etc18.left .d_toggle { position:absolute; z-index:1; top:34px; right:-65px; width:60px; height:30px; margin-top:-25px; background:#1f1f1f; cursor:pointer;color:#feea00;font-weight:bold;line-height:30px;text-align:center;font-size:9pt; transition:right .5s .6s, background .5s 1s ease; }
     .d_etc18.left .d_toggle.fixed {top:34px;}
-    .d_etc18.left .d_toggle.d_on { right:0; background:rgba(0,0,0,.1); top:35px;}
+    .d_etc18.left .d_toggle.d_on { right:0; background:rgba(0,0,0,.1); top:35px;color:#1f1f1f}    
+    
     /* bar1 */
     .d_etc18.left .d_toggle .btn_01 { position:absolute; top:14px; left:7px; transition:all .4s 1.2s ease; display:none}
     .d_etc18.left .d_toggle.d_on .btn_01 { top:15px; transform:rotate(135deg); display:inline}
