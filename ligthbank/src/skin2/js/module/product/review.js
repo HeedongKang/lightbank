@@ -40,37 +40,6 @@ $(document).ready(function(){
     || $("#chkPrdNm").html().indexOf("레일기구") > -1 || $("#chkPrdNm").html().indexOf("직부등") > -1){
         $("#light_ord_guide").html("<img src='/ex/light_ord_guide.gif' alt='전구 구매 가이드'/>");
     }
-    try{
-      $("#addproduct_option_id_2795_1 option:selected").text("- 상품 선택 -");
-    }catch(e){}
-    try{
-      $("#addproduct_option_id_2915_2 option:selected").text("- 상품 선택 -");
-    }catch(e){}
-    try{
-      $("#addproduct_option_id_2916_3 option:selected").text("- 상품 선택 -");
-    }catch(e){}
-    try{
-      $("#addproduct_option_id_2912_4 option:selected").text("- 상품 선택 -");
-    }catch(e){}
-    try{
-      $("#addproduct_option_id_2913_5 option:selected").text("- 상품 선택 -");
-    }catch(e){}
-    try{
-      $("#addproduct_option_id_2914_6 option:selected").text("- 상품 선택 -");
-    }catch(e){}
-    try{
-      $("#addproduct_option_id_2912_2 option:selected").text("- 상품 선택 -");
-    }catch(e){}
-    try{
-      $("#addproduct_option_id_2913_3 option:selected").text("- 상품 선택 -");
-    }catch(e){}   
-    try{
-      $("#addproduct_option_id_2914_4 option:selected").text("- 상품 선택 -");
-    }catch(e){}   
-    try{
-      $("#addproduct_option_id_2915_5 option:selected").text("- 상품 선택 -");
-    }catch(e){}   
-
 });
 
 function cart_custom(){

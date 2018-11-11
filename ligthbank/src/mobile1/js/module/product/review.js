@@ -47,9 +47,6 @@ $(document).ready(function(){
     || $("#chkPrdNm").html().indexOf("레일기구") > -1 || $("#chkPrdNm").html().indexOf("직부등") > -1){
         $("#light_ord_guide").html("<img src='/ex/light_ord_guide.gif' alt='전구 구매 가이드'/>");
     }
-    try{
-      $("#addproduct_option_id_2795_1 option:selected").text("- 상품 선택 -");
-    }catch(e){}
 });
 
 var PARENT = '';
