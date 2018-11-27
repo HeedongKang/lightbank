@@ -1,8 +1,8 @@
 
-    .JS_layerBnr_position { position:fixed; z-index:999; bottom:0; widht:0; height:0; font-family:'Nanum Gothic'; }
+    .JS_layerBnr_position { margin-bottom:140px;position:fixed; z-index:999; bottom:0; widht:0; height:0; font-family:'Nanum Gothic'; }
     .JS_layerBnr { position:absolute; left:0; bottom:0; width:150px; height:150px; }
     
-    .JS_layerBnr .d_winBanner { position:absolute; left:40px; bottom:30px; width:400px; height:410px/*사이즈필수*/; overflow:hidden; visibility:hidden; }
+    .JS_layerBnr .d_winBanner { position:absolute; top:-150px; left:200px; bottom:30px; width:400px; height:410px/*사이즈필수*/; overflow:hidden; visibility:hidden; }
 
-    .JS_layerBnr #d_checkBox { position:absolute; bottom:25px; right:60px; }
-    .JS_layerBnr .d_winBanner .d_close { position:absolute; bottom:25px; right:25px; cursor:pointer; }
+    .JS_layerBnr #d_checkBox { position:absolute; bottom:15px; }
+    .JS_layerBnr .d_winBanner .d_close { position:absolute; bottom:15px; right:25px; cursor:pointer; }
