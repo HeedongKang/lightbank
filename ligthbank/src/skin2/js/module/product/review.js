@@ -37,7 +37,7 @@ $(document).ready(function(){
     //상품명에 펜던트가 포함되면 전구구매가이드 노출
     if($("#chkPrdNm").html().indexOf("펜던트") > -1 || $("#chkPrdNm").html().indexOf("벽등") > -1 
     || $("#chkPrdNm").html().indexOf("레일기구") > -1 || $("#chkPrdNm").html().indexOf("직부등") > -1){
-        $("#light_ord_guide").html("<img src='/ex/light_ord_guide.gif' alt='전구 구매 가이드'/>");
+        $("#light_ord_guide").html("<img src='/_wg/img/prd_detail/light_ord_guide.gif' alt='전구 구매 가이드'/>");
     }
 });
 
