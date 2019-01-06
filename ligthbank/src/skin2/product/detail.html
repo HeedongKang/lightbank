@@ -463,6 +463,51 @@ if(!_IDV(_amt)) var _amt = '' ;
         <h3><span>이벤트</span></h3>
         <div class="event">{$common_event_a}</div>
     </div>
+    <!-- 관련상품 
+	<div style="margin-top:50px">
+    	
+
+  <div module="product_relation" id="relation_item">
+		<img src="/_wg/img/related_tit.jpg">
+
+        
+        <div module="product_relationlist" class="ec-base-product">
+            <ul class="mSlider prdList grid5">
+                <li class="item">
+                    <div class="thumbnail">
+                        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$img_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></a>
+                    </div>
+                    <div class="description">
+                        <p class="name">
+                            <a href="/product/detail.html{$param}">{$name}</a>
+                        </p>
+                        <ul class="spec">
+                            <li><strong class="{$product_sale_strike}">{$disp_product_price}</strong></li>
+                            <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="thumbnail">
+                        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$img_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></a>
+                    </div>
+                    <div class="description">
+                        <p class="name">
+                            <a href="/product/detail.html{$param}">{$name}</a>
+                        </p>
+                        <ul class="spec">
+                            <li><strong class="{$product_sale_strike}">{$disp_product_price}</strong></li>
+                            <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div><div class="divClear"></div>
+
+    	  	
+    </div>
+    -->
 </div><!-- //상단 제품 정보 -->
 
 
@@ -647,7 +692,8 @@ if(!_IDV(_amt)) var _amt = '' ;
 
 
     
-    
+    <link rel="stylesheet" href="/_wg/css/jquery.slider.css" media="screen" />
+	<script type="text/javascript" src="/_wg//js/jquery.slider.js"></script>
     <!-- 관련상품 -->
     <div module="product_relation" id="relation_item">
         <div class="slide_anchor">
@@ -661,9 +707,10 @@ if(!_IDV(_amt)) var _amt = '' ;
                 <li><a href="#prdQnA">상품문의 <span>{$qna_count}</span></a></li>
             </ul>
         </div>
+
         
         <div module="product_relationlist" class="ec-base-product">
-            <ul class="prdList grid5">
+            <ul class="mSlider prdList grid5">
                 <li class="item">
                     <div class="thumbnail">
                         <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$img_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></a>
@@ -671,15 +718,11 @@ if(!_IDV(_amt)) var _amt = '' ;
                     <div class="description">
                         <p class="name">
                             <a href="/product/detail.html{$param}">{$name}</a>
-                            <div class="line -mov"></div>
                         </p>
                         <ul class="spec">
                             <li><strong class="{$product_sale_strike}">{$disp_product_price}</strong></li>
                             <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
                         </ul>
-                        <div class="status">
-                            <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
-                        </div>
                     </div>
                 </li>
                 <li class="item">
@@ -689,22 +732,32 @@ if(!_IDV(_amt)) var _amt = '' ;
                     <div class="description">
                         <p class="name">
                             <a href="/product/detail.html{$param}">{$name}</a>
-                            <div class="line -mov"></div>
                         </p>
                         <ul class="spec">
                             <li><strong class="{$product_sale_strike}">{$disp_product_price}</strong></li>
                             <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
                         </ul>
-                        <div class="status">
-                            <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
-                        </div>
                     </div>
                 </li>
             </ul>
         </div>
     </div><div class="divClear"></div>
     
-    
+ <script type="text/javascript" >
+ $('.mSlider').bxSlider({
+		pager: false,
+		auto: false,
+		speed: 100,
+		mode:'horizontal',
+		   controls: true,    // 이전 다음 버튼 노출 여부
+		   minSlides : 5,
+		   maxSlides : 5,
+		   slideMargin:10,   
+		   slideWidth: 250,
+		   adaptiveHeight: true,
+		   moveSlides: 5
+	});
+</script>   
     
     <!-- 상품사용후기 -->
     <div id="prdReview" class="ec-base-tab grid5">
