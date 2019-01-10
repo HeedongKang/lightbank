@@ -463,55 +463,70 @@ if(!_IDV(_amt)) var _amt = '' ;
         <h3><span>이벤트</span></h3>
         <div class="event">{$common_event_a}</div>
     </div>
-    <!-- 관련상품 
+    <!-- 관련상품-->
+    <link rel="stylesheet" href="/_wg/css/jquery.slider.css" media="screen" />
+	<script type="text/javascript" src="/_wg//js/jquery.slider.js"></script>     
 	<div style="margin-top:50px">
     	
-
-  <div module="product_relation" id="relation_item">
-		<img src="/_wg/img/related_tit.jpg">
-
-        
-        <div module="product_relationlist" class="ec-base-product">
-            <ul class="mSlider prdList grid5">
-                <li class="item">
-                    <div class="thumbnail">
-                        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$img_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></a>
-                    </div>
-                    <div class="description">
-                        <p class="name">
-                            <a href="/product/detail.html{$param}">{$name}</a>
-                        </p>
-                        <ul class="spec">
-                            <li><strong class="{$product_sale_strike}">{$disp_product_price}</strong></li>
-                            <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="thumbnail">
-                        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$img_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></a>
-                    </div>
-                    <div class="description">
-                        <p class="name">
-                            <a href="/product/detail.html{$param}">{$name}</a>
-                        </p>
-                        <ul class="spec">
-                            <li><strong class="{$product_sale_strike}">{$disp_product_price}</strong></li>
-                            <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div><div class="divClear"></div>
+		  <div module="product_relation" id="relation_item">
+				<img src="/_wg/img/related_tit.jpg" style="margin-bottom:10px">
+		
+		        
+		        <div module="product_relationlist" class="ec-base-product" style="border-left:1px solid #ddd;padding-left:0px">
+		            <ul class="mSlider prdList grid5">
+		                <li class="item" style="border:1px solid #ddd;padding-top:20px;margin:0px 0px 0px 0px">
+		                    <div class="thumbnail">
+		                        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$img_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" style="width:85%;margin:0 auto"/></a>
+		                    </div>
+		                    <div class="description"  style="height:60px;text-align:center">
+		                        <p class="name">
+		                            <a href="/product/detail.html{$param}">{$name}</a>
+		                        </p>
+		                        <ul class="spec">
+		                            <li style="font-size:13pt"><strong class="{$product_sale_strike}">{$disp_product_price}</strong></li>
+		                            <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
+		                        </ul>
+		                    </div>
+		                </li>
+		                <li class="item" style="border:1px solid #ddd;padding-top:20px;margin:0px 0px 0px 0px">
+		                    <div class="thumbnail">
+		                        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$img_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"  style="width:85%;margin:0 auto"/></a>
+		                    </div>
+		                    <div class="description" style="height:60px;text-align:center">
+		                        <p class="name">
+		                            <a href="/product/detail.html{$param}">{$name}</a>
+		                        </p>
+		                        <ul class="spec">
+		                            <li style="font-size:13pt"><strong class="{$product_sale_strike}">{$disp_product_price}</strong></li>
+		                            <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
+		                        </ul>
+		                    </div>
+		                </li>
+		            </ul>
+		        </div>
+		    </div><div class="divClear"></div>
 
     	  	
     </div>
-    -->
+    
 </div><!-- //상단 제품 정보 -->
 
 
-
+ <script type="text/javascript" >
+ $('.mSlider').bxSlider({
+		pager: false,
+		auto: false,
+		speed: 100,
+		mode:'horizontal',
+		   controls: true,    // 이전 다음 버튼 노출 여부
+		   minSlides : 5,
+		   maxSlides : 5,
+		   slideMargin:0,   
+		   slideWidth: 250,
+		   adaptiveHeight: true,
+		   moveSlides: 5
+	});
+</script>   
 
 
 
@@ -691,73 +706,6 @@ if(!_IDV(_amt)) var _amt = '' ;
     </div>
 
 
-    
-    <link rel="stylesheet" href="/_wg/css/jquery.slider.css" media="screen" />
-	<script type="text/javascript" src="/_wg//js/jquery.slider.js"></script>
-    <!-- 관련상품 -->
-    <div module="product_relation" id="relation_item">
-        <div class="slide_anchor">
-            <ul module="product_detail">
-                <li><a href="#prdDetail">상품상세정보</a></li>
-                <li><a href="#install_guide">설치가이드</a></li>
-                <li><a href="#FAQ">FAQ</a></li>
-                <li><a href="#tab_02">상품구매안내</a></li>
-                <li class="on"><a href="#relation_item">관련상품</a></li>
-                <li><a href="#prdReview">상품후기 <span>{$review_count}</span></a></li>
-                <li><a href="#prdQnA">상품문의 <span>{$qna_count}</span></a></li>
-            </ul>
-        </div>
-
-        
-        <div module="product_relationlist" class="ec-base-product">
-            <ul class="mSlider prdList grid5">
-                <li class="item">
-                    <div class="thumbnail">
-                        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$img_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></a>
-                    </div>
-                    <div class="description">
-                        <p class="name">
-                            <a href="/product/detail.html{$param}">{$name}</a>
-                        </p>
-                        <ul class="spec">
-                            <li><strong class="{$product_sale_strike}">{$disp_product_price}</strong></li>
-                            <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="thumbnail">
-                        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$img_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></a>
-                    </div>
-                    <div class="description">
-                        <p class="name">
-                            <a href="/product/detail.html{$param}">{$name}</a>
-                        </p>
-                        <ul class="spec">
-                            <li><strong class="{$product_sale_strike}">{$disp_product_price}</strong></li>
-                            <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div><div class="divClear"></div>
-    
- <script type="text/javascript" >
- $('.mSlider').bxSlider({
-		pager: false,
-		auto: false,
-		speed: 100,
-		mode:'horizontal',
-		   controls: true,    // 이전 다음 버튼 노출 여부
-		   minSlides : 5,
-		   maxSlides : 5,
-		   slideMargin:10,   
-		   slideWidth: 250,
-		   adaptiveHeight: true,
-		   moveSlides: 5
-	});
-</script>   
     
     <!-- 상품사용후기 -->
     <div id="prdReview" class="ec-base-tab grid5">
