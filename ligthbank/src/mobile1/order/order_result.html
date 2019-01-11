@@ -1,4 +1,7 @@
 <!--@layout(/layout/basic/layout.html)-->
+<script language='javascript'>
+var products =[]; // google analytics items 
+</script>
 <div id="titleArea">
     <h2>주문완료</h2>
     <span module="Layout_MobileAction">
@@ -30,6 +33,23 @@
                 <div module="Order_normalresultlist" class="orderArea">
                     <!-- 참고: 상품 반복 -->
                     <div class="prdInfo">
+                        <script language='javascript'>
+                        if('{$product_total_price_front}'.replace(/,/g,'')>0||'{$product_total_price_front}'.replace(/,/g,'')!=''){
+                            <!--Google analytics-->
+                        	var items = {
+                        			"id": "{$product_no}",
+                        		      "name": "{$product_name}",
+                        		      "list_name": "",
+                        		      "brand": "",
+                        		      "category": "{$param}".split("cate_no=")[1],
+                        		      "variant": "{$option_str}",
+                        		      "list_position": 1,
+                        		      "quantity": {$product_quantity},
+                        		      "price": "{$product_total_price_front}".replace(/,/g,"")
+                        		}
+                            products.push(items);
+                        }
+                        </script>                    
                         <div class="description">
                             <p class="prdImg"><a href="/product/detail.html{$param}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" width="73" height="73" alt="" /></a></p>
                             <strong class="prdName" title="상품명"><a href="/product/detail.html{$param}">{$product_name}</a></strong>
@@ -64,6 +84,23 @@
                     </div><!-- //참고 -->
                     <!-- 참고: 상품 반복 -->
                     <div class="prdInfo">
+                        <script language='javascript'>
+                        if('{$product_total_price_front}'.replace(/,/g,'')>0||'{$product_total_price_front}'.replace(/,/g,'')!=''){
+                            <!--Google analytics-->
+                        	var items = {
+                        			"id": "{$product_no}",
+                        		      "name": "{$product_name}",
+                        		      "list_name": "",
+                        		      "brand": "",
+                        		      "category": "{$param}".split("cate_no=")[1],
+                        		      "variant": "{$option_str}",
+                        		      "list_position": 1,
+                        		      "quantity": {$product_quantity},
+                        		      "price": "{$product_total_price_front}".replace(/,/g,"")
+                        		}
+                            products.push(items);
+                        }
+                        </script>                     
                         <div class="description">
                             <p class="prdImg"><a href="/product/detail.html{$param}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" width="73" height="73" alt="" /></a></p>
                             <strong class="prdName" title="상품명"><a href="/product/detail.html{$param}">{$product_name}</a></strong>
@@ -546,7 +583,24 @@
             </div>
         </div>
     </div>
-
+    <script language='javascript'>
+    <!--google analytics-->
+    var gtmData={
+  		  "transaction_id": "{$order_id}",
+  		  "affiliation": "Lightbank Mobile",
+  		  "value": "{$payed_order_price_front}".replace(/[^0-9-]/g,"") ,
+  		  "currency": "KRW",
+  		  "tax": 0,
+  		  "shipping": "{$normal_total_delv_price}".replace(/[^0-9-]/g,"")  + "{$normal_total_special_delv_price}".replace(/[^0-9-]/g,"") ,
+  		  "items": products
+  		}   
+    gtag('event', 'purchase',gtmData);
+    <!-- AceCounter 
+    var _AEC_order_code='{$order_id}';		// 주문코드
+    var _amt = '{$payed_order_price_front}'.replace(/[^0-9-]/g,'') ;              // 총 구매액 
+    AEC_B_L();			// 구매완료 함수
+    -->
+    </script>
     <!-- 추가 정보 -->
     <div class="toggleArea type1 eToggle selected orderArea {$ordadd.display|display}">
         <div class="title">
