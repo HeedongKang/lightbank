@@ -48,6 +48,55 @@
 <!-- best 인기상품-->
 <!--@import(/_wg/import/bestProduct.html)-->
 
+
+<!--포토후기 및 시공사 -->
+<div class="mainReview_Tit">포토후기 및  <span class="stit">시공사례</span></div>
+<div class="mainReview_Desc">조명뱅크 고객님들의 포토후기와 시공사례를 볼 수 있습니다</div>
+
+<div style="width:1300px;margin:0 auto;">		
+	<div module="photoreview_display" class="photoreview_skin2">
+	    <!--@css(/_wg/app_photo/lister.css)-->
+	    <!--@css(/_wg/app_photo/skin2.css)-->
+	    <!--@js(/_wg/app_photo/lister.js)-->
+	    <!--@js(/_wg/app_photo/skin2.js)-->
+	    <!-- 
+	       $count=12
+	       $size=215
+	       $point=show
+	       $board_no=4
+	    -->
+	    <div class="lister_wrap">
+	        <dl>
+	            <dt><a href="#none" rel="{$no}"><img src="{$rhimg}" alt="" /></a></dt>
+	            <dd>
+	            	<p style="text-align:center">{$rdate|date:Y/m/d} &nbsp;&nbsp;&nbsp;&nbsp;<img src="//img.echosting.cafe24.com/apps/photo-review/skin2/ico_star{$rpoint}.png" alt="{$rpoint}점" /></p>
+	                <p style="margin-top:5px">{$rsub}</p>
+	            </dd>
+	        </dl>
+	        <dl>
+	            <dt><a href="#none" rel="{$no}"><img src="{$rhimg}" alt="" /></a></dt>
+	            <dd>
+	                <p style="text-align:center">{$rdate|date:Y/m/d} &nbsp;&nbsp;&nbsp;&nbsp;<img src="//img.echosting.cafe24.com/apps/photo-review/skin2/ico_star{$rpoint}.png" alt="{$rpoint}점" /></p>
+	                <p style="margin-top:5px">{$rsub}</p>
+	            </dd>
+	        </dl>
+	    </div>
+	    
+	    <p class="more"><a href="#none"><img src="/_wg/img/btn_Rmore.png" width="60"/></a></p>
+	    <div style="width: 100%;margin: 0 auto;border:0.5px solid #414141;margin-top:30px"></div>
+	    
+	    <div class="detail-dimmed">
+	        <div class="detail">
+	        	<a href="#none" class="close" style="position: fixed;width: 535px;text-align: right;"><img src="/_wg/app_photo/btn_wlclose.png" height="30px"></a>
+	            <p class="image"><img src="//img.echosting.cafe24.com/apps/photo-review/skin3/@img_photo9.jpg" alt="" /></p>
+	            <div class="contents"></div>
+	            <p></p>
+	        </div>
+	    </div>
+	</div>
+</div>
+
+
 <!-- 조명뱅크가 자신있게 추천하는 상품 -->
 <div class="maint_Tit" style="padding-top:25px">⊂ 조명뱅크가 자신있게 <span class="stit">추천하는 제품</span> ⊃</div>
 	<div module="product_listmain_1" class="ec-base-product">
@@ -64,8 +113,4 @@
 
 <div style="background-color:#EDEDED;height:1px;margin-bottom:70px;"></div>
    
-<!-- 베스트리뷰 -->
-<!--@import(/_wg/import/bestReview.html)-->	
-
-
 <!--@define(cmc_log)-->

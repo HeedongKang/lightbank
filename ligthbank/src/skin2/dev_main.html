@@ -1,251 +1,116 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--@layout(/layout/basic/main.html)-->
 
-    <!--PG크로스브라우징필수내용 시작-->
-    <meta http-equiv="Cache-Control" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <!--PG크로스브라우징필수내용 끝-->
+<!----------------------------------------------------------------------------------------------------------------------------------------
 
-    <title>조명뱅크-조명의모든것</title>
-    <!--@css(/layout/basic/css/common.css)--><!--해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요.-->
-    <!--@css(/layout/basic/css/ec-base-ui.css)-->
-    <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
-    <!--@css(/layout/basic/css/ec-base-help.css)-->
-    <!--@css(/layout/basic/css/ec-base-paginate.css)-->
-    <!--@css(/layout/basic/css/ec-base-tab.css)-->
-    <!--@css(/layout/basic/css/ec-base-button.css)-->
-    <!--@css(/layout/basic/css/ec-base-box.css)-->
-    <!--@css(/layout/basic/css/ec-base-desc.css)-->
+    ### 본 디자인의 저작권은 디자인웹굿에 있으며 디자인을 무단 [ 이전/양도/대여/재판매/템플릿제작 ] 은 법적책임을 지게됩니다. ####
 
-    <!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
-    <!--@js(/layout/basic/js/basic.js)-->
-    <!--@js(/js/common.js)-->
-    <!--@js(/js/module/layout/quick_view.js)-->
-    <script type="text/javascript" src="/ec-js/common.js"></script><!-- 해당 JS는 플래시를 사용하기 위한 스크립트입니다. -->
+    ### 이미지경로 - FTP접속 후 /sde_design/스킨번호(skin번호)/_wg/img/
     
-    <!--@import(/_wg/base.html)--><!-- 디자인웹굿 베이스 -->
-    
- 
-</head>
-<body id="main">
-<!-- 최상단 top 배너 -->
-<center style="background:#323232;width:100%">
-<img src="/_wg/img/JS_topBnr/topBanner.jpg" alt=""/>
+    ### 언어 - 한국어
+
+    ### 버젼 SKIN215_M30
+
+    ### 업데이트 20170313
+
+----------------------------------------------------------------------------------------------------------------------------------------->
+
+<!--슬라이딩 배너 사용안함import(/_wg/import/billboardBanner.html)-->
+<!-- 추천상품 사용안함 import(/_wg/import/recommendPrd.html)-->
+
+
+<!-- 빌보드 배너 -->
+<!--@import(/_wg/import/JS_mainBnr.html)-->
+<!--조명설치서비스, 평생as배너-->
+<center style="margin-bottom:-40px;">
+	<a href="/_wg/import/installService.html"><img src="/_wg/img/banner_mrs01.jpg"></a>
+	<a href="/_wg/import/as_whole.html"><img src="/_wg/img/banner_mrs02.jpg" style="margin-left:20px;"></a>
 </center>
-
-<!-- 상단 디자인 -->
-<div id="skipNavigation">
-    <p><a href="#category">전체상품목록 바로가기</a></p>
-    <p><a href="#contents">본문 바로가기</a></p>
-</div>
-
-<!--@css(/_wg/css/header.css)-->
-
-<div id="header">
-    
-<div id="header_01">
-    <div class="header_01_inner -frame">
-        
-        <!-- 슬라이드 홈버튼 -->
-        <div id="slide_home_wrap">
-            <div id="slide_home">
-                <a href="/"><img src="/_wg/img/gohome.gif" alt="홈" /></a>
-            </div>
-        </div>
-        
-        <!-- 좌측상단메뉴 -->
-        <!--@import(/_wg/import/JS_topMenu2.html)-->
-
-        <!-- SNS 아이콘 -->
-        <!--@import(/_wg/import/sns_icon.html)-->
-        
-        <!-- 상단 메뉴 -->
-        <!--@import(/_wg/import/JS_topMenu.html)-->
-
-    </div>
-</div><div class="divClear"></div>
-
-<div id="header_02" class="-frame" style="height:133px">
-    
-    <!-- 로고 -->
-    <div style="position:absolute; top:40px; z-index:1; font-size:0;cursor:pointer">
-        <img src="/_wg/img/new_logo.jpg" alt="{$mall_name}"  border="0"/>
-    </div>
-     <!-- 검색창 -->
-    <!--@css(/_wg/css/search_section_new.css)-->
-    <div class="search_section">
-		<form id="searchBarForm" name="" action="/product/search.html" method="get" enctype="multipart/form-data">
-			<input id="banner_action" name="banner_action" value="" type="hidden">
-			<div style="float: left;height: 46px;" class="xans-element- xans-layout xans-layout-searchheader ">
-				<!--
-	                $product_page=/product/detail.html
-	                $category_page=/product/list.html
-	        	-->
-				<fieldset>
-					<legend>검색</legend>
-	                <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" style="height:41px;width:381px;border: 1px solid #5A5A5A;" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text">
-	                &nbsp;<input type="image" src="/_wg/img/search_btn_n.jpg" alt="검색" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;" height="48" style="margin-left:-6px">
-				</fieldset>
-			</div>
-		</form>     
-		<div class="h_right" style="position:absolute; top:-53px; right:-55px; cursor:pointer">
-			<img src="/_wg/img/search_btn_d.jpg" id="JS_searchBtn" alt="맞춤검색" />
-        </div>
-        <!-- 스마트서치 버튼 ( /_wg/import/JS_searchBox.html 에서 내용 수정이 가능합니다 ) -->
-    </div>
-    
-   <!-- 헤더 배너2 -->
-    <!--@import(/_wg/import/JS_headerBnr2.html)-->
-
-</div>
-
-    <!--import(/_wg/import/header_03.html)-->
- <div id="header_03">   
-    <div class="header_03_inner -frame">
-        <!--@css(/_wg/css/category_sub_new.css)-->
-
-        <!-- 전체메뉴 -->
-        <!--@import(/_wg/import/category_full_new.html)-->
-        
-        <!-- 전체메뉴 html버젼 -->
-        <!--@import(/_wg/import/category_full_m.html)-->
-        
-        <!-- 브랜드 전체보기(추후 오픈 -->
-        <!--import(/_wg/import/layer_brand.html)-->
-        
-        <!-- 추가메뉴1 -->
-        <!--@import(/_wg/import/category_sub1.html)-->
-        
-        <!-- 상품분류 카테고리 -->
-        <!--@import(/_wg/import/category_new.html)-->
-        
-        <!-- 추가메뉴2(추후 오픈 -->
-        <!--import(/_wg/import/category_sub2.html)-->
-        
-        <!-- 추가메뉴3(타임세일 & 룩북) -->
-        <!--import(/_wg/import/category_sub3.html)-->
-		<!-- 추가메뉴3 -->
-		<ul class="categorySub m03">
-		    <!-- 타임세일 -->
-			<li class="time_sale"><a href="/_wg/import/timeSale.html">
-				<!-- <i class="xi-alarm-clock-o"></i> 타임세일 -->
-				파격특가
-				<!--추후사용 
-				<ul>
-		            <li><iframe src="/_wg/import/timeLayer.html" width="300" height="425" frameborder="0" scrolling="no"></iframe></li>
-		        </ul>
-		         -->
-		    </li><!-- //타임세일 -->
-		    
-		    <!-- 카탈로그(추후사용)
-		    <li class="lookbook"><a href="/_wg/import/JS_lookbook.html" class="-mov">카탈로그</a></li>
-		     -->
-		</ul>
-
-    </div>
-</div>
-
-
-
-
-</div><hr class="layout" />
-
-<div id="wrap">
-    <div id="container">
-        <div id="contents_main" >
-        
-        <!-- 빌보드 배너 -->
-        <!--import(/_wg/import/JS_mainBnr.html)-->
-		<!--@css(/_wg/css/JS_mainBnr_new.css)-->
-		<div class="JS_mainBnr">
-		    <ul class="DB_imgSet">
-		        <li><a href="/product/list.html?cate_no=164"><img src="/_wg/img/billboard_bnr/bill_banner01_180703.jpg" alt=""></a></li>
-		        <li><a href="/product/list.html?cate_no=131"><img src="/_wg/img/billboard_bnr/bill_banner02_180703.jpg" alt=""></a></li>
-		        <li><a href="/member/join.html"><img src="/_wg/img/billboard_bnr/bill_banner03_180703.jpg" alt=""></a></li>
-		        <li><a href="/product/list.html?cate_no=134"><img src="/_wg/img/billboard_bnr/bill_banner04_180703.jpg" alt=""></a></li>
-		    </ul>
-		    <div class="DB_arrow"><span></span></div>
-		    <ul class="DB_menuSet">
-		       <li><span></span></li>
-		       <li><span></span></li>
-		       <li><span></span></li>
-		       <li><span></span></li>
-		   </ul>
-		    <!-- 화살표 -->
-		    <ul class="DB_dir">
-		        <span class="DB_prevBtn"></span>
-		        <span class="DB_nextBtn"></span>
-		    </ul>
-		</div>	        
-	        
-        <!--브랜드 베스트상품-->
-	    <!--@import(/_wg/import/brandBest.html)-->
+<!--브랜드 베스트상품-->
+<!--@import(/_wg/import/brandBest.html)-->
 	    
-	    <!-- 한정수량 파격특가 -->
-		<div style="background-color:#EDEDED;height:670px;margin-top:-50px;margin-bottom:80px;">	        
-			<div class="maint_Tit" style="padding-top:75px">⊂ 한정수량 파격특가 <span class="stit">최대45%</span> ⊃</div>	        
-			<!-- 특가상품 (New arrivals) -->
-			<div module="product_listmain_2" class="ec-base-product">
-			    <!--
-			        $count = 4
-			        $basket_result = /product/add_basket.html
-			        $basket_option = /product/basket_option.html
-			    -->
-			    <ul class="prdList grid4">
-			        <!--@import(/_wg/import/specialPrdList.html)-->
-			    </ul>
-			</div>        
+<!-- 한정수량 파격특가 -->
+<div style="background-color:#EDEDED;height:670px;margin-top:-50px;margin-bottom:80px;">	        
+	<div class="maint_Tit" style="padding-top:75px">⊂ 한정수량 파격특가 <span class="stit">최대45%</span> ⊃</div>
+	<div class="maint_Tit_more"><a href="_wg/import/timeSale.html">더보기></a></div>	        
+	<!-- 특가상품 (New arrivals) -->
+	<div module="product_listmain_2" class="ec-base-product">
+	    <!--
+	        $count = 4
+	        $basket_result = /product/add_basket.html
+	        $basket_option = /product/basket_option.html
+	    -->
+	    <ul class="prdList grid4">
+	        <!--@import(/_wg/import/specialPrdList.html)-->
+	    </ul>	
+	</div>        
+</div>    
+     
+<!-- best 인기상품-->
+<!--@import(/_wg/import/bestProduct.html)-->
+
+
+<!--포토후기 및 시공사 -->
+<div class="mainReview_Tit">포토후기 및  <span class="stit">시공사례</span></div>
+<div class="mainReview_Desc">조명뱅크 고객님들의 포토후기와 시공사례를 볼 수 있습니다</div>
+
+<div style="width:1300px;margin:0 auto;">		
+	<div module="photoreview_display" class="photoreview_skin2">
+	    <!--@css(/_wg/app_photo/lister.css)-->
+	    <!--@css(/_wg/app_photo/skin2.css)-->
+	    <!--@js(/_wg/app_photo/lister.js)-->
+	    <!--@js(/_wg/app_photo/skin2.js)-->
+	    <!-- 
+	       $count=12
+	       $size=215
+	       $point=show
+	       $board_no=4
+	    -->
+	    <div class="lister_wrap">
+	        <dl>
+	            <dt><a href="#none" rel="{$no}"><img src="{$rhimg}" alt="" /></a></dt>
+	            <dd>
+	            	<p style="text-align:center">{$rdate|date:Y/m/d} &nbsp;&nbsp;&nbsp;&nbsp;<img src="//img.echosting.cafe24.com/apps/photo-review/skin2/ico_star{$rpoint}.png" alt="{$rpoint}점" /></p>
+	                <p style="margin-top:5px">{$rsub}</p>
+	            </dd>
+	        </dl>
+	        <dl>
+	            <dt><a href="#none" rel="{$no}"><img src="{$rhimg}" alt="" /></a></dt>
+	            <dd>
+	                <p style="text-align:center">{$rdate|date:Y/m/d} &nbsp;&nbsp;&nbsp;&nbsp;<img src="//img.echosting.cafe24.com/apps/photo-review/skin2/ico_star{$rpoint}.png" alt="{$rpoint}점" /></p>
+	                <p style="margin-top:5px">{$rsub}</p>
+	            </dd>
+	        </dl>
 	    </div>
 	    
-
-       <!-- 베스트 상품-->
-	   <!--@import(/_wg/import/bestProduct.html)-->
-	       
-	       
-	   	<!-- 조명뱅크가 자신있게 추천하는 상품 -->
-	   	<div class="maint_Tit" style="padding-top:25px">⊂ 조명뱅크가 자신있게 <span class="stit">추천하는 제품</span> ⊃</div>
-			<div module="product_listmain_1" class="ec-base-product">
-			    <!--
-			        $count = 28
-			        $basket_result = /product/add_basket.html
-			        $basket_option = /product/basket_option.html
-			    -->
-			    <ul class="prdList grid4">
-			        <!--@import(/_wg/import/main_prdList.html)-->
-			    </ul>
-			</div>
-		</div>
-		
-		<div style="background-color:#EDEDED;height:1px;margin-bottom:70px;"></div>
-			    
-        <!-- 베스트리뷰 -->
-        <!--@import(/_wg/import/bestReview.html)-->			    
-			    
-
-        </div>
-    </div><hr class="layout" />
-</div><hr class="layout" />
+	    <p class="more"><a href="#none"><img src="/_wg/img/btn_Rmore.png" width="60"/></a></p>
+	    <div style="width: 100%;margin: 0 auto;border:0.5px solid #414141;margin-top:30px"></div>
+	    
+	    <div class="detail-dimmed">
+	        <div class="detail">
+	        	<a href="#none" class="close" style="position: fixed;width: 535px;text-align: right;"><img src="/_wg/app_photo/btn_wlclose.png" height="30px"></a>
+	            <p class="image"><img src="//img.echosting.cafe24.com/apps/photo-review/skin3/@img_photo9.jpg" alt="" /></p>
+	            <div class="contents"></div>
+	            <p></p>
+	        </div>
+	    </div>
+	</div>
+</div>
 
 
-<!-- 푸터 -->
-<!--@import(/_wg/import/footer.html)-->
-    
-<!-- 최근본상품 -->
-<!--@import(/_wg/import/productRecent.html)-->
-    
-<!-- 우측숨김바 -->
-<!--@import(/_wg/import/dev_right_hidden.html)-->
+<!-- 조명뱅크가 자신있게 추천하는 상품 -->
+<div class="maint_Tit" style="padding-top:25px">⊂ 조명뱅크가 자신있게 <span class="stit">추천하는 제품</span> ⊃</div>
+	<div module="product_listmain_1" class="ec-base-product">
+	    <!--
+	       $count = 28
+	       $basket_result = /product/add_basket.html
+	       $basket_option = /product/basket_option.html
+	   	-->
+	   	<ul class="prdList grid4">
+	       <!--@import(/_wg/import/main_prdList.html)-->
+		</ul>
+	</div>
+</div>
 
-<!-- 좌측하단 팝업 배너(메인페이지에만 노출됩니다.) -->
-<!--@import(/_wg/import/JS_layerBnr.html)-->
-
-</body>
-</html>
-
-
-
+<div style="background-color:#EDEDED;height:1px;margin-bottom:70px;"></div>
+   
 <!--@define(cmc_log)-->
