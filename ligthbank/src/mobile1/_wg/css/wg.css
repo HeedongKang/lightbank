@@ -196,9 +196,9 @@
 	.maint_Tit{margin: 30px auto 25px;font-size: 14pt; text-align: center;font-weight:bold;}
 	.maint_Tit .stit {color:red;}
  	/*USER BEST 타이틀*/
- 	.mainReview_Tit{text-align: center;font-size:27pt;font-weight:bold;}
+ 	.mainReview_Tit{text-align: center;font-size:18pt;font-weight:bold;}
  	.mainReview_Tit .stit {color:red;}
- 	.mainReview_Desc {font-size:15px;text-align:center;margin-top:15px;margin-bottom:20px}
+ 	.mainReview_Desc {font-size:13px;text-align:center;margin-top:15px;}
 	/*더보기 버튼*/
 	.moreBtn {height: 35px;line-height: 35px;width: 50%;text-align: center;margin-top: 15px;border: 1px solid #cac7c7;font-size: 12pt;background:#ffffff} 		
 
