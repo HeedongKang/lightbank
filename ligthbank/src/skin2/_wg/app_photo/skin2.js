@@ -170,12 +170,11 @@ $(document).ready(function(){
     {
         var tmpl = [];
         var img = (isHigh == true) ? c.rhimg : c.rimg;
-        var date = new Date(c.rdate);
 
         tmpl.push('<dl>');
         tmpl.push('<dt><a href="#none" rel="'+c.no+'"><img src="'+img+'" alt="" /></a></dt>');
         tmpl.push('<dd>');
-        tmpl.push('<p style="text-align:center">'+getFormatDate(date)+' &nbsp;&nbsp;&nbsp;&nbsp;<img src="//img.echosting.cafe24.com/apps/photo-review/skin3/ico_star'+c.rpoint+'.png" alt="'+c.rpoint+'점" /></p>');
+        tmpl.push('<p style="text-align:center">'+c.rdate.substring(0,10)+' &nbsp;&nbsp;&nbsp;&nbsp;<img src="//img.echosting.cafe24.com/apps/photo-review/skin3/ico_star'+c.rpoint+'.png" alt="'+c.rpoint+'점" /></p>');
         tmpl.push('<p style="margin-top:5px">'+c.rsub+'</p>');
         tmpl.push('</dd>');
         tmpl.push('</dl>');
