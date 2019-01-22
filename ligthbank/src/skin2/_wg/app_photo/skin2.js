@@ -110,6 +110,10 @@ $(document).ready(function(){
             hideDetail();
         });
         
+        $(".detail-dimmed").click(function(e){
+            e.preventDefault();
+            hideDetail();
+        });        
 //        $(".xans-photoreview-display .detail-dimmed").click(function(e){
 //            e.preventDefault();
 //            hideDetail();

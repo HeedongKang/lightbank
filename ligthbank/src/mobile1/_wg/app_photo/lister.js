@@ -164,18 +164,20 @@
                 var guide_id = 'jq_lister_guide'+ i;
                 //var $guide = $("<div/>").css({'top':0,'left':(i*options.c_wid)+options.w_pad,'width':options.c_wid,'margin-left':options.c_pad,'position':'absolute'});
                 
-
-                var $guide;
+                $guide = $("<div/>").css({'vertical-align':'top', 'width': '100%'});
+                
+                /*var $guide;
                 if (options.c_num == 1 && i == 0) {
                     $guide = $("<div/>").css({'vertical-align':'top', 'width': '100%'});
                 } else {
                     $guide = $("<div/>").css({'vertical-align':'top', 'width':options.c_wid});
-                }
+                }*/
                 
+                /*
                 if( options.c_num > 1 && i == 0 ) {
                     $guide.css({'margin-left':options.w_pad});
                 }
-
+                 */
                 $guide.attr('id', guide_id);
                 $guide.addClass('jq_lister_guide_co');
                 $wrapper.append($guide);

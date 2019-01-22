@@ -4,10 +4,10 @@
 
 .xans-photoreview-display .lister_wrap { display:none; }
 
-.xans-photoreview-display dl { margin:22px 0 0; }
+.xans-photoreview-display dl { margin:22px 6px 0 0; }
 .xans-photoreview-display dt { padding:15px 0 9px;  border-bottom:none; text-align:center; }
 .xans-photoreview-display dt img { width:100%; }
-.xans-photoreview-display dd { padding:0 0 2px;  }
+.xans-photoreview-display dd { padding:0 0 2px;  } 
 .xans-photoreview-display dd p { padding:0 2px;  line-height:15px; word-break:break-all;  }
 .xans-photoreview-display dd p.date { padding-top:4px; font-family:gulim, sans-serif; }
 .xans-photoreview-display dd p.point { height:20px; padding-left:15px; }
