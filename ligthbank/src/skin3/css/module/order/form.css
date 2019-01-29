@@ -227,6 +227,7 @@
 #imgNaverMileageHelp { cursor:pointer; }
 
 /* 배송방식선택190128*/
+.develry_type{float:left}
 .develry_type ul { margin-bottom: 10px; }
 .develry_type ul li { list-style: none;display: inline-block;width: 134px;text-align: center;padding: 5px 0 5px 0;background:#BDBDBD;font-weight: bold;color: #fff;cursor: pointer; }
 .develry_type ul li:first-child {background:#333333;color:#F2DE01;}

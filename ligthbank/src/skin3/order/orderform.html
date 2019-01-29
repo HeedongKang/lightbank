@@ -865,86 +865,89 @@
 		</div>
 	</div>
 
-	<div id="{$lShippingCompanyLists}"
-		class="shippingArea {$shipcompany_display|display}">
-		<div class="title">
-			<h3>배송업체(방식) 선택</h3>
-		</div>
-		<table border="1" summary="">
-<caption>배송업체(방식) 선택</caption>
-			<thead><tr>
-<th scope="col">
-						<div class="method">
-							 <span class="ec-base-label"><input id="delivcompany0" name="delivcompany" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" value="11" type="radio"><label for="delivcompany0">CJ대한통운</label></span>
-<span class="ec-base-label"><input id="delivcompany1" name="delivcompany" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" value="12" type="radio"><label for="delivcompany1">퀵배송</label></span>
-<span class="ec-base-label"><input id="delivcompany2" name="delivcompany" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" value="13" type="radio"><label for="delivcompany2">직접수령</label></span>							 							<p class="ec-base-help displaynone">스토어픽업을
-								사용할 수 없는 상품이 포함되어 있어 일반 배송사만 선택 가능합니다.</p>
-						</div>
-					</th>
-				</tr></thead>
-<tbody><tr>
-<td>
-						<ul class="list" id="deliv_info_view" style="display: block;">
-<li>배송업체 : <span id="deliv_company_name_custom_type">CJ대한통운</span></li>
-							<li class="">배송비 :
-								<span id="deliv_company_price_custom_type">￦2,500</span></li>
-							<li class="displaynone">
-								<div class="ec-shop-shipping_additional_fee_show displaynone">
-									배송비 : <strong>￦<span id="f_addr_total_ship_fee_id"></span>									</strong> = 해외배송비 ￦<span id="f_addr_delv_price_id"></span>									+ 보험료 ￦<span id="f_addr_insurance_price_id"></span>									<span class="ec-shop-shipping_additional_fee_name_show"> + <span id="f_addr_shipping_additional_fee_name_id"></span>
-										￦<span id="f_addr_shipping_additional_fee_id"></span>									</span>
-									<p>
-										보험료는 배송과정에서 발생하는 분실, 도난, 파손 등으로 인한 손해에 대하여<br>규정에 따라 배상해
-										드리는 서비스입니다.
-									</p>
-								</div>
-								<div class="ec-shop-shipping_additional_fee_hide ">
-									배송비 : <strong>￦<span id="f_addr_total_ship_fee_id"></span>									</strong> = 해외배송비 ￦<span id="f_addr_delv_price_id"></span>									+ 보험료 ￦<span id="f_addr_insurance_price_id"></span>									<p>
-										배송비에는 관세 및 세금 등의 각종 비용은 포함되어 있지 않습니다.<br>상품수령 시 고객님이 추가로
-										지불하셔야 합니다.<br>보험료는 배송과정에서 발생하는 분실, 도난, 파손 등으로 인한 손해에 대하여<br>규정에
-										따라 배상해 드리는 서비스입니다.
-									</p>
-								</div>
-							</li>
-							<li>배송소요기간 : <span id="deliv_company_period_custom_type">3일 ~ 7일 이내</span></li>
-							<li>홈페이지주소 : <span id="deliv_company_site_custom_type"></span></li>
-							<li class="" id="areaname" style="display: none;">배송가능
-								지역 : <span id="deliv_company_areaname_custom_type"></span></li>
-							<li class="" id="ordertime" style="display: none;">주문가능
-								시간 : <span id="deliv_company_ordertime_custom_type"></span></li>
-						</ul>
-<ul class="list" id="store_info_view" style="display: none;">
-<li>주소 : <span id="store_receive_addr"></span></li>
-							<li>전화번호 : <span id="store_main_phone"></span></li>
-							<li>영업시간 : <span id="store_office_hour"></span></li>
-							<li>수령 가능일 : <span id="store_receive_period"></span></li>
-							<li>수령지 안내 : <span id="store_receive_info"></span></li>
-							<li class="map">약도<br><span id="store_receive_map"></span>							</li>
-						</ul>
-</td>
-				</tr></tbody>
-</table>
-	</div>
+<script type="text/javascript">
+  function chgDelryBtn(type){
+	  var beforeZipcode ='';
+	  var beforeAddr1 ='';
+	  var beforeAddr2 ='';
+	  if(type == '1'){
+		  $("#delryType1").css({"color":"#F2DE01","background":"#333333"});
+		  $("#delryType2").css({"color":"#fff","background":"#BDBDBD"});
+		  $("#delryType3").css({"color":"#fff","background":"#BDBDBD"});
+		  
+		  $("#delryChoiceView").css("display","");
+		  
+		  $("#addrView").css("display","");
+		  $("#receveTit").html("받으시는 분");
+		
+		  if(beforeZipcode != ''){
+			  $("#rzipcode1").html(beforeZipcode);
+			  $("#beforeAddr1").html(beforeAddr1);
+			  $("#beforeAddr2").html(beforeAddr2);
+		  }
+		  $("#delryMsgTit").html("배송메시지");
+		  
+		  $("#quickMentView").css("display","none");
+		  $("#directionView").css("display","none");
+	  }else if(type == '2'){
+		  $("#delryType2").css({"color":"#F2DE01","background":"#333333"});
+		  $("#delryType1").css({"color":"#fff","background":"#BDBDBD"});
+		  $("#delryType3").css({"color":"#fff","background":"#BDBDBD"});
+		  
+		  $("#delryChoiceView").css("display","none");
+		  
+		  $("#addrView").css("display","none");
+		  $("#receveTit").html("수령하시는 분");
+		  beforeZipcode = $("#rzipcode1").html();
+		  beforeAddr1 = $("#beforeAddr1").html();
+		  beforeAddr2 = $("#beforeAddr2").html();
+		  $("#rzipcode1").html("10397");
+		  $("#beforeAddr1").html("경기도 고양시 일산동구 멱절길 366-112 (장항동)");
+		  $("#beforeAddr2").html("조명뱅크 직접수령");	
+		  $("#delryMsgTit").html("방문일자/시간");
+		  
+		  $("#quickMentView").css("display","none");
+		  $("#directionView").css("display","");
+	  }else if(type == '3'){
+		  $("#delryType3").css({"color":"#F2DE01","background":"#333333"});
+		  $("#delryType1").css({"color":"#fff","background":"#BDBDBD"});
+		  $("#delryType2").css({"color":"#fff","background":"#BDBDBD"});
+		  
+		  $("#delryChoiceView").css("display","");
+		  
+		  $("#addrView").css("display","");
+		  $("#receveTit").html("받으시는 분");
+		
+		  if(beforeZipcode != ''){
+			  $("#rzipcode1").html(beforeZipcode);
+			  $("#beforeAddr1").html(beforeAddr1);
+			  $("#beforeAddr2").html(beforeAddr2);
+		  }
+		  $("#delryMsgTit").html("배송메시지");
+		  
+		  $("#quickMentView").css("display","");
+		  $("#directionView").css("display","none");
+	  }
+  }
+</script>
 
 	<div class="orderArea">
 		<div class="title">
 			<h3>배송 정보</h3>
-			<div class="develry_type">
-				<ul style="margin-bottom: 10px;">
-				
-					<li id="delivcompany0" name="delivcompany2" value="11">택배발송</li>
-					<li id="delivcompany1" name="delivcompany2" value="13">직접수령</li>
-					<li id="delivcompany2" name="delivcompany2"  value="12">퀵배송</li>
-				</ul>
-				<input id="delivcompany0" name="delivcompany3" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" value="11" type="radio">택배발송
-				<input id="delivcompany1" name="delivcompany3" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" value="11" type="radio">직접수령
-				<input id="delivcompany2" name="delivcompany3" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" value="11" type="radio">퀵배송
-			</div>
 			<p class="required">
 				<img
 					src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
 					alt="필수" /> 필수입력사항
 			</p>
 		</div>
+		<div class="develry_type">
+			<ul style="margin-bottom: 10px;">
+				<li id="delryType1"><input onclick="javascript:chgDelryBtn('1')" id="delivcompany0" name="delivcompany" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" value="11" type="radio"><label for="delivcompany0">택배</label></li>
+				<li id="delryType2"><input onclick="javascript:chgDelryBtn('2')" id="delivcompany2" name="delivcompany" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" value="13" type="radio"><label for="delivcompany2">직접수령</label></li>
+				<li id="delryType3"><input onclick="javascript:chgDelryBtn('3')" id="delivcompany1" name="delivcompany" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" value="12" type="radio"><label for="delivcompany1">퀵배송</label></li>
+			</ul>
+		</div>	
+		<div id="quickMentView" style="color: red;font-weight: bold;margin-top: 20px;display:none">&nbsp;&nbsp; *퀵배송은 착불만 가능하기 때문에 주문 페이지에는 배송비 "0원"으로 노출됩니다.</div>	
 		<div class="ec-base-table typeWrite">
 			<table border="1" summary="">
 				<caption>배송 정보 입력</caption>
@@ -975,7 +978,7 @@
 				</tbody>
 				<!-- 국내 배송지 정보 -->
 				<tbody class="{$r_info_display|display}">
-					<tr class="{$sameaddr_display|display}">
+					<tr class="{$sameaddr_display|display}" id="delryChoiceView">
 						<th scope="row">배송지 선택</th>
 						<td>
 							<div class="address">
@@ -988,12 +991,12 @@
 						</td>
 					</tr>
 					<tr>
-						<th scope="row">받으시는 분 <img
+						<th scope="row"><span id="receveTit">받으시는 분</span> <img
 							src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
 							alt="필수" /></th>
 						<td>{$form.rname}</td>
 					</tr>
-					<tr>
+					<tr id="addrView">
 						<th scope="row">주소 <img
 							src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
 							alt="필수" /></th>
@@ -1134,7 +1137,7 @@
 				<!-- 국내 배송관련 정보 -->
 				<tbody class="delivery {$r_info_display|display}">
 					<tr class="{$use_delivery_message_display|display}">
-						<th scope="row">배송메시지 <span
+						<th scope="row"><span id="delryMsgTit">배송메시지</span> <span
 							class="{$is_delivery_message_required_display|display}"><img
 								src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
 								alt="필수" /></span></th>
@@ -1149,6 +1152,12 @@
 							</div>
 						</td>
 					</tr>
+					<tr style="display:none" id="directionView">
+                    	<th scope="row">물품수령주소</th>
+	                    <td>
+	                        주소 : 경기 고양시 일산동구 장항로 381 조명뱅크 (영업시간:9:00~18:00 월~금 공휴일 제외)
+	                    </td>
+	                </tr> 
 					<tr class="{$hope_shipping_display|display}">
 						<th scope="row">희망배송일</th>
 						<td>
