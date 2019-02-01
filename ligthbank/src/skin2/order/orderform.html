@@ -590,293 +590,398 @@
         </div>
     </div>
 
-    <!-- 배송업체(방식) 선택 -->
-    <div id="{$lShippingCompanyLists}" class="shippingArea {$shipcompany_display|display}">
-        <div class="title">
-            <h3>배송업체(방식) 선택</h3>
-        </div>
-        <table border="1" summary="">
-            <caption>배송업체(방식) 선택</caption>
-            <thead>
-                <tr>
-                    <th scope="col">
-                        <div class="method">
-                            {$form.shiping_company_type}
-                            {$form.delivcompany} {$form.delivcompany_radio_add} {$form.delivstore}
-                            <p class="ec-base-help {$form.store_pickup_not_used_display|display}">스토어픽업을 사용할 수 없는 상품이 포함되어 있어 일반 배송사만 선택 가능합니다.</p>
-                        </div>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <ul class="list {$deliv_info_view_display|display}" {$form.deliv_info_view}>
-                            <li>배송업체 : {$form.deliv_company_name_custom_type}</li>
-                            <li class="{$r_info_display|display}">배송비 : {$form.deliv_company_price_custom_type}</li>
-                            <li class="{$f_r_info_display|display}">
-                                <div class="{$shipping_additional_fee_show} {$shipping_additional_fee_show_display|display}">
-                                    배송비 : <strong>{$price_unit_head}<span id="{$f_addr_total_ship_fee_id}">{$form.f_ship_fee}</span>{$price_unit_tail}</strong> = 해외배송비 {$price_unit_head}<span id="{$f_addr_delv_price_id}">{$form.f_ship_fee}</span>{$price_unit_tail} + 보험료 {$price_unit_head}<span id="{$f_addr_insurance_price_id}">{$form.f_insurance}</span>{$price_unit_tail} <span class="{$shipping_additional_fee_name_show}"> + <span id="{$f_addr_shipping_additional_fee_name_id}">{$shipping_additional_fee_name}</span> {$price_unit_head}<span id="{$f_addr_shipping_additional_fee_id}">{$form.f_shipping_additional_fee}</span>{$price_unit_tail}</span>
-                                    <p>보험료는 배송과정에서 발생하는 분실, 도난, 파손 등으로 인한 손해에 대하여<br />규정에 따라 배상해 드리는 서비스입니다.</p>
-                                </div>
-                                <div class="{$shipping_additional_fee_hide} {$shipping_additional_fee_hide_display|display}">
-                                    배송비 : <strong>{$price_unit_head}<span id="{$f_addr_total_ship_fee_id}">{$form.f_ship_fee}</span>{$price_unit_tail}</strong> = 해외배송비 {$price_unit_head}<span id="{$f_addr_delv_price_id}">{$form.f_ship_fee}</span>{$price_unit_tail} + 보험료 {$price_unit_head}<span id="{$f_addr_insurance_price_id}">{$form.f_insurance}</span>{$price_unit_tail}
-                                    <p>배송비에는 관세 및 세금 등의 각종 비용은 포함되어 있지 않습니다.<br />상품수령 시 고객님이 추가로 지불하셔야 합니다.<br />보험료는 배송과정에서 발생하는 분실, 도난, 파손 등으로 인한 손해에 대하여<br />규정에 따라 배상해 드리는 서비스입니다.</p>
-                                </div>
-                            </li>
-                            <li>배송소요기간 : {$form.deliv_company_period_custom_type}</li>
-                            <li>홈페이지주소 : {$form.deliv_company_site_custom_type}</li>
-                            <li class="{$areaname_display|display}" {$form.areaname}>배송가능 지역 : {$form.deliv_company_areaname_custom_type}</li>
-                            <li class="{$ordertime_display|display}" {$form.ordertime}>주문가능 시간 : {$form.deliv_company_ordertime_custom_type}</li>
-                        </ul>
-                        <ul class="list {$store_info_view_display|display}" {$form.store_info_view}>
-                            <li>주소 : {$form.store_receive_addr}</li>
-                            <li>전화번호 : {$form.store_main_phone}</li>
-                            <li>영업시간 : {$form.store_office_hour}</li>
-                            <li>수령 가능일 : {$form.store_receive_period}</li>
-                            <li>수령지 안내 : {$form.store_receive_info}</li>
-                            <li class="map">약도<br />{$form.store_receive_map}</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+
+<script type="text/javascript">
+  function chgDelryBtn(type){
+	  var beforeZipcode ='';
+	  var beforeAddr1 ='';
+	  var beforeAddr2 ='';
+	  if(type == '1'){
+		  $("#delryType1").css({"color":"#F2DE01","background":"#333333"});
+		  $("#delryType2").css({"color":"#fff","background":"#BDBDBD"});
+		  $("#delryType3").css({"color":"#fff","background":"#BDBDBD"});
+		  
+		  $("#delryChoiceView").css("display","");
+		  
+		  $("#addrView").css("display","");
+		  $("#receveTit").html("받으시는 분");
+		
+		  if(beforeZipcode != ''){
+			  $("#rzipcode1").val(beforeZipcode);
+			  $("#raddr1").val(beforeAddr1);
+			  $("#raddr2").val(beforeAddr2);
+		  }
+		  $("#delryMsgTit").html("배송메시지");
+		  
+		  $("#quickMentView").css("display","none");
+		  $("#directionView").css("display","none");
+	  }else if(type == '2'){
+		  $("#delryType2").css({"color":"#F2DE01","background":"#333333"});
+		  $("#delryType1").css({"color":"#fff","background":"#BDBDBD"});
+		  $("#delryType3").css({"color":"#fff","background":"#BDBDBD"});
+		  
+		  $("#delryChoiceView").css("display","none");
+		  
+		  $("#addrView").css("display","none");
+		  $("#receveTit").html("수령하시는 분");
+		  beforeZipcode = $("#rzipcode1").val();
+		  beforeAddr1 = $("#raddr1").val();
+		  beforeAddr2 = $("#raddr2").val();
+		  $("#rzipcode1").val("10397");
+		  $("#raddr1").val("경기도 고양시 일산동구 멱절길 366-112 (장항동)");
+		  $("#raddr2").val("조명뱅크 직접수령");	
+		  
+		  $("#delryMsgTit").html("방문일자/시간");
+		  
+		  $("#quickMentView").css("display","none");
+		  $("#directionView").css("display","");
+	  }else if(type == '3'){
+		  $("#delryType3").css({"color":"#F2DE01","background":"#333333"});
+		  $("#delryType1").css({"color":"#fff","background":"#BDBDBD"});
+		  $("#delryType2").css({"color":"#fff","background":"#BDBDBD"});
+		  
+		  $("#delryChoiceView").css("display","");
+		  
+		  $("#addrView").css("display","");
+		  $("#receveTit").html("받으시는 분");
+		
+		  if(beforeZipcode != ''){
+			  $("#rzipcode1").val(beforeZipcode);
+			  $("#raddr1").val(beforeAddr1);
+			  $("#raddr2").val(beforeAddr2);
+		  }
+		  $("#delryMsgTit").html("배송메시지");
+		  
+		  $("#quickMentView").css("display","");
+		  $("#directionView").css("display","none");
+	  }
+  }
+</script>
 
     <!-- 배송 정보 -->
-    <div class="orderArea">
-        <div class="title">
-            <h3>배송 정보</h3>
-            <p class="required"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /> 필수입력사항</p>
-        </div>
-        <div class="ec-base-table typeWrite">
-            <table border="1" summary="">
-            <caption>배송 정보 입력</caption>
-            <colgroup>
-                <col style="width:139px;" />
-                <col style="width:auto;" />
-            </colgroup>
-            <!-- 비회원 결제 -->
-            <tbody class="{$nm_display|display} {$order_form_delivery_simple_nomember_class}">
-                <tr class="ec-orderform-NoMemberPasswdRow">
-                    <th scope="row">주문조회 비밀번호 <img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></th>
-                    <td>{$form.order_password} (주문조회시 필요합니다. 4자에서 12자 영문 또는 숫자 대소문자 구분)</td>
-                </tr>
-                <tr class="ec-orderform-NoMemberPasswdRow">
-                    <th scope="row">주문조회 비밀번호<br />확인 <img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></th>
-                    <td>{$form.order_password_confirm}</td>
-                </tr>
-            </tbody>
-            <!-- 국내 배송지 정보 -->
-            <tbody class="{$r_info_display|display}">
-                <tr class="{$sameaddr_display|display}">
-                    <th scope="row">배송지 선택</th>
-                    <td>
-                        <div class="address">
-                            {$form.sameaddr}
-                            <span class="recent {$recent_delivery_class} {$recent_delivery_info_display|display}">
-                                최근 배송지 : {$form.recent_delivery_info}
-                            </span>
-                            <a href="#none" id="{$btn_shipp_addr_id}" class="{$btn_address_display|display}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/btn_address.gif" alt="주소록 보기" /></a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">받으시는 분 <img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></th>
-                    <td>{$form.rname}</td>
-                </tr>
-                <tr>
-                    <th scope="row">주소 <img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></th>
-                    <td>
-                        {$form.rzipcode1}
-                        <a href="#none" id="{$btn_search_rzipcode_id}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/btn_zipcode.gif" alt="우편번호" /></a><br />
-                        {$form.raddr1} <span class="grid">기본주소</span><br />
-                        {$form.raddr2} <span class="grid">나머지주소</span><span class="grid {$is_delivery_address2_required_display|display}">(선택입력가능)</span>
-                    </td>
-                </tr>
-                <tr class="{$use_delivery_tel_display|display}">
-                    <th scope="row">일반전화 <span class="{$is_delivery_tel_required_display|display}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></span></th>
-                    <td>{$form.rphone1_}</td>
-                </tr>
-                <tr class="{$use_delivery_cell_display|display}">
-                    <th scope="row">휴대전화 <span class="{$is_delivery_cell_required_display|display}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></span></th>
-                    <td>{$form.rphone2_}</td>
-                </tr>
-                <tr class="{$use_safe_phone_display|display}">
-                    <th scope="row">안심번호</th>
-                    <td>
-                        {$form.use_safe_phone}
-                        <p>- 안심번호 서비스는 개인정보 보호를 위하여 휴대폰번호 등 실제 연락처 대신에 1회성 임시 번호를 제공하는 서비스입니다.</p>
-                    </td>
-                </tr>
-            </tbody>
-            <!-- 해외 배송지 정보 -->
-            <tbody class="{$f_r_info_display|display}">
-                <tr class="{$address_select_display|display}">
-                    <th scope="row">배송지 선택</th>
-                    <td>
-                        <p class="address">
-                            {$form.fsameaddr}
-                            <a href="#none" id="{$btn_address_oversea_id}" class="{$btn_address_display|display}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/btn_address.gif" alt="주소록 보기" /></a>
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">받으시는 분 <img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></th>
-                    <td>{$form.fname} <span class="grid">받는분의 이름은 영문으로 작성해 주세요.</span></td>
-                </tr>
-                <tr class="{$english_name_display|display}">
-                    <th scope="row">영문이름</th>
-                    <td>{$form.english_name}</td>
-                </tr>
-                <tr class="{$pron_name_display|display}">
-                     <th scope="row">이름(발음기호)</th>
-                    <td>{$form.pron_name}</td>
-                </tr>
-                <tr>
-                    <th scope="row">국가 <img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></th>
-                    <td>{$form.f_country}</td>
-                </tr>
-                <tr>
-                    <th scope="row">우편번호</th>
-                    <td>
-                        {$form.fzipcode} <a href="#none" id="{$btn_search_fzipcode_id}" class="{$recive_address_search_display|display}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/btn_address_search.gif" alt="주소검색" /></a> {$form.no_fzipcode}
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">주소1 <img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></th>
-                    <td>{$form.faddress}</td>
-                </tr>
-                <tr>
-                    <th scope="row">주소2</th>
-                    <td>{$form.faddress2}</td>
-                </tr>
-                <tr>
-                    <th scope="row">도시 <img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></th>
-                    <td>{$form.si_gun_dosi}</td>
-                </tr>
-                <tr>
-                    <th scope="row">주/지방 <img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></th>
-                    <td>{$form.ju_do}</td>
-                </tr>
-                <tr class="{$use_delivery_tel_display|display}">
-                    <th scope="row">일반전화 <span class="{$is_delivery_tel_required_display|display}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></span></th>
-                    <td>
-                        {$form.fphone1_ex}
-                        <p class="gBlank5">'-' 없이 숫자만 입력해 주세요.</p>
-                    </td>
-                </tr>
-                <tr class="{$use_delivery_cell_display|display}">
-                    <th scope="row">휴대전화 <span class="{$is_delivery_cell_required_display|display}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></span></th>
-                    <td>
-                        {$form.fphone2_ex}
-                        <p class="gBlank5">'-' 없이 숫자만 입력해 주세요.</p>
-                    </td>
-                </tr>
-                <tr id="{$receiver_id_card_key}" class="{$receiver_id_card_key_display|display}">
-                    <th scope="row">신분증 ID <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" alt="필수" /></th>
-                    <td>
-                        {$form.receiver_id_card_key}
-                        <p class="gBlank5">통관을 위해 규정에 따라 신분증 ID를 수집합니다.</p>
-                    </td>
-                </tr>
-            </tbody>
-            <!-- 이메일 국내/해외 -->
-            <tbody class="email ec-orderform-emailRow {$order_form_delivery_simple_class}">
-                <tr>
-                    <th scope="row">이메일 <img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></th>
-                    <td>
-                        {$form.oemail}
-                        <p class="gBlank5">이메일을 통해 주문처리과정을 보내드립니다.<br />이메일 주소란에는 반드시 수신가능한 이메일주소를 입력해 주세요.</p>
-                    </td>
-                </tr>
-            </tbody>
-            <!-- 국내 배송관련 정보 -->
-            <tbody class="delivery {$r_info_display|display}">
-                <tr class="{$use_delivery_message_display|display}">
-                    <th scope="row">배송메시지 <span class="{$is_delivery_message_required_display|display}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></span></th>
-                    <td>
-                        {$form.omessage}
-                        <div class="devMessage {$omessage_autosave_display|display}">
-                            <label>{$form.omessage_autosave}{$omessage_autosave_board} 자동저장</label>
-                            <ul class="gIndent5">
-                                <li>배송메시지란에는 배송시 참고할 사항이 있으면 적어주십시오.</li>
-                                <li>게시글은 비밀글로 저장되며 비밀번호는 주문번호 뒷자리로 자동 저장됩니다.</li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="{$hope_shipping_display|display}">
-                    <th scope="row">희망배송일</th>
-                    <td>
-                        <ul class="grid">
-                            <li>{$form.hope_shipping_fast}</li>
-                            <li>{$hope_start_day} 이후 날짜를 입력해야 합니다.</li>
-                            <li>{$form.hdateY}년 {$form.hdateM}월 {$form.hdateD}일 <span id="{$fhdateW_str}">{$hope_date_str}</span>요일</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr class="{$hope_shipping_time_display|display}">
-                    <th scope="row">희망배송시간</th>
-                    <td>
-                       <ul class="grid">
-                           <li>{$form.hope_shipping_time_fast}</li>
-                           <li>{$form.ship_hope_time}</li>
-                       </ul>
-                   </td>
-                </tr>
-            </tbody>
-            <!-- 해외 배송관련 정보 -->
-            <tbody class="delivery {$f_r_info_display|display}">
-                <tr class="{$use_delivery_message_display|display}">
-                    <th scope="row">배송메시지 <span class="{$is_delivery_message_required_display|display}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /></span></th>
-                    <td>
-                        {$form.fmessage}
-                        <div class="devMessage {$fmessage_autosave_display|display}">
-                            <label>{$form.fmessage_autosave}{$fmessage_autosave_board} 자동저장</label>
-                            <ul>
-                                <li>배송메시지란에는 배송시 참고할 사항이 있으면 적어주십시오.</li>
-                                <li>게시글은 비밀글로 저장되며 비밀번호는 주문번호 뒷자리로 자동 저장됩니다.</li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="{$hope_shipping_display|display}">
-                    <th scope="row">희망배송일</th>
-                    <td>
-                        <ul class="grid">
-                            <li>{$form.fhope_shipping_fast}</li>
-                            <li>{$hope_start_day} 이후 날짜를 입력해야 합니다.</li>
-                            <li>{$form.fhdateY}년 {$form.fhdateM}월 {$form.fhdateD}일 <span id="{$fhdateW_str}">{$hope_date_str}</span>요일 {$form.sagawa_hope_ship_time}</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr class="{$hope_shipping_time_display|display}">
-                    <th scope="row">희망배송시간</th>
-                    <td>
-                       <ul class="grid">
-                           <li>{$form.fhope_shipping_time_fast}</li>
-                           <li>{$form.fship_hope_time}</li>
-                       </ul>
-                   </td>
-                </tr>
-                <tr class="{$international_shipping_display|display}">
-                    <th scope="row">배송비</th>
-                    <td>
-                        <div class="{$shipping_additional_fee_show} {$shipping_additional_fee_show_display|display}">
-                            <strong>{$price_unit_head}<span id="{$f_addr_total_ship_fee_id}">{$form.f_ship_fee}</span>{$price_unit_tail}</strong> = 해외배송비 {$price_unit_head}<span id="{$f_addr_delv_price_id}">{$form.f_ship_fee}</span>{$price_unit_tail} + 보험료 {$price_unit_head}<span id="{$f_addr_insurance_price_id}">{$form.f_insurance}</span>{$price_unit_tail} <span class="{$shipping_additional_fee_name_show}"> + <span id="{$f_addr_shipping_additional_fee_name_id}">{$shipping_additional_fee_name}</span> {$price_unit_head}<span id="{$f_addr_shipping_additional_fee_id}">{$form.f_shipping_additional_fee}</span>{$price_unit_tail}</span>
-                            <p class="gBlank5">보험료는 배송과정에서 발생하는 분실, 도난, 파손 등으로 인한 손해에 대하여<br />규정에 따라 배상해 드리는 서비스입니다.</p>
-                        </div>
-                        <div class="{$shipping_additional_fee_hide} {$shipping_additional_fee_hide_display|display}">
-                            <strong>{$price_unit_head}<span id="{$f_addr_total_ship_fee_id}">{$form.f_ship_fee}</span>{$price_unit_tail}</strong> = 해외배송비 {$price_unit_head}<span id="{$f_addr_delv_price_id}">{$form.f_ship_fee}</span>{$price_unit_tail} + 보험료 {$price_unit_head}<span id="{$f_addr_insurance_price_id}">{$form.f_insurance}</span>{$price_unit_tail}
-                            <p class="gBlank5">배송비에는 관세 및 세금 등의 각종 비용은 포함되어 있지 않습니다.<br />상품수령 시 고객님이 추가로 지불하셔야 합니다.<br />보험료는 배송과정에서 발생하는 분실, 도난, 파손 등으로 인한 손해에 대하여<br />규정에 따라 배상해 드리는 서비스입니다.</p>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-            </table>
-        </div>
-    </div>
+
+	<div class="orderArea">
+		<div class="title">
+			<h3>배송 정보</h3>
+			<p class="required"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /> 필수입력사항</p>
+		</div>
+		<div class="develry_type">
+			<ul style="margin-bottom: 10px;">
+				<li id="delryType1"><input onclick="javascript:chgDelryBtn('1')" id="delivcompany0" name="delivcompany" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" value="4" type="radio"><label for="delivcompany0">택배</label></li>
+				<li id="delryType2"><input onclick="javascript:chgDelryBtn('2')" id="delivcompany2" name="delivcompany" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" value="15" type="radio"><label for="delivcompany2">직접수령</label></li>
+				<li id="delryType3"><input onclick="javascript:chgDelryBtn('3')" id="delivcompany1" name="delivcompany" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" value="14" type="radio"><label for="delivcompany1">퀵배송</label></li>
+			</ul>
+		</div>	
+		<div id="quickMentView" style="color: red;font-weight: bold;margin-top: 20px;display:none">&nbsp;&nbsp; *퀵배송은 착불만 가능하기 때문에 주문 페이지에는 배송비 "0원"으로 노출됩니다.</div>	
+		<div class="ec-base-table typeWrite">
+			<table border="1" summary="">
+				<caption>배송 정보 입력</caption>
+				<colgroup>
+					<col style="width: 139px;" />
+					<col style="width: auto;" />
+				</colgroup>
+				<!-- 비회원 결제 -->
+				<tbody
+					class="{$nm_display|display} {$order_form_delivery_simple_nomember_class}">
+					<tr class="ec-orderform-NoMemberPasswdRow">
+						<th scope="row">주문조회 비밀번호 <img
+							src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+							alt="필수" /></th>
+						<td>{$form.order_password} <span
+							id="{$order_form_nomember_password_alert_id}" class="txtWarn"></span><span
+							id="{$order_form_nomember_password_message_id}">
+								(영문대소문자/숫자/특수문자 중 2가지 이상 조합, 6자~16자)</span></td>
+					</tr>
+					<tr class="ec-orderform-NoMemberPasswdRow">
+						<th scope="row">주문조회 비밀번호<br />확인 <img
+							src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+							alt="필수" /></th>
+						<td>{$form.order_password_confirm} <span
+							id="{$order_form_nomember_password_confirm_alert_id}"
+							class="txtWarn"></span></td>
+					</tr>
+				</tbody>
+				<!-- 국내 배송지 정보 -->
+				<tbody class="{$r_info_display|display}">
+					<tr class="{$sameaddr_display|display}" id="delryChoiceView">
+						<th scope="row">배송지 선택</th>
+						<td>
+							<div class="address">
+								{$form.sameaddr} <span
+									class="recent {$recent_delivery_class} {$recent_delivery_info_display|display}">
+									최근 배송지 : {$form.recent_delivery_info} </span> <a href="#none"
+									id="{$btn_shipp_addr_id}"
+									class="btnNormal {$btn_address_display|display}">주소록 보기</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><span id="receveTit">받으시는 분</span> <img
+							src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+							alt="필수" /></th>
+						<td>{$form.rname}</td>
+					</tr>
+					<tr id="addrView">
+						<th scope="row">주소 <img
+							src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+							alt="필수" /></th>
+						<td>{$form.rzipcode1} <a href="#none"
+							id="{$btn_search_rzipcode_id}" class="btnNormal">우편번호</a><br />
+							{$form.raddr1} <span class="grid">기본주소</span><br />
+							{$form.raddr2} <span class="grid">나머지주소</span><span
+							class="grid {$is_delivery_address2_required_display|display}">(선택입력가능)</span>
+						</td>
+					</tr>
+					<tr class="{$use_delivery_tel_display|display}">
+						<th scope="row">일반전화 <span
+							class="{$is_delivery_tel_required_display|display}"><img
+								src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+								alt="필수" /></span></th>
+						<td>{$form.rphone1_}</td>
+					</tr>
+					<tr class="{$use_delivery_cell_display|display}">
+						<th scope="row">휴대전화 <span
+							class="{$is_delivery_cell_required_display|display}"><img
+								src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+								alt="필수" /></span></th>
+						<td>{$form.rphone2_}</td>
+					</tr>
+					<tr class="{$use_safe_phone_display|display}">
+						<th scope="row">안심번호</th>
+						<td>{$form.use_safe_phone}
+							<p>- 안심번호 서비스는 개인정보 보호를 위하여 휴대폰번호 등 실제 연락처 대신에 1회성 임시 번호를
+								제공하는 서비스입니다.</p>
+						</td>
+					</tr>
+				</tbody>
+				<!-- 해외 배송지 정보 -->
+				<tbody class="{$f_r_info_display|display}">
+					<tr class="{$address_select_display|display}">
+						<th scope="row">배송지 선택</th>
+						<td>
+							<p class="address">
+								{$form.fsameaddr} <a href="#none" id="{$btn_address_oversea_id}"
+									class="btnNormal {$btn_address_display|display}">주소록 보기</a>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">받으시는 분 <img
+							src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+							alt="필수" /></th>
+						<td>{$form.fname} <span class="grid">받는분의 이름은 영문으로 작성해
+								주세요.</span></td>
+					</tr>
+					<tr class="{$english_name_display|display}">
+						<th scope="row">영문이름</th>
+						<td>{$form.english_name}</td>
+					</tr>
+					<tr class="{$pron_name_display|display}">
+						<th scope="row">이름(발음기호)</th>
+						<td>{$form.pron_name}</td>
+					</tr>
+					<tr>
+						<th scope="row">국가 <img
+							src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+							alt="필수" /></th>
+						<td>{$form.f_country}</td>
+					</tr>
+					<tr>
+						<th scope="row">우편번호</th>
+						<td>{$form.fzipcode} <a href="#none"
+							id="{$btn_search_fzipcode_id}"
+							class="btnNormal {$recive_address_search_display|display}">주소검색</a>
+							{$form.no_fzipcode}
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">주소1 <img
+							src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+							alt="필수" /></th>
+						<td>{$form.faddress}</td>
+					</tr>
+					<tr>
+						<th scope="row">주소2</th>
+						<td>{$form.faddress2}</td>
+					</tr>
+					<tr>
+						<th scope="row">도시 <img
+							src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+							alt="필수" /></th>
+						<td>{$form.si_gun_dosi}</td>
+					</tr>
+					<tr>
+						<th scope="row">주/지방 <img
+							src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+							alt="필수" /></th>
+						<td>{$form.ju_do}</td>
+					</tr>
+					<tr class="{$use_delivery_tel_display|display}">
+						<th scope="row">일반전화 <span
+							class="{$is_delivery_tel_required_display|display}"><img
+								src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+								alt="필수" /></span></th>
+						<td>{$form.fphone1_ex}
+							<p class="gBlank5">'-' 없이 숫자만 입력해 주세요.</p>
+						</td>
+					</tr>
+					<tr class="{$use_delivery_cell_display|display}">
+						<th scope="row">휴대전화 <span
+							class="{$is_delivery_cell_required_display|display}"><img
+								src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+								alt="필수" /></span></th>
+						<td>{$form.fphone2_ex}
+							<p class="gBlank5">'-' 없이 숫자만 입력해 주세요.</p>
+						</td>
+					</tr>
+					<tr id="{$receiver_id_card_key}"
+						class="{$receiver_id_card_key_display|display}">
+						<th scope="row">신분증 유형 <img
+							src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif"
+							alt="필수" /></th>
+						<td>{$form.receiver_id_card_type}
+							{$form.receiver_id_card_key}
+							<p id="{$receiver_id_card_type_msg}" class="gBlank5"></p>
+						</td>
+					</tr>
+				</tbody>
+				<tbody
+					class="email ec-orderform-emailRow {$order_form_delivery_simple_class}">
+					<tr>
+						<th scope="row">이메일 <img
+							src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+							alt="필수" /></th>
+						<td>{$form.oemail}
+							<p class="gBlank5">
+								이메일을 통해 주문처리과정을 보내드립니다.<br />이메일 주소란에는 반드시 수신가능한 이메일주소를 입력해
+								주세요.
+							</p>
+						</td>
+					</tr>
+				</tbody>
+				<!-- 국내 배송관련 정보 -->
+				<tbody class="delivery {$r_info_display|display}">
+					<tr class="{$use_delivery_message_display|display}">
+						<th scope="row"><span id="delryMsgTit">배송메시지</span> <span
+							class="{$is_delivery_message_required_display|display}"><img
+								src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+								alt="필수" /></span></th>
+						<td>{$form.omessage}
+							<div class="delvMessage {$omessage_autosave_display|display}">
+								<label>{$form.omessage_autosave}{$omessage_autosave_board}
+									자동저장</label>
+								<ul class="gIndent5">
+									<li>배송메시지란에는 배송시 참고할 사항이 있으면 적어주십시오.</li>
+									<li>게시글은 비밀글로 저장되며 비밀번호는 주문번호 뒷자리로 자동 저장됩니다.</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr style="display:none" id="directionView">
+                    	<th scope="row">물품수령주소</th>
+	                    <td>
+	                        주소 : 경기 고양시 일산동구 장항로 381 조명뱅크 (영업시간:9:00~18:00 월~금 공휴일 제외)
+	                    </td>
+	                </tr> 
+					<tr class="{$hope_shipping_display|display}">
+						<th scope="row">희망배송일</th>
+						<td>
+							<ul class="grid">
+								<li>{$form.hope_shipping_fast}</li>
+								<li>{$hope_start_day} 이후 날짜를 입력해야 합니다.</li>
+								<li>{$form.hdateY}년 {$form.hdateM}월 {$form.hdateD}일 <span
+									id="{$fhdateW_str}">{$hope_date_str}</span>요일
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="{$hope_shipping_time_display|display}">
+						<th scope="row">희망배송시간</th>
+						<td>
+							<ul class="grid">
+								<li>{$form.hope_shipping_time_fast}</li>
+								<li>{$form.ship_hope_time}</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+				<!-- 해외 배송관련 정보 -->
+				<tbody class="delivery {$f_r_info_display|display}">
+					<tr class="{$use_delivery_message_display|display}">
+						<th scope="row">배송메시지 <span
+							class="{$is_delivery_message_required_display|display}"><img
+								src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
+								alt="필수" /></span></th>
+						<td>{$form.fmessage}
+							<div class="delvMessage {$fmessage_autosave_display|display}">
+								<label>{$form.fmessage_autosave}{$fmessage_autosave_board}
+									자동저장</label>
+								<ul>
+									<li>배송메시지란에는 배송시 참고할 사항이 있으면 적어주십시오.</li>
+									<li>게시글은 비밀글로 저장되며 비밀번호는 주문번호 뒷자리로 자동 저장됩니다.</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr class="{$hope_shipping_display|display}">
+						<th scope="row">희망배송일</th>
+						<td>
+							<ul class="grid">
+								<li>{$form.fhope_shipping_fast}</li>
+								<li>{$hope_start_day} 이후 날짜를 입력해야 합니다.</li>
+								<li>{$form.fhdateY}년 {$form.fhdateM}월 {$form.fhdateD}일 <span
+									id="{$fhdateW_str}">{$hope_date_str}</span>요일
+									{$form.sagawa_hope_ship_time}
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="{$hope_shipping_time_display|display}">
+						<th scope="row">희망배송시간</th>
+						<td>
+							<ul class="grid">
+								<li>{$form.fhope_shipping_time_fast}</li>
+								<li>{$form.fship_hope_time}</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="{$international_shipping_display|display}">
+						<th scope="row">배송비</th>
+						<td>
+							<div
+								class="{$shipping_additional_fee_show} {$shipping_additional_fee_show_display|display}">
+								<strong>{$price_unit_head}<span
+									id="{$f_addr_total_ship_fee_id}">{$form.f_ship_fee}</span>{$price_unit_tail}
+								</strong> = 해외배송비 {$price_unit_head}<span id="{$f_addr_delv_price_id}">{$form.f_ship_fee}</span>{$price_unit_tail}
+								+ 보험료 {$price_unit_head}<span id="{$f_addr_insurance_price_id}">{$form.f_insurance}</span>{$price_unit_tail}
+								<span class="{$shipping_additional_fee_name_show}"> + <span
+									id="{$f_addr_shipping_additional_fee_name_id}">{$shipping_additional_fee_name}</span>
+									{$price_unit_head}<span
+									id="{$f_addr_shipping_additional_fee_id}">{$form.f_shipping_additional_fee}</span>{$price_unit_tail}
+								</span>
+								<p class="gBlank5">
+									보험료는 배송과정에서 발생하는 분실, 도난, 파손 등으로 인한 손해에 대하여<br />규정에 따라 배상해 드리는
+									서비스입니다.
+								</p>
+							</div>
+							<div
+								class="{$shipping_additional_fee_hide} {$shipping_additional_fee_hide_display|display}">
+								<strong>{$price_unit_head}<span
+									id="{$f_addr_total_ship_fee_id}">{$form.f_ship_fee}</span>{$price_unit_tail}
+								</strong> = 해외배송비 {$price_unit_head}<span id="{$f_addr_delv_price_id}">{$form.f_ship_fee}</span>{$price_unit_tail}
+								+ 보험료 {$price_unit_head}<span id="{$f_addr_insurance_price_id}">{$form.f_insurance}</span>{$price_unit_tail}
+								<p class="gBlank5">
+									배송비에는 관세 및 세금 등의 각종 비용은 포함되어 있지 않습니다.<br />상품수령 시 고객님이 추가로
+									지불하셔야 합니다.<br />보험료는 배송과정에서 발생하는 분실, 도난, 파손 등으로 인한 손해에 대하여<br />규정에
+									따라 배상해 드리는 서비스입니다.
+								</p>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
 
     <!-- 추가 정보 -->
     <div class="orderArea {$ordadd.display|display}">

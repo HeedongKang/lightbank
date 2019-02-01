@@ -881,9 +881,9 @@
 		  $("#receveTit").html("받으시는 분");
 		
 		  if(beforeZipcode != ''){
-			  $("#rzipcode1").html(beforeZipcode);
-			  $("#beforeAddr1").html(beforeAddr1);
-			  $("#beforeAddr2").html(beforeAddr2);
+			  $("#rzipcode1").val(beforeZipcode);
+			  $("#raddr1").val(beforeAddr1);
+			  $("#raddr2").val(beforeAddr2);
 		  }
 		  $("#delryMsgTit").html("배송메시지");
 		  
@@ -898,12 +898,13 @@
 		  
 		  $("#addrView").css("display","none");
 		  $("#receveTit").html("수령하시는 분");
-		  beforeZipcode = $("#rzipcode1").html();
-		  beforeAddr1 = $("#beforeAddr1").html();
-		  beforeAddr2 = $("#beforeAddr2").html();
-		  $("#rzipcode1").html("10397");
-		  $("#beforeAddr1").html("경기도 고양시 일산동구 멱절길 366-112 (장항동)");
-		  $("#beforeAddr2").html("조명뱅크 직접수령");	
+		  beforeZipcode = $("#rzipcode1").val();
+		  beforeAddr1 = $("#raddr1").val();
+		  beforeAddr2 = $("#raddr2").val();
+		  $("#rzipcode1").val("10397");
+		  $("#raddr1").val("경기도 고양시 일산동구 멱절길 366-112 (장항동)");
+		  $("#raddr2").val("조명뱅크 직접수령");	
+		  
 		  $("#delryMsgTit").html("방문일자/시간");
 		  
 		  $("#quickMentView").css("display","none");
@@ -919,9 +920,9 @@
 		  $("#receveTit").html("받으시는 분");
 		
 		  if(beforeZipcode != ''){
-			  $("#rzipcode1").html(beforeZipcode);
-			  $("#beforeAddr1").html(beforeAddr1);
-			  $("#beforeAddr2").html(beforeAddr2);
+			  $("#rzipcode1").val(beforeZipcode);
+			  $("#raddr1").val(beforeAddr1);
+			  $("#raddr2").val(beforeAddr2);
 		  }
 		  $("#delryMsgTit").html("배송메시지");
 		  
@@ -934,11 +935,7 @@
 	<div class="orderArea">
 		<div class="title">
 			<h3>배송 정보</h3>
-			<p class="required">
-				<img
-					src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
-					alt="필수" /> 필수입력사항
-			</p>
+			<p class="required"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif" alt="필수" /> 필수입력사항</p>
 		</div>
 		<div class="develry_type">
 			<ul style="margin-bottom: 10px;">
