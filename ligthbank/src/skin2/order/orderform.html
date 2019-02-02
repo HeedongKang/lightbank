@@ -595,7 +595,6 @@
 	var beforeZipcode ='';
 	var beforeAddr1 ='';
 	var beforeAddr2 ='';
-
 	function chgDelryBtn(type){
 	  if(type == '1'){
 		  $("#delryType1").css({"color":"#F2DE01","background":"#333333"});
@@ -606,7 +605,11 @@
 		  
 		  $("#addrView").css("display","");
 		  $("#receveTit").html("받으시는 분");
-		
+		  if($("#rzipcode1").val()=="10397"){
+			  $("#rzipcode1").val("");
+			  $("#raddr1").val("");
+			  $("#raddr2").val("");
+		  }   
 		  if(beforeZipcode != '10397'){
 			  $("#rzipcode1").val(beforeZipcode);
 			  $("#raddr1").val(beforeAddr1);
@@ -644,8 +647,14 @@
 		  
 		  $("#addrView").css("display","");
 		  $("#receveTit").html("받으시는 분");
-		
-		  if(beforeZipcode != '10397'){
+		 
+		  if($("#rzipcode1").val()=="10397"){
+			  $("#rzipcode1").val("");
+			  $("#raddr1").val("");
+			  $("#raddr2").val("");
+		  }   
+		  
+		  if(beforeZipcode != '' && beforeZipcode != '10397'){
 			  $("#rzipcode1").val(beforeZipcode);
 			  $("#raddr1").val(beforeAddr1);
 			  $("#raddr2").val(beforeAddr2);
@@ -719,7 +728,7 @@
 						<th scope="row"><span id="receveTit">받으시는 분</span> <img
 							src="//img.echosting.cafe24.com/skin/base_ko_KR/order/ico_required.gif"
 							alt="필수" /></th>
-						<td>{$form.rname}</td>
+						<td>{$form.rname|replace:(퀵배송),}</td>
 					</tr>
 					<tr id="addrView">
 						<th scope="row">주소 <img
@@ -1481,13 +1490,35 @@
                 </table>
             </div>
         </div>
-
+<script type="text/javascript">   
+window.onload = function(){
+	$("#rname").val($("#rname").val().replace("(퀵배송)",""));
+	$("#rname").val($("#rname").val().replace("(직접수령)",""));
+	  if(beforeZipcode != '10397'){
+		  $("#rzipcode1").val(beforeZipcode);
+		  $("#raddr1").val(beforeAddr1);
+		  $("#raddr2").val(beforeAddr2);
+	  }	
+};
+	function setName(){
+    	if($('input[name="delivcompany"]:checked').val()=="4"){
+    		$("#rname").val($("#rname").val().replace("(퀵배송)",""));
+    		$("#rname").val($("#rname").val().replace("(직접수령)",""));
+    	}else if($('input[name="delivcompany"]:checked').val()=="15"){
+    		$("#rname").val($("#rname").val().replace("(직접수령)",""));
+    		$("#rname").val("(직접수령)"+$("#rname").val());
+    	}else if($('input[name="delivcompany"]:checked').val()=="14"){
+    		$("#rname").val($("#rname").val().replace("(퀵배송)",""));
+    		$("#rname").val("(퀵배송)"+$("#rname").val());
+    	}
+	}
+</script>   
         <!-- 최종결제금액 -->
         <div class="total">
             <h4><strong id="{$current_pay_name}">{$current_pay_name_default}</strong> <span>최종결제 금액</span></h4>
             <p class="price"><span>{$price_unit_head}</span>{$form.total_price}<span>{$price_unit_tail}</span></p>
             <p class="paymentAgree" id="{$chk_purchase_agreement}">{$form.chk_purchase_agreement}</p>
-            <div class="button"><a href="#none"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/btn_place_order.gif" id="{$btn_payment_id}" alt="결제하기" /></a></div>
+            <div class="button"><a href="javascript:setName();"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/order/btn_place_order.gif" id="{$btn_payment_id}" alt="결제하기"/></a></div>
             <div class="mileage {$total_save_mileage_display|display}">
                 <dl class="ec-base-desc gLarge right">
                     <dt><strong>총 적립예정금액</strong></dt>

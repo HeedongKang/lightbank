@@ -516,22 +516,46 @@
             </div>
             
 <script type="text/javascript">
-	var beforeZipcode ='';
-	var beforeAddr1 ='';
-	var beforeAddr2 ='';
+	var beforeAddrBox = '';
 	function chgDelryBtn(type){
 	  if(type == '4'){
 		  $("#delryChoiceView").css("display","");
-		  //$("#Order_DeliveryList option:eq(0)").prop("selected", true);
+		  if(beforeAddrBox != ''){
+			  $('.xans-order-deliverylist option[value='+beforeAddrBox+']').attr('selected', 'selected');
+			  $('.xans-order-deliverylist:visible').change();			  
+		  }		  
+		  $("#addrView").css("display","");
 		  $("#delryMsgTit").html("배송메시지");
+		  $("#quickMentView").css("display","none");
+		  $("#directionView").css("display","none");
 	  }else if(type == '15'){
-		  $('#Order_DeliveryList option[value=direct]').attr('selected','selected');
-		  //$("#delryChoiceView").css("display","none");
+		  if(beforeAddrBox == ''){
+			  beforeAddrBox =  $('.xans-order-deliverylist:visible').val();
+		  }
+		  $('.xans-order-deliverylist option[value=direct]').attr('selected', 'selected');
+		  $('.xans-order-deliverylist:visible').change();
+		  
+		  $("#delryChoiceView").css("display","none");
+		  $("#addrView").css("display","none");		  
+		  setTimeout(function(){
+			 $("#rzipcode1").val("10397");
+			 $("#raddr1").val("경기도 고양시 일산동구 멱절길 366-112 (장항동)");
+			 $("#raddr2").val("조명뱅크 직접수령");	
+		  }, 1500);
+		   
 		  $("#delryMsgTit").html("방문일자/시간");
+		  $("#quickMentView").css("display","none");
+		  $("#directionView").css("display","");
 	  }else if(type == '14'){
-		  $("#delryChoiceView").css("display","");
-		  //$("#Order_DeliveryList option:eq(0)").prop("selected", true);
+		  $("#delryChoiceView").css("display","");	
+		  if(beforeAddrBox != ''){
+			  $('.xans-order-deliverylist option[value='+beforeAddrBox+']').attr('selected', 'selected');
+			  $('.xans-order-deliverylist:visible').change();			  
+		  }	
+		  $("#addrView").css("display","");
 		  $("#delryMsgTit").html("배송메시지");
+		  $("#quickMentView").css("display","");
+		  $("#directionView").css("display","none");
 	  }
   }
 </script>            
@@ -571,6 +595,7 @@
                                         <li>- 수령 가능일 : {$form.store_receive_period}</li>
                                         <li><button type="button" id="{$open_store_list_id}" class="btnNormal">수령지 안내</button></li>
                                     </ul>
+                                    <div id="quickMentView" style="color: red;font-weight: bold;display:none;text-align:center">&nbsp;&nbsp; *퀵배송은 착불만 가능하기 때문에 <br>주문 페이지에는 배송비 "0원"으로 노출됩니다.</div>
                                 </td>
                             </tr>
                         </tbody>
@@ -646,7 +671,7 @@
                                 <th scope="row">이름 <img src="//img.echosting.cafe24.com/skin/mobile/common/ico_required.png" alt="필수" width="5" height="5"></th>
                                 <td>{$form.rname}</td>
                             </tr>
-                            <tr>
+                            <tr id="addrView">
                                 <th scope="row">주소 <img src="//img.echosting.cafe24.com/skin/mobile/common/ico_required.png" alt="필수" width="5" height="5"></th>
                                 <td>
                                     {$form.rzipcode1}
@@ -771,6 +796,13 @@
                                     </div>
                                 </td>
                             </tr>
+							<tr style="display:none" id="directionView">
+		                    	<th scope="row">물품수령주소</th>
+			                    <td>
+			                         	경기 고양시 일산동구 장항로 381 조명뱅크<br> (영업시간:9:00~18:00 월~금 공휴일 제외)
+			                    </td>
+			                </tr> 
+                            
                             <tr class="{$hope_shipping_display|display}">
                                 <th scope="row">희망배송일</th>
                                 <td>
@@ -1460,10 +1492,24 @@
         </li>
     </ul>
 
-    <p id="{$chk_purchase_agreement}" class="sign">{$form.chk_purchase_agreement}</p>
-
+ 
+<script type="text/javascript">   
+	function setName(){
+    	if($("#delivcompany").val()=="4"){
+    		$("#rname").val($("#rname").val().replace("(퀵배송)",""));
+    		$("#rname").val($("#rname").val().replace("(직접수령)",""));
+    	}else if($("#delivcompany").val()=="15"){
+    		$("#rname").val($("#rname").val().replace("(직접수령)",""));
+    		$("#rname").val("(직접수령)"+$("#rname").val());
+    	}else if($("#delivcompany").val()=="14"){
+    		$("#rname").val($("#rname").val().replace("(퀵배송)",""));
+    		$("#rname").val("(퀵배송)"+$("#rname").val());
+    	}
+	}
+</script>   
+   <p id="{$chk_purchase_agreement}" class="sign">{$form.chk_purchase_agreement}</p> 	
     <div class="btnArea type1" id="orderFixItem">
-        <button type="button" class="btnSubmit" id="{$btn_payment_id}">결제하기</button>
+        <button type="button" class="btnSubmit" id="{$btn_payment_id}" onclick="javascript:setName()">결제하기</button>
     </div>
     <ul class="payInfo">
         <li>무이자할부가 적용되지 않은 상품과 무이자할부가 가능한 상품을 동시에 구매할 경우 전체 주문 상품 금액에 대해 무이자할부가 적용되지 않습니다. 무이자할부를 원하시는 경우 장바구니에서 무이자할부 상품만 선택하여 주문하여 주시기 바랍니다.</li>
