@@ -66,9 +66,14 @@
             <div class="contents">
                 <div class="segment">
                     <!-- 배송업체(방식) 선택 -->
+                     
                     {$form.shiping_company_type}
                     <p class="ec-base-help {$form.store_pickup_not_used_display|display}">스토어픽업을 사용할 수 없는 상품이 포함되어 있어 일반 배송사만 선택 가능합니다.</p>
-                    {$form.delivcompany}
+					<select id="delivcompany" name="delivcompany" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" onChange="javascript:chgDelryBtn(this.value)">
+						<option value="11">택배</option>
+						<option value="12">퀵배송</option>
+						<option value="13">직접수령</option>
+					</select>
                     <ul class="ec-base-help {$deliv_info_view_display|display}" {$form.deliv_info_view}>
                         <li class="txtEm {$r_info_display|display}">배송비 : {$form.deliv_company_price_custom_type}</li>
                         <li class="{$f_r_info_display|display}">
@@ -89,7 +94,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li>배송소요기간 : {$form.deliv_company_period_custom_type}</li>
+                        <!-- <li>배송소요기간 : {$form.deliv_company_period_custom_type}</li> -->
                         <li class="{$ordertime_display|display}" {$form.ordertime}>주문가능 시간 : {$form.deliv_company_ordertime_custom_type}</li>
                         <li class="{$areaname_display|display}" {$form.areaname}><div class="ec-base-button"><button type="button" id="{$open_avail_delivery_id}" class="btnNormal mini">배송가능지역</button></div></li>
                         <li>{$form.deliv_company_etc}</li>

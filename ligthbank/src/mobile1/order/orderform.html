@@ -514,22 +514,46 @@
                     </table>
                 </div>
             </div>
+            
+<script type="text/javascript">
+	var beforeZipcode ='';
+	var beforeAddr1 ='';
+	var beforeAddr2 ='';
+	function chgDelryBtn(type){
+	  if(type == '4'){
+		  $("#delryChoiceView").css("display","");
+		  //$("#Order_DeliveryList option:eq(0)").prop("selected", true);
+		  $("#delryMsgTit").html("배송메시지");
+	  }else if(type == '15'){
+		  $('#Order_DeliveryList option[value=direct]').attr('selected','selected');
+		  //$("#delryChoiceView").css("display","none");
+		  $("#delryMsgTit").html("방문일자/시간");
+	  }else if(type == '14'){
+		  $("#delryChoiceView").css("display","");
+		  //$("#Order_DeliveryList option:eq(0)").prop("selected", true);
+		  $("#delryMsgTit").html("배송메시지");
+	  }
+  }
+</script>            
             <!-- 배송업체(방식) 선택 -->
             <div id="{$lShippingCompanyLists}" class="recipient {$shipcompany_display|display}">
-                <h4>배송업체(방식) 선택</h4>
+                <h4>배송방식 선택(택배,직접수령,퀵배송)</h4>
                 <div class="boardWrite">
                     <table border="1" summary="">
-                        <caption>배송업체(방식) 선택</caption>
+                        <caption>배송방식 선택(택배,직접수령,퀵배송)</caption>
                         <tbody>
                             <tr>
-                                <th scope="row">배송업체<br>(방식)</th>
                                 <td>
                                     {$form.shiping_company_type}
                                     <p class="ec-base-help {$form.store_pickup_not_used_display|display}">스토어픽업을 사용할 수 없는 상품이 포함되어 있어 일반 배송사만 선택 가능합니다.</p>
-                                    {$form.delivcompany}
                                     <ul class="list {$deliv_info_view_display|display}" {$form.deliv_info_view}>
-                                        <li>- 배송업체 : {$form.deliv_company_name_custom_type}</li>
-                                        <li class="{$r_info_display|display}">- 배송비 : {$form.deliv_company_price_custom_type}</li>
+                                        <li class="{$r_info_display|display}" style="text-align:center">
+		                                    <select id="delivcompany" name="delivcompany" fw-filter="" fw-label="배송업체(방식) 선택" fw-msg="" style="width:60%" onChange="javascript:chgDelryBtn(this.value)">
+												<option value="4">택배</option>
+												<option value="15">직접수령</option>
+												<option value="14">퀵배송</option>
+											</select>&nbsp;&nbsp;                                        
+                                         배송비 : {$form.deliv_company_price_custom_type}</li>
                                         <li class="{$f_r_info_display|display}">
                                             <div class="{$shipping_additional_fee_show} {$shipping_additional_fee_show_display|display}">
                                                 - 배송비 : <strong>{$price_unit_head}<span id="{$f_addr_total_ship_fee_id}">{$form.f_ship_fee}</span>{$price_unit_tail}</strong> = 해외배송비 {$price_unit_head}<span id="{$f_addr_delv_price_id}">{$form.f_ship_fee}</span>{$price_unit_tail} + 보험료 {$price_unit_head}<span id="{$f_addr_insurance_price_id}">{$form.f_insurance}</span>{$price_unit_tail} <span class="{$shipping_additional_fee_name_show}"> + <span id="{$f_addr_shipping_additional_fee_name_id}">{$shipping_additional_fee_name}</span> {$price_unit_head}<span id="{$f_addr_shipping_additional_fee_id}">{$form.f_shipping_additional_fee}</span>{$price_unit_tail}</span>
@@ -540,9 +564,6 @@
                                                 <p>배송비에는 관세 및 세금 등의 각종 비용은 포함되어 있지 않습니다. 상품수령 시 고객님이 추가로 지불하셔야 합니다.<br />보험료는 배송과정에서 발생하는 분실, 도난, 파손 등으로 인한 손해에 대하여 규정에 따라 배상해 드리는 서비스입니다.</p>
                                             </div>
                                         </li>
-                                        <li>- 배송소요기간 : {$form.deliv_company_period_custom_type}</li>
-                                        <li>- 홈페이지주소 : {$form.deliv_company_site_custom_type}</li>
-                                        <li class="{$ordertime_display|display}" {$form.ordertime}>- 주문가능 시간 : {$form.deliv_company_ordertime_custom_type}</li>
                                         <li class="{$areaname_display|display}" {$form.areaname}><button type="button" id="{$open_avail_delivery_id}" class="btnBasic">배송가능지역</button></li>
                                     </ul>
                                     <ul class="list {$store_info_view_display|display}" {$form.store_info_view}>
@@ -577,11 +598,11 @@
                             </tr>
                         </tbody>
                         <!--국내배송 정보 -->
-                        <tbody class="{$r_info_display|display}">
+                        <tbody class="{$r_info_display|display}" id="delryChoiceView">
                             <tr class="{$addr_is_logout_display|display} {$sameaddr_display|display}">
                                 <th scope="row">배송지 선택</th>
                                 <td>
-                                    <select module="Order_DeliveryList">
+                                    <select module="Order_DeliveryList" id="Order_DeliveryList">
                                         <option value="same">주문자 정보와 동일</option>
                                         <option value="direct" selected>직접입력</option>
                                     </select>
@@ -590,7 +611,7 @@
                             <tr class="{$addr_is_login_display|display} {$sameaddr_display|display}">
                                 <th scope="row">배송지 선택</th>
                                 <td>
-                                    <select module="Order_DeliveryList">
+                                    <select module="Order_DeliveryList" id="Order_DeliveryList">
                                         <option value="same">주문자 정보와 동일</option>
                                         <option value="member">회원 정보와 동일</option>
                                         <option value="{$ma_idx}">{$ma_rcv_title}</option>
@@ -738,7 +759,7 @@
                         <!-- 국내 배송관련 정보 -->
                         <tbody class="{$r_info_display|display}">
                             <tr class="{$use_delivery_message_display|display}">
-                                <th scope="row">배송메시지 <span class="{$is_delivery_message_required_display|display}"><img src="//img.echosting.cafe24.com/skin/mobile/common/ico_required.png" alt="필수" width="5" height="5"></span></th>
+                                <th scope="row"><span id="delryMsgTit">배송메시지</span> <span class="{$is_delivery_message_required_display|display}"><img src="//img.echosting.cafe24.com/skin/mobile/common/ico_required.png" alt="필수" width="5" height="5"></span></th>
                                 <td>
                                     {$form.omessage}
                                     <div class="message {$omessage_autosave_display|display}">
