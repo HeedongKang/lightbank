@@ -47,6 +47,11 @@ $(document).ready(function(){
     || $("#chkPrdNm").html().indexOf("레일기구") > -1 || $("#chkPrdNm").html().indexOf("직부등") > -1){
         $("#light_ord_guide").html("<img src='/_wg/img/prd_detail/light_ord_guide.gif' alt='전구 구매 가이드'/>");
     }
+    
+    //상품명에 LG, 엘지가 포함되면 플리커프리 영상 교체 
+    if($("#chkPrdNm").html().indexOf("LG") > -1 || $("#chkPrdNm").html().indexOf("엘지") > -1){
+        $("#compareVideo").html("<img src='/_wg/img/prd_detail/detail_02-1.jpg' alt='플리커프리'/><center style='background: #cbcbcb;'><iframe width='90%' height='210'  src='https://www.youtube.com/embed/0aoLNxU4HQ0?rel=0' frameborder='0' allwfullscreen=''></iframe></center>");
+    }
 });
 
 var PARENT = '';
