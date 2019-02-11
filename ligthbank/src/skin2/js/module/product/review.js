@@ -44,7 +44,16 @@ $(document).ready(function(){
     if($("#chkPrdNm").html().indexOf("LG") > -1 || $("#chkPrdNm").html().indexOf("엘지") > -1){
         $("#compareVideo").html("<img src='/_wg/img/prd_detail/detail_02-1.jpg' width='1260px' alt='플리커프리'/><center style='width:1260px;background: #cbcbcb;'><iframe width='980' height='500' src='https://www.youtube.com/embed/0aoLNxU4HQ0?rel=0' frameborder='0' allwfullscreen=''></iframe></center>");
     }
-
+    //상품명에 거실이 들어갔을 경우 거실등 설치영상 노출
+    if($("#chkPrdNm").html().indexOf("거실") > -1){
+        $("#installGuideVideo").html("<iframe width='100%' height='600' src='https://www.youtube.com/embed/4Ol9EJMVG6g?rel=0' frameborder='0' allwfullscreen=''></iframe>");
+    }
+    //상품명에 방등이 들어갔을 경우 방ㄷ 설치영상 노출
+    if($("#chkPrdNm").html().indexOf("방등") > -1){
+        $("#installGuideVideo").html("<iframe width='100%' height='600' src='https://www.youtube.com/embed/RMGJBYllnX4?rel=0' frameborder='0' allwfullscreen=''></iframe>");
+    }
+    
+    
     $('.mSlider').bxSlider({
 		pager: false,
 		auto: false,
