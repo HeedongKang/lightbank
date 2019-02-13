@@ -2,4 +2,3 @@ User-agent: *
 Disallow: /admin
 Disallow: /api
 Allow: /
-Sitemap:http://www.lightbank.co.kr/sitemap.xml
