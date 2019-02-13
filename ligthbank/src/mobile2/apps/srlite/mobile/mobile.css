@@ -1,0 +1,197 @@
+.xans-srlite-mobile { background:#fff; font-family:Malgun Gothic; }
+
+/******************************** 기본형 ********************************/
+
+/* 토글 */
+.xans-srlite-mobile-none .toggleArea.type1 { position:relative; margin:7px 0 0; font-size:12px; }
+.xans-srlite-mobile-none .toggleArea.type1 > .title { position:relative; padding:14px 34px 14px 14px; cursor:pointer; line-height:1.3em; background-color:#fff; font-size:15px; font-weight:bold; color:#1b1b1b; -webkit-tap-highlight-color:rgba(255,255,255,0); }
+.xans-srlite-mobile-none .toggleArea.type1 > .title:after { display:block; position:absolute; top:0; right:0; content:""; width:40px; height:100%; background-repeat:no-repeat; background-size:20px; background-position:center; background-image:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_arrow_gray.png"); }
+.xans-srlite-mobile-none .toggleArea.type1.selected > .title:after { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); transform:rotate(180deg); }
+.xans-srlite-mobile-none .toggleArea.type1.disable > .title:after { background-image:none !important; }
+.xans-srlite-mobile-none .toggleArea.type1 > .title h2 { display:inline-block; font-size:13px; }
+.xans-srlite-mobile-none .toggleArea.type1 > .contents { display:none; }
+.xans-srlite-mobile-none .toggleArea.type1.selected > .contents,
+.xans-srlite-mobile-none .toggleArea.type1.disable > .contents { display:block; }
+
+/* 목록 */
+.xans-srlite-mobile-none ul[class*="grid"] { display:table; table-layout:fixed; width:100%; font-size:0; line-height:0; box-sizing:border-box; padding:0 7px 0; }
+.xans-srlite-mobile-none ul[class*="grid"] > li { position:relative; display:inline-block; vertical-align:top; }
+.xans-srlite-mobile-none .grid1 li { width:100%; }
+.xans-srlite-mobile-none .grid2 li { width:50%; }
+.xans-srlite-mobile-none .grid3 li { width:33.333%; }
+.xans-srlite-mobile-none .grid4 li { width:25%; }
+
+.xans-srlite-mobile-none .thumbnail{ padding:0 7px; }
+.xans-srlite-mobile-none img { max-width:100%; }
+.xans-srlite-mobile-none .thumbnail img { width:100%; border:1px solid #ECECEC; }
+.xans-srlite-mobile-none .information { position:relative; min-height:10px; margin:14px 7px; }
+.xans-srlite-mobile-none .name { margin:0 0 10px; }
+.xans-srlite-mobile-none .name a { font-size:13px; line-height:1.25; word-wrap:break-word; color:#757575; }
+.xans-srlite-mobile-none .price { color:#000; font-family:Tahoma; font-size:15px; line-height:1.25; }
+
+/******************************** //기본형 ********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************** 자동슬라이드형 ********************************/
+
+/* 토글 */
+.xans-srlite-mobile-slide .toggleArea.type1 { position:relative; margin:7px 0 0; font-size:12px; }
+.xans-srlite-mobile-slide .toggleArea.type1 > .title,
+.xans-srlite-mobile-slide .toggleArea.type1 .toggleArea > .title { position:relative; padding:14px 34px 14px 14px; cursor:pointer; line-height:1.3em; background-color:#fff; font-size:15px; font-weight:bold; color:#1b1b1b; -webkit-tap-highlight-color:rgba(255,255,255,0); }
+.xans-srlite-mobile-slide .toggleArea.type1 > .title:after { display:block; position:absolute; top:0; right:0; content:""; width:40px; height:100%; background-repeat:no-repeat; background-size:20px; background-position:center; background-image:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_arrow_gray.png"); }
+.xans-srlite-mobile-slide .toggleArea.type1.selected > .title:after { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); transform:rotate(180deg); }
+.xans-srlite-mobile-slide .toggleArea.type1.disable > .title:after { background-image:none !important; }
+.xans-srlite-mobile-slide .toggleArea.type1 > .title h2 { display:inline-block; font-size:13px; }
+.xans-srlite-mobile-slide .toggleArea.type1 > .contents { display:none; position:relative; }
+.xans-srlite-mobile-slide .toggleArea.type1.selected > .contents,
+.xans-srlite-mobile-slide .toggleArea.type1.disable > .contents { display:block; }
+
+/* 목록 */
+.xans-srlite-mobile-slide .srlite-list { margin-left:37px}
+.xans-srlite-mobile-slide ul { display:inline-block; width:100%; font-size:0; line-height:0; box-sizing:border-box;  }
+.xans-srlite-mobile-slide ul > li { position:relative; display:inline-block; vertical-align:top; }
+
+.xans-srlite-mobile-slide .thumbnail{ padding:0 4px; }
+.xans-srlite-mobile-slide img { max-width:100%; }
+.xans-srlite-mobile-slide .thumbnail img { width:100%; border:1px solid #ECECEC; }
+.xans-srlite-mobile-slide .information { position:relative; min-height:10px; margin:14px 7px; }
+.xans-srlite-mobile-slide .name { margin:0 0 10px; }
+.xans-srlite-mobile-slide .name a { font-size:13px; line-height:1.25; word-wrap:break-word; color:#757575; }
+.xans-srlite-mobile-slide .price { color:#000; font-family:Tahoma; font-size:15px; line-height:1.25; }
+
+/* 페이지네이트 */
+.xans-srlite-mobile-slide .toggleArea.type1 > p { position:absolute; top:50%; margin-top:-45px; }
+.xans-srlite-mobile-slide .toggleArea.type1 > p.btnPrev { left:0; }
+.xans-srlite-mobile-slide .toggleArea.type1 > p.btnNext { right:0; }
+.xans-srlite-mobile-slide .toggleArea.type1 > p a { display:inline-block; padding:13px 14px; }
+
+/******************************** //자동슬라이드형 ********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************** 스와이프 써클이미지형********************************/
+
+/* 토글 */
+.xans-srlite-mobile-swipe1 .toggleArea.type1 { position:relative; margin:7px 0 0; font-size:12px; }
+.xans-srlite-mobile-swipe1 .toggleArea.type1 > .title { position:relative; padding:14px 34px 14px 14px; cursor:pointer; line-height:1.3em; background-color:#fff; font-size:15px; font-weight:bold; color:#1b1b1b; -webkit-tap-highlight-color:rgba(255,255,255,0); }
+.xans-srlite-mobile-swipe1 .toggleArea.type1 > .title:after { display:block; position:absolute; top:0; right:0; content:""; width:40px; height:100%; background-repeat:no-repeat; background-size:20px; background-position:center; background-image:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_arrow_gray.png"); }
+.xans-srlite-mobile-swipe1 .toggleArea.type1.selected > .title:after { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); transform:rotate(180deg); }
+.xans-srlite-mobile-swipe1 .toggleArea.type1.disable > .title:after { background-image:none !important; }
+.xans-srlite-mobile-swipe1 .toggleArea.type1 > .title h2 { display:inline-block; font-size:13px; }
+.xans-srlite-mobile-swipe1 .toggleArea.type1 > .contents { display:none; }
+.xans-srlite-mobile-swipe1 .toggleArea.type1.selected > .contents,
+.xans-srlite-mobile-swipe1 .toggleArea.type1.disable > .contents { display:block; }
+
+/* 목록 */
+.xans-srlite-mobile-swipe1 ul[class*="grid"] { display:table; table-layout:fixed; width:100%; font-size:0; line-height:0; box-sizing:border-box; padding:0 7px 0; }
+.xans-srlite-mobile-swipe1 ul[class*="grid"] > li { position:relative; display:inline-block; vertical-align:top; }
+.xans-srlite-mobile-swipe1 .grid1 li { width:100%; }
+.xans-srlite-mobile-swipe1 .grid2 li { width:50%; }
+.xans-srlite-mobile-swipe1 .grid3 li { width:33.333%; }
+.xans-srlite-mobile-swipe1 .grid4 li { width:25%; }
+
+.xans-srlite-mobile-swipe1 .thumbnail{ padding:0 7px; }
+.xans-srlite-mobile-swipe1 img { max-width:100%; }
+.xans-srlite-mobile-swipe1 .thumbnail img { width:100%; border:1px solid #ECECEC; }
+.xans-srlite-mobile-swipe1 .information { position:relative; min-height:10px; margin:14px 7px; }
+.xans-srlite-mobile-swipe1 .name { margin:0 0 10px; }
+.xans-srlite-mobile-swipe1 .name a { font-size:13px; line-height:1.25; word-wrap:break-word; color:#757575; }
+.xans-srlite-mobile-swipe1 .price { color:#000; font-family:Tahoma; font-size:15px; line-height:1.25; }
+
+/* 페이지네이트 */
+.xans-srlite-mobile-swipe1 .paginate.typeSwipe { margin:0 0 14px; height:30px; line-height:30px; color:#757575; text-align:center; background:#fff; }
+.xans-srlite-mobile-swipe1 .paginate.typeSwipe .prev,
+.xans-srlite-mobile-swipe1 .paginate.typeSwipe .next { display:none; }
+.xans-srlite-mobile-swipe1 .paginate.typeSwipe button.circle { margin:0 3px 0 4px; width:13px; height:13px; border:0; cursor:pointer; background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_swipe.png") no-repeat 0 0; background-size:13px 13px; }
+.xans-srlite-mobile-swipe1 .paginate.typeSwipe button.circle.selected { background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_swipe_on.png") no-repeat 0 0; background-size:13px 13px; }
+.xans-srlite-mobile-swipe1 .paginate.typeSwipe span { color:#fff; font-size:0; line-height:0; }
+
+/******************************** // 스와이프 써클이미지형********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************** 스와이프 숫자형********************************/
+
+/* 토글 */
+.xans-srlite-mobile-swipe2 .toggleArea.type1 { position:relative; margin:7px 0 0; font-size:12px; }
+.xans-srlite-mobile-swipe2 .toggleArea.type1 > .title { position:relative; padding:14px 34px 14px 14px; cursor:pointer; line-height:1.3em; background-color:#fff; font-size:15px; font-weight:bold; color:#1b1b1b; -webkit-tap-highlight-color:rgba(255,255,255,0); }
+.xans-srlite-mobile-swipe2 .toggleArea.type1 > .title:after { display:block; position:absolute; top:0; right:0; content:""; width:40px; height:100%; background-repeat:no-repeat; background-size:20px; background-position:center; background-image:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_arrow_gray.png"); }
+.xans-srlite-mobile-swipe2 .toggleArea.type1.selected > .title:after { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); transform:rotate(180deg); }
+.xans-srlite-mobile-swipe2 .toggleArea.type1.disable > .title:after { background-image:none !important; }
+.xans-srlite-mobile-swipe2 .toggleArea.type1 > .title h2 { display:inline-block; font-size:13px; }
+.xans-srlite-mobile-swipe2 .toggleArea.type1 > .contents { display:none; }
+.xans-srlite-mobile-swipe2 .toggleArea.type1.selected > .contents,
+.xans-srlite-mobile-swipe2 .toggleArea.type1.disable > .contents { display:block; }
+
+/* 목록 */
+.xans-srlite-mobile-swipe2 ul[class*="grid"] { display:table; table-layout:fixed; width:100%; font-size:0; line-height:0; box-sizing:border-box; padding:0 7px 0; }
+.xans-srlite-mobile-swipe2 ul[class*="grid"] > li { position:relative; display:inline-block; vertical-align:top; }
+.xans-srlite-mobile-swipe2 .grid1 li { width:100%; }
+.xans-srlite-mobile-swipe2 .grid2 li { width:50%; }
+.xans-srlite-mobile-swipe2 .grid3 li { width:33.333%; }
+.xans-srlite-mobile-swipe2 .grid4 li { width:25%; }
+
+.xans-srlite-mobile-swipe2 .thumbnail{ padding:0 7px; }
+.xans-srlite-mobile-swipe2 img { max-width:100%; }
+.xans-srlite-mobile-swipe2 .thumbnail img { width:100%; border:1px solid #ECECEC; }
+.xans-srlite-mobile-swipe2 .information { position:relative; min-height:10px; margin:14px 7px; }
+.xans-srlite-mobile-swipe2 .name { margin:0 0 10px; }
+.xans-srlite-mobile-swipe2 .name a { font-size:13px; line-height:1.25; word-wrap:break-word; color:#757575; }
+.xans-srlite-mobile-swipe2 .price { color:#000; font-family:Tahoma; font-size:15px; line-height:1.25; }
+
+/* 페이지네이트 숫자형*/
+.xans-srlite-mobile-swipe2 .paginate.typeTotal { margin:0 0 14px; height:30px; line-height:30px; color:#696969; text-align:center; background:#fff; }
+.xans-srlite-mobile-swipe2 .paginate.typeTotal > span { margin:0 8px;font-weight:bold; }
+.xans-srlite-mobile-swipe2 .paginate.typeTotal p { padding:0 7px; display:inline-block;vertical-align:middle; color:#353535; font-weight:bold; font-size:13px; }
+.xans-srlite-mobile-swipe2 .paginate.typeTotal .prev,
+.xans-srlite-mobile-swipe2 .paginate.typeTotal .next { width:7px;height:13px; font-size:15px; line-height:1.2em; background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_prev.png") no-repeat 50% 50%; background-size:7px auto; }
+.xans-srlite-mobile-swipe2 .paginate.typeTotal .next { background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_next.png") no-repeat 50% 50%; background-size:7px auto; }
+.xans-srlite-mobile-swipe2 .paginate.typeTotal p span { overflow:hidden; display:block; width:29px; text-indent:-999px; }
+.xans-srlite-mobile-swipe2 .paginate.typeTotal strong { color:#508bed; }
+
+/******************************** //스와이프 숫자형********************************/

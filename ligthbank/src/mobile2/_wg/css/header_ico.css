@@ -1,0 +1,4 @@
+
+    .header_ico { position:relative; z-index:1; float:left; left:3%; width:42%; }
+    .header_ico li { position:relative; float:left; margin:0 2.5% 0 0; }
+    .header_ico li a { display:block; width:30px; height:30px; background:rgba(0,0,0,.08); border-radius:100%; font-family:'xeicon'; font-size:12px; color:#333; line-height:30px; text-align:center; }

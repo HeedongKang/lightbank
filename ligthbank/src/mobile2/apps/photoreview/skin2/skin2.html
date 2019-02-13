@@ -1,0 +1,44 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div module="photoreview_display" class="photoreview_skin2">
+    <!--@css(./lister.css)-->
+    <!--@css(./skin2.css)-->
+    <!--@js(./lister.js)-->
+    <!--@js(./skin2.js)-->
+    <!-- 
+       $count=6
+       $size=195
+       $point=show
+       $board_no=4
+    -->
+    <h2>Photo Review</h2>
+    <div class="lister_wrap">
+        <dl>
+            <dt><a href="#none" rel="{$no}"><img src="{$rhimg}" alt="" /></a></dt>
+            <dd>
+                <p>{$rsub}</p>
+                <p class="date">{$rdate}</p>
+                <p class="point is_rating"><img src="//img.echosting.cafe24.com/apps/photo-review/skin2/ico_star{$rpoint}.png" alt="{$rpoint}점" /></p>
+                <p class="post">{$rwriter}</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt><a href="#none" rel="{$no}"><img src="{$rhimg}" alt="" /></a></dt>
+            <dd>
+                <p>{$rsub}</p>
+                <p class="date">{$rdate}</p>
+                <p class="point is_rating"><img src="//img.echosting.cafe24.com/apps/photo-review/skin2/ico_star{$rpoint}.png" alt="{$rpoint}점" /></p>
+                <p class="post">{$rwriter}</p>
+            </dd>
+        </dl>
+    </div>
+    <p class="more"><a href="#none"><strong>더보기</strong></a></p>
+    <div class="detail-dimmed">
+        <div class="detail">
+            <p class="post"><span></span><a href="#none" class="close">닫기</a></p>
+            <p class="image"><img src="//img.echosting.cafe24.com/apps/photo-review/skin3/@img_photo9.jpg" alt="" /></p>
+            <div class="contents"></div>
+            <p></p>
+        </div>
+    </div>
+</div>

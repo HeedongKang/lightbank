@@ -1,0 +1,26 @@
+<!-- <div class="timer"></div> -->
+<div class="thumbnail">
+    <div class="time_out"></div>
+    <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}">
+        <img src="{$image_medium}" alt="{$seo_alt_tag}" class="thumb">
+    </a>
+</div>
+<div class="info">
+    <div class="discount_rate ico04 -mov" data-price="{$product_custom}" data-sale="{$product_price}"></div>
+    <p class="name">
+        <a href="#none" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a>
+    </p>
+    <ul module="product_ListItem" class="spec">
+        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+    </ul>
+    <div class="status">
+        <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+        <div class="list_button">
+            <span class="zoom"><a href="/product/detail.html{$param}#start" target="_blank"><img src="/_wg/img/ico_blank.png"></a></span>
+            <span class="basket">{$basket_icon}</span>
+            <span class="option">{$option_preview_icon}</span>
+            <span class="wishIcon">{$list_wish_icon}</span>
+        </div>
+    </div>
+</div>

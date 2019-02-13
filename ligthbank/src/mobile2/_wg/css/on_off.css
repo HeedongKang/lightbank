@@ -1,0 +1,104 @@
+
+/*****************************************************************************************************************************************************
+
+    ### 디자인 ON/OFF 설정 ###
+
+    • 수정전 반드시 백업 또는 스킨 복사를 해두시기 바랍니다.
+    • 해당 페이지에서 옵션 변경으로 디자인을 선택적으로 사용하실 수 있습니다.
+    • 사용 [ display:block; ], 미사용 [ display:none; ] 으로 디자인의 사용유무를 선택 가능합니다.
+    • display:none; 으로 안되면 none!important; 로 넣어주세요.
+    • 상품이 진열된 곳은 상품을 진열 안하시면 노출되지 않습니다.
+    • 아래 내용에 없는 부분은 html상에서 직접 수정하셔야되겠습니다.
+
+*****************************************************************************************************************************************************/
+
+
+
+/** 메인 디자인 **/
+
+    /* 메인 > 메인 슬라이드 배너 */
+    .JS_mainBnr { display:block; }
+
+    /* 메인 > 브랜드 */
+    .btn_brand { display:block; }
+
+    /* 메인 > 추가메뉴1 - 사용안함 */
+    .category.sub1 { display:none; }
+
+    /* 메인 > 상품분류메뉴 */
+    .category { display:block; }
+
+    /* 상단 > 신상품메뉴 (상품분류 메뉴중 첫번째 메뉴) */
+    .new_item { display:block; }
+
+    /* 메인 > 추가메뉴2 */
+    .category_sub3_left,
+    .category.sub2 { display:block; }
+
+    /* 메인 > 추가메뉴3 (타임세일 & 룩북) */
+    .category.sub3 { display:block; }
+
+    /* 메인 > 퀵공지사항 */
+    .JS_quickNotice { display:block; }
+
+    /* 메인 > 섹션1 (공지사항 아래 배너들) */
+    .SD_23165_01 { display:block; }
+
+    /* 메인 > 탭롤링아이템 */
+    .JS_tabRolling { display:block; }
+
+    /* 메인 > 와이드 슬라이드 배너 */
+    .JS_wideBnr { display:block; }
+
+    /* 메인 > 인스타그램 */
+    .instafeed_wrap { display:block; }
+
+
+
+
+/** 하단 디자인 **/
+
+    /* 하단 > 아이콘 */
+    .footer_ico { display:block; }
+
+
+
+
+/** 상세페이지 디자인 **/
+
+    /* 상세페이지 > 네이버톡톡 */
+    .a_naverTalk { display:block; }
+
+    /* 상세페이지 > 옐로우아이디 */
+    .a_YellowID { display:block; }
+
+    /* 상세페이지 > SNS홍보 (페이스북,트위터) */
+    .snsLink { display:block; }
+
+
+
+
+/** 기타 디자인 **/
+
+    /* 기타 > 상품리스트 > 세일할인율 */
+    .discount_rate { display:block; }
+
+    /* 기타 > 상품리스트 > 좋아요 (엄지척) */
+    .-likeButton { display:block; }
+
+    /* 기타 > 상품리스트 > 새창보기 */
+    .ec-base-product .zoom { display:block; }
+
+    /* 기타 > 상품리스트 > 장바구니 */
+    .ec-base-product .basket { display:block; }
+
+    /* 기타 > 상품리스트 > 옵션보기 */
+    .ec-base-product .option { display:block; }
+
+    /* 기타 > 상품리스트 > 관심상품 */
+    .ec-base-product .wishIcon { display:block; }
+
+    /* 기타 > Design by WG */
+    .made { display:block; }
+
+

@@ -1,0 +1,19 @@
+
+    #searchForm #titleArea span.count { position:static; color:#111; }
+
+    .xans-search-form { margin:0 0 20px; }
+    .xans-search-form .empty { padding:93px 0 59px; color:#333; text-align:center; font-size:15px; background:url("http://img.echosting.cafe24.com/skin/mobile_ko_KR/product/ico_search.png") center 28px no-repeat #fff; background-size:37px; }
+    
+    .xans-search-form .searchbox { position:relative; padding:7px 65px 6px 14px; background:#fff; }
+    .xans-search-form .searchbox input#keyword { width:100%; }
+    .xans-search-form .searchbox .button { width:60px; position:absolute; top:7px; right:10px; text-align:right; }
+    .xans-search-form .searchbox .button .btnStrong { height:29px; }
+    .xans-search-form .searchbox .btnDelete {
+        overflow: hidden; position: absolute; right: 72px; top: 12px; width: 20px; height: 20px;
+        border: 0; cursor: pointer; text-indent: 100%; font-size: 0; white-space: nowrap;
+        background: url("http://img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_delete.png") no-repeat 0 0; background-size: 20px 20px;
+     }
+    .xans-search-form .inner { overflow:hidden; padding:7px 14px 6px; background:#fff; }
+    .xans-search-form .inner p { float:left; }
+    .xans-search-form .inner p.button { float:right; padding:2px 0 0; }
+    .xans-search-form .inner .button img { display:block; border:1px solid red; }

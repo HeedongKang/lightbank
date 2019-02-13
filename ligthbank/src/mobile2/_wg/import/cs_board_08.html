@@ -1,0 +1,31 @@
+<div module="Board_ListPackage_8" class="_cs_gallery">
+    <h4 module="board_title_8">{$board_name}</h4>
+    <p class="line"></p>
+    <a href="/board/free/list.html?board_no=8" class="more">+ MORE</a>
+    <div module="board_list_8">
+        <!--
+            $count = 5
+            $main_list = yes
+            $login_page_url = /member/login.html
+            $deny_access_url = /index.html
+         -->
+        <ul>
+            <li>
+                <a href="/board/gallery/read.html{$param_read}" class="thumb"><img src="{$img_src}"></a>
+                <div class="description">
+                    <p class="subject">[{$category_name}] <a href="/board/gallery/read.html{$param_read}"> {$subject} {$icon_new} {$comment_count}</a></p>
+                    <p class="name">{$member_icon}{$writer}</p>
+                    <p class="date">{$write_date}</p>
+                </div>
+            </li>
+            <li>
+                <a href="/board/gallery/read.html{$param_read}" class="thumb"><img src="{$img_src}"></a>
+                <div class="description">
+                    <p class="subject">[{$category_name}] <a href="/board/gallery/read.html{$param_read}"> {$subject} {$icon_new} {$comment_count}</a></p>
+                    <p class="name">{$member_icon}{$writer}</p>
+                    <p class="date">{$write_date}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

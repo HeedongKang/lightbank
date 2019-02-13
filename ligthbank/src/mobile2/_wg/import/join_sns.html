@@ -1,0 +1,35 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div id="titleArea">
+    <h2>회원가입</h2>
+    <span module="Layout_MobileAction">
+        <a href="#none" onclick="{$go_back}"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_back.gif" width="33" alt="뒤로가기"></a>
+    </span>
+</div>
+<a href="/_wg/import/joinMemberSpecial.html"><img src="/_wg/img/mb_signup_banner.png" width="100%"/></a>
+<!--------------------------------------------------------------------------------------------------------------------------------------
+    ### 회원가입 렌딩 페이지 ###
+--------------------------------------------------------------------------------------------------------------------------------------->
+<!--@css(/_wg/css/joinSns.css)-->
+<div module="member_login" class="js_wrap">
+	<h1>조명뱅크 회원가입</h1>
+	<p>조명뱅크 회원으로 가입함니다.</p>
+	<a href="/member/agreement.html" class="btn_join">회원가입</a>
+	<div class="jsin_line"></div>
+	<h1>조명뱅크 간편 회원가입</h1>
+	<p>SNS아이디를 이용해 간편하게 조명뱅크 회원으로 가입합니다.</p>
+	<ul class="js_link">
+		<li class="{$display_naver|display} -mov">
+			<a href="#" onclick="{$naver_func_login}" class=""><img src="/_wg/img/sns_01naver.jpg" alt="sns 네이버로 회원가입하기"></a>
+		</li>
+		<li class="{$display_facebook|display} -mov">
+			<a href="#" onclick="{$facebook_func_login}" class=""><img src="/_wg/img/sns_02face.jpg" alt="sns 페이스북으로 회원가입하기"></a>
+		</li>
+		<li class="{$display_kakao|display} -mov">
+			<a href="#" onclick="{$kakao_func_login}" class=""><img src="/_wg/img/sns_03kakao.jpg" alt="sns 카카오로 회원가입하기"></a>
+		</li>
+		<li class="{$display_google|display} -mov">
+			<a href="#" onclick="{$google_func_login}" class=""><img src="/_wg/img/sns_04google.jpg" alt="sns 구글로 회원가입하기"></a>
+		</li>
+	</ul>
+</div>
+<!--@js(/layout/basic/js/comssl.js)-->

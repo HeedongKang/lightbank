@@ -1,0 +1,23 @@
+<!--@layout(/layout/basic/layout.html)-->
+<script src="/_wg/js/jquery-1.11.0.min.js"></script>
+<script src="/_wg/js/jquery.rwdImageMaps.min.js"></script>
+
+<style type="text/css">
+	img[usemap] {
+		border: none;
+		height: auto;
+		max-width: 100%;
+		width: auto;
+	}
+</style>
+<img src="/_wg/img/bus_signup_01.jpg" width="100%"/><br><img src="/_wg/img/bus_signup_02.jpg"  usemap="#MapLink"/>
+
+<map name="MapLink" >
+    <area shape="rect" coords="274,400,523,496" href="/_wg/import/join_sns.html">
+    <area shape="rect" coords="127,1563,386,1659" href="/_wg/import/join_sns.html">
+    <area shape="rect" coords="492,1553,754,1659" href="/board/free/list.html?board_no=3001">
+    <area shape="rect" coords="859,1565,1121,1657" href="javascript:alert('031-901-1583\n또는 상단에 있는 네이버톡톡,카카오톡상담으로 문의주세요^^');"> 
+</map>
+<script type="text/javascript">
+        $('img[usemap]').rwdImageMaps();
+</script>

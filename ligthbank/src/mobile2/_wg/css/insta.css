@@ -1,0 +1,18 @@
+
+    .instafeed_wrap { position:relative; z-index:1; margin:0 0 -1px; padding:10px 3% 15px; }
+    .instafeed_wrap .title { display:block; margin:0 0 15px; font-weight:200; text-align:center; }
+    .instafeed_wrap .title .tit a { display:block; margin:0 0 5px; font-size:30px; color:#333;  font-weight:bold}
+    .instafeed_wrap .title .tit i { position:relative; top:3px; font-size:22px; }
+    .instafeed_wrap .title .tag { position:relative; }
+    .instafeed_wrap .title a { color:#666; font-size:12px; }
+    
+    #instafeed { display:block; }
+    #instafeed:after { content:""; display:block; *zoom:1; clear:both; }
+    #instafeed .post { position:relative; float:left; width:19.6%; margin:0.2%; overflow:hidden; }
+    #instafeed img { width:100%; height:100%; transition:all .3s ease; -webkit-transition:all .3s ease; }
+    #instafeed img:hover { filter:alpha(opacity=60); opacity:.6; -webkit-opacity:.6; }
+
+    /* 캡션(사용안함) */
+    #instafeed .post .tit { display:none; position:absolute; z-index:10; bottom:-4px; left:50%; width:74px; margin-left:-37px; line-height:25px; border:1px solid #ddd; border-radius:4px; background:#f4f4f4; font-size:11px; color:#333; text-align:center; white-space:nowrap; overflow:hidden; filter:alpha(opacity=0); opacity:0; -webkit-opacity:0; transition:all .2s ease; -webkit-transition:all .2s ease; }
+    #instafeed .post:hover .tit { bottom:0; filter:alpha(opacity=100); opacity:1.0; -webkit-opacity:1.0; }
+    #instafeed .post .tit a:hover { text-decoration:none; }

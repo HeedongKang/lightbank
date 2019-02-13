@@ -1,0 +1,36 @@
+
+    <!-- 비회원 주문조회 -->
+    <div class="pannelArea ec-orderform-NoMemberPasswdRow {$nm_display|display}">
+        <div class="title">
+            <h2>비회원 주문조회 비밀번호</h2>
+        </div>
+        <div class="contents">
+            <div class="ec-base-table typeWrite">
+                <table border="1">
+                    <caption>비회원 주문조회</caption>
+                    <colgroup>
+                        <col style="width:122px">
+                        <col style="width:auto">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">비밀번호</th>
+                            <td>
+                                {$form.order_password}
+                                <span id="order_password_alert" class="ec-base-help txtWarn gBlank5"></span>
+                                <span id="order_password_msg" class="ec-base-help gBlank5"> (영문대소문자/숫자/특수문자 중 2가지 이상 조합, 6자~16자)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">비밀번호 확인</th>
+                            <td>
+                                {$form.order_password_confirm}
+                                <span id="{$order_form_nomember_password_confirm_alert_id}" class="ec-base-help txtWarn gBlank5"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+

@@ -1,0 +1,35 @@
+
+<!-- 스마트 추천 앱 -->
+<div module="srlite_mobile">
+<!--@css(./mobile.css)-->
+    <!--
+        $count = 6 
+        $grid = 3
+    -->
+    <div class="toggleArea type1 eRceoToggle selected">
+        <div class="title">
+            <h3>이 상품과 함께 구매한 상품 BEST</h3>
+        </div>
+        <div class="contents srlite-list">
+            <ul>
+                <li>
+                    <div class="thumbnail"><a href="{$product_link}" rel="{$product_no}" class="product_img" {$target}  ><img src="{$product_img}" alt="" /></a></div>
+                    <div class="information">
+                        <p class="name"><a href="{$product_link}" rel="{$product_no}" class="name product_name">{$product_name}</a></p>
+                        <p class="price">{$product_price}원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumbnail"><a href="{$product_link}" rel="{$product_no}" class="product_img" {$target}  ><img src="{$product_img}" alt="" /></a></div>
+                    <div class="information">
+                        <p class="name"><a href="{$product_link}" rel="{$product_no}" class="name product_name">{$product_name}</a></p>
+                        <p class="price">{$product_price}원</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        {$sPagenate}
+    </div>
+</div>
+
+<!-- //스마트 추천 앱 -->

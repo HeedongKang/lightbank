@@ -1,0 +1,99 @@
+<!--@css(/_wg/css/bar_left_m.css)-->
+<!--@js(/_wg/js/slide_menu.js)-->
+
+<div class="d_etc18 left">
+    
+    <!-- 버튼--> 
+    <div class="d_toggle">전체메뉴</div>
+    <div class="d_content">
+        
+        <div class="top_content">
+            
+            <!-- 상단문구 -->
+            <p module="Layout_stateLogoff" class="intro">
+                <strong>조명뱅크</strong>
+                회원가입을 하시면 다양한 혜택과 이벤트가 기다리고 있습니다.
+            </p>
+            
+            <p module="Layout_stateLogon" class="intro">
+                <strong>조명뱅크</strong>
+                다시 찾아주셔서 감사합니다 즐거운 쇼핑되세요~
+            </p><!-- //상단문구 -->
+    
+            <!-- 버튼 -->
+            <p module="Layout_stateLogoff" class="member_btn">
+                <a href="/member/login.html" class="btnLogin">로그인</a>
+                <a href="/_wg/import/join_sns.html" class="btnJoin">회원가입</a>
+            </p>
+            
+            <p module="Layout_stateLogon" class="member_btn">
+                <a href="{$action_logout}" class="btnLogout">로그아웃</a>
+                <a href="/member/modify.html" class="btnJoin">정보수정</a>
+            </p>
+            <!-- //버튼 -->
+            
+        </div>
+        
+        <aside id="aside" module="layout_slidePackage">
+            <div id="slideCateList">
+                
+                <h2 class="selected">쇼핑 카테고리<button type="button" class="icoCategory">펼침</button></h2>
+                <ul module="layout_category" class="categoryList">
+                    <li id="cate{$cate_no}" class="new_item">
+                        <a href="#none" class="cate" cate="{$param}">{$name|cut 25}</a>
+                        <a href="/product/list.html{$param}" class="view">상품보기</a>
+                    </li>
+                    <li id="cate{$cate_no}">
+                        <a href="#none" class="cate" cate="{$param}">{$name|cut 25}</a>
+                        <a href="/product/list.html{$param}" class="view">상품보기</a>
+                    </li>
+                </ul>
+                
+                <!-- 추가메뉴2 -->
+                <!--@import(/_wg/import/category_sub3_left.html)-->
+                
+                <div id="slideProjectList" module="layout_project">
+                    <h2 class="selected">기획전<button type="button" class="icoCategory">펼침</button></h2>
+                    <ul class="categoryList">
+                        <li id="cate{$cate_no}">
+                            <a href="#none" class="cate" cate="{$param}">{$category_text|cut 25}</a>
+                        </li>
+                        <li id="cate{$cate_no}">
+                            <a href="#none" class="cate" cate="{$param}">{$category_text|cut 25}</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <h2 class="selected">게시판 카테고리<button type="button" class="icoCategory">펼침</button></h2>
+                <ul module="Layout_BoardInfo" class="categoryList">
+                    <li>
+                        <a href="{$board_list_url}" class="cate board">{$board_name|cut 25}</a>
+                        <a href="{$board_list_url}" class="view">게시글보기</a>
+                    </li>
+                    <li>
+                        <a href="{$board_list_url}" class="cate board">{$board_name|cut 25}</a>
+                        <a href="{$board_list_url}" class="view">게시글보기</a>
+                    </li>
+                </ul>
+                <!--
+                <h2 class="selected">멀티쇼핑몰<button type="button" class="icoCategory">펼침</button></h2>
+                <div class="multishop categoryList" module="Layout_multishopList" id="slideMultishopList">
+                    <ul module="Layout_multishopListitem">
+                        <li class="{$selected_class}">
+                            <a href="http://{$shop_domain}/" class="cate board">
+                                <img src="http://img.cafe24.com/img/common/global/{$language}_53x36.png" width="27" height="18" alt=""><span class="name"> {$shop_name}</span>
+                            </a>
+                        </li>
+                        <li class="{$selected_class}">
+                            <a href="http://{$shop_domain}/" class="cate board">
+                                <img src="http://img.cafe24.com/img/common/global/{$language}_53x36.png" width="27" height="18" alt=""><span class="name"> {$shop_name}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                -->
+            </div>
+        </aside>
+
+    </div>
+</div>
