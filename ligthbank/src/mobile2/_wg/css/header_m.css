@@ -30,7 +30,7 @@
     .header_01 .header_point { position:absolute; z-index:1; top:32px; left:50%; width:55px; height:20px; margin:0 0 0 -28px; line-height:22px; background:#111; border-radius:4px; font-size:10px; font-weight:600; letter-spacing:0; text-align:center; color:#fff; transition:box-shadow 1s, opacity .8s 1s, top .8s 1s ease; }
 	
 	/*검색 영역박스*/
-	.header_01 .searchBoxTip {background-color: #DBDBDB;width: 48%;float: right;line-height: 30px;height: 28px;border-radius: 20px;color: #525151;paddint-left: 30px;font-size: 14px;}
+	.header_01 .searchBoxTip {background-color: #DBDBDB;width: 48%;float: right;line-height: 30px;height: 28px;border-radius: 20px;color: #525151;font-size: 14px;}
 
     /* 스크롤 고정 */
     #header.fixed .header_01 {  box-shadow:0 3px 4px rgba(0,0,0,0.15); border-bottom:none; height:36px; padding-top:10px}

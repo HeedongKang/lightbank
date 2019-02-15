@@ -4,17 +4,16 @@
     .d_etc18.right .d_content {position:relative; display:block; height:100%; padding:0 0 20px; font:12px 돋움; overflow-y:auto; -webkit-overflow-scrolling:touch; cursor:pointer; }
 
     /* 버튼 */
-    .d_etc18.right .d_toggle { position:absolute; z-index:1; top:102px; left:-39px; width:39px; height:39px; margin-top:-25px; cursor:pointer; transition:left .5s .6s, background .5s 1s ease; }
+    .d_etc18.right .d_toggle { position:absolute; z-index:1; top:102px; left:-39px; width:39px; height:39px; margin-top:-25px; cursor:pointer;  }
     .d_etc18.right .d_toggle.fixed {top:32px;}
     .d_etc18.right .d_toggle.d_on { left:0; background:rgba(0,0,0,.1);top:32px;}
 
-    .d_etc18.right .d_toggle .btn_all { position:absolute; top:4px; left:4px; width:28px; height:28px; opacity:1; -webkit-opacity:1; transition:all .4s .6s ease; }
-    .d_etc18.right .d_toggle.d_on .btn_all { opacity:0; -webkit-opacity:0; transform:rotate(135deg); }
+    .d_etc18.right .d_toggle .btn_all { position:fixed; height:20px;bottom:25px;right:7.5%;}
     /* bar1 */
-    .d_etc18.right .d_toggle .btn_01 { position:absolute; top:14px; left:12px; opacity:0; -webkit-opacity:0; transition:all .4s .6s ease; }
+    .d_etc18.right .d_toggle .btn_01 { position:absolute; left:12px; opacity:0; -webkit-opacity:0;  }
     .d_etc18.right .d_toggle.d_on .btn_01 { top:19px; opacity:1; -webkit-opacity:1; transform:rotate(135deg); }
     /* bar2 */
-    .d_etc18.right .d_toggle .btn_02 { position:absolute; top:24px; left:12px; opacity:0; -webkit-opacity:0; transition:all .4s .6s ease; }
+    .d_etc18.right .d_toggle .btn_02 { position:absolute; left:12px; opacity:0; -webkit-opacity:0; }
     .d_etc18.right .d_toggle.d_on .btn_02 { top:19px; opacity:1; -webkit-opacity:1; transform:rotate(45deg); }
 
     /* 퀵아이콘 */
