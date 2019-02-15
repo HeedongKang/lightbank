@@ -25,15 +25,6 @@
 
     /* 내용 */
     .d_etc18.left .top_content { display:block; padding:20px 15px; }
- 
-    .d_content .intro { margin:10px 10px 15px; font-size:10px; letter-spacing:-0.03em; color:#888; font-weight:200; }
-    .d_content .intro strong { display:block; margin:0 0 4px; font-size:13px; letter-spacing:0.08em; color:#333; }
-
-    .d_content .member_btn { height:35px; } 
-    .d_content .member_btn a { float:right; width:48%; height:35px; line-height:37px; border:1px solid #ddd; background-color:#fff; font-size:13px; text-align:center; font-weight:200; }
-    .d_content .member_btn a.btnLogin { float:left; border:1px solid #000; background-color:#111; color:#fff; }
-    .d_content .member_btn a.btnLogout { float:left; border:1px solid #777; background-color:#888; color:#fff; }
-
 
 
     /** 네비게이션 **/

@@ -18,7 +18,7 @@
     .d_etc18.right .d_toggle.d_on .btn_02 { top:19px; opacity:1; -webkit-opacity:1; transform:rotate(45deg); }
 
     /* 퀵아이콘 */
-    .SD_quickIco { display:block; margin:20px 0 0; padding:0 10px; }
+    .SD_quickIco { display:block;}
     .SD_quickIco:after { content:""; display:block; *zoom:1; clear:both; }
 
     .SD_quickIco h4 { display:block; margin:0 0 15px; color:#333; font-weight:600; font-size:14px; line-height:17px; text-align:center; letter-spacing:0.1em; }
