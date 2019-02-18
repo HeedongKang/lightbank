@@ -53,19 +53,6 @@ $(document).ready(function(){
         $("#installGuideVideo").html("<iframe width='100%' height='600' src='https://www.youtube.com/embed/RMGJBYllnX4?rel=0' frameborder='0' allwfullscreen=''></iframe>");
     }
     
-    
-    $('.mSlider').bxSlider({
-		pager: false,
-		auto: false,
-		speed: 100,
-		   controls: true,    // 이전 다음 버튼 노출 여부
-		   minSlides : 5,
-		   maxSlides : 5,
-		   slideMargin:10,   
-		   slideWidth: 1260,
-		   adaptiveHeight: false,
-		   moveSlides: 1
-	});
 });
 
 function cart_custom(){
