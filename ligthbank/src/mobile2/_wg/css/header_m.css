@@ -62,3 +62,66 @@
 
     .header_03 { position:relative; z-index:1; display:block; padding:10px 0; border-top:1px solid #eee; border-bottom:1px solid #eee; background:#fff; }
     .header_03:after { content:""; display:block; clear:both; *zoom:1; }
+
+    
+    /**검색**/
+
+body.sLightBox {
+    overflow: hidden;
+}
+
+#d_sLightBox_win {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#d_sLightBox_win .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.80);
+}
+
+#d_sLightBox_win .inner {
+    position: relative;
+    top: 5%;
+    left: 50%;
+    width: 0;
+    height: 90%;
+}
+
+#d_sLightBox_win .inner .iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #fff;
+}
+
+#d_sLightBox_win .inner .popup {
+    display: none;
+    height: 100%;
+}
+
+#d_sLightBox_win .close {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+    background: url('/_wg/img/_btn/btn_x_w.png') no-repeat;
+    text-indent: -9999px;
+}
+
+#d_sLightBox_win .close:hover {
+    opacity: .5;
+}    
+    
+    

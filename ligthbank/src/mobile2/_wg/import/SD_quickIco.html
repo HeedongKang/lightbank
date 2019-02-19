@@ -71,24 +71,27 @@
 			</ul>
 		</div>
 		<div class="tab_line"></div>
-		
-		<div class="oper_time _section" style="width:180px">
-			<h4>고객센터</h4>
-			<ul class="xans-element- xans-layout xans-layout-footer ">
-				<p class="phone">
-					031-901-1583
-				</p>
-				<li><strong>평일</strong>오전 10:00 ~ 오후 06:00<ㅠ (토요일 오후03:00)</li>
-				<li><strong>점심</strong><span class="v_time2"></span></li>
-				<li><strong>휴무</strong><span class="v_time3"></span></li>
-				<li><span class="v_etc1"></span></li>
-				<li><span class="v_etc2"></span></li>
-			</ul>
-		</div>
+		<table width="100%" style="height:130px">
+			<tr>
+				<td width="70%" style="line-height:normal">
+					<div class="oper_time _section">
+						<div style="margin-top: 10px;font-size: 15pt;">고객센터</div>
+						<ul module="Layout_footer">
+			                <p style="font-size: 25px;font-weight: bold;margin-top: 5px;"><a href="tel:{$phone}"> {$phone}</a></p>
+			                <li style="font-size:10pt"><strong>평일</strong> 오전 10:00 ~ 오후 06:00</li>
+			                <li style="font-size:10pt"><strong>점심</strong> 오후 12:00 ~ 오후 01:00</li>
+			                <li style="font-size:10pt"><strong>휴무</strong><span class="v_time3"></span></li>
+			            </ul>			
+					</div>				
+				</td>
+				<td>
+					<a href="tel:{$phone}"><img src="/_wg/img/icon_customer.png" width="50"></a>
+				</td>
+			</tr>
+		</table>
+
 		<div class="tab_line"></div>
-		<div>
-			농협은행 352-0838-9306-13<br>
-			예금주 김남성 (무통장입금 시 추가할인)
-		</div>
+		<div style="font-size: 18px;margin-top: 15px;">농협은행 <b>352-0838-9306-13</b></div>
+		<div style="font-size: 16px;margin-top: 5px;">예금주 김남성 <span style="font-size:12px">(무통장입금 시 추가할인)</span></div>		
 	</div>
 </div>
