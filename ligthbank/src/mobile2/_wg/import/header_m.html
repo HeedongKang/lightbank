@@ -7,8 +7,11 @@
 	        		<span>
 	        			<img src="/_wg/img/m_logo.png"  height="30" onclick="javascript:location.href='/'" id="m_logo">
 	        		</span>
-	        		<div id="searchBoxTip" class="searchBoxTip d_sLightBox"><img src="/_wg/img/icon_search.png" height="15" style="margin-left: 10px;margin-top: -3px;margin-right: 2px;"> 
-	        			한정수량특가!
+	        		<div id="searchBoxTip" class="searchBoxTip d_sLightBox">
+	        			<a href="javascript:searchLayer('inline')">
+		        			<img src="/_wg/img/icon_search.png" height="15" style="margin-left: 10px;margin-top: -3px;margin-right: 2px;"> 
+		        			한정수량특가!
+	        			</a>
 	        		</div>
 	        	</li>
 	            <li module="Layout_orderBasketcount"><a href="/order/basket.html?page=1"><img src="/_wg/img/icon_cart.png" height="28"> <span module="Layout_orderBasketcount" class="count{$basket_cnt}">{$basket_count}</span></a></li>
@@ -22,14 +25,6 @@
 		</div>
 		</form>
 		 -->
-		 
-		 
-		 
-
-		<div id="d_sLightBox_win">
-		    <div class="bg"></div><!-- 배경 -->
-		    <div class="inner">
-		</div>		 
 	</div>
 	<!-- 사용안함 -->    
     <!--import(/_wg/import/header_01.html)-->
