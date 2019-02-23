@@ -170,53 +170,5 @@
     {$quick_button}
 </div>
 
-<div id="d_sLightBox_win">
-    <div class="bg" onclick="javascript:searchLayer('none')"></div><!-- 배경 -->
-    <div class="inner">
-		<div class="popup popup1" style="display: block;">
-            <div class="search_section" onclick="event.stopPropagation()" >
-                <form id="searchBarForm" name="" action="/product/search.html" method="get" enctype="multipart/form-data" onsubmit="return searchLayer('none')">
-					<input id="banner_action" name="banner_action" value="" type="hidden">
-					<div class="xans-element- xans-layout xans-layout-searchheader search_form ">
-						<!--
-	                        $product_page=/product/detail.html
-	                        $category_page=/product/list.html
-	                    -->
-						<fieldset style="background-color:#fff">
-							<legend>검색</legend>
-		                    <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text">
-		                    <input type="image" src="/_wg/img/icon_Bsearch.png" alt="검색" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;" class="-mov">
-						</fieldset>
-					</div>
-				</form>
-				<div class="title">
-					인기검색어
-				</div>
-				<div class="titleLine"></div>
-				<div class="top_keyword">
-					<ul>
-						<li><a href="/product/search.html?keyword=거실등">1. LED거실등</a></li>
-						<li><a href="/product/search.html?keyword=밀레">2. 밀레시리즈</a></li>
-						<li><a href="/product/search.html?keyword=거실등">3. 거실등</a></li>
-						<li><a href="/product/search.html?keyword=방등">4. 방등</a></li>
-						<li><a href="/product/search.html?keyword=리폼모듈">5. 리폼모듈</a></li>
-					</ul>		
-				</div>	
-				<div class="title">
-					추천검색어
-				</div>
-				<div class="titleLine"></div>	
-				<div class="recomm_keyword">
-					<ul>
-						<li><a href="/product/search.html?keyword=리모컨">리모컨등</a></li>
-						<li><a href="/product/search.html?keyword=스타벅스">스타벅스조명</a></li>
-						<li><a href="/product/search.html?keyword=세트">세트상품</a></li>
-						<li><a href="/product/search.html?keyword=밀레 거실등">밀레거실등</a></li>
-						<li><a href="/product/search.html?keyword=리모콘">리모컨 스위치</a></li>
-					</ul>				
-				</div>										
-		  	</div>
-		</div>
-	</div>
-	<div class="close" onclick="javascript:searchLayer('none')">닫기</div>
-</div>	
+<!-- 검색창 -->
+<!--@import(/_wg/import/searchLayer.html)-->
