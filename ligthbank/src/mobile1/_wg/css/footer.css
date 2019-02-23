@@ -68,3 +68,205 @@
         transition:all .5s ease; -webkit-transition:all .5s ease;
     }
     #back_top_wrap.fixed #back_top { right:10px; opacity:1.0; -webkit-opacity:1.0; }
+
+        /**검색**/
+
+body.sLightBox {
+    overflow: hidden;
+}
+
+#d_sLightBox_win {
+	display:none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#d_sLightBox_win .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.80);
+}
+
+#d_sLightBox_win .inner {
+    position: relative;
+    top: 5%;
+    left: 50%;
+    width: 0;
+    height: 90%;
+}
+
+#d_sLightBox_win .inner .title {
+    margin-top: 20px;
+    font-size: 18pt;
+    font-weight: 600;
+    color: #fff;
+    width: 40%;
+}
+
+#d_sLightBox_win .inner .titleLine {
+	width: 62%;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+    float: right;
+    margin-top: -8px;
+}
+
+#d_sLightBox_win .inner .top_keyword{margin:15px 0 30px 0;}
+#d_sLightBox_win .inner .top_keyword ul{ clear:both;font-size:0;}
+#d_sLightBox_win .inner .top_keyword li{ font-size: 18px;font-weight:400;display: inline-block;line-height:35px;height:35px;margin-right:17px}
+#d_sLightBox_win .inner .top_keyword li a{color:#fff}
+    
+#d_sLightBox_win .inner .recomm_keyword{margin-top:15px}
+#d_sLightBox_win .inner .recomm_keyword ul{ clear:both;font-size:0;}
+#d_sLightBox_win .inner .recomm_keyword li{ font-size: 18px;font-weight:400;display: inline-block;line-height:35px;height:35px;border:2px solid #ddd;margin-right:5px;margin-bottom:7px;padding:0 10px 0 10px;}
+#d_sLightBox_win .inner .recomm_keyword li a{color:#fff}
+
+
+#d_sLightBox_win .inner .iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #fff;
+}
+
+#d_sLightBox_win .inner .popup {
+    display: none;
+    height: 100%;
+}
+
+#d_sLightBox_win .close {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url('/_wg/img/btn_wclose.png') no-repeat;
+    background-size:30px;
+    text-indent: -9999px;
+}
+
+#d_sLightBox_win .close:hover {
+    opacity: .5;
+}    
+
+
+.search_section {
+    position: relative;
+    top: 10px;
+    width: 320px;
+    margin-left: -160px;
+}
+
+.search_section .search_form {
+    position: relative;
+    border: 3px solid rgba(255,255,255,.9);
+}
+
+.search_section .search_form #keyword {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: #000;
+    text-indent: 5px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.search_section .search_form:hover #keyword {
+    background: rgba(255,255,255,.05);
+}
+
+.search_section .search_form #keyword:focus {
+    background: rgba(255,255,255,.05);
+}
+
+.search_section .search_form input[type=image] {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.search_section .search_form button {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: url('/_wg/img/_btn/btn_x_w_150.png') no-repeat center;
+    background-size: 40px 40px;
+    font-size: 0;
+}
+
+.JS_hotKeyword {
+    position: relative;
+    width: 300px;
+    margin: 20px 0 0;
+}
+
+.JS_hotKeyword .DB_mask {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+}
+
+.JS_hotKeyword .DB_mask .DB_imgSet {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.JS_hotKeyword .DB_mask .DB_imgSet li {
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+}
+
+.JS_hotKeyword .DB_mask .DB_imgSet li a {
+    display: block;
+    font-size: 25px;
+    color: #aaa;
+    text-align: center;
+    font-family: FontNSR;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.JS_hotKeyword .DB_mask .DB_imgSet li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.JS_hotKeyword .DB_prevBtn {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    cursor: pointer;
+}
+
+.JS_hotKeyword .DB_nextBtn {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    cursor: pointer;
+}
+    

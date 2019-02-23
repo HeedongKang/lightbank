@@ -9,6 +9,11 @@
  */
      
     #goBtn { position:fixed; z-index:100; top:1px; right:0; width:0; height:0; }
-    #goBtn .btn a { position:fixed; right:0px;}
+    #goBtn .btn a { position:fixed; right:-12px;}
     #goBtn.fixed .btn a { display:block; }
     #goBtn .btn.up a { bottom:110px; }
+	
+	#quickMenuBtn {position: fixed;z-index: 100;bottom: 0;width: 100%;height: 58px;background-color: #393939;}
+    #quickMenuBtn ul{clear:both}
+    #quickMenuBtn li{position:relative;width:20%;min-height:60px;height:60px;text-align:center;float:left;color:#fff;font-size:7pt;}
+    #quickMenuBtn li a {color:#fff}

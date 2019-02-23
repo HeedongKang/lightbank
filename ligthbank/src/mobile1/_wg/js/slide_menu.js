@@ -181,6 +181,9 @@ $(document).ready(function(){
 
     offCover.init();
 
+    //로딩때문에 버튼이 깜빡거리는 문제 대체이미지로 해결
+    $('#categoryImsi').hide();
+    $('#myImsi').hide();
 
     $('#header .fold, #aside .btnClose').click(function(e){
         $('#dimmedSlider').toggle();
