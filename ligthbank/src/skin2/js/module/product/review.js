@@ -35,16 +35,15 @@ $(document).ready(function(){
 	    }
 	});
 	*/
-    /*
+    
 	//상품교체작업 진행 중 임시 상품상세 분기 작업 
-	if($("#chkPrdNm").html().indexOf("밀레 거실등2+2") > -1 || $("#밀레 거실등2+2+2").html().indexOf("벽등") > -1 
+	if($("#chkPrdNm").html().indexOf("밀레 거실등2+2") > -1 || $("#chkPrdNm").html().indexOf("밀레 거실등2+2+2") > -1 
 		    || $("#chkPrdNm").html().indexOf("밀레 거실등1+2+1") > -1 || $("#chkPrdNm").html().indexOf("밀레방등") > -1){
 		$("#compareVideo").hide();
 		$("#info_img_id").hide();
 		$("#detail03").hide();
 		$("#detail04").hide();
-				
-	}*/
+	}
 	
     //상품명에 펜던트가 포함되면 전구구매가이드 노출
     if($("#chkPrdNm").html().indexOf("펜던트") > -1 || $("#chkPrdNm").html().indexOf("벽등") > -1 
@@ -54,7 +53,7 @@ $(document).ready(function(){
     
     //상품명에 LG, 엘지가 포함되면 플리커프리 영상 교체 
     if($("#chkPrdNm").html().indexOf("LG") > -1 || $("#chkPrdNm").html().indexOf("엘지") > -1){
-        $("#compareVideo").html("<img src='/_wg/img/prd_detail/detail_02-1.jpg' width='1260px' alt='플리커프리'/><center style='width:1260px;background: #cbcbcb;'><iframe width='980' height='500' src='https://www.youtube.com/embed/0aoLNxU4HQ0?rel=0' frameborder='0' allwfullscreen=''></iframe></center>");
+        $("#compareVideo").html("<img src='/_wg/img/prd_detail/detail_02-1.jpg' width='1260px' alt='플리커프리'/><center style='width:1260px;height:550px;background: #cbcbcb;'><iframe width='980' height='500' src='https://www.youtube.com/embed/0aoLNxU4HQ0?rel=0' frameborder='0' allwfullscreen=''></iframe></center>");
     }
     //상품명에 거실이 들어갔을 경우 거실등 설치영상 노출
     if($("#chkPrdNm").html().indexOf("거실") > -1){
