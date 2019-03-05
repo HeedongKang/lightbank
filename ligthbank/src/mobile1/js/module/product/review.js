@@ -43,14 +43,13 @@ $(document).ready(function(){
 	    }
 	});
 	*/
-	//상품교체작업 진행 중 임시 상품상세 분기 작업 
-	if($("#chkPrdNm").html().indexOf("밀레 거실등2+2") > -1 || $("#chkPrdNm").html().indexOf("밀레 거실등2+2+2") > -1 
-		    || $("#chkPrdNm").html().indexOf("밀레 거실등1+2+1") > -1 || $("#chkPrdNm").html().indexOf("밀레방등") > -1){
+	//상품교체작업 진행 중 임시 상품상세 분기 작업(밀레 작업완료) 
+	if($("#chkPrdNm").html().indexOf("밀레") > -1 ){
 		$("#compareVideo").hide();
 		$("#info_img_id").hide();
 		$("#detail03").hide();
 		$("#detail04").hide();
-	}
+	}	
     
     //상품명에 펜던트가 포함되면 전구구매가이드 노출
     if($("#chkPrdNm").html().indexOf("펜던트") > -1 || $("#chkPrdNm").html().indexOf("벽등") > -1 
