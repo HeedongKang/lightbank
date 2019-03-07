@@ -1,0 +1,22 @@
+<!--@layout(/layout/basic/layout.html)-->
+<script src="/_wg/js/jquery-1.11.0.min.js"></script>
+<script src="/_wg/js/jquery.rwdImageMaps.min.js"></script>
+
+<style type="text/css">
+	img[usemap] {
+		border: none;
+		height: auto;
+		max-width: 100%;
+		width: auto;
+	}
+</style>
+
+<img src="/_wg/img/Gb_detail.jpg" usemap="#MapLink">
+<map name="MapLink" >
+	<area shape="rect" coords="226,2324,590,2417" href="/board/product/write.html?board_no=101"> 
+	<area shape="rect" coords="672,2326,1025,2408" href="/product/list.html?cate_no=211">
+</map>
+
+<script type="text/javascript">
+        $('img[usemap]').rwdImageMaps();
+</script>
