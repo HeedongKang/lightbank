@@ -22,8 +22,13 @@
        		</div>
 	        <div class="BpriceBox">
 		        <span class="discount_rate sale_large_Number" data-price="{$product_custom}" data-sale="{$product_price}" style="margin-top:-15px"></span>
-		        <span class="{$product_custom|display} price_small_BNumber" style="margin-top:-60px;float:right">{$product_custom|numberformat}원</span><br>
-		        <span class="price_middle_BNumber" style="margin-top:-30px;float:right">{$product_price|numberformat}<span class="won_txtbig">원</span></span>
+		        <span class="{$product_custom|display}" style="margin-top:-60px;float:right">타사평균가 
+		        	<span class="{$product_custom|display} price_small_BNumber">{$product_custom|numberformat}원</span>
+		        </span>
+		        <br>
+		        <span style="margin-top:-30px;float:right">조명뱅크 
+		        	<span class="price_middle_BNumber">{$product_price|numberformat}<span class="won_txtbig">원</span></span>
+		        </span>
 	        </div>
 	    </div>        
     </li>
@@ -50,9 +55,14 @@
    			<span class="small_Best_Text">BEST</span><br>
    		</div>
        <div class="SpriceBox">
-        <span class="discount_rate sale_small_Number" data-price="{$product_custom}" data-sale="{$product_price}" style="margin-top:-5px"></span>
-        <span class="{$product_custom|display} price_small_SNumber" style="margin-top:-25px;float:right">{$product_custom|numberformat}원</span><br>
-        <span class="price_middle_SNumber" style="margin-top:-20px;float:right">{$product_price|numberformat}<span class="won_txt3">원</span></span>
+        <!-- <span class="discount_rate sale_small_Number" data-price="{$product_custom}" data-sale="{$product_price}" style="margin-top:-5px"></span> -->
+        <span class="{$product_custom|display}" style="margin-top:-25px;float:right">타사평균가 
+        	<span class="{$product_custom|display} price_small_SNumber">{$product_custom|numberformat}원</span>
+        </span>	
+        <br>
+        <span style="margin-top:-20px;float:right">조명뱅크 	
+        	<span class="price_middle_SNumber" >{$product_price|numberformat}<span class="won_txt3">원</span></span>
+        </span>
        </div>        
     </li>
     <li class="item" id="anchorBoxId_{$product_no}">
@@ -76,9 +86,14 @@
    			<span class="small_Best_Text">BEST</span><br>
    		</div>
        <div class="SpriceBox">
-        <span class="discount_rate sale_small_Number" data-price="{$product_custom}" data-sale="{$product_price}" style="margin-top:-5px"></span>
-        <span class="{$product_custom|display} price_small_SNumber" style="margin-top:-25px;float:right">{$product_custom|numberformat}원</span><br>
-        <span class="price_middle_SNumber" style="margin-top:-20px;float:right">{$product_price|numberformat}<span class="won_txt3">원</span></span>
+        <!-- <span class="discount_rate sale_small_Number" data-price="{$product_custom}" data-sale="{$product_price}" style="margin-top:-5px"></span> -->
+        <span class="{$product_custom|display}" style="margin-top:-25px;float:right">타사평균가 
+        	<span class="{$product_custom|display} price_small_SNumber">{$product_custom|numberformat}원</span>
+        </span>
+        <br>
+        <span style="margin-top:-20px;float:right">조명뱅크 
+        	<span class="price_middle_SNumber" >{$product_price|numberformat}<span class="won_txt3">원</span></span>
+        </span>
        </div>          
     </li>
 </ul>
