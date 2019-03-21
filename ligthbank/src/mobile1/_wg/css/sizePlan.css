@@ -1,0 +1,10 @@
+
+    .sizePlanTab { margin-bottom: 5px;margin-top: -10px;}
+    .sizePlanTab ul{font-size: 0;}
+    .sizePlanTab li{display: inline-block;width: 33.3%;text-align: center;background: #E9E9E9;letter-spacing: 0em;font-size: 16px;height: 45px;line-height: 45px;font-weight: bold;}
+    .sizePlanTab .tab1{color:#CCA890}
+    .sizePlanTab .tab1.on{background:#CDA991;color:#fff}
+	.sizePlanTab .tab2{color:#8A98C5}
+	.sizePlanTab .tab2.on{background:#8D9EC9;color:#fff}
+	.sizePlanTab .tab3{color:#83AF8C}
+	.sizePlanTab .tab3.on{background:#8BBB93;color:#fff}

@@ -1,0 +1,38 @@
+<!--@css(/_wg/css/sizePlan.css)-->
+<div class="maint_Tit">⊂ 평형별 <span class="stit">세트상품할인!</span> ⊃</div>
+<div class="sizePlanTab">
+    <ul>
+        <li class="tab1 on" onclick="sizePlanTab(1)">20평대</li>
+        <li class="tab2" onclick="sizePlanTab(2)">30평대</li>
+        <li class="tab3" onclick="sizePlanTab(3)">40평대이상</li>
+    </ul>
+</div>
+<a href="/product/list.html?cate_no=171" id="sizePlangTab1img"><img src="/_wg/img/set_sale_20.png" width="100%"></a>
+<a href="/product/list.html?cate_no=172" id="sizePlangTab2img" style="display:none"><img src="/_wg/img/set_sale_30.png" width="100%"></a>
+<a href="/product/list.html?cate_no=173" id="sizePlangTab3img" style="display:none"><img src="/_wg/img/set_sale_40.jpg" width="100%"></a>
+<script>
+	function sizePlanTab(type){
+		if(type==1){
+			$(".sizePlanTab .tab1").addClass( "on" );
+			$(".sizePlanTab .tab2").removeClass( "on" );
+			$(".sizePlanTab .tab3").removeClass( "on" );
+			$("#sizePlangTab1img").css("display","");
+			$("#sizePlangTab2img").css("display","none");
+			$("#sizePlangTab3img").css("display","none");
+		}else if(type==2){
+			$(".sizePlanTab .tab1").removeClass( "on" );
+			$(".sizePlanTab .tab2").addClass( "on" );
+			$(".sizePlanTab .tab3").removeClass( "on" );
+			$("#sizePlangTab1img").css("display","none");
+			$("#sizePlangTab2img").css("display","");
+			$("#sizePlangTab3img").css("display","none");
+		}else if(type==3){
+			$(".sizePlanTab .tab1").removeClass( "on" );
+			$(".sizePlanTab .tab2").removeClass( "on" );
+			$(".sizePlanTab .tab3").addClass( "on" );
+			$("#sizePlangTab1img").css("display","none");
+			$("#sizePlangTab2img").css("display","none");
+			$("#sizePlangTab3img").css("display","");
+		}
+	}
+</script>	
