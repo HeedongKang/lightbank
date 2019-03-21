@@ -63,4 +63,6 @@
 		margin: 0px 3px 0px 0px; top: 2px; color: rgb(119, 119, 119); font-size: 13px; display: none;
 	}
 	.topTitle{background: #0F0F0F;height: 70px;color: #797979;text-align: center;line-height: 70px;font-weight: bold;}
-	.quickBtn{color: #797979;border-radius: 6em;border: 1px solid #d8d8d8;padding: 10px 0px 10px 20px;display:table;margin-bottom:10px}
+	.quickBtn{color: #797979;border-radius: 6em;border: 1px solid #d8d8d8;padding: 10px 0px 10px 20px;display:table;margin-bottom:10px;}
+	.quickBtn:hover { color:#dc6d1c; font-weight:bold;text-decoration:none;}
+	.quickBtn a:link{text-decoration:none;}
