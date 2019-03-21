@@ -1,7 +1,7 @@
 
     /** 최근본상품 **/
     .xans-layout-productrecent { margin-top:5px; }
-    .productRecent { padding:10px 3px 30px 0; }
+    .productRecent { padding:10px 3px 0 0; }
     .productRecent:after { content:""; display:block; *zoom:1; clear:both; }
     .productRecent:hover { filter:alpha(opacity=100); opacity:1; -webkit-opacity:1; }
 
