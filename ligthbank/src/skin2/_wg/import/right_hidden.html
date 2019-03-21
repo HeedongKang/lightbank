@@ -7,8 +7,7 @@
     
         <!-- 우측 숨김 메뉴 버튼 -->
         <div class="d_toggle Btn"><a href="#none"><span class="bar l01"></span><span class="bar l02"></span></a><p>퀵메뉴</p></div>
-        
-        <!-- 네이버 톡톡 버튼 -->
+        <!-- 
         <div class="naver Btn"><a href="#none" class="p_naverTalk" data-popup="link,window,500,600"><img src="/_wg/img/naver_talk_green.png"><p>네이버상담</p></a></div>
         <div class="goBtn Btn"><a href="https://pf.kakao.com/_XaxdfC" target="_blank"><img src="/_wg/img/plus_id.png"><p>카카오톡상담</p></a></div>
         <div class="goBtn Btn"><a href="/product/search.html?banner_action=&keyword="><i class="xi-search"></i><p>상품검색</p></a></div>
@@ -18,21 +17,71 @@
         <div class="goBtn Btn"><a href="https://www.cjlogistics.com/ko/main" target="_blank"><i class="xi-truck"></i><p>배송조회</p></a></div>
         <div class="goBtn Btn"><a href="/myshop/likeit/product.html"><i class="xi-star-o"></i><p>좋아요</p></a></div>
         <div class="goBtn Btn"><a href="/myshop/coupon/coupon.html"><i class="xi-bookmark-o"></i><p>쿠폰</p></a></div>
-        <!-- TOP/BOTTOM 버튼 -->
+
         <div class="goBtn up Btn"><a href="#top"><i class="xi-angle-up-thin"></i></a><p>위로</p></div>
         <div class="goBtn down Btn"><a href="#bottom"><i class="xi-angle-down-thin"></i></a><p>아래로</p></div>
-        
+		-->        
     </div>	
-    
+    <div class="topTitle">QUICK MENU</div>
     <div class="position">
-    
+    	<center>
+			<a href="#" class="quickBtn" style="padding-right:20px">
+				<img src="/_wg/img/icon_QM_01.png">&nbsp;&nbsp;&nbsp; 자주묻는질문
+			</a>    
+	        <a href="#" class="quickBtn" style="padding-right:20px">
+				<img src="/_wg/img/icon_QM_02.png">&nbsp;&nbsp;&nbsp; 기업회원할인
+			</a>    
+			<a href="#" class="quickBtn" style="padding-right:20px">
+				<img src="/_wg/img/icon_QM_03.png">&nbsp;&nbsp;&nbsp; 공동구매할인
+			</a>    
+			<a href="#" class="quickBtn" style="padding-right:10px">
+				<img src="/_wg/img/icon_QM_04.png">&nbsp;&nbsp;&nbsp; 조명설치서비스
+			</a>    
+			<a href="#" class="quickBtn" style="padding-right:20px">
+				<img src="/_wg/img/icon_QM_05.png">&nbsp;&nbsp;&nbsp; 무료방문견적
+			</a>    
+			<a href="#" class="quickBtn" style="padding-right:15px">
+				<img src="/_wg/img/icon_QM_06.png">&nbsp;&nbsp;&nbsp; 평생AS서비스
+			</a>    
+			<a href="#" class="quickBtn" style="padding-right:35px">
+				<img src="/_wg/img/icon_QM_07.png">&nbsp;&nbsp;&nbsp; 조명Q&A
+			</a>    
+			<a href="#" class="quickBtn" style="padding-right:40px">
+				<img src="/_wg/img/icon_QM_08.png">&nbsp;&nbsp;&nbsp; 배송추적
+			</a>    
+			
+			<div style="margin-top: 30px;">
+				<img src="/_wg/img/Q_customerNumber.png" width="120">
+			</div>
+			<div module="Layout_productRecent">
+			    <div class="productRecent">
+					<div style="text-align: left;width: 70%;color:#797979">최근본 상품</div>			    
+			        <ul>
+			            <li class="{$disp_recent|display}">
+			                <a href="/product/detail.html{$param}"><img src="{$recent_img}" class="-mov" alt="" /><span class="-pTxt">{$name}</span></a>
+			            </li>
+			            <li class="{$disp_recent|display}">
+			                <a href="/product/detail.html{$param}"><img src="{$recent_img}" class="-mov" alt="" /><span class="-pTxt">{$name}</span></a>
+			            </li>
+			        </ul>
+			        <div class="player -mov">
+			            <i class="xi-angle-left-thin prev"></i><i class="xi-angle-right-thin next"></i>
+			        </div>
+			    </div>
+			</div>
+			<div>
+				<a href="#top" class="up"><img src="/_wg/img/btn_Qtop.png"></a><a href="#bottom" class="down"><img src="/_wg/img/btn_Qdown.png"></a>
+			</div>			
+			        <div class="goBtn up Btn"><a href="#top"><i class="xi-angle-up-thin"></i></a><p>위로</p></div>
+        <div class="goBtn down Btn"><a href="#bottom"><i class="xi-angle-down-thin"></i></a><p>아래로</p></div>
+		</center>
         <!-- 퀵배너 -->
-        <!--@import(/_wg/import/JS_quickBnr.html)-->
+        <!--import(/_wg/import/JS_quickBnr.html)-->
         
         <!-- 퀵공지사항 -->
-        <!--@import(/_wg/import/JS_quickNotice.html)-->
+        <!--import(/_wg/import/JS_quickNotice.html)-->
         
         <!-- 하단 내용 -->
-		<!--@import(/_wg/import/quickIco.html)-->
+		<!--import(/_wg/import/quickIco.html)-->
     </div>
 </div>	
