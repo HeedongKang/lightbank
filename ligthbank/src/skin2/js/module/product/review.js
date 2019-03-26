@@ -45,12 +45,6 @@ $(document).ready(function(){
 	}
 	
 	
-    //상품명에 펜던트가 포함되면 전구구매가이드 노출
-    if($("#chkPrdNm").html().indexOf("펜던트") > -1 || $("#chkPrdNm").html().indexOf("벽등") > -1 
-    || $("#chkPrdNm").html().indexOf("레일기구") > -1 || $("#chkPrdNm").html().indexOf("직부등") > -1){
-        $("#light_ord_guide").html("<img src='/_wg/img/prd_detail/light_ord_guide.gif' alt='전구 구매 가이드'/>");
-    }
-    
     //상품명에 LG, 엘지가 포함되면 플리커프리 영상 교체 
     if($("#chkPrdNm").html().indexOf("LG") > -1 || $("#chkPrdNm").html().indexOf("엘지") > -1){
         $("#compareVideo").html("<img src='/_wg/img/prd_detail/detail_02-1.jpg' width='1260px' alt='플리커프리'/><center style='width:1260px;height:550px;background: #cbcbcb;'><iframe width='980' height='500' src='https://www.youtube.com/embed/0aoLNxU4HQ0?rel=0' frameborder='0' allwfullscreen=''></iframe></center>");
@@ -59,9 +53,17 @@ $(document).ready(function(){
     if($("#chkPrdNm").html().indexOf("거실") > -1){
         $("#installGuideVideo").html("<iframe width='100%' height='600' src='https://www.youtube.com/embed/4Ol9EJMVG6g?rel=0' frameborder='0' allwfullscreen=''></iframe>");
     }
-    //상품명에 방등이 들어갔을 경우 방ㄷ 설치영상 노출
+    //상품명에 방등이 들어갔을 경우 방등 설치영상 노출
     if($("#chkPrdNm").html().indexOf("방등") > -1){
         $("#installGuideVideo").html("<iframe width='100%' height='600' src='https://www.youtube.com/embed/RMGJBYllnX4?rel=0' frameborder='0' allwfullscreen=''></iframe>");
+    }
+    
+    //상품명에 펜던트가 포함되면 전구구매가이드 노출 및 안정기 플리커프리 영상 삭제 
+    if($("#chkPrdNm").html().indexOf("펜던트") > -1 || $("#chkPrdNm").html().indexOf("벽등") > -1 
+    || $("#chkPrdNm").html().indexOf("레일기구") > -1 || $("#chkPrdNm").html().indexOf("직부등") > -1){
+        $("#light_ord_guide").html("<img src='/_wg/img/prd_detail/light_ord_guide.gif' alt='전구 구매 가이드'/>");
+        $("#compareVideo").hide();
+        $("#detail03").hide();
     }
     
 });

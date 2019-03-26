@@ -16,8 +16,8 @@
     .product_addproduct .productSet tbody tr.product:first-child { border-top:none; }
     .product_addproduct .productSet tbody tr.product { border-top:1px solid #eee; }
     .product_addproduct .productSet .product:after { content:""; display:block; clear:both; *zoom:1; }
-    .product_addproduct .productSet .thumb { width:120px; padding:10px 0; }
-    .product_addproduct .productSet .thumb a { display:block; width:110px; margin:0 auto; }
+    .product_addproduct .productSet .thumb { width:60px; padding:2px 0; }
+    .product_addproduct .productSet .thumb a { display:block; width:60px; margin:0 auto; }
     .product_addproduct .productSet .thumb img { width:100%; }
     .product_addproduct .productSet .name a {  }
     .product_addproduct .productSet .name a:hover { color:#888; text-decoration:none; }
