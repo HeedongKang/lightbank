@@ -25,9 +25,28 @@
 	<a href="/_wg/import/installService.html"><img src="/_wg/img/banner_mrs01.jpg"></a>
 	<a href="/_wg/import/as_whole.html"><img src="/_wg/img/banner_mrs02.jpg" style="margin-left:20px;"></a>
 </center>
-<!--브랜드 베스트상품-->
-<!--@import(/_wg/import/brandBest.html)-->
-	    
+<!-- 평형별 기획전  -->
+<div class="maint_Tit">⊂ 평형별 <span class="stit">세트상품 할인!</span> ⊃</div>
+<div style="margin: 0 auto 120px;width: 1260px;">
+    <a href="/product/list.html?cate_no=171"><img src="/_wg/img/set_sale_20.png" style="margin-right: 3px;"></a>
+	<a href="/product/list.html?cate_no=172"><img src="/_wg/img/set_sale_30.png" style="margin-right: 3px;"></a>
+	<a href="/product/list.html?cate_no=173"><img src="/_wg/img/set_sale_40.jpg"></a>
+</div>
+
+<!-- 가장 많이 팔린 조명 -->
+<div class="maint_Tit" style="padding-top:25px">⊂ <span class="stit">브랜드 아파트</span> 설치조명 ⊃</div>
+	<div module="product_listmain_54" class="ec-base-product">
+	    <!--
+	       $count = 12
+	       $basket_result = /product/add_basket.html
+	       $basket_option = /product/basket_option.html
+	   	-->
+	   	<ul class="prdList grid4">
+	       <!--@import(/_wg/import/main_prdList.html)-->
+		</ul>
+	</div>
+</div>
+   
 <!-- 한정수량 파격특가 -->
 <div style="background-color:#EDEDED;height:670px;margin-top:-50px;margin-bottom:80px;">	        
 	<div class="maint_Tit" style="padding-top:75px">⊂ 한정수량 파격특가 <span class="stit">최대45%</span> ⊃</div>
@@ -44,11 +63,11 @@
 	    </ul>	
 	</div>        
 </div>    
+
+<!--브랜드 베스트상품-->
+<!--@import(/_wg/import/brandBest.html)-->
+
      
-<!-- best 인기상품-->
-<!--@import(/_wg/import/bestProduct.html)-->
-
-
 <!--포토후기 및 시공사 -->
 <div class="mainReview_Tit">포토후기 및  <span class="stit">시공사례</span></div>
 <div class="mainReview_Desc">조명뱅크 고객님들의 포토후기와 시공사례를 볼 수 있습니다</div>
@@ -60,7 +79,7 @@
 	    <!--@js(/_wg/app_photo/lister.js)-->
 	    <!--@js(/_wg/app_photo/skin2.js)-->
 	    <!-- 
-	       $count=12
+	       $count=24
 	       $size=215
 	       $point=show
 	       $board_no=4
@@ -69,14 +88,14 @@
 	        <dl>
 	            <dt><a href="#none" rel="{$no}"><img src="{$rhimg}" alt="" /></a></dt>
 	            <dd>
-	            	<p style="text-align:center">{$rdate|date:Y/m/d} &nbsp;&nbsp;&nbsp;&nbsp;<img src="//img.echosting.cafe24.com/apps/photo-review/skin2/ico_star{$rpoint}.png" alt="{$rpoint}점" /></p>
+	            	<p style="text-align:center">{$rdate|date:Y-m-d} &nbsp;&nbsp;&nbsp;&nbsp;<img src="//img.echosting.cafe24.com/apps/photo-review/skin2/ico_star{$rpoint}.png" alt="{$rpoint}점" /></p>
 	                <p style="margin-top:5px">{$rsub}</p>
 	            </dd>
 	        </dl>
 	        <dl>
 	            <dt><a href="#none" rel="{$no}"><img src="{$rhimg}" alt="" /></a></dt>
 	            <dd>
-	                <p style="text-align:center">{$rdate|date:Y/m/d} &nbsp;&nbsp;&nbsp;&nbsp;<img src="//img.echosting.cafe24.com/apps/photo-review/skin2/ico_star{$rpoint}.png" alt="{$rpoint}점" /></p>
+	                <p style="text-align:center">{$rdate|date:Y-m-d} &nbsp;&nbsp;&nbsp;&nbsp;<img src="//img.echosting.cafe24.com/apps/photo-review/skin2/ico_star{$rpoint}.png" alt="{$rpoint}점" /></p>
 	                <p style="margin-top:5px">{$rsub}</p>
 	            </dd>
 	        </dl>
@@ -89,25 +108,10 @@
 	        <div class="detail">
 	        	<a href="#none" class="close" style="position: fixed;width: 535px;text-align: right;"><img src="/_wg/app_photo/btn_wlclose.png" height="30px"></a>
 	            <p class="image"><img src="//img.echosting.cafe24.com/apps/photo-review/skin3/@img_photo9.jpg" alt="" /></p>
-	            <div class="contents"></div>
+	            <div class="contents" onclick="event.stopPropagation()"></div>
 	            <p></p>
 	        </div>
 	    </div>
-	</div>
-</div>
-
-
-<!-- 조명뱅크가 자신있게 추천하는 상품 -->
-<div class="maint_Tit" style="padding-top:25px">⊂ 조명뱅크가 자신있게 <span class="stit">추천하는 제품</span> ⊃</div>
-	<div module="product_listmain_1" class="ec-base-product">
-	    <!--
-	       $count = 28
-	       $basket_result = /product/add_basket.html
-	       $basket_option = /product/basket_option.html
-	   	-->
-	   	<ul class="prdList grid4">
-	       <!--@import(/_wg/import/main_prdList.html)-->
-		</ul>
 	</div>
 </div>
 
