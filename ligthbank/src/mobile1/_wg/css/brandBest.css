@@ -4,7 +4,7 @@
     .brandBestTab > .img > li { position:absolute; left:0; top:0; width:100%; font-size:0; line-height:0; }
     /* 버튼 */
     .brandBestTab .btn { display:none; position:relative; width:100%; margin:0 0 15px; text-align:center; font-size:0; line-height:0; }
-    .brandBestTab .btn li { display:inline-block; position:relative; width:12.5%; height:40px; line-height:40px; background:#4f4f4f; font-size:14px; font-weight:200; letter-spacing:0em; color:#FFFFFF; text-align:center; }
+    .brandBestTab .btn li { display:inline-block; position:relative; width:16.6%; height:40px; line-height:40px; background:#4f4f4f; font-size:14px; font-weight:200; letter-spacing:0em; color:#FFFFFF; text-align:center; }
     .brandBestTab .btn li a{color:#FFFFFF;}
     .brandBestTab .btn li.on { top:-1px; height:42px; line-height:42px;font-weight:700; color:#F7E306; }
     .brandBestTab .btn li span { display:block; }
