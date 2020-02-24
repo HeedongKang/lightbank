@@ -66,6 +66,10 @@ $(document).ready(function(){
         $("#detail03").hide();
     }
     
+	//상품명에 모듈이 포함되면 기본인트로 페이지 삭제 
+	if($("#chkPrdNm").html().indexOf("모듈") > -1){
+		$("#defaultIntro").hide();
+	}
 });
 
 function cart_custom(){
