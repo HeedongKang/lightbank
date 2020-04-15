@@ -5,7 +5,7 @@
 
     /* 버튼 */
     .JS_tabRolling .btn { display:none; position:relative; width:100%; margin:0 0 15px; text-align:center; font-size:0; line-height:0;}
-    .JS_tabRolling .btn li { display:inline-block; position:relative; width:11.1%; height:50px; line-height:50px; background:#4f4f4f; font-size:14px; font-weight:200; letter-spacing:0em; color:#FFFFFF; text-align:center;  }
+    .JS_tabRolling .btn li { display:inline-block; position:relative; width:12.5%; height:50px; line-height:50px; background:#4f4f4f; font-size:14px; font-weight:200; letter-spacing:0em; color:#FFFFFF; text-align:center;  }
     .JS_tabRolling .btn li a{color:#FFFFFF;}
     .JS_tabRolling .btn li.on { top:-1px; height:52px; line-height:52px;font-weight:700; color:#F7E306;}
     .JS_tabRolling .btn li span { display:block; }
