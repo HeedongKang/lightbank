@@ -1,5 +1,13 @@
 	<!--@layout(/layout/basic/layout_prd.html)-->
-
+<div class="path" module="product_headcategory" style="display:none">
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li class="{$disp_cate_1|display}"><a href="{$link_product_list_1}" id="location1">{$name_1}</a></li>
+        <li class="{$disp_cate_2|display}"><a href="{$link_product_list_2}" id="location2">{$name_2}</a></li>
+        <li class="{$disp_cate_3|display}"><a href="{$link_product_list_3}" id="location3">{$name_3}</a></li>
+        <li class="{$disp_cate_4|display}"><strong><a href="{$link_product_list_4}" id="location4">{$name_4}</a></strong></li>
+    </ol>
+</div>
 <div module="product_detail">
     <!--@css(/_wg/css/detail.css)-->
     <!--@js(/js/module/product/detail.js)-->

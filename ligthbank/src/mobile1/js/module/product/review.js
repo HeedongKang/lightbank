@@ -51,6 +51,12 @@ $(document).ready(function(){
 		$("#detail04").hide();
 	}	
     
+	//첫번재 카테고리에 기타가 있을 경우 안정기, 플리커 플리 노출 안함. 
+	if($('#location1').html().indexOf("기타") > -1){
+		$("#compareVideo").hide();
+		$("#detail03").hide();
+	}
+	
     //상품명에 LG, 엘지가 포함되면 플리커프리 영상 교체 
     if($("#chkPrdNm").html().indexOf("LG") > -1 || $("#chkPrdNm").html().indexOf("엘지") > -1){
         $("#compareVideo").html("<img src='/_wg/img/prd_detail/detail_02-1.jpg' alt='플리커프리'/><center style='height:230px;background: #cbcbcb;'><iframe width='90%' height='210'  src='https://www.youtube.com/embed/0aoLNxU4HQ0?rel=0' frameborder='0' allwfullscreen=''></iframe></center>");

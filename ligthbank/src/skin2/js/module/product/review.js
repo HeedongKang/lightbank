@@ -44,6 +44,11 @@ $(document).ready(function(){
 		$("#detail04").hide();
 	}
 	
+	//첫번재 카테고리에 기타가 있을 경우 안정기, 플리커 플리 노출 안함. 
+	if($('#location1').html().indexOf("기타") > -1){
+		$("#compareVideo").hide();
+		$("#detail03").hide();
+	}
 	
     //상품명에 LG, 엘지가 포함되면 플리커프리 영상 교체 
     if($("#chkPrdNm").html().indexOf("LG") > -1 || $("#chkPrdNm").html().indexOf("엘지") > -1){
