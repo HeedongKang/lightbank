@@ -45,7 +45,7 @@ $(document).ready(function(){
 	}
 	
 	//첫번재 카테고리에 기타가 있을 경우 안정기, 플리커 플리 노출 안함. 
-	if($('#location1').html().indexOf("기타") > -1){
+	if($('#location1').html().indexOf("기타") > -1 || $('#location1').html().indexOf("베란다") > -1){
 		$("#compareVideo").hide();
 		$("#detail03").hide();
 	}
